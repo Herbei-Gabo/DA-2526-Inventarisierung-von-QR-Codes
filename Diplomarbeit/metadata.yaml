@@ -1,58 +1,61 @@
 ---
-da-titel: Erstellen einer Diplomarbeit mit LaTex
+da-titel: Inventarisierung von QR Codes
 
-da-jahr: 2020/21 
+da-jahr: 2025/26 
 
-da-keywords: HTLLE, Keyword1, Keyword2, Keyword3
+da-keywords: HTLLE, Inventarisierung, QR-Codes
 
 #lang: english
 
 bibliography: [literatur.bib]
 
 da-author:
-- vorname: Joltawan 
-  nachname: Barodscheff
-  klasse: 5AHWIN
-  thema: Bauen des LaTex Templates
+- vorname: Gabriel 
+  nachname: Herbei
+  klasse: 5BHWIN
+  thema: Recherche und testen der Inventarisierungslösung
   ki-tools:
   - name: ChatGPT3.5
     zweck: Informationsbeschaffung
   - name: Midjourney
     zweck: Künstlerische Illustration
 
-- vorname: Craig 
-  nachname: Tester
-  klasse: 5AHWIN
-  thema: Entwicklung eines Prototypen
+- vorname: Andre 
+  nachname: Karner
+  klasse: 5BHWIN
+  thema: Recherche und entwickeln eines Inventarisierungsprozess
   ki-tools:
   - name: Github Copilot
     zweck: Boilerplate codegenerierung, Codedokumentation
 
-- vorname: Karl 
-  nachname: Ranseier
-  klasse: 5AHWIN
-  thema: API-Mockups und Testen der Applikation
-
-- vorname: Frank 
-  nachname: Borland
-  klasse: 5AHWIN
-  thema: GUI Generierung
-  ki-tools:
-  - name: Galileo AI
-    zweck: Setendesign sowie UI/UX Design der App
-  - name: Grammarly Go
-    zweck: Stilverbesserung sowie Rechtschreibkorrekturen
+- vorname: Stephan 
+  nachname: Dietmair
+  klasse: 5BHWIN
+  thema: Recherche und führen des Projekthandbuch, sowie Evaluierung der Technologiealternativen
 
 da-betreuer:
-- paraffe: hg
-  name: Ing. DI(FH) Günther Hutter, Msc.
+- paraffe: lech
+  name: Dipl.-Wirt.-Ing. (FH) Leitner Christoph, BEd
 
-- paraffe: me
-  name: DI Dr. mont Thomas Messner
+- paraffe: kep
+  name: DI (FH) Klaus Kepplinger, MSc
 
-da-kurzfassung-de: Hier kommt eine deutsche Kurzfassung hin.
+da-kurzfassung-de: Die vorliegende Diplomarbeit beschäftigt sich mit der Entwicklung und Umsetzung einer webbasierten Inventarisierungslösung unter Verwendung von QR-Codes zur Verwaltung schulischer IT-Ausstattung. Der Ausgangspunkt ist der bisherige manuelle Prozess, bei dem Objekte wie Monitore, PCs, Beamer oder Tastaturen in einer Excel-Tabelle erfasst und verwaltet werden. Dieses Verfahren ist fehleranfällig, zeitaufwendig und wenig effizient.
 
-da-kurzfassung-en: Hier kommt eine englische Kurzfassung hin.
+Ziel dieser Arbeit ist es, den bestehenden Prozess durch eine digitale Lösung zu ersetzen, die sowohl benutzerfreundlich als auch ressourcenschonend ist. Durch den Einsatz von QR-Codes wird die Identifikation und Zuordnung von Geräten deutlich vereinfacht. Nutzer:innen können mittels mobiler Endgeräte wie Smartphones oder Tablets direkt auf Informationen zugreifen, Objekte erfassen oder Änderungen vornehmen.
+
+Die Lösung wird auf Basis vorhandener schulischer Infrastruktur realisiert, wodurch zusätzliche Investitionen weitgehend vermieden werden können. Die Umsetzung erfolgt in mehreren Phasen – von der Anforderungsanalyse über die Implementierung bis hin zur Testphase mit ausgewählten Nutzer:innen. Anschließend wird die Lösung hinsichtlich Funktionalität, Effizienz und Benutzerfreundlichkeit evaluiert.
+
+Die Arbeit zeigt, wie durch den gezielten Einsatz digitaler Werkzeuge bestehende Verwaltungsprozesse an Schulen modernisiert und langfristig optimiert werden können.
+
+
+da-kurzfassung-en: This thesis focuses on the development and implementation of a web-based inventory system using QR codes to manage IT equipment in schools. The starting point is the current manual process, in which devices such as monitors, PCs, projectors, and keyboards are tracked using Excel spreadsheets. This method is inefficient, time-consuming, and prone to errors.
+
+The aim of this work is to replace the existing process with a digital solution that is both user-friendly and resource-efficient. QR codes simplify the identification and assignment of devices. Users can access and update information directly using mobile devices such as smartphones or tablets.
+
+The solution is implemented using existing school infrastructure, avoiding major additional costs. The development follows a structured plan, including requirement analysis, implementation, and a testing phase with selected users. Afterwards, the system is evaluated regarding functionality, efficiency, and usability.
+
+This thesis demonstrates how digital tools can modernize and sustainably improve administrative processes in educational institutions.
 
 
 da-kiquellen:
