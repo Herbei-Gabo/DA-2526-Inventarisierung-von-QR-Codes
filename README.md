@@ -5,5 +5,7 @@ In dieser Diplomarbeit wird eine webbasierte Inventarisierungslösung entwickelt
 ### Teammitglieder:
 
 Gabriel Herbei 5BHWIN
+
 Andre Karner 5BHWIN
+
 Stephan Dietmair 5BHWIN
