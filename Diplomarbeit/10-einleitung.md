@@ -1,3 +1,6 @@
 # Einleitung
-Hier schreiben Sie eine Einleitung zu Ihrem Thema
-Das ist quasi der Problemaufriss
+Die fortschreitende Digitalisierung hat auch im schulischen Umfeld zu einem wachsenden Bedarf an effizienten, digitalen Verwaltungsprozessen geführt. Besonders die Inventarisierung – also die systematische Erfassung, Verwaltung und Wartung von schulischen Geräten und Ausstattungen – stellt unserer Bildungseinrichtungen weiterhin vor erhebliche organisatorische Herausforderungen. Aktuell wird an der Schule mit einer Excel Liste inventarisiert, was einem hohen manuellen Aufwand, mangelnder Übersichtlichkeit und erhöhter Fehleranfälligkeit entspricht.
+
+Im Rahmen dieser Diplomarbeit wird eine praxisorientierte, webbasierte Lösung zur Inventarisierung von Schulgegenständen auf Basis von QR-Codes konzipiert, umgesetzt und getestet. Ziel ist es, den bestehenden Verwaltungsprozess durch eine digitale Lösung signifikant zu vereinfachen, die Wartbarkeit zu erhöhen sowie eine benutzerfreundliche Oberfläche für schulisches Personal bereitzustellen. QR-Codes bieten sich dabei als technisches Mittel an, um eine schnelle, mobile und fehlerarme Erfassung sowie Zuordnung von Inventargegenständen zu ermöglichen.
+
+Die Entwicklung der Lösung erfolgt unter Berücksichtigung vorhandener schulischer IT-Ressourcen. Dabei wird besonderer Wert auf eine realistische Umsetzung gelegt, die keine zusätzlichen Investitionen seitens der Schule erfordert. Im Rahmen eines geplanten Praxistests soll zudem die Bedienbarkeit und Praxistauglichkeit der Anwendung evaluiert werden.
