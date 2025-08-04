@@ -1,5 +1,4 @@
-# Teilaufgabe Schüler André Karner
-# Programmierung einer Funktionierenden Weblösung
+# Projekttagebuch – QR-Code Inventarisierung
 ---
 # Inhaltsverzeichnis
 
@@ -7,22 +6,20 @@
   - [1.1 Analyse der bereit gestellten Excel Datei der aktuellen Inventarisierung](#11-analyse-der-bereit-gestellten-excel-datei-der-aktuellen-inventarisierung)
   - [1.2 Auswahl der Datenbank](#12-auswahl-der-datenbank)
   - [1.3 Datenbankmodell Erstellung](#13-datenbankmodell-erstellung)
-- [Tabellen Schema Abbildung](#tabellen-schema-abbildung)
-  - [Excel Datei mit Abbildung der Tabellen `da_inventory_TableSchema.xlsx`](#excel-datei-mit-abbildung-der-tabellen-dainventory_tableschemaxlsx)
-  - [T_Account](#t_account)
-  - [T_Product](#t_product)
-  - [config_DetailInfo](#config_detailinfo)
-  - [Abgeleitete Konfigurationstabellen aus `config_DetailInfo`](#abgeleitete-konfigurationstabellen-aus-config_detailinfo)
-    - [config_ProductArea (RefType = 1)](#config_productarea-reftype--1)
-    - [config_Supplier (RefType = 2)](#config_supplier-reftype--2)
-    - [config_Location (RefType = 3)](#config_location-reftype--3)
-    - [config_Depositor (RefType = 4)](#config_depositor-reftype--4)
-    - [config_ResponsiblePerson (RefType = 5)](#config_responsibleperson-reftype--5)
-- [Dokumente](#dokumente)
-  - [DA_2025-07-15_HoferText.docx](#da_2025-07-15_hofertextdocx)
-  - [HTLGesamtinventar_Monitorbeispiel.xlsx](#htlgesamtinventar_monitorbeispiellxlsx)
-  - [da_inventory_TableSchema.xlsx](#da_inventory_tableschemaxlsx)
-- [Feature: QR-Code-Generierung für Objekte](#feature-qr-code-generierung-für-objekte)
+    - [1.3.1 Tabellen Schema Abbildung](#tabellen-schema-abbildung)
+    - [1.3.1 T_Account](#t_account)
+    - [1.3.2 T_Product](#t_product)
+    - [1.3.3 config_DetailInfo](#config_detailinfo)
+    - [1.3.4 Abgeleitete Konfigurationstabellen aus config_DetailInfo](#abgeleitete-konfigurationstabellen)
+      - [config_ProductArea (RefType = 1)](#config_productarea-reftype--1)
+      - [config_Supplier (RefType = 2)](#config_supplier-reftype--2)
+      - [config_Location (RefType = 3)](#config_location-reftype--3)
+      - [config_Depositor (RefType = 4)](#config_depositor-reftype--4)
+      - [config_ResponsiblePerson (RefType = 5)](#config_responsibleperson-reftype--5)
+- [2. Dokumente](#2-dokumente)
+  - [2.1 DA_2025-07-15_HoferText.docx](#21-da_2025-07-15_hofertextdocx)
+  - [2.2 HTLGesamtinventar_Monitorbeispiel.xlsx](#22-htlgesamtinventar_monitorbeispiellxlsx)
+  - [2.3 da_inventory_TableSchema.xlsx](#23-da_inventory_tableschemaxlsx)
 
 ---
 <div id="DatenauswertungUndDatenbankerstellung"></div>
@@ -111,9 +108,9 @@ Dies würde wiefolgt aussehen:
 	- *Ref_Type 5* = **ResponsiblePerson**
 - **Begründung:** Dies ermöglicht eine einfache Wartbarkeit sowie Konfiguration der Daten und die Namensgebung wurde in Englisch gewählt, da diese eine Universale Lesbarkeit der Datenbank ermöglicht.
 
-# Tabellen Schema Abbildung:
+## Tabellen Schema Abbildung:
 
-## Excel Datei mit Abbildung der Tabellen `da_inventory_TableSchema.xlsx`
+- Alle hier abgebildeten Tabellen sind in `da_inventory_TableSchema.xlsx` abgebildet
 
 ## T_Account
 
@@ -169,7 +166,7 @@ Dies würde wiefolgt aussehen:
 
 ---
 
-## Abgeleitete Konfigurationstabellen aus `config_DetailInfo`
+## Abgeleitete Konfigurationstabellen
 
 Alle untenstehenden Tabellen basieren auf der Basistabelle `config_DetailInfo`. Der jeweilige `DetailInfo_RefType` filtert die Einträge für die unterschiedlichen Kategorien.
 
@@ -253,47 +250,18 @@ WHERE
 	(  DetailInfo_RefType = 5 );
 ```
 
-## Dokumente 
+## 2. Dokumente
 
-#### **DA_2025-07-15_HoferText.docx**
-#### **HTLGesamtinventar_Monitorbeispiel.xlsx**
-#### **da_inventory_TableSchema.xlsx**  
+### 2.1 DA_2025-07-15_HoferText.docx
+
+Kurzes internes Schreiben von Prof. Hofer mit wichtigen Informationen.
+
+### 2.2 HTLGesamtinventar_Monitorbeispiel.xlsx
+
+Beispielhafte Excel-Datei der aktuellen Inventarliste mit realen Daten und Struktur für die spätere Datenübernahme.
+
+### 2.3 da_inventory_TableSchema.xlsx
+
+Darstellung aller geplanten Tabellen, Beziehungen und Datentypen der SQL-Datenbank in Excel-Form.
+
 ---
-
-
-### VORLAGE --> Features
-
-# Feature: QR-Code-Generierung für Objekte
-
-## Beschreibung
-Beim Anlegen eines neuen Objekts wird automatisch ein QR-Code erzeugt, der auf die Objekt-Detailseite verweist. Dieser QR-Code wird im System gespeichert und kann heruntergeladen oder gedruckt werden.
-
-## Technologie
-- JavaScript-Bibliothek: `qrcode.js`
-- Eingabedaten: Objekt-ID
-- Ausgabe: QR-Code im PNG-Format
-
-## Entscheidung
-- Die QR-Codes werden clientseitig erzeugt, um Serverlast zu vermeiden.
-- PNG wird verwendet, da es verlustfrei druckbar ist.
-
-## Umsetzung
-- `generateQRCode(data)` Funktion im Frontend-Modul `qr.js`
-- Aufruf in `object-form.js` nach erfolgreichem POST zur Datenbank
-
-## Probleme
-- Canvas war zu klein auf mobilen Geräten → dynamische Skalierung eingebaut
-- PNG-Download funktionierte nicht in Safari → Workaround mit `toBlob()`-Funktion
-
-## Screenshot
-- `screenshots/qr-generator-example.png`
-
-## Getestet
-- Chrome, Firefox, Safari
-- QR-Code führt korrekt zur jeweiligen Objekt-URL
-
-## Verknüpfte Komponenten
-- `object-form.js`
-- `qr.js`
-- Backend-Router für Objektdaten (`/api/objects`)
-
