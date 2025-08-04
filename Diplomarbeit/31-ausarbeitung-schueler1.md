@@ -1,4 +1,6 @@
-# Projekttagebuch – QR-Code Inventarisierung
+# Teilaufgabe André Karner
+---
+### Entwicklung und Programmierung einer funktionierenden Webbasierden Inventarisierungslösung.
 ---
 # Inhaltsverzeichnis
 
