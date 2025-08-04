@@ -1,7 +1,6 @@
 # Teilaufgabe André Karner
 ---
 ### Entwicklung und Programmierung einer funktionierenden Webbasierenden Inventarisierungslösung.
-##### ????? Inhaltsverzeichnis Links funktionieren in Github nicht, Lokal schon ( wtf ) ?????
 ---
 # Inhaltsverzeichnis
 
