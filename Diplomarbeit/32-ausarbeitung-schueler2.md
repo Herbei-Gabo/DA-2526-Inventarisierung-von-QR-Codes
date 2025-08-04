@@ -1,206 +1,269 @@
-# Teilaufgabe Schüler Bravo
-\textauthor{Schueler 2}
+# Teilaufgabe André Karner
+---
+### Entwicklung und Programmierung einer funktionierenden Webbasierden Inventarisierungslösung.
+---
+# Inhaltsverzeichnis
 
-## Theorie
+- [1. Datenauswertung & Datenbankerstellung](#1-datenauswertung--datenbankerstellung)
+  - [1.1 Analyse der bereit gestellten Excel Datei der aktuellen Inventarisierung](#11-analyse-der-bereit-gestellten-excel-datei-der-aktuellen-inventarisierung)
+  - [1.2 Auswahl der Datenbank](#12-auswahl-der-datenbank)
+  - [1.3 Datenbankmodell Erstellung](#13-datenbankmodell-erstellung)
+    - [1.3.1 Tabellen Schema Abbildung](#tabellen-schema-abbildung)
+    - [1.3.1 T_Account](#t_account)
+    - [1.3.2 T_Product](#t_product)
+    - [1.3.3 config_DetailInfo](#config_detailinfo)
+    - [1.3.4 Abgeleitete Konfigurationstabellen aus config_DetailInfo](#abgeleitete-konfigurationstabellen)
+      - [config_ProductArea (RefType = 1)](#config_productarea-reftype--1)
+      - [config_Supplier (RefType = 2)](#config_supplier-reftype--2)
+      - [config_Location (RefType = 3)](#config_location-reftype--3)
+      - [config_Depositor (RefType = 4)](#config_depositor-reftype--4)
+      - [config_ResponsiblePerson (RefType = 5)](#config_responsibleperson-reftype--5)
+- [2. Dokumente](#2-dokumente)
+  - [2.1 DA_2025-07-15_HoferText.docx](#21-da_2025-07-15_hofertextdocx)
+  - [2.2 HTLGesamtinventar_Monitorbeispiel.xlsx](#22-htlgesamtinventar_monitorbeispiellxlsx)
+  - [2.3 da_inventory_TableSchema.xlsx](#23-da_inventory_tableschemaxlsx)
 
-Dieses Kapitel wird oft auch als _Literaturrecherche_ bezeichnet. Da gehört alles rein was der __normale__ Leser braucht um den praktischen Ansatz zu verstehen. Das bedeutet Sie brauchen einen roten Faden !
+---
+<div id="DatenauswertungUndDatenbankerstellung"></div>
 
-Das sind z.B: allgemeine Definitionen, Beschreibung von fachspezifischen Vorgehensweisen, Frameworks, Theorie zu verwendeten Algorithmen, besondere Umstände, ...
+## 1. Datenauswertung & Datenbankerstellung 
 
-## Praktische Arbeit
+<div id="AnalyseExcelDatei"></div>
 
-Hier beschreiben Sie ihren praktischen Teil. Es geht darum seine Implementierung / Versuche so darzustellen dass anhand dieser dre Leser erkennen kann was sie wie gemacht haben.
+## 1.1 Analyse der bereit gestellten Excel Datei der aktuellen Inventarisierung
 
-Die Frage nach der Detailgenauigkeit lässt sich wie folgt beantworten: So, dass man Ihre Aufgabenstellung vollständig  nachvollziehen kann wenn man nur diese Diplomarbeit in Händen hat!
+### Datenquelle 
+Die Basis der Datenbank entspricht aus dieser uns bereit gestellten Excel Liste `HTLGesamtinventar_Monitorbeispiel.xlsx`
 
-### Erzeugen von Java Quellcode
+### Erkenntnisse
+**1.** In Summe gibt es 5. verschiedene Listen mit Daten, welche später in Dropdown Menüs abgebildet werden:
+   + Bereich
+   + Lieferant
+   + Standort ( Die Standort Bezeichnung wird im Standort selbst mit gespeichert )
+   + Einbringer/in
+   + Verantwortliche/r`
 
-Unter einem Array in Java versteht man ein Feld oder Container, das in der Lage ist, mehrere Objekte vom gleichen Typ aufzunehmen und zu verwalten. Dabei wird in Java das Array als eine spezielle Klasse repräsentiert, was unter anderem mit sich bringt, dass man auf spezielle Methoden und Operationen bei Arrays zurückgreifen kann. Der Umgang mit Arrays mag gerade am Anfang etwas schwerer sein und birgt viele Fehlerquellen, nach und nach wird man das System das hinter den Arrays steht aber gut nachvollziehen können. 
+**2.** Die aufgezählten Spalten können ignoriert werden, da diese Daten Laut der Nachricht von Herr Hofer bereits im Ticketsystem vorhanden sind.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{caption="Initialisieren eines Arrays" .java}
-Typ[] Name = new Typ[Anzahl];
-Typ Name[] = new Typ[Anzahl];
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   > "Dazu kommt, dass im Ticketsystem bereits jetzt Rechnungen, Lieferscheine und andere Dokumente zu den Anschaffungen abgelegt werden." 
+   `DA_2025-07-15_HoferText.docx`
 
-Etwas erfahrenere Programmierer werden jetzt schon erkennen, worauf es beim Zugriff auf Elemente im Array meist hinausläuft: Auf Schleifen!
-Schleifen sind ein komfortables Mittel um alle Elemente eines Arrays durchzugehen und auf Wunsch auszugeben oder andere Operationen darauf anzuwenden. Allerdings muss man nicht nur hier aufpassen, dass man die länge des Arrays in der Schleife nicht überschreitet und so auf Felder zugreift die gar nicht existieren. Damit so etwas erst gar nicht passiert, kann man in der Abbruchbedingung der for-Schleife direkt die Länge des Arrays ausgeben mit: array.length.
+   + Redat
+   + ReNr
+   + Stk
+   + Betrag inkl. MWSt.
+   + Gesamt
 
-Möchte man nun also alle 5 Elemente unseres Beispiels-Arrays mit einer Schleife ausgeben lassen, dann würde das so gehen:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{caption="Examples of array manipulations" .java}
-// (c) by Mike Scott
-
-public class ArrayExamples
-{	public static void main(String[] args)
-	{	int[] list = {1, 2, 3, 4, 1, 2, 3};
-		findAndPrintPairs(list, 5);
-		bubblesort(list);
-		showList(list);
-
-		list = new int[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-		bubblesort(list);
-		showList(list);
-
-		list = new int[]{11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2};
-		bubblesort(list);
-		showList(list);
-
-		list = new int[]{1};
-		bubblesort(list);
-		showList(list);
-	}
-
-
-	// pre: list != null, list.length > 0
-	// post: return index of minimum element of array
-	public static int findMin(int[] list)
-	{	assert list != null && list.length > 0 : "failed precondition";
-
-		int indexOfMin = 0;
-		for(int i = 1; i < list.length; i++)
-		{	if(list[i] < list[indexOfMin])
-			{	indexOfMin = i;
-			}
-		}
-
-		return indexOfMin;
-	}
-}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Obwohl hier nur java gezeigt ist, unterstützt das Template auch scala, java, javascript, css, html5 und xml
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{caption="Ein einfaches XML" .xml}
-<?xml version="1.0" standalone="yes"?>
-<!DOCTYPE module [
-    <!ELEMENT module (module|property|metadata|message)*>
-    <!ATTLIST module name NMTOKEN #REQUIRED>
-    <!ELEMENT property EMPTY>
-    <!ATTLIST property
-        name NMTOKEN #REQUIRED
-        value CDATA #REQUIRED
-        default CDATA #IMPLIED
-    >
-    <!ELEMENT metadata EMPTY>
-    <!ATTLIST metadata
-        name NMTOKEN #REQUIRED
-        value CDATA #REQUIRED
-    >
-    <!ELEMENT message EMPTY>
-    <!ATTLIST message
-        key NMTOKEN #REQUIRED
-        value CDATA #REQUIRED
-    >
-]>
-
-<!--
-    Checkstyle configuration that checks if the braces are set correctly
- -->
-
-<module name = "Checker">
-    <property name="charset" value="UTF-8"/>
-    <property name="severity" value="warning"/>
-
-    <property name="fileExtensions" value="java"/>
-    <!-- Checks for whitespace                               -->
-    <!-- See http://checkstyle.sf.net/config_whitespace.html -->
-
-    <module name="TreeWalker">
-        
-        <module name="NeedBraces"/>
-        <module name="LeftCurly">
-        	<property name="option" value="nl"/>
-        </module>
-
-        <module name="RightCurly">
-            <property name="id" value="RightCurlyAlone"/>
-            <property name="option" value="alone"/>
-            <property name="tokens"
-             value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                    INSTANCE_INIT,LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE,
-                    LITERAL_DO"/>
-        </module>
-    </module>
-</module>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Hier etwas in kotlin
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{caption="Ein einfaches Kotlin Beispiel" .kotlin}
-// this is a simple code listing:
-println("hello kotlin from latex")
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hier muss nur eine Verbindung zwischen Ticketsystem und neuem System erstellt werden, was jedoch kein großes Problem darstellt, 
+da man die ID - die aktuell im Ticketsystem benutzt wird - in der neuen Inventarisierung einfach integrieren kann.
+-> Lösung dafür: Eine Spalte einfügen, wo diese fortlaufende Nummer eingetragen wird.
 
 
-Und noch ein Beispiel in vba
+### Entscheidungen & Begründungen
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{caption="Ein einfaches Visual Basic for Applications Beispiel" .vba}
-Private Sub ExitSub()
- 
-    Dim i As Integer
- 
-    For i = 1 To 10      
-        If i = 5 Then
-            Exit Sub
-            MsgBox "The value of i is" & i
-        End If
-    Next i 
- 
-End Sub
- 
- 
-Private Sub CallExitSub()
-    Call ExitSub
-    MsgBox "Exit Sub"  
-End Sub
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Entscheidung:** Da es 5. Verschiedene Dropdown Menüs geben wird, wird daraus **EINE** Tabelle gemacht und die verschiedenen Typen werden mit einem REF_TYPE versehen.
+Dies würde wiefolgt aussehen.
+	- *REF_TYPE 1* = **Area**
+	- *REF_TYPE 2* = **Supplier**
+	- *REF_TYPE 3* = **Location**
+	- *REF_TYPE 4* = **Depositor**
+	- *REF_TYPE 5* = **ResponsiblePerson**
+- **Begründung:** Dies ermöglicht eine einfache Wartbarkeit sowie Konfiguration der Daten. Die Namensgebung wurde in Englisch gewählt,
+ da diese eine universale Lesbarkeit der Datenbank ermöglicht.
 
+### Nächste Schritte
+- Auswahl der Datenbank
+- Datenbankmodell Erstellung 
 
-und noch was in Dart (im Markdown direkt als Latex Quellcode eingefügt - damit funktionieren jegliche Sprachen welche als langdef vorliegen) 
+---
+<div id="AuswahlDatenbank"></div>
 
-\begin{lstlisting}[language=Dart, caption={Ein Beispiel für Dart}]
-library hallo;
+## 1.2 Auswahl der Datenbank
 
-void main() {
-  String x;
-  print('Hello, World!');
-  x = 'hallo';
-}
-\end{lstlisting}
+### Entscheidungen & Begründungen
+- **Entscheidung:** SQL Server Management Studio 2019 (SSMS) wird als SQL-Server benutzt.
+  - **Begründung:** Schnelles Verständnis, da man eine klare Dateneinsicht hat und ich persönlich schon sehr viel Zeit  
+    mit SSMS verbracht habe und mich daher mit den Features wie:  
+    - Views  
+    - Funktionen  
+    - Stored Procedure  
+
+	sehr gut auskenne, wobei **Stored Procedures** ein wichtiger Bestandteil einer sicheren Anwendung sind **(Schutz vor SQL-Injection).**
 
 
-### Auswertung der Ergebnisse
+### Nächste Schritte
+- Datenbankmodell Erstellung 
 
-Anhand von XY kann man folgende Tabelle ableiten:
+---
 
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|   12  |  12  |    12   |    12  |
-|  123  |  123 |   123   |   123  |
-|    1  |    1 |     1   |     1  |
+<div id="DatenbankmodellErstellung"></div>
 
-: Eine Tolle tabelle
+## 1.3 Datenbankmodell Erstellung
 
-#### Eine Überschrift 4ter Ordnung
+### Entscheidungen & Begründungen
+- **Entscheidung:** Da es 5. Verschiedene Dropdown Menüs geben wird, wird daraus eine **Config-Tabelle** gemacht und die verschiedenen Typen werden mit einem Ref_Type versehen.
+Dies würde wiefolgt aussehen:
+	- *Ref_Type 1* = **Area**
+	- *Ref_Type 2* = **Supplier**
+	- *Ref_Type 3* = **Location**
+	- *Ref_Type 4* = **Depositor**
+	- *Ref_Type 5* = **ResponsiblePerson**
+- **Begründung:** Dies ermöglicht eine einfache Wartbarkeit sowie Konfiguration der Daten und die Namensgebung wurde in Englisch gewählt, da diese eine Universale Lesbarkeit der Datenbank ermöglicht.
 
-Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext.
+## Tabellen Schema Abbildung:
 
+- Alle hier abgebildeten Tabellen sind in `da_inventory_TableSchema.xlsx` abgebildet
 
-#### Noch ein Überschrift 4ter Ordnung
+## T_Account
 
-Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext.
+| Feldname                  | Datentyp                       | Beschreibung                              |
+|---------------------------|--------------------------------|-------------------------------------------|
+| ACCOUNT_ID                | uniqueidentifier ROWGUIDCOL    | [ PRIMARY_KEY + ROW_GUID ]                |
+| Convert_ID                | varchar(50) NULL               | ID welche vom Datenimport stammt          |
+| Account_Info_CreateFrom   | varchar(100) NULL              | Datum Erstellt am                         |
+| Account_Info_CreateDate   | datetime NULL                  | Name des Erstellers                       |
+| Account_Username          | varchar(100) NULL              | Account Username                          |
+| Account_Password          | varchar(500) NULL              | crypted Account password                  |
+| Account_LastLoginDate     | datetime NULL                  | Letztes Login Datum                       |
+| Account_CountLogin        | int NULL                       | Anzahl der Logins                         |
+| Account_IsReadable        | bit                            | Darf dieser Account Daten lesen?          |
+| Account_IsWriteable       | bit                            | Darf dieser Account Daten schreiben?      |
 
-Und mit einer Aufzählung:
+---
 
-* Alpha
-* Bravo
-* Charlie
-    * Charlie 1
-    * Charlie 2
-    * Charlie 3
-    * Charlie 4
-* Delta
-* Epsilon
+## T_Product
 
- Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext. Mit etwas Fließtext.
+| Feldname                    | Datentyp                       | Beschreibung                               |
+|-----------------------------|--------------------------------|--------------------------------------------|
+| PRODUCT_ID                  | uniqueidentifier ROWGUIDCOL    | [ PRIMARY_KEY + ROW_GUID ]                 |
+| Convert_ID                  | varchar(50) NULL               | ID welche vom Datenimport stammt           |
+| Product_InfoCreateFrom      | varchar(100) NULL              | Name des Erstellers                        |
+| Product_InfoCreateDate      | datetime NULL                  | Datum Erstellt am                          |
+| Product_InventarNummer      | varchar(100) NULL              | Fortlaufende Inventarnummer                |
+| Product_Name                | varchar(200) NULL              | Individueller Produkt Name                 |
+| Product_Purpose             | varchar(300) NULL              | Produkt Zweck                              |
+| Product_SerialNumber        | varchar(100) NULL              | Produkt Seriennummer                       |
+| Product_Type                | varchar(100) NULL              | Produkt Typ                                |
+| Product_WarrantyUntil       | datetime NULL                  | Produkt Garantie bis                       |
+| Product_DeInventoryReason   | varchar(500) NULL              | Produkt Entinventarisierungsgrund          |
+| Product_DeInventoryDate     | datetime NULL                  | Produkt Entinventarisierungsdatum          |
+| Product_Area                | uniqueidentifier NULL          | Produkt Bereich -> IT, MAT etc             |
+| Product_Supplier            | uniqueidentifier NULL          | Produkt Lieferant                          |
+| Product_Location            | uniqueidentifier NULL          | Produkt Standort (Raum)                    |
+| Product_Depositor           | uniqueidentifier NULL          | Produkt Einbringer                         |
+| Product_ResponsiblePerson   | uniqueidentifier NULL          | Produkt Verantwortlicher                   |
 
+---
+
+## config_DetailInfo
+
+| Feldname               | Datentyp                       | Beschreibung                    |
+|------------------------|--------------------------------|---------------------------------|
+| DETAILINFO_ID          | uniqueidentifier ROWGUIDCOL    | [ PRIMARY_KEY + ROW_GUID ]     |
+| Convert_ID             | varchar(50) NULL               | ID welche vom Datenimport stammt |
+| DetailInfo_CreateDate  | datetime NULL                  | Datum Erstellt am              |
+| DetailInfo_RefType     | int NULL                       | Welcher Reftype?               |
+| DetailInfo_Name        | varchar(200)                   | Name des RefTypes              |
+| DetailInfo_InfoText    | varchar(500)                   | Informationstext               |
+
+---
+
+## Abgeleitete Konfigurationstabellen
+
+Alle untenstehenden Tabellen basieren auf der Basistabelle `config_DetailInfo`. Der jeweilige `DetailInfo_RefType` filtert die Einträge für die unterschiedlichen Kategorien.
+
+## Übersicht: RefTypes
+
+| RefTypes                 | Value |
+|--------------------------|-------|
+| config_Area              | 1     |
+| config_Supplier          | 2     |
+| config_Location          | 3     |
+| config_Depositor         | 4     |
+| config_ResponsiblePerson | 5     |
+
+---
+
+### config_ProductArea (RefType = 1) 
+```sql
+SELECT
+  AREA_ID            			= 	DETAILINFO_ID,
+  Area_Bezeichnung   			= 	DetailInfo_Name,
+  Area_InfoText      			= 	DetailInfo_InfoText
+FROM 
+	dbo.config_DetailInfo
+WHERE 
+	( DetailInfo_RefType = 1 );
+```
+
+---
+
+### config_Supplier (RefType = 2) 
+```sql
+SELECT
+  SUPPLIER_ID          			= 	DETAILINFO_ID,
+  Supplier_Bezeichnung 			= 	DetailInfo_Name,
+  Supplier_InfoText    			= 	DetailInfo_InfoText
+FROM 
+	dbo.config_DetailInfo
+WHERE 
+	( DetailInfo_RefType = 2 );
+```
+
+---
+
+### config_Location (RefType = 3) 
+```sql
+SELECT
+  LOCATION_ID         			= 	DETAILINFO_ID,
+  Location_Name       			= 	DetailInfo_Name,
+  Location_InfoText  			= 	DetailInfo_InfoText
+FROM 
+	dbo.config_DetailInfo
+WHERE 
+	( DetailInfo_RefType = 3 );
+```
+
+---
+
+### config_Depositor (RefType = 4)
+```sql
+SELECT
+  DEPOSITOR_ID        			= 	DETAILINFO_ID,
+  Depositor_Name      			= 	DetailInfo_Name,
+  Depositor_InfoText  			= 	DetailInfo_InfoText
+FROM 
+	dbo.config_DetailInfo
+WHERE 
+	( DetailInfo_RefType = 4 );
+```
+
+---
+
+### config_ResponsiblePerson (RefType = 5) 
+```sql
+SELECT
+  RESPONSIBLEPERSON_ID        	= 	DETAILINFO_ID,
+  ResponsiblePerson_Name      	= 	DetailInfo_Name,
+  ResponsiblePerson_InfoText  	= 	DetailInfo_InfoText
+FROM 
+	dbo.config_DetailInfo
+WHERE 
+	(  DetailInfo_RefType = 5 );
+```
+
+## 2. Dokumente
+
+### 2.1 DA_2025-07-15_HoferText.docx
+
+Kurzes internes Schreiben von Prof. Hofer mit wichtigen Informationen.
+
+### 2.2 HTLGesamtinventar_Monitorbeispiel.xlsx
+
+Beispielhafte Excel-Datei der aktuellen Inventarliste mit realen Daten und Struktur für die spätere Datenübernahme.
+
+### 2.3 da_inventory_TableSchema.xlsx
+
+Darstellung aller geplanten Tabellen, Beziehungen und Datentypen der SQL-Datenbank in Excel-Form.
+
+---
