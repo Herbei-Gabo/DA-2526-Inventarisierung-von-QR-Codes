@@ -13,7 +13,7 @@ da-author:
 - vorname: Gabriel 
   nachname: Herbei
   klasse: 5BHWIN
-  thema: Recherche und testen der Inventarisierungslösung
+  thema: Analyse, Anwendung und Testen einer digitalen Inventarisierungslösung basierend auf QR-Codes
   ki-tools:
   - name: ChatGPT3.5
     zweck: Informationsbeschaffung
@@ -23,7 +23,7 @@ da-author:
 - vorname: Andre 
   nachname: Karner
   klasse: 5BHWIN
-  thema: Recherche und entwickeln eines Inventarisierungsprozess
+  thema: Entwicklung und Programmierung einer funktionierenden Webbasierenden Inventarisierungslösung
   ki-tools:
   - name: Github Copilot
     zweck: Boilerplate codegenerierung, Codedokumentation
