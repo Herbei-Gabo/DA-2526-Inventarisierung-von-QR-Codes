@@ -47,14 +47,18 @@ Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch 
 # Literaturverzeichnis:
 
 
-*Was versteht man unter Inventarisierung?*  (o. D.). Entek Systems GmbH. 
+*Was versteht man unter Inventarisierung?*  (o. D.). Entek Systems GmbH.
+
 Abgerufen am 15.07.2025, von https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung](https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung)
 
-*QR-Code*. (o. D.). Gabler Wirtschaftslexikon.  
+*QR-Code*. (o. D.). Gabler Wirtschaftslexikon. 
+
 Abgerufen am 15.07.2025, von [https://wirtschaftslexikon.gabler.de/definition/qr-code-53515](https://wirtschaftslexikon.gabler.de/definition/qr-code-53515)
 
-*Basic writing and formatting syntax*. (o. D.). GitHub Docs.  
-Abgerufen am 15.07.2025, von [https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+*Basic writing and formatting syntax*. (o. D.). GitHub Docs.
 
-*Internetquellen zitieren*. (o. D.). Scribbr.  
-Abgerufen am 15.07.2025, von [https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/](https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/)
+Abgerufen am 05.08.2025, von [https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+*Internetquellen zitieren*. (o. D.). Scribbr. 
+
+Abgerufen am 05.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/](https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/)
