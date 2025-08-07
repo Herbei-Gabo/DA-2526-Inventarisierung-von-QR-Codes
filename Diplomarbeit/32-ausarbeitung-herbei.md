@@ -26,9 +26,7 @@ Die Digitalisierung des Inventarisierungsprozesses verfolgt das Ziel, den Aufwan
 
 Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.
 
-<p align="center">
-  <img src="DA-2526-Inventarisierung-von-QR-Codes/Diplomarbeit/img/qrcode.gif" alt="QR-Code" width="300">
-</p>
+![QR-Code](DA-2526-Inventarisierung-von-QR-Codes/Diplomarbeit/img/qrcode.gif)
 
 *Abbildung 1: Darstellung eines QR-Codes.*  
 (Quelle: QR-Code, [ActiveBarcode](https://www.activebarcode.com/de/codes/qrcode) abgerufen am 07.08.2025)
