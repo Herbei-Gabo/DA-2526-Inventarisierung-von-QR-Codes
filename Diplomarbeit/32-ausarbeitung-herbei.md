@@ -66,3 +66,6 @@ https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/
 
 *QR-Code*. (o. D.). ActiveBarcode.  
 Abgerufen am 07.08.2025, von [https://www.activebarcode.com/de/codes/qrcode](https://www.activebarcode.com/de/codes/qrcode)
+
+
+
