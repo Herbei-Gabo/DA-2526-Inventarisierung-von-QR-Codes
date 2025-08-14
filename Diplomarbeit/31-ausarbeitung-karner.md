@@ -150,11 +150,11 @@ Dies würde wiefolgt aussehen:
 ## Fremdschlüssel Zusammenfassung
 
 ```text
-T_Product.Product_Area              	→ 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 1
-T_Product.Product_Supplier          	→ 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 2
-T_Product.Product_Location          	→ 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 3
-T_Product.Product_Depositor         	→ 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 4
-T_Product.Product_ResponsiblePerson 	→ 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 5
+T_Product.Product_Area              	->	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 1
+T_Product.Product_Supplier          	->	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 2
+T_Product.Product_Location          	-> 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 3
+T_Product.Product_Depositor         	-> 	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 4
+T_Product.Product_ResponsiblePerson		->	config_DetailInfo.DETAILINFO_ID WHERE DetailInfo_RefType = 5
 ```
 
 ---
