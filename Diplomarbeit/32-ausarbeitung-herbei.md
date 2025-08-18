@@ -60,30 +60,6 @@ Bevor man überhaupt an eine neue Entwicklung denken kann, muss man zuerst evalu
 
 ## 2.1 Bestehende Kauflösungen
 
-Am Markt existieren schon bereits sowohl Kostenlose als auch Kostenpflichtige Inventarisierungsprogramme. Der Unterschied zwischen den beiden liegt nicht jeweils am Preis, nein. Sondern an den Erweiterten Funktionsumfang. Dieser ist bei den kostenlosen Inventarisierungsprogramme deutlich eingeschränkt. 
-### 2.1.1 Kostenlose Alternativen
-
-Eine kostenlose Inventarisierungssoftware für Schulen per se existiert nicht auf dem Markt. 
-nur für E-comerce und Kleinunternehmen. Zu viele Funktionen für den Aufwand einer Schulinventarisierung. Bsp: https://www.zoho.com/inventory/ , https://www.odoo.com/de_DE/app/inventory 
-
-Dies würde einfach unnötigen Aufwand betreiben. Bringt nur nachteile.
-Keine von diesen ist mit QR-Code kompatibel
-
-### 2.1.2 Kostenpflichtige Alternativen
-
-da kommen schon mehrere ins Spiel:
-
-https://endoo-organize.de/funktionen-inventarisierung/
-Vorteil: für Schule, beinhaltet QR-Code integration, diverse Funktionen wie: Zubehör verwalten, Ausleihmanagement, Reservieren von Objekten usw.
-
-Nachteile: Keine Preisangabe, Zuerst muss man einen Termin vereinbaren für eine Onlineberatung - Dauer: 1 Stunde, oder zur Live-Präsentation
-
-https://www.inflowinventory.com/inflow-inventory
-Vorteil: diverse Anwendung, 14 kostenlos
-Nachteil: Billigste Packet ist Entrepreneur startet bei 186 USD/mo bis hin zu teuersten Paket Mid-Size 999 USD/mo. https://www.inflowinventory.com/software-pricing Erstes Packet beinhaltet nur die nötigsten Anforderungen wie 2 Mitglieder haben darauf zugriff, technischer support, rest kann man sich dazu kaufen, zu teuer füt unsere SChule
-
-## 2.1 Bestehende Kauflösungen
-
 Am Markt existieren sowohl kostenlose als auch kostenpflichtige Inventarisierungsprogramme. Der wesentliche Unterschied zwischen beiden Ansätzen liegt dabei nicht primär im Preis, sondern vielmehr im Funktionsumfang. Während kostenlose Varianten oft nur einen sehr eingeschränkten Umfang bieten, beinhalten kostenpflichtige Lösungen in der Regel erweiterte Funktionen, die insbesondere für größere Organisationen oder Unternehmen von Bedeutung sind. Für Schulen stellt sich daher die Frage, ob der zusätzliche Funktionsumfang den Mehraufwand und die höheren Kosten rechtfertigt.
 
 ### 2.1.1 Kostenlose Alternativen
@@ -154,12 +130,7 @@ Zusammenfassend lässt sich feststellen, dass sowohl kostenlose als auch kostenp
 
 Für Schulen ergibt sich daraus die Herausforderung, entweder mit einer zu komplexen oder zu teuren Lösung zu arbeiten. Eine speziell entwickelte, kostengünstige Eigenlösung erscheint daher als sinnvoller Ansatz, da sie exakt an die Bedürfnisse der Schule angepasst werden kann.
 
-
 # Literaturverzeichnis:
-
-
-# Literaturverzeichnis:
-
 
 Kister, F. (2024, 7. Mai). _Was versteht man unter Inventarisierung?_ Entek Systems GmbH.  
 Abgerufen am 15.07.2025, von [https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung](https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung)
