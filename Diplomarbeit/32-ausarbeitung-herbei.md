@@ -9,6 +9,15 @@
    1.2 [Ziel der Digitalisierung: Vereinfachung des schulischen Prozesses](#12-ziel-der-digitalisierung-vereinfachung-des-schulischen-prozesses)  
    1.3 [QR-Codes als technologische Grundlage](#13-qr-codes-als-technologische-grundlage)  
    1.4 [Aktueller Inventarisierungsprozess an Schulen](#14-aktueller-inventarisierungsprozess-an-schulen)
+2.  [Evaluierung bestehender Lösungen und Alternativen](#2-evaluierung-bestehender-lösungen-und-alternativen)  
+	2.1 [Bestehende Kauflösungen](#21-bestehende-kauflösungen)  
+	   2.1.1 [Kostenlose Alternativen](#211-kostenlose-alternativen)  
+	   2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)  
+	   2.1.3 [Fazit zu Kauflösungen](#213-fazit-zu-kauflösungen)  
+	2.2 [Excel-Erweiterung](#22-excel-erweiterung)  
+	2.3 [Microsoft Access](#23-microsoft-access)  
+	2.4 [Integration in bestehende Systeme (z. B. Ticketsystem, Teams)](#24-integration-in-bestehende-systeme-z-b-ticketsystem-teams)  
+
 
 # 1. Theoretische Grundlagen
 
@@ -45,22 +54,136 @@ Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware 
 
 Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch zukunftsfähig ist. Insbesondere bei wachsendem Bestand und höherem Digitalisierungsgrad wird eine professionelle, digitale Lösung notwendig, die zentrale Datenhaltung, Mehrbenutzerfähigkeit und mobile Zugriffsmöglichkeiten vereint.
 
+# 2. Evaluierung bestehender Lösungen und Alternativen
+
+Bevor man überhaupt an eine neue Entwicklung denken kann, muss man zuerst evaluieren, ob es aktuelle bestehende Lösungen oder auch relevante Alternativen gibt. In diesem Kapitel werden verschiedene Ansätze analysiert und hinsichtlich anhand der Vor- und Nachteile bewertet.
+
+## 2.1 Bestehende Kauflösungen
+
+Am Markt existieren schon bereits sowohl Kostenlose als auch Kostenpflichtige Inventarisierungsprogramme. Der Unterschied zwischen den beiden liegt nicht jeweils am Preis, nein. Sondern an den Erweiterten Funktionsumfang. Dieser ist bei den kostenlosen Inventarisierungsprogramme deutlich eingeschränkt. 
+### 2.1.1 Kostenlose Alternativen
+
+Eine kostenlose Inventarisierungssoftware für Schulen per se existiert nicht auf dem Markt. 
+nur für E-comerce und Kleinunternehmen. Zu viele Funktionen für den Aufwand einer Schulinventarisierung. Bsp: https://www.zoho.com/inventory/ , https://www.odoo.com/de_DE/app/inventory 
+
+Dies würde einfach unnötigen Aufwand betreiben. Bringt nur nachteile.
+Keine von diesen ist mit QR-Code kompatibel
+
+### 2.1.2 Kostenpflichtige Alternativen
+
+da kommen schon mehrere ins Spiel:
+
+https://endoo-organize.de/funktionen-inventarisierung/
+Vorteil: für Schule, beinhaltet QR-Code integration, diverse Funktionen wie: Zubehör verwalten, Ausleihmanagement, Reservieren von Objekten usw.
+
+Nachteile: Keine Preisangabe, Zuerst muss man einen Termin vereinbaren für eine Onlineberatung - Dauer: 1 Stunde, oder zur Live-Präsentation
+
+https://www.inflowinventory.com/inflow-inventory
+Vorteil: diverse Anwendung, 14 kostenlos
+Nachteil: Billigste Packet ist Entrepreneur startet bei 186 USD/mo bis hin zu teuersten Paket Mid-Size 999 USD/mo. https://www.inflowinventory.com/software-pricing Erstes Packet beinhaltet nur die nötigsten Anforderungen wie 2 Mitglieder haben darauf zugriff, technischer support, rest kann man sich dazu kaufen, zu teuer füt unsere SChule
+
+## 2.1 Bestehende Kauflösungen
+
+Am Markt existieren sowohl kostenlose als auch kostenpflichtige Inventarisierungsprogramme. Der wesentliche Unterschied zwischen beiden Ansätzen liegt dabei nicht primär im Preis, sondern vielmehr im Funktionsumfang. Während kostenlose Varianten oft nur einen sehr eingeschränkten Umfang bieten, beinhalten kostenpflichtige Lösungen in der Regel erweiterte Funktionen, die insbesondere für größere Organisationen oder Unternehmen von Bedeutung sind. Für Schulen stellt sich daher die Frage, ob der zusätzliche Funktionsumfang den Mehraufwand und die höheren Kosten rechtfertigt.
+
+### 2.1.1 Kostenlose Alternativen
+
+Eine speziell auf Schulen zugeschnittene kostenlose Inventarisierungssoftware existiert derzeit nicht auf dem Markt. Vielmehr richten sich die vorhandenen kostenlosen Programme an kleine Unternehmen oder den E-Commerce-Bereich. Beispiele hierfür sind:
+
+- [Zoho Inventory](https://www.zoho.com/inventory/)  
+- [Odoo Inventory](https://www.odoo.com/de_DE/app/inventory)  
+
+Diese Lösungen bieten eine Vielzahl von Funktionen wie Lagerverwaltung, Bestellwesen und Lieferkettenmanagement. Für den schulischen Bereich ist dieser Funktionsumfang jedoch überdimensioniert und führt zu einem unnötigen Verwaltungsaufwand.  
+
+**Vorteile**:  
+- kostenlos nutzbar  
+- professionell entwickelte Software mit stabiler Basis  
+- modular erweiterbar  
+
+**Nachteile**:  
+- keine QR-Code-Integration für einfache Inventarisierung vor Ort  
+- Fokus auf Warenwirtschaft und Verkauf, nicht auf schulische Inventarverwaltung  
+- hohe Komplexität in der Einrichtung und Bedienung, die nicht im Verhältnis zum Nutzen steht  
+- keine direkte Anpassung an die Bedürfnisse einer Schule möglich  
+
+Damit sind kostenlose Alternativen für den angestrebten Anwendungsbereich ungeeignet, da sie mehr Aufwand erzeugen als Nutzen bringen.
+
+### 2.1.2 Kostenpflichtige Alternativen
+
+Im Bereich der kostenpflichtigen Softwarelösungen existieren mehrere Anbieter, die Inventarisierung speziell für Institutionen wie Schulen oder öffentliche Einrichtungen anbieten. Zwei Beispiele sollen im Folgenden exemplarisch betrachtet werden:
+
+#### Endoo Organize
+
+Die Lösung [Endoo Organize](https://endoo-organize.de/funktionen-inventarisierung/) richtet sich ausdrücklich auch an Schulen und Bildungseinrichtungen. Sie bietet neben einer QR-Code-Integration auch zahlreiche zusätzliche Funktionen wie:
+
+- Verwaltung von Zubehör  
+- Ausleihmanagement  
+- Reservierung von Objekten  
+- zentrale Verwaltung von Geräten und Materialien  
+
+**Vorteile**:  
+- speziell für Schulen ausgelegt  
+- integrierte QR-Code-Lösung  
+- vielfältige Zusatzfunktionen, die den Schulalltag vereinfachen können  
+- professionelle Unterstützung durch den Anbieter  
+
+**Nachteile**:  
+- keine transparente Preisgestaltung (Preisinformationen nur nach Kontaktaufnahme)  
+- verpflichtende Terminvereinbarung für eine Online-Beratung oder Live-Präsentation (zeitaufwändig)  
+- mögliche laufende Lizenzkosten, die schwer abschätzbar sind  
+- Abhängigkeit vom Anbieter bei Erweiterungen und Wartung  
+
+#### inFlow Inventory
+
+Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/inflow-inventory) dar, die für verschiedene Anwendungsbereiche von kleinen bis mittelgroßen Unternehmen konzipiert ist.  
+
+**Vorteile**:  
+- 14-tägige kostenlose Testphase  
+- benutzerfreundliche Oberfläche  
+- für verschiedene Plattformen (Web, Desktop, Mobile) verfügbar  
+- international weit verbreitet und gut dokumentiert  
+
+**Nachteile**:  
+- sehr hohe Kosten: Das günstigste Paket „Entrepreneur“ beginnt bei 186 USD/Monat und bietet nur eingeschränkte Funktionen (z. B. Zugriff für nur zwei Benutzer, begrenzter technischer Support). Die teuersten Pakete für mittelgroße Unternehmen kosten bis zu 999 USD/Monat ([Preisübersicht](https://www.inflowinventory.com/software-pricing)).  
+- viele Funktionen sind nur in höheren Preiskategorien enthalten  
+- Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar  
+
+### 2.1.3 Fazit zu Kauflösungen
+
+Zusammenfassend lässt sich feststellen, dass sowohl kostenlose als auch kostenpflichtige Kauflösungen für den schulischen Einsatz problematisch sind. Kostenlose Varianten sind funktional nicht passend, da sie nicht für den Bildungssektor entwickelt wurden und wichtige Funktionen wie QR-Code-Integration fehlen. Kostenpflichtige Lösungen hingegen bieten zwar umfangreiche Funktionen, sind jedoch mit hohen und oft intransparenten Kosten verbunden.  
+
+Für Schulen ergibt sich daraus die Herausforderung, entweder mit einer zu komplexen oder zu teuren Lösung zu arbeiten. Eine speziell entwickelte, kostengünstige Eigenlösung erscheint daher als sinnvoller Ansatz, da sie exakt an die Bedürfnisse der Schule angepasst werden kann.
+
+
 # Literaturverzeichnis:
 
 
-*Was versteht man unter Inventarisierung?*  (o. D.). Entek Systems GmbH. 
-Abgerufen am 15.07.2025, von https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung](https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung)
+# Literaturverzeichnis:
 
-*QR-Code*. (o. D.). Gabler Wirtschaftslexikon.  
+
+Kister, F. (2024, 7. Mai). _Was versteht man unter Inventarisierung?_ Entek Systems GmbH.  
+Abgerufen am 15.07.2025, von [https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung](https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung)
+
+Bendel, O. (o. D.). _QR-Code_. Gabler Wirtschaftslexikon.  
 Abgerufen am 15.07.2025, von [https://wirtschaftslexikon.gabler.de/definition/qr-code-53515](https://wirtschaftslexikon.gabler.de/definition/qr-code-53515)
 
 *Basic writing and formatting syntax*. (o. D.). GitHub Docs.  
 Abgerufen am 07.08.2025, von [https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-*Internetquellen zitieren*. (o. D.). Scribbr.  
+Theel, M. (2024, 18. Januar). _Internetquellen einfach zitieren: Unterschiede & Beispiele_. Scribbr.  
 Abgerufen am 07.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/](https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/)
 
-https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/
+Glöckler, L. (2023, 31. März). _Quellenangaben von Bildern aus dem Internet_. Scribbr. 
+Abgerufen am 07.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/](https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/)
+
+_Fischer, T._ (2024, 26. Februar). _Beste Inventarsoftware kostenlos: Die 10 besten Tools im Vergleich_.  
+Abgerufen am 15.08.2025, von [https://omr.com/de/reviews/contenthub/beste-inventarsoftware-kostenlos](https://omr.com/de/reviews/contenthub/beste-inventarsoftware-kostenlos)
+
+_Hofer, N._ (2025, 21. Mai). _Open Source Inventory Management: Die besten kostenlosen Tools im Überblick_. Wondershare.  
+Abgerufen am 15.08.2025, von [https://pdf.wondershare.de/business/open-source-inventory-management.html](https://pdf.wondershare.de/business/open-source-inventory-management.html)
+
+*Odoo Inventory – Bestandsverwaltung*. (o. D.). Odoo.  
+Abgerufen am 18.08.2025, von [https://www.odoo.com/de_DE/app/inventory](https://www.odoo.com/de_DE/app/inventory) 
 
 # Abbildungsverzeichnis:
 
