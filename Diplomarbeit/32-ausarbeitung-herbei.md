@@ -8,15 +8,13 @@
    1.1 [Begriffsklärung: Inventarisierung](#11-begriffsklärung-inventarisierung)  
    1.2 [Ziel der Digitalisierung: Vereinfachung des schulischen Prozesses](#12-ziel-der-digitalisierung-vereinfachung-des-schulischen-prozesses)  
    1.3 [QR-Codes als technologische Grundlage](#13-qr-codes-als-technologische-grundlage)  
-   1.4 [Aktueller Inventarisierungsprozess an Schulen](#14-aktueller-inventarisierungsprozess-an-schulen)
-2.  [Evaluierung bestehender Lösungen und Alternativen](#2-evaluierung-bestehender-lösungen-und-alternativen)  
-	2.1 [Bestehende Kauflösungen](#21-bestehende-kauflösungen)  
-		2.1.1 [Kostenlose Alternativen](#211-kostenlose-alternativen)  
-		2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)  
-		2.1.3 [Fazit zu Kauflösungen](#213-fazit-zu-kauflösungen)  
-	2.2 [Excel-Erweiterung](#22-excel-erweiterung)  
-	2.3 [Microsoft Access](#23-microsoft-access)  
-	2.4 [Integration in bestehende Systeme (z. B. Ticketsystem, Teams)](#24-integration-in-bestehende-systeme-z-b-ticketsystem-teams)  
+   1.4 [Aktueller Inventarisierungsprozess an Schulen](#14-aktueller-inventarisierungsprozess-an-schulen)  
+
+2. [Evaluierung bestehender Lösungen und Alternativen](#2-evaluierung-bestehender-lösungen-und-alternativen)  
+   2.1 [Bestehende Kauflösungen](#21-bestehende-kauflösungen)  
+      2.1.1 [Kostenlose Alternativen](#211-kostenlose-alternativen)  
+      2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)  
+      2.1.3 [Fazit zu Kauflösungen](#213-fazit-zu-kauflösungen) 
 
 
 # 1. Theoretische Grundlagen
