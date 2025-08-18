@@ -122,7 +122,7 @@ Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/i
 - viele Funktionen sind nur in höheren Preiskategorien enthalten  
 - Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar  
 
-### 2.1.3 Fazit zu Kauflösungen
+### 2.1.3 Fazit zucden Kauflösungen
 
 Zusammenfassend lässt sich feststellen, dass sowohl kostenlose als auch kostenpflichtige Kauflösungen für den schulischen Einsatz problematisch sind. Kostenlose Varianten sind funktional nicht passend, da sie nicht für den Bildungssektor entwickelt wurden und wichtige Funktionen wie QR-Code-Integration fehlen. Kostenpflichtige Lösungen hingegen bieten zwar umfangreiche Funktionen, sind jedoch mit hohen und oft intransparenten Kosten verbunden.  
 
