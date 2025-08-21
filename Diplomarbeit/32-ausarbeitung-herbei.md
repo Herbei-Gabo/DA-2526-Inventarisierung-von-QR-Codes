@@ -102,7 +102,7 @@ Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist e
 **Nachteile**:
 
 - keine transparente Preisübersicht, genaue Kosten meist nur auf Anfrage
-- Installation und ggf. Schulung notwendig → höherer Einführungsaufwand
+- Installation und ggf. Schulung notwendig, führt zu höheren Einführungsaufwand
 - keine reine Cloud-Lösung, Nutzung primär lokal oder über App
 - Funktionsumfang eher auf Unternehmen und Behörden ausgelegt, dadurch für Schulen überdimensioniert
 - zusätzliche Kosten bei Erweiterungen oder Support
