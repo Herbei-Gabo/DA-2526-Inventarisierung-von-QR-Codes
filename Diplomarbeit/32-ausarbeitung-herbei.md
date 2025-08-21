@@ -163,7 +163,7 @@ Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/i
 - viele Funktionen sind nur in höheren Preiskategorien enthalten  
 - Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar  
 
-### 2.1.3 Fazit zucden Kauflösungen
+### 2.1.3 Fazit zuden Kauflösungen
 
 Zusammenfassend lässt sich feststellen, dass sowohl kostenlose als auch kostenpflichtige Kauflösungen für den schulischen Einsatz problematisch sind. Kostenlose Varianten sind funktional nicht passend, da sie nicht für den Bildungssektor entwickelt wurden und wichtige Funktionen wie QR-Code-Integration fehlen. Kostenpflichtige Lösungen hingegen bieten zwar umfangreiche Funktionen, sind jedoch mit hohen und oft intransparenten Kosten verbunden.  
 
@@ -196,7 +196,10 @@ Abgerufen am 15.08.2025, von [https://pdf.wondershare.de/business/open-source-in
 Abgerufen am 18.08.2025, von [https://www.odoo.com/de_DE/app/inventory](https://www.odoo.com/de_DE/app/inventory) 
 
 Hoppe Unternehmensberatung. (o. D.). _Inventarmanager – Inventarisieren ganz einfach_. Inventarsoftware. 
-Abgerufen am 18.08.2025, von [https://www.inventarsoftware.de/Inventarmanager.html](https://www.inventarsoftware.de/Inventarmanager.html)
+Abgerufen am 21.08.2025, von [https://www.inventarsoftware.de/Inventarmanager.html](https://www.inventarsoftware.de/Inventarmanager.html)
+
+Timly Software AG. (o. D.). Die Inventar Software für eine optimale Übersicht. 
+Abgerufen am 21.08.2025, von [https://timly.com/inventar-software](https://timly.com/inventar-software)
 
 # Abbildungsverzeichnis:
 
