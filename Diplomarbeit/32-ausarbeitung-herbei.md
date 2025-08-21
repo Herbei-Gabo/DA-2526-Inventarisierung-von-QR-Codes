@@ -183,7 +183,7 @@ Abgerufen am 07.08.2025, von [https://docs.github.com/de/get-started/writing-on-
 Theel, M. (2024, 18. Januar). _Internetquellen einfach zitieren: Unterschiede & Beispiele_. Scribbr.  
 Abgerufen am 07.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/](https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/)
 
-Glöckler, L. (2023, 31. März). _Quellenangaben von Bildern aus dem Internet_. Scribbr. 
+Glöckler, L. (2023, 31. März). _Quellenangaben von Bildern aus dem Internet_. Scribbr.   
 Abgerufen am 07.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/](https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/)
 
 _Fischer, T._ (2024, 26. Februar). _Beste Inventarsoftware kostenlos: Die 10 besten Tools im Vergleich_.  
@@ -195,10 +195,10 @@ Abgerufen am 15.08.2025, von [https://pdf.wondershare.de/business/open-source-in
 *Odoo Inventory – Bestandsverwaltung*. (o. D.). Odoo.  
 Abgerufen am 18.08.2025, von [https://www.odoo.com/de_DE/app/inventory](https://www.odoo.com/de_DE/app/inventory) 
 
-Hoppe Unternehmensberatung. (o. D.). _Inventarmanager – Inventarisieren ganz einfach_. Inventarsoftware. 
+Hoppe Unternehmensberatung. (o. D.). _Inventarmanager – Inventarisieren ganz einfach_. Inventarsoftware.  
 Abgerufen am 21.08.2025, von [https://www.inventarsoftware.de/Inventarmanager.html](https://www.inventarsoftware.de/Inventarmanager.html)
 
-Timly Software AG. (o. D.). Die Inventar Software für eine optimale Übersicht. 
+Timly Software AG. (o. D.). Die Inventar Software für eine optimale Übersicht.   
 Abgerufen am 21.08.2025, von [https://timly.com/inventar-software](https://timly.com/inventar-software)
 
 # Abbildungsverzeichnis:
