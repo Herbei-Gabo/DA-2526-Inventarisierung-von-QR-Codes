@@ -86,6 +86,27 @@ Damit sind kostenlose Alternativen für den angestrebten Anwendungsbereich ungee
 
 Im Bereich der kostenpflichtigen Softwarelösungen existieren mehrere Anbieter, die Inventarisierung speziell für Institutionen wie Schulen oder öffentliche Einrichtungen anbieten. Zwei Beispiele sollen im Folgenden exemplarisch betrachtet werden:
 
+#### Hoppe Inventarsoftware (Inventarmanager)
+
+Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist eine etablierte Lösung zur Inventarisierung, die vor allem von Behörden, Krankenhäusern und mittelständischen Unternehmen genutzt wird. Sie wird in über 11 Ländern mit mehr als 3 300 Kunden eingesetzt.
+
+**Vorteile**:
+
+- einmalige Lizenzgebühr ab 195 € (kein Abo-Modell)
+- umfangreiche Funktionen wie Barcode- und RFID-Erfassung, Standort- und Lifecycle-Management
+- mobile App für Smartphones und Tablets verfügbar
+- regelmäßige Updates und professioneller Support
+- vielfach ausgezeichnet (u. a. Industriepreis, Innovationspreis Mittelstand)
+- Referenzen von großen Organisationen (z. B. Bundesamt für Verfassungsschutz, Deutsches Rotes Kreuz)
+
+**Nachteile**:
+
+- keine transparente Preisübersicht, genaue Kosten meist nur auf Anfrage
+- Installation und ggf. Schulung notwendig → höherer Einführungsaufwand
+- keine reine Cloud-Lösung, Nutzung primär lokal oder über App
+- Funktionsumfang eher auf Unternehmen und Behörden ausgelegt, dadurch für Schulen überdimensioniert
+- zusätzliche Kosten bei Erweiterungen oder Support
+
 #### Endoo Organize
 
 Die Lösung [Endoo Organize](https://endoo-organize.de/funktionen-inventarisierung/) richtet sich ausdrücklich auch an Schulen und Bildungseinrichtungen. Sie bietet neben einer QR-Code-Integration auch zahlreiche zusätzliche Funktionen wie:
@@ -153,6 +174,9 @@ Abgerufen am 15.08.2025, von [https://pdf.wondershare.de/business/open-source-in
 
 *Odoo Inventory – Bestandsverwaltung*. (o. D.). Odoo.  
 Abgerufen am 18.08.2025, von [https://www.odoo.com/de_DE/app/inventory](https://www.odoo.com/de_DE/app/inventory) 
+
+Hoppe Unternehmensberatung. (o. D.). _Inventarmanager – Inventarisieren ganz einfach_. Inventarsoftware. 
+Abgerufen am 18.08.2025, von [https://www.inventarsoftware.de/Inventarmanager.html](https://www.inventarsoftware.de/Inventarmanager.html)
 
 # Abbildungsverzeichnis:
 
