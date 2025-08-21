@@ -86,9 +86,9 @@ Damit sind kostenlose Alternativen für den angestrebten Anwendungsbereich ungee
 
 Im Bereich der kostenpflichtigen Softwarelösungen existieren mehrere Anbieter, die Inventarisierung speziell für Institutionen wie Schulen oder öffentliche Einrichtungen anbieten. Zwei Beispiele sollen im Folgenden exemplarisch betrachtet werden:
 
-#### Hoppe Inventarsoftware (Inventarmanager)
+#### Hoppe
 
-Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist eine etablierte Lösung zur Inventarisierung, die vor allem von Behörden, Krankenhäusern und mittelständischen Unternehmen genutzt wird. Sie wird in über 11 Ländern mit mehr als 3 300 Kunden eingesetzt.
+Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist eine etablierte Lösung zur Inventarisierung, die vor allem von Behörden, Krankenhäusern und mittelständischen Unternehmen genutzt wird. Sie wird in über 11 Ländern mit mehr als 3300 Kunden eingesetzt.
 
 **Vorteile**:
 
@@ -101,11 +101,31 @@ Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist e
 
 **Nachteile**:
 
+- keine QR-Code integration
 - keine transparente Preisübersicht, genaue Kosten meist nur auf Anfrage
-- Installation und ggf. Schulung notwendig, führt zu höheren Einführungsaufwand
-- keine reine Cloud-Lösung, Nutzung primär lokal oder über App
-- Funktionsumfang eher auf Unternehmen und Behörden ausgelegt, dadurch für Schulen überdimensioniert
+- Installation und ggf. Schulung notwendig
+- keine reine Cloud-Lösung
+- Funktionsumfang eher auf Unternehmen und Behörden ausgelegt,
+- für Schulen überdimensioniert
 - zusätzliche Kosten bei Erweiterungen oder Support
+
+#### Timly 
+
+Die [Timly Inventarsoftware](https://timly.com/inventar-software/) ist eine moderne, cloudbasierte Lösung zur Inventarisierung von Assets und Geräten. Sie wird vor allem von Unternehmen eingesetzt, die eine mobile, flexible Verwaltung ihrer Bestände benötigen.
+
+**Vorteile**:
+
+- cloudbasiert, mobil nutzbar via Web-App oder Smartphone-App
+- Echtzeit-Tracking von Assets durch GPS, QR-Code-Scanning und IoT-Integration
+- automatisierte Wartungsplanung mit Erinnerungen und Fristenmanagement
+- Integration mit ERP-Systemen wie SAP, DATEV oder Microsoft Dynamics 365 über REST-API
+- benutzerfreundliche Oberfläche mit anpassbaren Feldern und Rollenmanagement
+
+**Nachteile**:
+
+- hohe Kosten (ab 185 CHF im Monat)
+- keine Offline-Nutzung möglich
+- ständige Internetverbindung erforderlich
 
 #### Endoo Organize
 
