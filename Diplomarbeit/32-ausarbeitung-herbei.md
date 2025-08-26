@@ -14,7 +14,8 @@
    2.1 [Bestehende Kauflösungen](#21-bestehende-kauflösungen)
       - 2.1.1 [Kostenlose Alternativen](#211-kostenlose-alternativen)  
       - 2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)  
-      - 2.1.3 [Fazit zu den Kauflösungen](#213-fazit-zu-den-kauflösungen)     
+      - 2.1.3 [Fazit zu den Kauflösungen](#213-fazit-zu-den-kauflösungen)
+   
    2.2 [Programmierung einer Excel-Erweiterung](#22-programmierung-einer-excel-erweiterung)
 
 
