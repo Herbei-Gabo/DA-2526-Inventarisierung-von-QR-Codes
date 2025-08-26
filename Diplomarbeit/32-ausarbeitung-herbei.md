@@ -14,7 +14,8 @@
    2.1 [Bestehende Kauflösungen](#21-bestehende-kauflösungen)  
      - 2.1.1 [Kostenlose Alternativen](#211-kostenlose-alternativen)
      - 2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)
-     - 2.1.3 [Fazit zu Kauflösungen](#213-fazit-zu-kauflösungen) 
+     - 2.1.3 [Fazit zu den Kauflösungen](#213-fazit-zu-den-kauflösungen)
+   2.2 [Programmierung einer Excel-Erweiterung](#22-Programmierung einer Excel-Erweiterung)
 
 
 # 1. Theoretische Grundlagen
@@ -169,6 +170,26 @@ Zusammenfassend lässt sich feststellen, dass sowohl kostenlose als auch kostenp
 
 Für Schulen ergibt sich daraus die Herausforderung, entweder mit einer zu komplexen oder zu teuren Lösung zu arbeiten. Eine speziell entwickelte, kostengünstige Eigenlösung erscheint daher als sinnvoller Ansatz, da sie exakt an die Bedürfnisse der Schule angepasst werden kann.
 
+## 2.2 Programmieren einer Excel-Erweiterung
+
+Die Inventarisierungsliste der HTL Leoben basiert, wie bereits erwähnt, auf Microsoft Excel. Daher wäre die Möglichkeit, eine Excel-Erweiterung zu programmieren, auf den ersten Blick eine naheliegende Idee. Excel-Add-ins (Erweiterungen) ermöglichen es, neue Funktionen direkt in Excel einzubinden, wie beispielsweise automatisierte Berechnungen, Datenvalidierungen oder benutzerdefinierte Menüleisten. Sie können Arbeitsabläufe deutlich vereinfachen und sind insbesondere dann sinnvoll, wenn wiederkehrende Aufgaben standardisiert werden sollen.
+
+Allerdings sprechen mehrere Punkte dagegen, diese Lösung tatsächlich umzusetzen:
+
+1. **Zugriff auf Originaldaten fehlt**  
+    Der Zugriff auf die originale Inventarliste ist nicht möglich. Ein Add-in könnte daher nur auf der Kopie entwickelt werden, die nicht den tatsächlichen Datenbestand widerspiegelt. Somit wäre die Lösung nicht einsatzfähig für die echte Inventarisierung.
+    
+2. **Keine Lösung des Kernproblems**  
+    Die zentrale Herausforderung der Inventarisierung ist die **Unübersichtlichkeit** großer Datenmengen, das Risiko von Duplikaten und die fehleranfällige Zuordnung von Objekten. Ein Excel-Add-in würde lediglich die vorhandene Liste geringfügig vereinfachen, ändert jedoch nichts an der eigentlichen Problematik.
+    
+3. **QR-Code-Zuordnung nicht automatisierbar über ein Add-in**  
+    Für die geplante Digitalisierung der Inventarliste ist es notwendig, dass jedem Objekt ein eigener QR-Code zugewiesen wird. Dies lässt sich nicht über ein Excel-Add-in automatisch umsetzen. Die QR-Codes müssen in der Excel-Datei selbst generiert und korrekt zugeordnet werden. Ein Add-in würde hier keinen nennenswerten Vorteil bringen, da die Generierung und Zuweisung der Codes weiterhin manuell erfolgen müsste.
+    
+4. **Optik und Benutzerfreundlichkeit**  
+    Ein Add-in kann zwar bestimmte Funktionen automatisieren, verändert jedoch nicht die Übersichtlichkeit oder Gestaltung der Excel-Liste. Die Darstellung bleibt unverändert und es entstehen keine zusätzlichen Hilfen, die das Arbeiten mit vielen Datensätzen erleichtern.
+    
+Die Entwicklung einer Excel-Erweiterung würde den Aufwand erhöhen und nur einen geringen Nutzen bringen. Sie greift nicht die Kernprobleme der Inventarisierung an und ist zudem aufgrund fehlender Originaldaten nicht praktisch umsetzbar. 
+
 # Literaturverzeichnis:
 
 Kister, F. (2024, 7. Mai). _Was versteht man unter Inventarisierung?_ Entek Systems GmbH.  
@@ -200,6 +221,9 @@ Abgerufen am 21.08.2025, von [https://www.inventarsoftware.de/Inventarmanager.ht
 
 Timly Software AG. (o. D.). Die Inventar Software für eine optimale Übersicht.   
 Abgerufen am 21.08.2025, von [https://timly.com/inventar-software](https://timly.com/inventar-software)
+
+Kowalski, W. (2024, 28. März). _How to Create and Use an Excel Add-in_. SCAND.    
+Abgerufen am 21.08.2025, von [https://scand.com/company/blog/how-to-create-and-use-an-excel-add-in/](https://scand.com/company/blog/how-to-create-and-use-an-excel-add-in/)
 
 # Abbildungsverzeichnis:
 
