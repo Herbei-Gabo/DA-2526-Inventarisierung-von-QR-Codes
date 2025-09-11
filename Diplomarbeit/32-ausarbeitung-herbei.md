@@ -16,6 +16,7 @@
    2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)      
    2.1.3 [Fazit zu den Kauflösungen](#213-fazit-zu-den-kauflösungen)           
    2.2 [Programmierung einer Excel-Erweiterung](#22-programmierung-einer-excel-erweiterung)
+   2.3 [Programmierung einer Teams-Erweiterung](#23-programmierung-einer-teams-erweiterung)
 
 
 # 1. Theoretische Grundlagen
@@ -190,6 +191,16 @@ Allerdings sprechen mehrere Punkte dagegen, diese Lösung tatsächlich umzusetze
     
 Die Entwicklung einer Excel-Erweiterung würde den Aufwand erhöhen und nur einen geringen Nutzen bringen. Sie greift nicht die Kernprobleme der Inventarisierung an und ist zudem aufgrund fehlender Originaldaten nicht praktisch umsetzbar. 
 
+## 2.3 Programmieren einer TEAMS-Erweiterung
+
+Die Idee, eine eigene Erweiterung für Microsoft Teams zu entwickeln, klingt auf den ersten Blick attraktiv, da Teams bereits ein etablierter Bestandteil des schulischen und organisatorischen Alltags ist. Dennoch spricht eine Reihe gewichtiger Argumente dagegen, diesen Ansatz für die Umsetzung einer Inventarisierungslösung zu wählen.
+
+Eine Teams-Erweiterung ist stark an die Microsoft-365-Umgebung und speziell an die Teams-Infrastruktur gebunden. Sie bietet keine direkte Möglichkeit, eigene Datenbanken anzubinden oder komplexe externe Datenquellen zuverlässig zu verwalten. Stattdessen müssen sämtliche Daten in der Teams- bzw. Microsoft-Cloud gespeichert oder über Zwischenschritte aus externen Dateien eingebunden werden. Das macht die Lösung nicht nur unflexibel, sondern auch abhängig von bestehenden Teams-Strukturen und der Verfügbarkeit dieser Dienste.
+
+Soll beispielsweise ein Inventar mit mehreren hundert Geräten verwaltet werden, müssten die Daten entweder in SharePoint-Listen oder anderen Teams-internen Strukturen hinterlegt werden. Diese sind jedoch nicht für performante, strukturierte Inventardatenbank ausgelegt. Zudem müsste weiterhin auf externe Dateien zurückgegriffen werden, um etwa QR-Code-Zuordnungen oder Geräteinformationen zu verwalten. Das erhöht die Komplexität und die Fehleranfälligkeit erheblich.
+
+Die fehlende direkte Datenbankanbindung verhindert den Aufbau einer robusten, skalierbaren Inventarisierungslösung. Da alle Daten zwangsläufig an die Teams-Umgebung gebunden sind, entsteht eine Abhängigkeit von einem Drittanbieter, der nicht nur die technische Grundlage kontrolliert, sondern auch Änderungen an Schnittstellen oder Richtlinien vornehmen kann. Dies macht die Wartung unsicher und langfristig schwer planbar. Außerdem besteht die Gefahr, dass externe Dateien oder Drittanbieter-Dienste ausfallen, was unmittelbar die Funktionalität der gesamten Lösung beeinträchtigen würde. Insgesamt überwiegen somit die Nachteile deutlich, sodass eine Teams-Erweiterung als technische Basis für eine Inventarisierungslösung nicht in Frage kommt.
+
 # Literaturverzeichnis:
 
 Kister, F. (2024, 7. Mai). _Was versteht man unter Inventarisierung?_ Entek Systems GmbH.  
@@ -224,6 +235,13 @@ Abgerufen am 21.08.2025, von [https://timly.com/inventar-software](https://timly
 
 Kowalski, W. (2024, 28. März). _How to Create and Use an Excel Add-in_. SCAND.    
 Abgerufen am 21.08.2025, von [https://scand.com/company/blog/how-to-create-and-use-an-excel-add-in/](https://scand.com/company/blog/how-to-create-and-use-an-excel-add-in/)
+
+**Georg, F.** (2023, 3. Juli). *Eigene Apps für Microsoft Teams entwickeln*. CONET.     
+Abgerufen am 22.08.2025, von [https://www.conet.de/blog/eigene-apps-fuer-microsoft-teams-entwickeln/](https://www.conet.de/blog/eigene-apps-fuer-microsoft-teams-entwickeln/) 
+
+**NovaCapta GmbH.** (o. D.). *Teams Extensions: Erstellen von Erweiterungen für Microsoft Teams*. NovaCapta.       
+Abgerufen am 22.08.2025, von [https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams](https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams)
+
 
 # Abbildungsverzeichnis:
 
