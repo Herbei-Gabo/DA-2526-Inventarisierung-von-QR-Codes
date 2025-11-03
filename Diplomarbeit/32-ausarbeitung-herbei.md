@@ -16,7 +16,8 @@
    2.1.2 [Kostenpflichtige Alternativen](#212-kostenpflichtige-alternativen)      
    2.1.3 [Fazit zu den Kauflösungen](#213-fazit-zu-den-kauflösungen)           
    2.2 [Programmierung einer Excel-Erweiterung](#22-programmierung-einer-excel-erweiterung)      
-   2.3 [Programmierung einer Teams-Erweiterung](#23-programmierung-einer-teams-erweiterung)
+   2.3 [Programmierung einer Teams-Erweiterung](#23-programmierung-einer-teams-erweiterung)  
+   2.4 [Verwendung von Microsoft Access](#24-verwendung-von-microsoft-access)
 
 
 # 1. Theoretische Grundlagen
@@ -201,6 +202,16 @@ Soll beispielsweise ein Inventar mit mehreren hundert Geräten verwaltet werden,
 
 Die fehlende direkte Datenbankanbindung verhindert den Aufbau einer robusten, skalierbaren Inventarisierungslösung. Da alle Daten zwangsläufig an die Teams-Umgebung gebunden sind, entsteht eine Abhängigkeit von einem Drittanbieter, der nicht nur die technische Grundlage kontrolliert, sondern auch Änderungen an Schnittstellen oder Richtlinien vornehmen kann. Dies macht die Wartung unsicher und langfristig schwer planbar. Außerdem besteht die Gefahr, dass externe Dateien oder Drittanbieter-Dienste ausfallen, was unmittelbar die Funktionalität der gesamten Lösung beeinträchtigen würde. Insgesamt überwiegen somit die Nachteile deutlich, sodass eine Teams-Erweiterung als technische Basis für eine Inventarisierungslösung nicht in Frage kommt.
 
+## 2.4 Verwendung von MS Access
+
+Microsoft Access ist eine relationale Datenbankanwendung, die Bestandteil des Microsoft-Office-Pakets ist, welches an das aktuelle System der Schule andocken würde. Sie ermöglicht die Erstellung, Verwaltung und Abfrage von Datenbanken über eine grafische Benutzeroberfläche, ohne dass tiefgehende Programmierkenntnisse erforderlich sind.
+
+Im schulischen Kontext wird Access häufig zur Verwaltung von Inventar, Lehrmitteln oder Schülerdaten verwendet. Durch seine Integration in das Office-Ökosystem bietet es eine einfache Möglichkeit, Daten mit anderen Anwendungen wie Excel oder Word auszutauschen. Besonders vorteilhaft ist dabei, dass Access auch von nicht-technischem Personal, wie Lehrkräften oder Verwaltungsmitarbeitern, genutzt werden kann.
+
+Trotz dieser Vorteile stößt Access in der Praxis schnell an seine Grenzen. Die Datenverwaltung erfolgt meist lokal auf einem einzelnen Computer, was zu reduzierter Zugänglichkeit und mangelnder Datensynchronisation führt. Zudem ist die Benutzeroberfläche nicht für mobile Endgeräte optimiert, was die Verwendung im Schulalltag – beispielsweise beim Erfassen von Inventargegenständen direkt im Raum – deutlich erschwert.
+
+Darüber hinaus ist die Erweiterbarkeit eingeschränkt: Funktionen wie die automatische Generierung und Zuordnung von QR-Codes, eine Weboberfläche oder der gleichzeitige Zugriff mehrerer Benutzer lassen sich nur mit erheblichem Aufwand realisieren. Aus diesen Gründen eignet sich Microsoft Access zwar als Einstiegslösung für einfache Inventarverwaltungen, erfüllt jedoch nicht die Anforderungen einer modernen, plattformunabhängigen und webbasierten Inventarisierungslösung.
+
 # Literaturverzeichnis:
 
 Kister, F. (2024, 7. Mai). _Was versteht man unter Inventarisierung?_ Entek Systems GmbH.  
@@ -242,6 +253,8 @@ Abgerufen am 22.08.2025, von [https://www.conet.de/blog/eigene-apps-fuer-microso
 **NovaCapta GmbH.** (o. D.). *Teams Extensions: Erstellen von Erweiterungen für Microsoft Teams*. NovaCapta.       
 Abgerufen am 22.08.2025, von [https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams](https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams)
 
+IONOS SE. (o. J.). _Microsoft Access: Alternativen im Überblick._ 
+Abgerufen am 3. November 2025, von [https://www.ionos.at/digitalguide/server/tools/microsoft-access-alternativen-im-ueberblick/](https://www.ionos.at/digitalguide/server/tools/microsoft-access-alternativen-im-ueberblick/?utm_source=chatgpt.com)
 
 # Abbildungsverzeichnis:
 
