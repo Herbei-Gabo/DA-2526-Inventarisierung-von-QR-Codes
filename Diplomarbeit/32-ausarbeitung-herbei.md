@@ -253,7 +253,7 @@ Abgerufen am 22.08.2025, von [https://www.conet.de/blog/eigene-apps-fuer-microso
 **NovaCapta GmbH.** (o. D.). *Teams Extensions: Erstellen von Erweiterungen für Microsoft Teams*. NovaCapta.       
 Abgerufen am 22.08.2025, von [https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams](https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams)
 
-IONOS SE. (o. J.). _Microsoft Access: Alternativen im Überblick._ 
+IONOS SE. (o. J.). _Microsoft Access: Alternativen im Überblick._     
 Abgerufen am 3. November 2025, von [https://www.ionos.at/digitalguide/server/tools/microsoft-access-alternativen-im-ueberblick/](https://www.ionos.at/digitalguide/server/tools/microsoft-access-alternativen-im-ueberblick/?utm_source=chatgpt.com)
 
 # Abbildungsverzeichnis:
