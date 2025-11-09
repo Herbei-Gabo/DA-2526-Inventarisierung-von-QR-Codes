@@ -43,7 +43,7 @@ Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und
 
 Ein einzelner QR-Code kann dabei bis zu 7.089 numerische Zeichen oder 4.296 alphanumerische Zeichen speichern – ausreichend, um beispielsweise eine eindeutige Identifikationsnummer oder einen Verweis auf ein Webformular zur Inventarverwaltung zu hinterlegen.
 
-## 1.4 Aktueller Inventarisierungsprozess an Schulen
+## 1.4 Aktueller Inventarisierungsprozess an der HTL Leoben
 
 Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware an unserer Schule mit einer herkömmlicher Excel-Tabelle. Ein Beispiel dafür wurde uns in [diesem GitHub-Dokument](https://github.com/Herbei-Gabo/DA-2526-Inventarisierung-von-QR-Codes/blob/main/Diplomarbeit/doc/HTLGesamtinventar_Monitorbeispiel.xlsx) zur Verfügung gestellt. Dabei werden Informationen wie Bereich, Objektbezeichnung, Lieferant, Seriennummer, Standort Zuständigkeit und vieles weiteres manuell erfasst und gepflegt. Diese Form der Datenhaltung bringt jedoch zahlreiche Herausforderungen mit sich:
 
