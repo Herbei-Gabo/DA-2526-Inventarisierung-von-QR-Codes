@@ -24,7 +24,7 @@ Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch 
 ## QR-Codes als technologische Grundlage
 Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.
 
-![QR-Code](img/qrcode.gif)
+![ Darstellung eines QR-Codes.](img/qrcode.gif)
 
 *Abbildung 1: Darstellung eines QR-Codes.*  
 (Quelle: QR-Code, [ActiveBarcode](https://www.activebarcode.com/de/codes/qrcode) abgerufen am 07.08.2025)
@@ -36,14 +36,14 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 ### Technische Vergleichskriterien
 **Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. 
 
-![Barcode](img/Barcode.jpg)
+![ Darstellung eines Bar-Codes.](img/Barcode.jpg)
 
 *Abbildung 2: Darstellung eines Bar-Codes.*  
 (Quelle: Bar-Code, [Tec.It](https://barcode.tec-it.com/de) abgerufen am 07.01.2026)
 
 NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte, siehe Abbildung 3), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. 
 
-![nfc-symbol](img/nfc-symbol.jpg)
+![Darstellung eines NFC.](img/nfc-symbol.jpg)
 
 *Abbildung 3: Darstellung eines NFC.*  
 (Quelle: NFC, [HomeAndSmart](https://www.homeandsmart.de/nfc-funkstandard-sicherheit-technik) abgerufen am 07.01.2026)
