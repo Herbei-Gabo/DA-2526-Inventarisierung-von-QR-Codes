@@ -1,6 +1,5 @@
-# Teilaufgabe Gabriel Herbei
 
-## Theoretische Grundlagen
+# Teilaufgabe Gabriel Herbei
 
 ## Begriffsklärung: Inventarisierung
 
