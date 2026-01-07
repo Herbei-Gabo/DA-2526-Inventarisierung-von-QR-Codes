@@ -1,3 +1,4 @@
+
 ---
 
 da-titel: Inventarisierung von QR Codes
@@ -28,8 +29,6 @@ da-author:
   ki-tools:
   - name: OpenAI ChatGPT
     zweck: Unterstützung bei Textstrukturierung, Markdown-Formatierung, inhaltlicher Gliederung sowie Erstellung von Mockup-Designkonzept
-
-
 
 - vorname: Stephan 
   nachname: Dietmair
