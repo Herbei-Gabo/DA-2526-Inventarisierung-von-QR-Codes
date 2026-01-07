@@ -36,7 +36,7 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 ### Technische Vergleichskriterien
 **Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. 
 
-![Barcode](img/Barcode.gif)
+![Barcode](img/Barcode.jpg)
 
 *Abbildung 2: Darstellung eines Bar-Codes.*  
 (Quelle: Bar-Code, [Tec.It](https://barcode.tec-it.com/de) abgerufen am 07.01.2026)
