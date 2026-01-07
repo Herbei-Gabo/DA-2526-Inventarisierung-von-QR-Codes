@@ -26,8 +26,10 @@ da-author:
   klasse: 5BHWIN
   thema: Entwicklung und Programmierung einer funktionierenden Webbasierenden Inventarisierungslösung
   ki-tools:
-  - name: Github Copilot
-    zweck: Boilerplate codegenerierung, Codedokumentation
+  - name: OpenAI ChatGPT
+    zweck: Unterstützung bei Textstrukturierung, Markdown-Formatierung, inhaltlicher Gliederung sowie Erstellung von Mockup-Designkonzept
+
+
 
 - vorname: Stephan 
   nachname: Dietmair
