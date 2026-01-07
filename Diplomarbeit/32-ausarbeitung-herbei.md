@@ -41,7 +41,20 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 
 ### Technische Vergleichskriterien
 
-**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können, können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. 
+**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. 
+
+
+![Barcode](img/Barcode.gif)
+
+*Abbildung 2: Darstellung eines Bar-Codes.*  
+(Quelle: Bar-Code, [Tec.It](https://barcode.tec-it.com/de) abgerufen am 07.01.2026)
+
+NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte, siehe Abbildung 3), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. 
+
+![nfc-symbol](img/nfc-symbol.jpg)
+
+*Abbildung 3: Darstellung eines NFC.*  
+(Quelle: NFC, [HomeAndSmart](https://www.homeandsmart.de/nfc-funkstandard-sicherheit-technik) abgerufen am 07.01.2026)
 
 **Lesegeschwindigkeit und -sicherheit:** Bei Barcodes muss der Scanner (oder die Kamera) den Code zeilenweise in einer Achse lesen. 1D-Barcodes sind **richtungsabhängig** – sie müssen in einer bestimmten Ausrichtung erfasst werden und das Lesegerät braucht oft einen direkten, geraden „Line-of-Sight“ zum Code. Das macht sie empfindlicher für Verdrehungen oder Winkel beim Scannen; in der Praxis müssen Barcodes meist ziemlich genau ausgerichtet werden, was Zeit kosten kann. QR-Codes dagegen besitzen Ausrichtungsmarkierungen und können aus jedem Winkel schnell erkannt werden. Das beschleunigt den Scan-Vorgang, da Nutzer das Gerät nicht exakt ausrichten müssen. Beide Codearten lassen sich mit modernen Geräten zügig einlesen; jedoch bieten QR-Codes hier einen Vorteil durch robustere Erkennung (daher der Name „Quick Response“). NFC-Scans sind in der Regel sehr schnell – ein kurzes _Tap_ mit dem Gerät reicht. In Szenarien mit einzelnen Objekten ist NFC vom reinen Lesevorgang her ggf. am schnellsten, da kein Fokussieren der Kamera nötig ist. Allerdings muss das Gerät für NFC sehr nah (wenige cm) an den Tag gebracht werden, was bei vielen Objekten hintereinander zeitaufwendiger werden kann . 
 
