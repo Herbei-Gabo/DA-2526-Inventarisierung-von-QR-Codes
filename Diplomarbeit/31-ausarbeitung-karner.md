@@ -261,7 +261,7 @@ Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Dip
 
 | Feldname                         | Datentyp                         | Beschreibung |
 |----------------------------------|----------------------------------|--------------|
-| ACCOUNT_ID                       | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID → newsequentialid() |
+| ACCOUNT_ID                       | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
 | Convert_ID                       | varchar(50)                      | DatenImport Reference Number |
 | Account_Info_CreateFrom          | varchar(100)                     | Nicht sichtbarer Name des Erstellers |
 | Account_Info_CreateDate          | datetime                         | Nicht sichtbares Datum der Erstellung |
@@ -291,7 +291,7 @@ Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Dip
 
 | Feldname                         | Datentyp                         | Beschreibung |
 |----------------------------------|----------------------------------|--------------|
-| ACCOUNTHISTORY_ID                | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID → newsequentialid() |
+| ACCOUNTHISTORY_ID                | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
 | ACCOUNT_ID                       | uniqueidentifier                 | Referenz auf Account |
 | AccountHistory_ActionCodeNum     | int                              | Aktionscode (0=Text, 1=Login, 2=Logout, …) |
 | AccountHistory_Date              | datetime                         | Datum |
@@ -305,7 +305,7 @@ Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Dip
 
 | Feldname                         | Datentyp                         | Beschreibung |
 |----------------------------------|----------------------------------|--------------|
-| PRODUCT_ID                       | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID → newsequentialid() |
+| PRODUCT_ID                       | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
 | Convert_ID                       | varchar(50)                      | DatenImport Reference Number |
 | Product_InfoCreateFrom           | varchar(100)                     | Ersteller (automatisch gesetzt) |
 | Product_InfoCreateDate           | datetime                         | Erstellungsdatum (automatisch gesetzt) |
@@ -334,7 +334,7 @@ Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Dip
 
 | Feldname                        | Datentyp                         | Beschreibung |
 |---------------------------------|----------------------------------|--------------|
-| PRODUCTTYPE_ID                  | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID → newsequentialid() |
+| PRODUCTTYPE_ID                  | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
 | Convert_ID                      | varchar(50)                      | DatenImport Reference Number |
 | ProductType_ParentID            | uniqueidentifier                 | Elternelement |
 | ProductType_CreateFrom          | varchar(100)                     | Ersteller |
@@ -351,7 +351,7 @@ Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Dip
 
 | Feldname                        | Datentyp                         | Beschreibung |
 |---------------------------------|----------------------------------|--------------|
-| DETAILINFO_ID                   | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID → newsequentialid() |
+| DETAILINFO_ID                   | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
 | Convert_ID                      | varchar(50)                      | DatenImport Reference Number |
 | DetailInfo_InfoCreateFrom       | varchar(100)                     | Ersteller |
 | DetailInfo_InfoCreateDate       | datetime                         | Erstellungsdatum |
