@@ -1,30 +1,20 @@
-
 # Teilaufgabe Gabriel Herbei
 
-# 1. Theoretische Grundlagen
+## Theoretische Grundlagen
 
-## 1.1 Begriffsklärung: Inventarisierung
+## Begriffsklärung: Inventarisierung
 
 Unter Inventarisierung versteht man den strukturierten Prozess der Erfassung, Organisation und Dokumentation von materiellen Vermögenswerten einer Organisation. Im schulischen Kontext betrifft dies insbesondere Geräte wie Monitore, Personal Computer, Beamer, Fernbedienungen, Tastaturen und weitere technische oder pädagogische Ausstattung.
 
 Die Einführung einer digitalen Inventarisierungslösung ermöglicht eine effizientere und transparentere Verwaltung dieser Gegenstände. Insbesondere bei einer größeren Anzahl an Geräten oder häufigen Standortwechseln stößt eine manuelle Erfassung mit Papierlisten oder Tabellenprogrammen schnell an ihre Grenzen.
 
-## 1.2 Ziel der Digitalisierung: Vereinfachung des schulischen Prozesses
+## Ziel der Digitalisierung: Vereinfachung des schulischen Prozesses
 
 Die Digitalisierung des Inventarisierungsprozesses verfolgt das Ziel, den Aufwand für schulisches Verwaltungspersonal deutlich zu reduzieren und zugleich die Genauigkeit der Bestandsdaten zu erhöhen. Eine einfache Erfassung verringert die Fehleranfälligkeit, beschleunigt den Zugriff auf Informationen und verbessert die Wartbarkeit der Inventardaten erheblich. Dabei steht nicht nur die Effizienz im Vordergrund, sondern auch die langfristige Entlastung der schulischen Infrastruktur durch transparente, leicht wartbare Datenstrukturen.
 
-## 1.3 QR-Codes als technologische Grundlage
+Gerade im schulischen Umfeld, in dem Geräte regelmäßig den Raum wechseln, ausgeliehen oder repariert werden, ist eine aktuelle und zentrale Datenhaltung entscheidend. Eine digitale Inventarisierung ermöglicht es, Änderungen unmittelbar zu erfassen und reduziert Abhängigkeiten von einzelnen Personen oder lokalen Dateien. Dadurch wird nicht nur der Verwaltungsaufwand gesenkt, sondern auch die Nachvollziehbarkeit und Transparenz für alle Beteiligten erhöht.
 
-Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.
-
-![QR-Code](img/qrcode.gif)
-
-*Abbildung 1: Darstellung eines QR-Codes.*  
-(Quelle: QR-Code, [ActiveBarcode](https://www.activebarcode.com/de/codes/qrcode) abgerufen am 07.08.2025)
-
-Ein einzelner QR-Code kann dabei bis zu 7.089 numerische Zeichen oder 4.296 alphanumerische Zeichen speichern – ausreichend, um beispielsweise eine eindeutige Identifikationsnummer oder einen Verweis auf ein Webformular zur Inventarverwaltung zu hinterlegen.
-
-## 1.4 Aktueller Inventarisierungsprozess an der HTL Leoben
+## Aktueller Inventarisierungsprozess an der HTL Leoben
 
 Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware an unserer Schule mit einer herkömmlicher Excel-Tabelle. Ein Beispiel dafür wurde uns in [diesem GitHub-Dokument](https://github.com/Herbei-Gabo/DA-2526-Inventarisierung-von-QR-Codes/blob/main/Diplomarbeit/doc/HTLGesamtinventar_Monitorbeispiel.xlsx) zur Verfügung gestellt. Dabei werden Informationen wie Bereich, Objektbezeichnung, Lieferant, Seriennummer, Standort Zuständigkeit und vieles weiteres manuell erfasst und gepflegt. Diese Form der Datenhaltung bringt jedoch zahlreiche Herausforderungen mit sich:
 
@@ -36,15 +26,51 @@ Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware 
 
 Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch zukunftsfähig ist. Insbesondere bei wachsendem Bestand und höherem Digitalisierungsgrad wird eine professionelle, digitale Lösung notwendig, die zentrale Datenhaltung, Mehrbenutzerfähigkeit und mobile Zugriffsmöglichkeiten vereint.
 
-# 2. Evaluierung bestehender Lösungen und Alternativen
+## QR-Codes als technologische Grundlage
+
+Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.
+
+![QR-Code](img/qrcode.gif)
+
+*Abbildung 1: Darstellung eines QR-Codes.*  
+(Quelle: QR-Code, [ActiveBarcode](https://www.activebarcode.com/de/codes/qrcode) abgerufen am 07.08.2025)
+
+Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeicher verwendet, sondern als Verweis auf einen zentralen Datensatz. Der Code enthält typischerweise eine eindeutige Identifikationsnummer oder eine URL, über die beim Scannen die aktuellen Informationen aus der Datenbank abgerufen werden. Dieses Prinzip ermöglicht es, Daten jederzeit zu aktualisieren, ohne den QR-Code neu drucken zu müssen. Zusätzlich verfügen QR-Codes über eine integrierte Fehlerkorrektur, wodurch sie auch bei teilweiser Beschädigung oder Verschmutzung noch zuverlässig gelesen werden können – ein wesentlicher Vorteil im schulischen Alltag.
+
+## Wieso QR-Code und kein Barcode oder NFC
+
+### Technische Vergleichskriterien
+
+**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können, können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. 
+
+**Lesegeschwindigkeit und -sicherheit:** Bei Barcodes muss der Scanner (oder die Kamera) den Code zeilenweise in einer Achse lesen. 1D-Barcodes sind **richtungsabhängig** – sie müssen in einer bestimmten Ausrichtung erfasst werden und das Lesegerät braucht oft einen direkten, geraden „Line-of-Sight“ zum Code. Das macht sie empfindlicher für Verdrehungen oder Winkel beim Scannen; in der Praxis müssen Barcodes meist ziemlich genau ausgerichtet werden, was Zeit kosten kann. QR-Codes dagegen besitzen Ausrichtungsmarkierungen und können aus jedem Winkel schnell erkannt werden. Das beschleunigt den Scan-Vorgang, da Nutzer das Gerät nicht exakt ausrichten müssen. Beide Codearten lassen sich mit modernen Geräten zügig einlesen; jedoch bieten QR-Codes hier einen Vorteil durch robustere Erkennung (daher der Name „Quick Response“). NFC-Scans sind in der Regel sehr schnell – ein kurzes _Tap_ mit dem Gerät reicht. In Szenarien mit einzelnen Objekten ist NFC vom reinen Lesevorgang her ggf. am schnellsten, da kein Fokussieren der Kamera nötig ist. Allerdings muss das Gerät für NFC sehr nah (wenige cm) an den Tag gebracht werden, was bei vielen Objekten hintereinander zeitaufwendiger werden kann . 
+
+**Kosten für Etiketten und Lesegeräte:** In Sachen Kosten sind QR-Codes und klassische Barcodes nahezu unschlagbar günstig. Sie lassen sich für ein paar Cent auf Papier oder Etiketten drucken und an den Gegenständen anbringen. Es fallen praktisch keine laufenden Kosten pro Code an – man kann mit einem Standard-Drucker oder einem Etikettendrucker hunderte QR- oder Barcode-Aufkleber billig herstellen. NFC-Tags hingegen enthalten Mikrochips und Antennen und sind deutlich teurer pro Stück. Selbst einfache NFC-Aufkleber kosten typischerweise zwischen 0,20€ und 0,50€ (hochwertige, robuste Tags oder größere Speicherkapazität noch mehr). Hinzu kommt: NFC-Tags benötigen spezielle Hardware im Gerät – nämlich einen NFC-Chip zum Auslesen – während QR- und Barcodes von jeder Kamera erfasst werden können. Ein dedizierter Barcode-Laserscanner (wie er in Läden genutzt wird) kostet zwar zusätzliches Geld, wird hier aber gar nicht benötigt, da Smartphones/Tablets als Scanner dienen sollen. Somit entstehen für QR-Lösungen keine zusätzlichen Hardwarekosten, was sie äußerst kosteneffektiv macht.
+
+**Infrastruktur (Kamera vs. Scanner vs. NFC-Reader):** Ein großer Vorteil von QR-Codes (und auch 1D-Barcodes) ist, dass keine spezielle Infrastruktur nötig ist – eine Kamera reicht aus. In unserem Fall soll die Inventar-Lösung ja webbasiert und mit der Kamera von Mobilgeräten funktionieren. Moderne Smartphones und Tablets haben fast alle eine Kamera, die sich via Browser nutzen lässt. Barcode-Scanner (Laser- oder CCD-Scanner) wären alternative Lesegeräte, doch diese wären Extra-Hardware, die angeschafft und mit dem System gekoppelt werden müsste. Das soll vermieden werden. NFC wiederum benötigt ein NFC-Lesegerät. Zwar haben viele neuere Smartphones einen NFC-Chip, aber **nicht alle** für die Schule relevanten Geräte unterstützen NFC – etwa manche günstigeren Tablets oder iPhones älterer Generation (und iPads haben teils gar kein NFC). Außerdem unterstützen gängige Webbrowser NFC **noch nicht plattformübergreifend**: z. B. wird Web-NFC in iOS/Safari nicht unterstützt (Stand 2025), sodass ein iPhone im Browser keinen NFC-Tag lesen könnte. Das heißt, NFC würde entweder eine native App oder spezielle Leser (z. B. USB-NFC-Reader am PC) erfordern, was der Vorgabe „ohne App und ohne Spezialhardware“ widerspricht. QR-Codes/Barcodes lassen sich hingegen direkt im Browser per Kamerazugriff scannen – dies ist truly plattformunabhängig möglich. Kurz gesagt: Ein Smartphone oder Tablet mit Kamera genügt für QR- und Barcode-Scanning, während NFC hardware-abhängig ist (braucht NFC-fähiges Gerät). Darüber hinaus ist die Reichweite ein Faktor: Die Kamera kann einen QR-Code aus einiger Entfernung lesen (je nach Codegröße auch aus ein paar Metern, z. B. ein großer QR-Code an der Wand), während NFC eine sehr geringe Reichweite (<10 cm) hat. Für das Inventar bedeutet das: QR-Codes können teils gescannt werden, ohne das Objekt in die Hand nehmen zu müssen, wohingegen NFC-Tags immer durch Annähern des Lesegeräts _physisch_ erreicht werden müssen.
+
+**Lesbarkeit unter Praxisbedingungen (Licht, Verschmutzung usw.):** In einem Schulalltag kann es vorkommen, dass Etiketten Schmutz abbekommen, zerkratzt werden oder bei suboptimalen Lichtverhältnissen gescannt werden müssen. QR-Codes sind hier relativ robust: Dank Error-Correction kann sogar ein teilweise verdeckter oder beschädigter QR-Code oft noch gelesen werden. 1D-Barcodes hingegen sind _empfindlicher_ – schon ein Riss oder Aufkleber über einem Teil des Codes macht ihn u.U. unlesbar. In dunkleren Umgebungen benötigen Kamera-Scanner genügend Licht oder den Einsatz der Geräte-Taschenlampe; dedizierte Barcode-Leser haben oft eingebaute Beleuchtung. Ein Smartphone kann aber den Blitz als Lichtquelle beim QR/Barcode-Scan verwenden, wodurch auch in weniger gut beleuchteten Räumen das Scannen möglich ist. NFC-Tags sind unempfindlich gegenüber Sichtverhältnissen – da sie per Funk ausgelesen werden, stört weder Dunkelheit noch Verschmutzung auf der Oberfläche (der Tag kann sogar unsichtbar unter einer Abdeckung sitzen). Allerdings haben auch NFC-Tags Umgebungsfaktoren: Metall in unmittelbarer Nähe oder Feuchtigkeit können das Signal dämpfen. In der Schule (z. B. Metallgestelle von Geräten oder Laptops mit Metallgehäuse) müsste man NFC-Tags eventuell mit Abstandshaltern oder speziellen on-metal Tags anbringen, um Lesbarkeit zu gewährleisten. Zudem können QR-/Barcode-Etiketten einfach mit einer Klarsichtfolie oder Laminat überzogen werden, um sie vor Verschmutzung zu schützen– das ist kostengünstig machbar.
+
+### Anforderungen an das geplante Inventarsystem (Browser/Plattform, Kosten, Bedienung)
+
+**Plattformunabhängiger Browser-Einsatz:** 
+Die Lösung soll auf verschiedenen Geräten (Android-Smartphones, iPhones, Tablets, ggf. Laptops mit Webcam) laufen. QR-Codes erfüllen diese Anforderung optimal, da _fast jedes_ dieser Geräte über eine Kamera verfügt und moderne Browser den Kamerazugriff erlauben. QR-Codes können direkt im Browser per JavaScript oder native Browser-APIs erkannt werden. Wichtig ist: QR-Code-Scanning ist inzwischen **nahezu universell** – Smartphone-Kameras erkennen QR-Codes oft automatisch, und im Web lassen sich Libraries oder die BarcodeDetector-API nutzen. Barcodes (1D) könnten theoretisch ebenfalls per Kamera erfasst werden, allerdings ist die native Unterstützung nicht so benutzerfreundlich (die Handy-Kamera-App z. B. liest standardmäßig nur QR, nicht aber beliebige 1D-Codes für Weblinks). NFC scheidet hier aus, da es im Web-Browser **nicht durchgängig unterstützt** wird. Viele Geräte (insbesondere iOS-Geräte) erlauben NFC-Lesen nur in nativen Apps, nicht im Browser. Zudem haben längst nicht alle User-Geräte NFC (gerade im Bildungsbereich könnten ältere Geräte im Einsatz sein). QR-Codes hingegen „**funktionieren auf fast allen Smartphones**“ ohne zusätzliche Hardware oder spezielle App[digital-link.com](https://digital-link.com/news/qr-codes-vs-nfc-tags/#:~:text=QR%20codes%20are%20incredibly%20accessible,to%20build%20and%20track%20campaigns). Diese Plattformunabhängigkeit – einmal ein Browser mit Kamera reicht – prädestiniert QR-Codes für die gewünschte Weblösung.
+
+**Kostengünstige Umsetzung ohne Spezialhardware:** 
+Schulen haben oft begrenztes Budget. Eine Lösung, die vorhandene Geräte (Lehrer-Smartphones, Schultablets) nutzt, spart Kosten. QR-Codes erfüllen das, da **kein spezielles Lesegerät** gekauft werden muss[codasol.com](https://www.codasol.com/rfid-vs-nfc-vs-qr-code-inventory-tracking/#:~:text=Pros%3A). Jedes handelsübliche Smartphone/Tablet wird zum Scanner. Auch die Labels selbst sind günstig: QR-Code-Aufkleber kann man selbst drucken oder für wenige Cent bestellen. Barcodes teilen diesen Vorteil der günstigen Druckkosten – auch sie könnten gedruckt werden. Allerdings würden reine Barcodes evtl. **Scanner** nötig machen, falls die Browser-Lösung nicht zuverlässig 1D-Codes lesen kann oder das Personal nicht mit der Kamera scannen will. Oft werden in professionellen Umgebungen Handscanner eingesetzt, was aber zusätzliche Hardware bedeutet. NFC wiederum hätte nicht nur höhere Tag-Kosten pro Objekt, sondern würde auch implizieren, dass jedes* Lesegerät NFC-fähig ist. Müsste die Schule Reader anschaffen (z. B. USB-NFC-Reader für PCs oder neue Mobilgeräte mit NFC), steigen die Kosten erheblich. Die **kosteneffektivste Lösung ist eindeutig der QR-Code**: Er lässt sich für „Pennies“ drucken und mit vorhandenen Smartphones scannen[codasol.com](https://www.codasol.com/rfid-vs-nfc-vs-qr-code-inventory-tracking/#:~:text=QR%20codes%20are%20the%20most,scan%20them%20with%20any%20smartphone). Zusätzliche Anschaffungen sind nicht nötig, was die Gesamtbetriebskosten minimal hält.
+
+**Einfache Nutzung durch Schulpersonal:** 
+Die Technik soll von Lehrkräften oder Verwaltungsmitarbeitern intuitiv bedienbar sein. QR-Codes sind hier quasi zum Alltag geworden – seit der Corona-Zeit kennen viele das Scannen von QR-Codes (z. B. für Menü, Check-in etc.) und wissen, **wie man einen QR-Code scannt**. Man öffnet einfach die Kamera oder die Web-App und hält sie auf den Code. Die Hemmschwelle ist gering, da kein technisches Spezialwissen nötig ist. Barcodes wären an sich ähnlich simpel, doch viele verbinden Barcodescans mit Kassenscannern – mit dem Smartphone einen Code128 zu scannen ist weniger verbreitet und intuitiv. Außerdem müsste man dem Personal erklären, dass sie in der Web-Anwendung dann einen Barcode anvisieren – was sicher machbar ist, aber der QR-Code genießt einen höheren Wiedererkennungswert („Ah, ein QR-Code – den kann ich mit dem Handy scannen.“). NFC würde in der Anwendung bedeuten: Der Nutzer muss wissen, **wo** sich der NFC-Sensor am Gerät befindet und das Gerät an jedes Inventarstück _anhalten_. Für technisch weniger versierte Nutzer ist das Konzept abstrakter, da NFC-Tags unsichtbar sein können. QR-Codes sind **sichtbar** und haben eine klar erkennbare Aufforderung zum Scannen (man sieht den Code und weiß, was zu tun ist). Zudem entfällt bei QR die Fehlersuche „habe ich den richtigen Tag erwischt?“ – man sieht eindeutig, welchen Code man scannt. Ein weiterer Punkt ist, dass kein Pairing oder keine spezielle App nötig ist: Die Nutzer öffnen einfach den Browser auf dem Tablet, drücken „Scan starten“ und verwenden die Kamera. Die Hürde, eine eigene App installieren zu müssen, entfällt komplett. Alles in allem wird das Schulpersonal mit QR-Codes am wenigsten Einarbeitungsaufwand haben. Selbst wenn jemand technisch nicht versiert ist, sind QR-Codes selbsterklärend (und falls jemand kein Smartphone nutzen will, könnten die QR-Codes auch ausgedruckt z.B. per Diensthandy gescannt werden). **NFC ist dagegen eine weniger bekannte Technologie** – viele Menschen wissen gar nicht, dass ihr Handy Tags lesen kann. Für einen erfolgreichen Einsatz müsste man alle Beteiligten schulen, wo sie das Gerät auflegen müssen und wie der Lesevorgang bestätigt wird. QR-Codes haben hier klar die Nase vorn in Sachen Usability und Akzeptanz.
+
+## Evaluierung bestehender Lösungen und Alternativen
 
 Bevor man überhaupt an eine neue Entwicklung denken kann, muss man zuerst evaluieren, ob es aktuelle bestehende Lösungen oder auch relevante Alternativen gibt. In diesem Kapitel werden verschiedene Ansätze analysiert und hinsichtlich anhand der Vor- und Nachteile bewertet.
 
-## 2.1 Bestehende Kauflösungen
+## Bestehende Kauflösungen
 
 Am Markt existieren sowohl kostenlose als auch kostenpflichtige Inventarisierungsprogramme. Der wesentliche Unterschied zwischen beiden Ansätzen liegt dabei nicht primär im Preis, sondern vielmehr im Funktionsumfang. Während kostenlose Varianten oft nur einen sehr eingeschränkten Umfang bieten, beinhalten kostenpflichtige Lösungen in der Regel erweiterte Funktionen, die insbesondere für größere Organisationen oder Unternehmen von Bedeutung sind. Für Schulen stellt sich daher die Frage, ob der zusätzliche Funktionsumfang den Mehraufwand und die höheren Kosten rechtfertigt.
 
-### 2.1.1 Kostenlose Alternativen
+### Kostenlose Alternativen
 
 Eine speziell auf Schulen zugeschnittene kostenlose Inventarisierungssoftware existiert derzeit nicht auf dem Markt. Vielmehr richten sich die vorhandenen kostenlosen Programme an kleine Unternehmen oder den E-Commerce-Bereich. Beispiele hierfür sind:
 
@@ -66,7 +92,7 @@ Diese Lösungen bieten eine Vielzahl von Funktionen wie Lagerverwaltung, Bestell
 
 Damit sind kostenlose Alternativen für den angestrebten Anwendungsbereich ungeeignet, da sie mehr Aufwand erzeugen als Nutzen bringen.
 
-### 2.1.2 Kostenpflichtige Alternativen
+### Kostenpflichtige Alternativen
 
 Im Bereich der kostenpflichtigen Softwarelösungen existieren mehrere Anbieter, die Inventarisierung speziell für Institutionen wie Schulen oder öffentliche Einrichtungen anbieten. Zwei Beispiele sollen im Folgenden exemplarisch betrachtet werden:
 
@@ -147,13 +173,7 @@ Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/i
 - viele Funktionen sind nur in höheren Preiskategorien enthalten  
 - Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar  
 
-### 2.1.3 Fazit zuden Kauflösungen
-
-Zusammenfassend lässt sich feststellen, dass sowohl kostenlose als auch kostenpflichtige Kauflösungen für den schulischen Einsatz problematisch sind. Kostenlose Varianten sind funktional nicht passend, da sie nicht für den Bildungssektor entwickelt wurden und wichtige Funktionen wie QR-Code-Integration fehlen. Kostenpflichtige Lösungen hingegen bieten zwar umfangreiche Funktionen, sind jedoch mit hohen und oft intransparenten Kosten verbunden.  
-
-Für Schulen ergibt sich daraus die Herausforderung, entweder mit einer zu komplexen oder zu teuren Lösung zu arbeiten. Eine speziell entwickelte, kostengünstige Eigenlösung erscheint daher als sinnvoller Ansatz, da sie exakt an die Bedürfnisse der Schule angepasst werden kann.
-
-## 2.2 Programmieren einer Excel-Erweiterung
+## Programmieren einer Excel-Erweiterung
 
 Die Inventarisierungsliste der HTL Leoben basiert, wie bereits erwähnt, auf Microsoft Excel. Daher wäre die Möglichkeit, eine Excel-Erweiterung zu programmieren, auf den ersten Blick eine naheliegende Idee. Excel-Add-ins (Erweiterungen) ermöglichen es, neue Funktionen direkt in Excel einzubinden, wie beispielsweise automatisierte Berechnungen, Datenvalidierungen oder benutzerdefinierte Menüleisten. Sie können Arbeitsabläufe deutlich vereinfachen und sind insbesondere dann sinnvoll, wenn wiederkehrende Aufgaben standardisiert werden sollen.
 
@@ -170,10 +190,10 @@ Allerdings sprechen mehrere Punkte dagegen, diese Lösung tatsächlich umzusetze
     
 4. **Optik und Benutzerfreundlichkeit**  
     Ein Add-in kann zwar bestimmte Funktionen automatisieren, verändert jedoch nicht die Übersichtlichkeit oder Gestaltung der Excel-Liste. Die Darstellung bleibt unverändert und es entstehen keine zusätzlichen Hilfen, die das Arbeiten mit vielen Datensätzen erleichtern.
-    
+
 Die Entwicklung einer Excel-Erweiterung würde den Aufwand erhöhen und nur einen geringen Nutzen bringen. Sie greift nicht die Kernprobleme der Inventarisierung an und ist zudem aufgrund fehlender Originaldaten nicht praktisch umsetzbar. 
 
-## 2.3 Programmieren einer TEAMS-Erweiterung
+## Programmieren einer TEAMS-Erweiterung
 
 Die Idee, eine eigene Erweiterung für Microsoft Teams zu entwickeln, klingt auf den ersten Blick attraktiv, da Teams bereits ein etablierter Bestandteil des schulischen und organisatorischen Alltags ist. Dennoch spricht eine Reihe gewichtiger Argumente dagegen, diesen Ansatz für die Umsetzung einer Inventarisierungslösung zu wählen.
 
@@ -183,7 +203,7 @@ Soll beispielsweise ein Inventar mit mehreren hundert Geräten verwaltet werden,
 
 Die fehlende direkte Datenbankanbindung verhindert den Aufbau einer robusten, skalierbaren Inventarisierungslösung. Da alle Daten zwangsläufig an die Teams-Umgebung gebunden sind, entsteht eine Abhängigkeit von einem Drittanbieter, der nicht nur die technische Grundlage kontrolliert, sondern auch Änderungen an Schnittstellen oder Richtlinien vornehmen kann. Dies macht die Wartung unsicher und langfristig schwer planbar. Außerdem besteht die Gefahr, dass externe Dateien oder Drittanbieter-Dienste ausfallen, was unmittelbar die Funktionalität der gesamten Lösung beeinträchtigen würde. Insgesamt überwiegen somit die Nachteile deutlich, sodass eine Teams-Erweiterung als technische Basis für eine Inventarisierungslösung nicht in Frage kommt.
 
-## 2.4 Verwendung von MS Access
+## Verwendung von MS Access
 
 Microsoft Access ist eine relationale Datenbankanwendung, die Bestandteil des Microsoft-Office-Pakets ist, welches an das aktuelle System der Schule andocken würde. Sie ermöglicht die Erstellung, Verwaltung und Abfrage von Datenbanken über eine grafische Benutzeroberfläche, ohne dass tiefgehende Programmierkenntnisse erforderlich sind.
 
@@ -193,54 +213,10 @@ Trotz dieser Vorteile stößt Access in der Praxis schnell an seine Grenzen. Die
 
 Darüber hinaus ist die Erweiterbarkeit eingeschränkt: Funktionen wie die automatische Generierung und Zuordnung von QR-Codes, eine Weboberfläche oder der gleichzeitige Zugriff mehrerer Benutzer lassen sich nur mit erheblichem Aufwand realisieren. Aus diesen Gründen eignet sich Microsoft Access zwar als Einstiegslösung für einfache Inventarverwaltungen, erfüllt jedoch nicht die Anforderungen einer modernen, plattformunabhängigen und webbasierten Inventarisierungslösung.
 
-# Literaturverzeichnis:
+## Anschließen an das aktuelle Ticketsystem
 
-Kister, F. (2024, 7. Mai). _Was versteht man unter Inventarisierung?_ Entek Systems GmbH.  
-Abgerufen am 15.07.2025, von [https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung](https://www.enteksystems.de/blog/was-versteht-man-unter-inventarisierung)
+Das aktuelle Ticketsystem der HTL Leoben läuft Open-Source auf https://ticket.htl-leoben.at/, erstellt von MantisBT. Dabei melden sich jeweilige Schüler und Lehrer über das Schulnetzwerk - welches über LDAP läuft - an und können einen Defekt oder einen Einwand reklamieren. 
 
-Bendel, O. (o. D.). _QR-Code_. Gabler Wirtschaftslexikon.  
-Abgerufen am 15.07.2025, von [https://wirtschaftslexikon.gabler.de/definition/qr-code-53515](https://wirtschaftslexikon.gabler.de/definition/qr-code-53515)
+Die Idee mit dem anschließen an dieses Ticketsystem klingt einfacher gesagt als getan. Zu aller Erst muss gesagt werden, dass wir uns dazu entschieden haben, unsere Invetarisierungslösung nicht als Open-Source veröffentlicht wird. Diese Lösung sollte ausschließlich der HTL Leoben dienen.
 
-*Basic writing and formatting syntax*. (o. D.). GitHub Docs.  
-Abgerufen am 07.08.2025, von [https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
-Theel, M. (2024, 18. Januar). _Internetquellen einfach zitieren: Unterschiede & Beispiele_. Scribbr.  
-Abgerufen am 07.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/](https://www.scribbr.at/richtig-zitieren-at/internetquellen-zitieren/)
-
-Glöckler, L. (2023, 31. März). _Quellenangaben von Bildern aus dem Internet_. Scribbr.   
-Abgerufen am 07.08.2025, von [https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/](https://www.scribbr.at/richtig-zitieren-at/quellenangabe-bild-internet/)
-
-_Fischer, T._ (2024, 26. Februar). _Beste Inventarsoftware kostenlos: Die 10 besten Tools im Vergleich_.  
-Abgerufen am 15.08.2025, von [https://omr.com/de/reviews/contenthub/beste-inventarsoftware-kostenlos](https://omr.com/de/reviews/contenthub/beste-inventarsoftware-kostenlos)
-
-_Hofer, N._ (2025, 21. Mai). _Open Source Inventory Management: Die besten kostenlosen Tools im Überblick_. Wondershare.  
-Abgerufen am 15.08.2025, von [https://pdf.wondershare.de/business/open-source-inventory-management.html](https://pdf.wondershare.de/business/open-source-inventory-management.html)
-
-*Odoo Inventory – Bestandsverwaltung*. (o. D.). Odoo.  
-Abgerufen am 18.08.2025, von [https://www.odoo.com/de_DE/app/inventory](https://www.odoo.com/de_DE/app/inventory) 
-
-Hoppe Unternehmensberatung. (o. D.). _Inventarmanager – Inventarisieren ganz einfach_. Inventarsoftware.  
-Abgerufen am 21.08.2025, von [https://www.inventarsoftware.de/Inventarmanager.html](https://www.inventarsoftware.de/Inventarmanager.html)
-
-Timly Software AG. (o. D.). Die Inventar Software für eine optimale Übersicht.   
-Abgerufen am 21.08.2025, von [https://timly.com/inventar-software](https://timly.com/inventar-software)
-
-Kowalski, W. (2024, 28. März). _How to Create and Use an Excel Add-in_. SCAND.    
-Abgerufen am 21.08.2025, von [https://scand.com/company/blog/how-to-create-and-use-an-excel-add-in/](https://scand.com/company/blog/how-to-create-and-use-an-excel-add-in/)
-
-**Georg, F.** (2023, 3. Juli). *Eigene Apps für Microsoft Teams entwickeln*. CONET.     
-Abgerufen am 22.08.2025, von [https://www.conet.de/blog/eigene-apps-fuer-microsoft-teams-entwickeln/](https://www.conet.de/blog/eigene-apps-fuer-microsoft-teams-entwickeln/) 
-
-**NovaCapta GmbH.** (o. D.). *Teams Extensions: Erstellen von Erweiterungen für Microsoft Teams*. NovaCapta.       
-Abgerufen am 22.08.2025, von [https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams](https://www.novacapta.de/unternehmen/blog/blog-archiv/teams-extensions-erstellen-von-erweiterungen-fuer-teams)
-
-IONOS SE. (o. J.). _Microsoft Access: Alternativen im Überblick._     
-Abgerufen am 3. November 2025, von [https://www.ionos.at/digitalguide/server/tools/microsoft-access-alternativen-im-ueberblick/](https://www.ionos.at/digitalguide/server/tools/microsoft-access-alternativen-im-ueberblick/?utm_source=chatgpt.com)
-
-# Abbildungsverzeichnis:
-
-*QR-Code*. (o. D.). ActiveBarcode.  
-Abgerufen am 07.08.2025, von [https://www.activebarcode.com/de/codes/qrcode](https://www.activebarcode.com/de/codes/qrcode)
-
-
-
+Eine weitere Herausforderung ist, an das bestehende LDAP Netzwerk anzuschließen um die Login Funktion zu vereinfachen. Anstatt sich zu Registrieren und neue Benutzer anzulegen, werden die Benutzer des aktuellen Ticketsystems hergenommen und per LDAP an das Login System der Inventarisierung weitergeleitet. So kann zum Beispiel der Lehrer der sich einmal in das Ticketsystem angemeldet hat, sich ohne weiteren Probleme bei der Inventarisierung anmelden.
