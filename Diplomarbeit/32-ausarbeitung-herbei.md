@@ -1,21 +1,16 @@
 # Teilaufgabe Gabriel Herbei
 
-## Theoretische Grundlagen
-
 ## Begriffsklärung: Inventarisierung
-
 Unter Inventarisierung versteht man den strukturierten Prozess der Erfassung, Organisation und Dokumentation von materiellen Vermögenswerten einer Organisation. Im schulischen Kontext betrifft dies insbesondere Geräte wie Monitore, Personal Computer, Beamer, Fernbedienungen, Tastaturen und weitere technische oder pädagogische Ausstattung.
 
 Die Einführung einer digitalen Inventarisierungslösung ermöglicht eine effizientere und transparentere Verwaltung dieser Gegenstände. Insbesondere bei einer größeren Anzahl an Geräten oder häufigen Standortwechseln stößt eine manuelle Erfassung mit Papierlisten oder Tabellenprogrammen schnell an ihre Grenzen.
 
 ## Ziel der Digitalisierung: Vereinfachung des schulischen Prozesses
-
 Die Digitalisierung des Inventarisierungsprozesses verfolgt das Ziel, den Aufwand für schulisches Verwaltungspersonal deutlich zu reduzieren und zugleich die Genauigkeit der Bestandsdaten zu erhöhen. Eine einfache Erfassung verringert die Fehleranfälligkeit, beschleunigt den Zugriff auf Informationen und verbessert die Wartbarkeit der Inventardaten erheblich. Dabei steht nicht nur die Effizienz im Vordergrund, sondern auch die langfristige Entlastung der schulischen Infrastruktur durch transparente, leicht wartbare Datenstrukturen.
 
 Gerade im schulischen Umfeld, in dem Geräte regelmäßig den Raum wechseln, ausgeliehen oder repariert werden, ist eine aktuelle und zentrale Datenhaltung entscheidend. Eine digitale Inventarisierung ermöglicht es, Änderungen unmittelbar zu erfassen und reduziert Abhängigkeiten von einzelnen Personen oder lokalen Dateien. Dadurch wird nicht nur der Verwaltungsaufwand gesenkt, sondern auch die Nachvollziehbarkeit und Transparenz für alle Beteiligten erhöht.
 
 ## Aktueller Inventarisierungsprozess an der HTL Leoben
-
 Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware an unserer Schule mit einer herkömmlicher Excel-Tabelle. Ein Beispiel dafür wurde uns in [diesem GitHub-Dokument](https://github.com/Herbei-Gabo/DA-2526-Inventarisierung-von-QR-Codes/blob/main/Diplomarbeit/doc/HTLGesamtinventar_Monitorbeispiel.xlsx) zur Verfügung gestellt. Dabei werden Informationen wie Bereich, Objektbezeichnung, Lieferant, Seriennummer, Standort Zuständigkeit und vieles weiteres manuell erfasst und gepflegt. Diese Form der Datenhaltung bringt jedoch zahlreiche Herausforderungen mit sich:
 
 - **Hoher manueller Aufwand**: Jede Änderung – sei es eine Standortverschiebung, Reparatur oder Neuanschaffung – muss manuell in die Liste eingetragen werden.
@@ -27,7 +22,6 @@ Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware 
 Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch zukunftsfähig ist. Insbesondere bei wachsendem Bestand und höherem Digitalisierungsgrad wird eine professionelle, digitale Lösung notwendig, die zentrale Datenhaltung, Mehrbenutzerfähigkeit und mobile Zugriffsmöglichkeiten vereint.
 
 ## QR-Codes als technologische Grundlage
-
 Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.
 
 ![QR-Code](img/qrcode.gif)
@@ -40,9 +34,7 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 ## Wieso QR-Code und kein Barcode oder NFC
 
 ### Technische Vergleichskriterien
-
 **Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. 
-
 
 ![Barcode](img/Barcode.gif)
 
