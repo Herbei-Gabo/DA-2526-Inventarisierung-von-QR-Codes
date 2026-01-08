@@ -1,255 +1,170 @@
-# Projekthandbuch
-\textauthor{Schueler XY}
 
-## Entwicklungsplan
+# Projekthandbuch – Diplomarbeit
+\textauthor{Dietmair}
+## „Inventarisierung mit QR-Codes“
+**Stand:** 08. Jänner 2026
+
+---
+
+### 1. Projektübersicht
+**Thema:** Entwicklung einer webbasierten Inventarisierungslösung mit QR-Codes zur Verwaltung schulischer IT-Ausstattung
+
+**Team:**
+- **Dietmair Stephan** – Projektmanagement & Organisation
+- **Herbei Gabriel** – Analyse, Konzeption & Qualitätssicherung 
+- **Karner André** – Softwareentwicklung & technische Umsetzung 
 
-### Projektauftrag
+**Betreuer:** Leitner Christoph 
+**Zeitraum:** Juni 2025 – März 2026
+**Schule:** HTL Leoben
 
-Hier beschreiben Sie die allgemeinen Informationen zu Ihrem Maturaprojekt. Hier beschreiben sie den Projektkontext, nämlich die Ausgangssituation und Problembeschreibung
+---
 
+### 2. Zielsetzung
+Die Zielsetzung beschreibt das allgemeine Ziel und die Motivation hinter der Diplomarbeit. Dabei werden folgende Themen adressiert:
 
-#### Projektziele
+- **Aktueller Stand:**  
+  An der Schule wird die IT-Ausstattung (PCs, Monitore, Beamer etc.) derzeit manuell in einer Excel-Liste verwaltet. Diese Methode ist zeitaufwendig, unübersichtlich und fehleranfällig.
+
+- **Motivation:**  
+  Der Wunsch besteht darin, den Inventarisierungsprozess zu digitalisieren und zu vereinfachen. Durch den Einsatz von QR-Codes soll die Verwaltung moderner, schneller und mobil zugänglich werden.
+
+- **Was möchten wir erreichen?**  
+  - Entwicklung einer webbasierten Inventarisierungslösung mit QR-Code-Integration  
+  - Vereinfachung der Erfassung, Verwaltung und Nachverfolgung von Geräten  
+  - Zugriff über Smartphones/Tablets ohne manuelle Eingabe  
+  - Nutzung vorhandener Schulressourcen ohne Zusatzkosten  
+  - Stärkung digitaler Kompetenzen innerhalb der Schule  
+
+- **Was möchten wir nicht erreichen (Nicht-Ziele)?**  
+  - Keine vollständige Integration in externe ERP- oder Ticketsysteme  
+  - Kein Austausch der bestehenden Schulserver-Struktur  
+  - Kein Fokus auf kaufmännische Warenwirtschaft  
+
+- **Was ändert sich durch die Arbeit?**  
+  - Der manuelle Aufwand entfällt weitgehend  
+  - Geräte können schnell und mobil identifiziert werden  
+  - Die Verwaltung wird übersichtlicher und weniger fehleranfällig  
+  - Das Schulpersonal kann eigenständig Inventar anpassen oder erfassen  
+
+---
+
+### 3. Projektorganisation
+**Kommunikation:**  
+- Microsoft Teams (Austausch, Statusupdates) 
+- Whatsapp Gruppe (schneller Austausch) 
+- GitHub (Code & Dokumentenverwaltung)  
+- Persönliche Treffen nach Bedarf (sporadisch, bei Projektfortschritten oder Problemen)  
+
+**Dateiablage:**  
+GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`  
+
+**Teammeetings:**  
+- Treffen erfolgen **nach Bedarf**, meist bei Abschluss eines Projektabschnitts  
+- Notizen und Entscheidungen werden im Projekthandbuch dokumentiert  
+
+---
+
+### 4. Zeitplan (aktualisiert – bis Ende Jänner 2026)
+
+| Zeitraum | Aufgabe / Meilenstein | Verantwortlich | Status |
+|-----------|----------------------|----------------|--------|
+| **Juli 2025** | Projektstart, Themenfindung, Rollenverteilung | Team | ✅ abgeschlossen |
+| **Ende Juli 2025** | Einrichtung GitHub-Repository & Basisstruktur | Gabriel | ✅ |
+| **Anfang August 2025** | Analyse der Excel-Inventarliste, Planung Datenbank | André | ✅ |
+| **Mitte August 2025** | Erstellung Datenbankschema & Testdaten | André | ✅ |
+| **Ende August 2025** | Theoretische Grundlagen & Marktanalyse (QR, Alternativen) | Gabriel | ✅ |
+| **September 2025** | Projektorganisation, Projekthandbuch-Erstellung, Abstimmung Frontend | Stephan | ✅ |
+| **14. Oktober 2025** | Planung der Frontend-Entwicklung (Layout & Architektur) | André | ✅ |
+| **25. Oktober – 2. November 2025 (Herbstferien)** | **Frontend-Entwicklung (UI, Seitenaufbau)** | André | ✅ |
+| **25. Oktober – 2. November 2025 (Herbstferien)** | **Evaluierung Technologiealternativen (Frameworks, Hosting, QR-Tools)** | Stephan | ✅  |
+| **November 2025 (KW 45–48)** | Implementierung QR-Code-Funktion und Integration ins System | Gabriel + André | ✅ |
+| **Ende November 2025** | Erste Systemtests (mobile Nutzung, Datenbankzugriff) | Team | ✅ |
+| **Dezember 2025 (KW 49–52)** | Dokumentationsabschluss & Vorbereitung der Abgabe | Team (Leitung: Stephan) | ⏳ offen |
+| **9 Jänner 2026** | Gemeinsane Erstversion für Feedback abgegen | Team | ⏳ offen |
+| **Ende Jänner 2026** | Feinschliff von Suchfunktion, Admin-Menü, Druckfunktion sowie Responsive | Gabriel + André | ⏳ offen
 
-Das Projektziel beschreibt den erwünschten Zustand (Sollzustand) nach dem erfolgreichen Abschluss des Projektes. Das Ziel wird wohlbedacht formuliert und durch aktives Handeln aller Projektbeteiligten erreicht. Projektziele sollten gemeinsam mit allen Projektbeteiligten erarbeitet werden.
+---
 
-#### Nicht-Ziele bzw. nicht Inhalte
+### 5. Aktueller Projektstatus (Stand 08.01.2026)
+✅ Datenbank- und Backend-Struktur fertiggestellt  
+✅ Theoretische Grundlagen & Marktanalyse abgeschlossen  
+⚙️ Projekthandbuch in Bearbeitung  
+✅ Frontend-Phase & Evaluierung größtenteils abgeschlossen   
+⚙️ Dokumentation in Bearbeitung    
+⏳ Finale Tests in Vorbereitung 
 
-Nicht-Ziele sind aus mehreren Gründen wichtig. Erstens helfen sie beim Erwartungsmanagement. Zweitens schaffen sie Klarheit darüber, was erledigt werden soll. Und drittens erhöhen Nicht-Ziele die Transparenz. Denn wenn man schon früh im Projekt explizit die Bereiche definiert, die das Projekt nicht bearbeiten soll, kann dadurch eine Diskussion über genau diese Randbereiche entstehen. 
+---
 
-#### Projektnutzen
 
-Wie soll ein Außenstehender ein Projekt genehmigen, wenn nicht klar formuliert ist, WARUM das Projekt überhaupt durchgeführt werden soll? Auch hier ist es wichtig, möglichst konkret zu werden. Einen Projektnutzen z.B. mit „neueste Technik“ zu bezeichnen, ist nicht ausreichend.
 
-#### Projektauftraggeber/in
+## 6. To-do-Liste (nächste Schritte)
 
-Hier beschreiben Sie wer der Projektauftraggeber ist. Falls es eine externe Firma ist können Sie hier eine kurze Beschreibung des Unternehmens (sofern Projektrelevant) einfügen.
+| Aufgabe | Verantwortlich | Fällig bis | Status |
+|--------|----------------|------------|--------|
+| Dokumentationsabschluss & Abgabevorbereitung | Stephan | 31.12.2025 | 🕒 geplant |
+| Überarbeitung Admin-Menü (Struktur & Bedienbarkeit) | André | 20.01.2026 | 🕒 geplant |
+| Implementierung & Optimierung Suchfunktion | André & Gabriel | 31.01.2026 | ⏳ offen |
+| Überarbeitung QR-Code-Druckfunktion | Gabriel | 25.01.2026 | ⏳ offen |
+| Feinschliff Responsive Design (mobile Endgeräte) | André | 25.01.2026 | 🕒 geplant |
+| Erweiterte Funktionstests (Suche, QR-Druck, Mobile) | Team | 05.02.2026 | ⏳ offen |
 
-#### Projekttermine
 
-Welche Termine sind Fixtermine und was sollte an diesen Terminen stattfinden ? Beispiele hierfür sind z.B: Präsentationen, Projektende, Zwischenabgaben, fest eingeplante Besprechungen / Reviews (die auch Projektrelevant sind) die auf keinen Fall vergessen werden dürfen
+---
+Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokumentiert.
 
 
+## 7. Aufgabenhistorie
 
-| Termin     | Inhalt                          |
-|-----------:|:--------------------------------|
-| 2020-12-24 | Weihnachten                     |
-| 20XX-12-24 | Projektstart                    |
-| 20XX-10-24 | Projektpräsentation             |
-| 20XX-10-24 | Erreichung Meilenstein I        |
-| 20XX-10-24 | Erste Zwischenpräsentation      |
-| 20XX-10-24 | Erreichung Meilenstein II       |
-| 20XX-10-24 | Erreichung Meilenstein III      |
-| 20XX-10-24 | Zweite Zwischenpräsentation     |
-| 20XX-10-24 | Abgabe Endversion an Betreuer   |
-| 20XX-10-24 | Abgabe Gebundene Version        |
-| 20XX-10-24 | ...                             |
+| Aufgabe / Meilenstein | Verantwortlich | Zeitraum | Ergebnis |
+|----------------------|----------------|----------|----------|
+| Projektstart, Themenfindung & Rollenverteilung | Team | Juli 2025 | Projektstruktur festgelegt |
+| Einrichtung GitHub-Repository & Basisstruktur | Gabriel | Ende Juli 2025 | Zentrale Code- & Dokuablage eingerichtet |
+| Analyse der Excel-Inventarliste | André | Anfang August 2025 | Anforderungen für DB definiert |
+| Planung der Datenbankstruktur | André | Anfang August 2025 | Grundlage für Schema-Erstellung |
+| Erstellung Datenbankschema & Testdaten | André | Mitte August 2025 | Funktionsfähige DB-Struktur |
+| Theoretische Grundlagen & Marktanalyse (QR) | Gabriel | Ende August 2025 | Vergleich & Entscheidungsbasis erstellt |
+| Projektorganisation & Projekthandbuch-Erstellung | Stephan | September 2025 | PM-Struktur dokumentiert |
+| Abstimmung Frontend (Konzept & Aufbau) | Stephan & André | September 2025 | Gemeinsames Verständnis hergestellt |
+| Planung Frontend-Architektur & Layout | André | 14.10.2025 | Frontend-Phase vorbereitet |
+| Frontend-Entwicklung (UI, Seitenaufbau) | André | 25.10.–02.11.2025 | Erste lauffähige UI-Version |
+| Abschluss Projekthandbuch v0.3 | Stephan | bis 18.10.2025 | Projekthandbuch konsolidiert |
+| Evaluierung QR- & Frontend-Technologien | Stephan | 25.10.–02.11.2025 | Entscheidungsgrundlage erstellt |
+| Auswahl QR-Code-Bibliothek & Testintegration | Gabriel & André | bis 10.11.2025 | Bibliothek festgelegt und getestet |
+| Implementierung QR-Code-Funktion | Gabriel & André | bis 20.11.2025 | QR-Scan und Gerätezuordnung umgesetzt |
+| Erste Systemtests (QR-Scan, mobile Nutzung) | Team | bis 25.11.2025 | Funktionalität erfolgreich geprüft |
 
-: Projektterminübersicht
 
 
-#### Projektkosten
+---
+### 8. Risiken & Herausforderungen
+- Abhängigkeit von der Schul-IT-Infrastruktur (Serverrechte, Zugriff)  
+- Zeitliche Belastung durch parallelen Schulunterricht  
+- QR-Code-Leserkompatibilität auf unterschiedlichen Geräten  
+- Fehlende Original-Listen für korrekte Inventarnummern  
 
-Hier dokumentieren Sie welche Kosten fallen Für Ihr Projekt an und wer kommt für diese Kosten auf ?
+---
 
-| Meilenstein  | Kostenart | Menge  | Preis   | Gesamtkosten | Deckung durch |
-|:-------------|:---------:|:------:|--------:|-------------:|---------------|
-| Prototyp     | Personal  |  10.00 |   15.00 | 150.00      | Schüler       |
-| Prototyp     | Hardware  |  1     |  254.00 | 254.00      | Projektpartner|
-| DA-Schreiben | Druck     |  3     |   26.00 |  53.00      | Schüler       |
+### 9. Dokumentenübersicht
+| Dokument | Beschreibung | Speicherort |
+|-----------|---------------|--------------|
+| `DA_Hauptdokument.docx` | Hauptteil der Diplomarbeit | GitHub / Dokumentation |
+| `projekthandbuch_v0.3.docx` | Projekthandbuch, Stand 14.10.2025 | GitHub / docs |
+| `HTLGesamtinventar_Monitorbeispiel.xlsx` | Basis-Excel der bisherigen Inventarisierung | GitHub / data |
+| `da_inventory_TableSchema.xlsx` | Datenbankschema & Tabellenbeziehungen | GitHub / data |
 
- : Geplante Projektkosten
- 
-Am ende sollten Sie eine Projektkostensumme ermitteln und hier angeben damit man sagen kann
-__Das Projekt kostet in Summe so und so viel Euro__. 
+---
 
+### 10. Zusammenfassung
+Das Projekt „Inventarisierung mit QR-Codes“ verläuft planmäßig und zeigt einen klaren Fortschritt.  
+Die theoretische und technische Basis ist abgeschlossen, das **Frontend** und die **technologische Evaluierung** folgen in den Herbstferien.  
+Bis **Ende Dezember 2025** werden alle Tests und die finale Dokumentation abgeschlossen sein.  
+Damit ist das Projekt sowohl technisch als auch organisatorisch auf einem sehr guten Weg.
 
-Am Ende der Diplomarbeit fügen Sie hier noch eine Liste der tatsächlich angefallenen Kosten ein.
+---
 
-#### Projektrisiken
+### 11. Projektlog & Entscheidungsdokumentation
 
-Hier geben Sie an welche Risiken auf Ohr Projekt zutreffen können, und auch wie wahrscheinlich es ist das dieses Risiko eintritt.
-Eine Übersicht über Risiken finden sie hier: https://projekte-leicht-gemacht.de/blog/pm-in-der-praxis/130-projektrisiken-beispiele/
+---
 
-Hier ein Beispiel:
 
-| Risiko         | EW  | Auswirkungen     | Maßnahmen     |
-|:--------------:|:---:| :----------------|:--------------|
-| Überziehen der Kosten | 15% | Erhöhte Kosten für Schüler | Budgetierung |
-| Ungenaue Schätzungen | 30% | Ungenaue Schätzungen führen zu Problem bezüglich Terminen und Budget. | Schätzungen mit Fachkollegen absprechen|
-| Verzögerungen beim Aufbau von Hard- und Software | 10% | Prototyp wird nicht rechtzeitig zur Endpräsentation fertig | Früh genug anfangen |
-
-: Projektrisiken
-
-### Projektorganisation
-
-#### Projektbeteiligte
-Hier wird definiert wer (welche Personen) an diesem Projekt beteiligt im Prinzip beteiligt ist.
-
-| Vorname     | Nachname     | Organisation | Kontaktinfos      |
-|:------------|:-------------|:-------------|:------------------|
-| Joltawan    | Barodscheff  | HTL Leoben   | jb@htl-leoben.at  |
-| Frank       | Borland      | Firma XY     | frank@borla.nd    |
-| ...         | ...          | ...          | ...               |
-
-: Projektbeteiligte
-
-Unter Kontaktinfos können neben der Emailadresse natürlich auch noch andere Informationen wie Telefonnunmmer, Postanschrift, usw. stehen. ... Im Prinzip alles was notwendig ist um die Person zu erreichen wenn es notwendig ist. 
-
-#### Projektrollen
-
-Hier werden den Kontakten von oben konkrete Rollen zuewiesen.
-
-| Projektrolle           | Rollenbeschreibung     | Name              |
-|------------------------|------------------------|-------------------|
-| Projektleiter | Verantwortlicher für Einhaltung des Projektrahmens | Joltawan Barodscheff |
-| Auftraggeber | Auftraggeber der internen Diplomarbeit | Frank Borland |
-| Betreuer | Schulischer Betreuer | G. Hutter |
-| Betreuer | Schulischer Betreuer | A. Poetscher |
-
-: Projektrollen
-
-Gerne können Sie hier auch noch zusätzlich eine Grafik oder ein Organisationsdiagramm einbauen.
-
-![Projektorganisationsdiagramm](img/projektorganisation.png){width=50%}
-
-### Vorgehen bei Änderungen
-
-Hier dokumentieren sie betreffend des Meilensteinplans oder der Anwendungsfälle: 
-
-* Wer wird informiert, 
-* wer muss zustimmen, 
-* wo werden die Änderungen wie vermerkt?
-
-Das dient in erster Linie dazu um ein einheitliches Vorgehen definiert zu haben.
-
-## Meilensteine
-
-Der Begriff taucht im Projektmanagement sehr häufig auf. Meilensteine sind wichtige Punkte im Projektverlauf. Oft werden sie auch als Prüfpunkte bezeichnet.
-
-Generell kann ein Meilenstein ein Ereignis sein, an dem
-
-* etwas abgeschlossen ist,
-* etwas begonnen wird oder
-* über die weitere Vorgehensweise entschieden wird
-
-Meilensteine werden meist am Ende von Projektphasen definiert. Auch innerhalb von Phasen kann es zusätzliche Meilensteine geben.
-
-Meilensteine verlaufen nie über eine Zeitdauer. Nie. Sie sind lediglich Entscheidungspunkte
-
-Hier ein Beispiel wie die Meilensteine im Fall einer aussehen können
-
-### 2020-09-15: Projektmanagement abgeschlossen
-
-- Projekthandbuch ist fertig
-- Serverinfrastruktur ist hergestellt
-- Bestellungen sind abgessendet
-
-### 2020-11-01: Genehmigung der DA
-
-- Einreichen des Antrags durch die Schüler/innen
-- DA Dokumentation wurde ausgefüllt und unterschrieben
-
-### 2020-11-26: Literaturrecherche abgeschlossen
-
-- Literatur zum Thema XY gesucht und in bibtex vermerkt
-- Aktellen Stand der Forschung erhoben
-- Verschriftlichung des Literaturteils begonnen 
-
-### 2020-12-17: Prototyp ist funktionell
-
-- DB mit Tabelle für Benutzer.
-- DB Kommunikation zur Anwendung (inkl. Dokumentation)
-- Es gibt in der Anwendung einen /Admin/ Benutzer. Dieser Benutzer kann weitere Benutzer in den Rollen /Lehrende/ und bzw. oder /Studierende/ anlegen.
-      
-### 2021-01-10: Applikation fertiggestellt
-
-- Lehrende sind dazu in der Lage Tests anzulegen.
-- Studenten können einen ihnen zugewiesenen Test absolvieren.
-
-### 2021-01-10: Review und Überarbeitung fertig
-
-- Der Quellcode ist gemeinsam mit den Projektpartnern reviewt
-- Quellcodedokumentation abgeschlossen (Javadoc)
-- Projekt baut auf eigenem Buildserver (Continous Integration)
-
-### 2021-02-03: Diploarbeit fertig verschriftlicht 
-
-- Stilfehler sind behoben
-- DA Dokumentationsblatt ist unterschrieben, eingescannt und im Hauptdokument enthalten 
-- Praxisteil ist ebgeschlossen und verschriftlicht
-- Informationen sind im DA Portal eingegeben
-- Unterschriebene DA Betreuungsprotokolle sind in der DA enthalten
-- DA liegt dem Betreuer in ausgedruckter Form vor
-    
-
-## Anwendungsfälle
-
-Hier beschreiben Sie die Anwendungsfälle (=UseCases) Ihrer Anwendung / Diplomarbeit. Dabei sollte die Beschreibung auf hohem Niveau (also ohne implementierungsspezifische Details) erfolgen und typischerweise so benannt sein, wie die Ziele aus Sicht der Akteure heißen: Mitglied anmelden, Geld abheben, Auto zurückgeben.
-
-Jeder Anwendungsfall wird im selben Muster beschrieben. In den folgenden Absätzen ist zuerst eine allgemeine Beschreibung eines solchen Anwendungsfalls zu finden und dann ein Beispiel dazu.
-
-Damit man auch versteht wer mit welchem Anwendungsfall agiert bietet es sich an hier eine Übersichtsgrafik zu erstellen:
-
-![Übersicht Anwendungsfälle](img/anwendungsfalldiagramm.png){width=60%}
-
-\newpage
-### Anwendungsfallname
-Anwendungsfälle haben einen eindeutigen Namen aus dem man auf den Inhalt des Anwendungsfalls schließen kann. Wenn Sie agil arbeiten dann stellt ein Anwendungsfall eine UserStory dar welche im Backlog liegt und im Laufe des Projekts (in einem Sprint) abgearbeitet wird.
-
-#### Kurzbeschreibung
-Hier erfolgt eine kurze Beschreibung, was im Anwendungsfall passiert. Kurz bedeutet, dass es zwei oder drei Zeilen sind, selten mehr.
-      
-#### Trigger
-Der fachliche Grund bzw. die Gründe dafür, dass dieser Anwendungsfall ausgeführt 
-
-#### Vorbedingung
-Alle Bedingungen, die erfüllt sein müssen, damit dieser Anwendungsfall ausgeführt werden kann. Gibt es keine Vorbedingungen, so steht hier "keine".
-      
-#### Nachbedingung
-Der Zustand, der nach einem erfolgreichen Durchlauf des Anwendungsfalls erwartet wird.
-
-#### Akteure
-Akteure sind beteiligte Personen oder Systeme außerhalb (!) des beschriebenen Systems. Z. B. Anwender, angemeldeter Anwender, Kunde, System, Abrechnungsprozess.
-
-#### Standardablauf
-Hier wird das typische Szenario dargestellt, das leicht zu verstehen oder der am häufigsten vorkommende Fall ist. An seinem Ende steht die Zielerreichung des Primärakteurs. Die Ablaufschritte werden nummeriert und meist in strukturierter Sprache beschrieben. Ablaufpläne können jedoch ebenfalls benutzt werden, wenn es angebracht erscheint. Mittels der UML können diese Ablaufschritte in Aktivitätsdiagrammen oder Anwendungsfall-orientierten Sequenzdiagrammen dargestellt werden.
-
-#### Fehlersituationen
-Dies sind Szenarien, die sich außerhalb des Standardablaufs auch bei der (versuchten) Zielerreichung des Anwendungsfalls ereignen können. Sie werden meistens als konditionale Verzweigungen der normalen Ablaufschritte dargestellt. An ihrem Ende steht ein Misserfolg, die Zielerreichung des Primärakteurs oder eine Rückkehr zum Standardablauf.
-
-#### Systemzustand im Fehlerfall
-Der Zustand, der nach einem erfolglosen Durchlauf des Anwendungsfalls erwartet wird.
-
-
-\newpage
-### Benutzer Anlegen
-
-#### Kurzbeschreibung
-Der Benutzer "Admin" kann auf Anfrage einen neuen Benutzer als "Lehrende" und bzw. oder "Studierende" anlegen
-
-#### Trigger
-Admin legt auf Anfrage eines Benutzers einen neuen Account an
-
-#### Vorbedingung
-Benutzer als "Admin" angemeldet
-      
-#### Nachbedingung
-Es existiert ein Eintrag in der DB Benutzer Tabelle für den neu erstellten Benutzer. (Dieser kann sich anschließend in der Anwendung anmelden)
-
-#### Akteure
-* Admin
-
-#### Fehlersituationen
-Admin bricht die Aktion ab
-
-#### Systemzustand im Fehlerfall
-Benutzer wird nicht angelegt und wird verworfen
-
-#### Standardablauf:
-
-1. Admin drückt Button, um einen neuen Benutzer anzulegen
-2. Es öffnet sich ein Formular, indem die nötigen Benutzer-Informationen eingegeben werden (Name, Adresse, Telephonnummer, E-Mail, Geburtsdatum, Passwort-Hash, Rolle). Der neue Benutzer muss mindestens einer der Rollen "Lehrende" und "Studierende" angehören
-
-#### Alternativabläufe:
-
-* Admin drückt den Button, um die Aktion abzubrechen 
