@@ -14,7 +14,7 @@
 - **Herbei Gabriel** – Analyse, Konzeption & Qualitätssicherung 
 - **Karner André** – Softwareentwicklung & technische Umsetzung 
 
-**Betreuer:** Leitner Christoph 
+**Betreuer:** Dipl.-Wirt.-Ing. (FH) Leitner Christoph, BEd 
 **Zeitraum:** Juni 2025 – März 2026
 **Schule:** HTL Leoben
 
