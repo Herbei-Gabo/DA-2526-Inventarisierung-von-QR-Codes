@@ -1,12 +1,12 @@
 
 # Projekthandbuch – Diplomarbeit
 \textauthor{Dietmair}
-## „Inventarisierung mit QR-Codes“
+## Inventarisierung mit QR-Codes
 **Stand:** 08. Jänner 2026
 
 ---
 
-### 1. Projektübersicht
+### Projektübersicht
 **Thema:** Entwicklung einer webbasierten Inventarisierungslösung mit QR-Codes zur Verwaltung schulischer IT-Ausstattung
 
 **Team:**
@@ -20,7 +20,7 @@
 
 ---
 
-### 2. Zielsetzung
+### Zielsetzung
 Die Zielsetzung beschreibt das allgemeine Ziel und die Motivation hinter der Diplomarbeit. Dabei werden folgende Themen adressiert:
 
 - **Aktueller Stand:**  
@@ -49,7 +49,7 @@ Die Zielsetzung beschreibt das allgemeine Ziel und die Motivation hinter der Dip
 
 ---
 
-### 3. Projektorganisation
+### Projektorganisation
 **Kommunikation:**  
 - Microsoft Teams (Austausch, Statusupdates) 
 - Whatsapp Gruppe (schneller Austausch) 
@@ -65,7 +65,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 
 ---
 
-### 4. Zeitplan (aktualisiert – bis Ende Jänner 2026)
+### Zeitplan (aktualisiert – bis Ende Jänner 2026)
 
 | Zeitraum | Aufgabe / Meilenstein | Verantwortlich | Status |
 |-----------|----------------------|----------------|--------|
@@ -86,7 +86,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 
 ---
 
-### 5. Aktueller Projektstatus (Stand 08.01.2026)
+### Aktueller Projektstatus (Stand 08.01.2026)
  Datenbank- und Backend-Struktur fertiggestellt  
  Theoretische Grundlagen & Marktanalyse abgeschlossen  
  Projekthandbuch in Bearbeitung  
@@ -98,7 +98,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 
 
 
-## 6. To-do-Liste (nächste Schritte)
+## To-do-Liste (nächste Schritte)
 
 | Aufgabe | Verantwortlich | Fällig bis | Status |
 |--------|----------------|------------|--------|
@@ -114,7 +114,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokumentiert.
 
 
-## 7. Aufgabenhistorie
+## Aufgabenhistorie
 
 | Aufgabe / Meilenstein | Verantwortlich | Zeitraum | Ergebnis |
 |----------------------|----------------|----------|----------|
@@ -137,7 +137,7 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 
 
 ---
-### 8. Risiken & Herausforderungen
+### Risiken & Herausforderungen
 - Abhängigkeit von der Schul-IT-Infrastruktur (Serverrechte, Zugriff)  
 - Zeitliche Belastung durch parallelen Schulunterricht  
 - QR-Code-Leserkompatibilität auf unterschiedlichen Geräten  
@@ -145,7 +145,7 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 
 ---
 
-### 9. Dokumentenübersicht
+### Dokumentenübersicht
 | Dokument | Beschreibung | Speicherort |
 |-----------|---------------|--------------|
 | `DA_Hauptdokument.docx` | Hauptteil der Diplomarbeit | GitHub / Dokumentation |
@@ -155,7 +155,7 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 
 ---
 
-### 10. Zusammenfassung
+### Zusammenfassung
 Das Projekt „Inventarisierung mit QR-Codes“ verläuft planmäßig und zeigt einen klaren Fortschritt.  
 Die theoretische und technische Basis ist abgeschlossen, das **Frontend** und die **technologische Evaluierung** folgen in den Herbstferien.  
 Bis **Ende Dezember 2025** werden alle Tests und die finale Dokumentation abgeschlossen sein.  
@@ -163,7 +163,7 @@ Damit ist das Projekt sowohl technisch als auch organisatorisch auf einem sehr g
 
 ---
 
-### 11. Projektlog & Entscheidungsdokumentation
+### Projektlog & Entscheidungsdokumentation
 
 ---
 
