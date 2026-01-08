@@ -22,9 +22,6 @@ da-author:
   nachname: Karner
   klasse: 5BHWIN
   thema: Entwicklung und Programmierung einer funktionierenden Webbasierenden Inventarisierungslösung
-  ki-tools:
-  - name: OpenAI ChatGPT
-    zweck: Unterstützung bei Textstrukturierung, Markdown-Formatierung, inhaltlicher Gliederung sowie Erstellung von Mockup-Designkonzept
 
 - vorname: Stephan 
   nachname: Dietmair
