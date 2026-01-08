@@ -179,9 +179,9 @@ Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unter
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![  KennzahlenBeispiel Bild](img/KennzahlenBeispiel.JPG)  
+![ KennzahlenBeispiel Bild.](img/KennzahlenBeispiel.JPG)  
 
-*Abbildung 1: KennzahlenBeispiel*
+*Abbildung: KennzahlenBeispiel*
 
 
 
@@ -553,8 +553,8 @@ Der Chat mit der KI für das MockUp kann hier eingesehen werden: [Mockup Design]
 
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform **Geizhals** angelehnt ist:
 
-![  Geizhals Suchfilteroptionen Bild](img/GeizhalsFilterOptionen.png)  
-*Abbildung 2: Geizhals Suchfilteroptionen*
+![ Geizhals Suchfilteroptionen Bild.](img/GeizhalsFilterOptionen.png)  
+*Abbildung: Geizhals Suchfilteroptionen*
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die **Benutzerfreundlichkeit** zu erhöhen.
 
@@ -598,8 +598,8 @@ Die Anwendung bietet umfangreiche Such- und Filtermöglichkeiten:
   - Hinterleger  
   - Erscheinungsdatum  
 
-![  Filter & Suche Bild](img/FilterUndSuche.png)  
-*Abbildung 3: Such- und Filterfunktion*
+![ Filter & Suche Bild.](img/FilterUndSuche.png)  
+*Abbildung: Such- und Filterfunktion*
 
 ### Anzeige der Produkte
 
@@ -607,8 +607,8 @@ Die Produkte werden tabellarisch dargestellt. Nutzer können die Anzahl der ange
 
 Jedes Produkt kann durch einen Klick auf einen Pfeil geöffnet werden, um zusätzliche Informationen anzuzeigen. Über ein Kopiersymbol lässt sich die Inventarnummer direkt kopieren.  
 
-![  Produktliste Bild](img/ProduktListe.png)  
-*Abbildung 4: Produktliste*
+![ Produktliste Bild.](img/ProduktListe.png)  
+*Abbildung: Produktliste*
 
 ### Erstellung neuer Produkte
 
