@@ -180,9 +180,7 @@ Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unter
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![ Kennzahlen Beispiel.](img/KennzahlenBeispiel.JPG)  
-
-*Abbildung: KennzahlenBeispiel*
+![ Kennzahlen Beispiel.](img/KennzahlenBeispiel.JPG)
 
 
 ### Erklärung des Anlagenkennzahlbeispiels  
@@ -271,6 +269,7 @@ Sie speichert sowohl grundlegende Benutzerdaten wie Anzeigename, Benutzername un
 Zusätzlich werden Informationen zur Account-Historie wie Login-Zähler, letzter Login-Zeitpunkt sowie Sperrstatus erfasst.  
 Durch die integrierten Rechtefelder kann exakt gesteuert werden, welche Funktionen einem Benutzer zur Verfügung stehen, beispielsweise das Bearbeiten von Produkten oder Konfigurationen.  
 Die Verwendung einer `uniqueidentifier`-ID gewährleistet eine eindeutige Identifikation jedes Accounts und erleichtert die Referenzierung in anderen Tabellen.
+
 ![ T_Account Tabellen Schema.](img/TableSchemaTAccount.png)  
 
 
@@ -281,6 +280,7 @@ Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Akti
 
 Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.  
 Diese Historie ist insbesondere für Wartungszwecke, Sicherheitsanalysen und administrative Auswertungen von Bedeutung.
+
 ![ T_Account_History Tabellen Schema.](img/TableSchemaTAccountHistory.png)  
 
 
@@ -292,6 +292,7 @@ Dazu zählen Identifikationsmerkmale wie Inventarnummer und Produktname, kaufmä
 Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung zu Produkttypen, Bereichen, Lieferanten, Standorten und verantwortlichen Personen ermöglichen.  
 Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.  
 Die konsequente Verwendung von GUIDs stellt sicher, dass Produkte auch bei späteren Erweiterungen oder Datenimporten eindeutig identifizierbar bleiben.
+
 ![ T_Product Tabellen Schema.](img/TableSchemaTProduct.png)  
 
 
@@ -303,6 +304,7 @@ Sie bildet die Grundlage für die Strukturierung der Inventarnummern und ermögl
 Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und Lebensdauer gespeichert.  
 Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.  
 Diese Konfiguration trägt wesentlich zur Flexibilität und Anpassbarkeit der Inventarisierungslösung bei.
+
 ![ config_ProductType Tabellen Schema.](img/TableSchemaconfigProductType.png)  
 
 
@@ -313,6 +315,7 @@ Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten ode
 
 Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
 Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
+
 ![ config_ProductType Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
 
 ### Erklärung der RefTypes
