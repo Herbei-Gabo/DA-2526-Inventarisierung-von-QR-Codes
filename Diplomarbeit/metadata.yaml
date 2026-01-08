@@ -17,10 +17,8 @@ da-author:
   klasse: 5BHWIN
   thema: Analyse, Anwendung und Testen einer digitalen Inventarisierungslösung basierend auf QR-Codes
   ki-tools:
-  - name: ChatGPT3.5
-    zweck: Informationsbeschaffung
-  - name: Midjourney
-    zweck: Künstlerische Illustration
+  - name: ChatGPT 5.2
+    zweck: Unterstützung bei der Recherche, Strukturierung, Formulierung und sprachlichen Korrektur einzelner Abschnitte. 
 
 - vorname: Andre 
   nachname: Karner
