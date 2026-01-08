@@ -179,7 +179,8 @@ Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unter
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![KennzahlenBeispiel Bild](img/KennzahlenBeispiel.JPG)  
+![  KennzahlenBeispiel Bild](img/KennzahlenBeispiel.JPG)  
+
 *Abbildung 1: KennzahlenBeispiel*
 
 
@@ -552,7 +553,7 @@ Der Chat mit der KI für das MockUp kann hier eingesehen werden: [Mockup Design]
 
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform **Geizhals** angelehnt ist:
 
-![Geizhals Suchfilteroptionen Bild](img/GeizhalsFilterOptionen.png)  
+![  Geizhals Suchfilteroptionen Bild](img/GeizhalsFilterOptionen.png)  
 *Abbildung 2: Geizhals Suchfilteroptionen*
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die **Benutzerfreundlichkeit** zu erhöhen.
@@ -597,7 +598,7 @@ Die Anwendung bietet umfangreiche Such- und Filtermöglichkeiten:
   - Hinterleger  
   - Erscheinungsdatum  
 
-![Filter & Suche Bild](img/FilterUndSuche.png)  
+![  Filter & Suche Bild](img/FilterUndSuche.png)  
 *Abbildung 3: Such- und Filterfunktion*
 
 ### Anzeige der Produkte
@@ -606,7 +607,7 @@ Die Produkte werden tabellarisch dargestellt. Nutzer können die Anzahl der ange
 
 Jedes Produkt kann durch einen Klick auf einen Pfeil geöffnet werden, um zusätzliche Informationen anzuzeigen. Über ein Kopiersymbol lässt sich die Inventarnummer direkt kopieren.  
 
-![Produktliste Bild](img/ProduktListe.png)  
+![  Produktliste Bild](img/ProduktListe.png)  
 *Abbildung 4: Produktliste*
 
 ### Erstellung neuer Produkte
@@ -628,7 +629,7 @@ In der Bearbeitungsansicht steht eine **Top-Bar** mit folgenden Funktionen zur V
 
 - **Abbrechen**  
 
-![Produktseite Bild](img/Produktseite.png)  
+![  Produktseite Bild](img/Produktseite.png)  
 *Abbildung 5: Produktbearbeitungs- und -erstellungsseite*
 
 ### Unterschiede zwischen Bearbeitung und Erstellung
