@@ -69,30 +69,30 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 
 | Zeitraum | Aufgabe / Meilenstein | Verantwortlich | Status |
 |-----------|----------------------|----------------|--------|
-| **Juli 2025** | Projektstart, Themenfindung, Rollenverteilung | Team | ✅ abgeschlossen |
-| **Ende Juli 2025** | Einrichtung GitHub-Repository & Basisstruktur | Gabriel | ✅ |
-| **Anfang August 2025** | Analyse der Excel-Inventarliste, Planung Datenbank | André | ✅ |
-| **Mitte August 2025** | Erstellung Datenbankschema & Testdaten | André | ✅ |
-| **Ende August 2025** | Theoretische Grundlagen & Marktanalyse (QR, Alternativen) | Gabriel | ✅ |
-| **September 2025** | Projektorganisation, Projekthandbuch-Erstellung, Abstimmung Frontend | Stephan | ✅ |
-| **14. Oktober 2025** | Planung der Frontend-Entwicklung (Layout & Architektur) | André | ✅ |
-| **25. Oktober – 2. November 2025 (Herbstferien)** | **Frontend-Entwicklung (UI, Seitenaufbau)** | André | ✅ |
-| **25. Oktober – 2. November 2025 (Herbstferien)** | **Evaluierung Technologiealternativen (Frameworks, Hosting, QR-Tools)** | Stephan | ✅  |
-| **November 2025 (KW 45–48)** | Implementierung QR-Code-Funktion und Integration ins System | Gabriel + André | ✅ |
-| **Ende November 2025** | Erste Systemtests (mobile Nutzung, Datenbankzugriff) | Team | ✅ |
-| **Dezember 2025 (KW 49–52)** | Dokumentationsabschluss & Vorbereitung der Abgabe | Team (Leitung: Stephan) | ⏳ offen |
-| **9 Jänner 2026** | Gemeinsane Erstversion für Feedback abgegen | Team | ⏳ offen |
-| **Ende Jänner 2026** | Feinschliff von Suchfunktion, Admin-Menü, Druckfunktion sowie Responsive | Gabriel + André | ⏳ offen
+| **Juli 2025** | Projektstart, Themenfindung, Rollenverteilung | Team | abgeschlossen |
+| **Ende Juli 2025** | Einrichtung GitHub-Repository & Basisstruktur | Gabriel | abgeschlossen |
+| **Anfang August 2025** | Analyse der Excel-Inventarliste, Planung Datenbank | André | abgeschlossen |
+| **Mitte August 2025** | Erstellung Datenbankschema & Testdaten | André | abgeschlossen |
+| **Ende August 2025** | Theoretische Grundlagen & Marktanalyse (QR, Alternativen) | Gabriel | abgeschlossen |
+| **September 2025** | Projektorganisation, Projekthandbuch-Erstellung, Abstimmung Frontend | Stephan | abgeschlossen |
+| **14. Oktober 2025** | Planung der Frontend-Entwicklung (Layout & Architektur) | André | abgeschlossen |
+| **25. Oktober – 2. November 2025 (Herbstferien)** | **Frontend-Entwicklung (UI, Seitenaufbau)** | André | abgeschlossen |
+| **25. Oktober – 2. November 2025 (Herbstferien)** | **Evaluierung Technologiealternativen (Frameworks, Hosting, QR-Tools)** | Stephan | abgeschlossen  |
+| **November 2025 (KW 45–48)** | Implementierung QR-Code-Funktion und Integration ins System | Gabriel + André | abgeschlossen |
+| **Ende November 2025** | Erste Systemtests (mobile Nutzung, Datenbankzugriff) | Team | abgeschlossen |
+| **Dezember 2025 (KW 49–52)** | Dokumentationsabschluss & Vorbereitung der Abgabe | Team (Leitung: Stephan) | offen |
+| **9 Jänner 2026** | Gemeinsane Erstversion für Feedback abgegen | Team | offen |
+| **Ende Jänner 2026** | Feinschliff von Suchfunktion, Admin-Menü, Druckfunktion sowie Responsive | Gabriel + André | offen
 
 ---
 
 ### 5. Aktueller Projektstatus (Stand 08.01.2026)
-✅ Datenbank- und Backend-Struktur fertiggestellt  
-✅ Theoretische Grundlagen & Marktanalyse abgeschlossen  
-⚙️ Projekthandbuch in Bearbeitung  
-✅ Frontend-Phase & Evaluierung größtenteils abgeschlossen   
-⚙️ Dokumentation in Bearbeitung    
-⏳ Finale Tests in Vorbereitung 
+ Datenbank- und Backend-Struktur fertiggestellt  
+ Theoretische Grundlagen & Marktanalyse abgeschlossen  
+ Projekthandbuch in Bearbeitung  
+ Frontend-Phase & Evaluierung größtenteils abgeschlossen   
+ Dokumentation in Bearbeitung    
+ Finale Tests in Vorbereitung 
 
 ---
 
@@ -102,12 +102,12 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 
 | Aufgabe | Verantwortlich | Fällig bis | Status |
 |--------|----------------|------------|--------|
-| Dokumentationsabschluss & Abgabevorbereitung | Stephan | 31.12.2025 | 🕒 geplant |
-| Überarbeitung Admin-Menü (Struktur & Bedienbarkeit) | André | 20.01.2026 | 🕒 geplant |
-| Implementierung & Optimierung Suchfunktion | André & Gabriel | 31.01.2026 | ⏳ offen |
-| Überarbeitung QR-Code-Druckfunktion | Gabriel | 25.01.2026 | ⏳ offen |
-| Feinschliff Responsive Design (mobile Endgeräte) | André | 25.01.2026 | 🕒 geplant |
-| Erweiterte Funktionstests (Suche, QR-Druck, Mobile) | Team | 05.02.2026 | ⏳ offen |
+| Dokumentationsabschluss & Abgabevorbereitung | Stephan | 31.12.2025 | geplant |
+| Überarbeitung Admin-Menü (Struktur & Bedienbarkeit) | André | 20.01.2026 | geplant |
+| Implementierung & Optimierung Suchfunktion | André & Gabriel | 31.01.2026 | offen |
+| Überarbeitung QR-Code-Druckfunktion | Gabriel | 25.01.2026 | offen |
+| Feinschliff Responsive Design (mobile Endgeräte) | André | 25.01.2026 | geplant |
+| Erweiterte Funktionstests (Suche, QR-Druck, Mobile) | Team | 05.02.2026 | offen |
 
 
 ---
