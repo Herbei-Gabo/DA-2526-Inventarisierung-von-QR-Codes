@@ -1,89 +1,113 @@
-
 ---
 
-da-titel: Inventarisierung von QR Codes
-
-da-jahr: 2025/26 
-
-da-keywords: HTLLE, Inventarisierung, QR-Codes
-
-#lang: english
-
+da-titel: Conquer the Castle - A Videogame in Unreal Engine
+ 
+da-jahr: 2025/26
+ 
+da-keywords: HTLLE, CTC, ConquerTheCastle
+ 
+#lang: deutsch
+ 
 bibliography: [literatur.bib]
-
+ 
 da-author:
-- vorname: Gabriel 
-  nachname: Herbei
+
+- vorname: Nevio 
+
+  nachname: Peißl
+
   klasse: 5BHWIN
-  thema: Analyse, Anwendung und Testen einer digitalen Inventarisierungslösung basierend auf QR-Codes
+
+  thema: Frontend und Gamedesign
+
   ki-tools:
-  - name: ChatGPT3.5
-    zweck: Informationsbeschaffung
-  - name: Midjourney
-    zweck: Künstlerische Illustration
 
-- vorname: Andre 
-  nachname: Karner
+  - name: ChatGPT5.2
+
+    zweck: Informationsbeschaffung, Rechtschreibkorrektur
+ 
+- vorname: Rhys 
+
+  nachname: Schmiedpeter
+
   klasse: 5BHWIN
-  thema: Entwicklung und Programmierung einer funktionierenden Webbasierenden Inventarisierungslösung
+
+  thema: Design, Modell und Animation des Bosses
+
   ki-tools:
-  - name: OpenAI ChatGPT
-    zweck: Unterstützung bei Textstrukturierung, Markdown-Formatierung, inhaltlicher Gliederung sowie Erstellung von Mockup-Designkonzept
 
-- vorname: Stephan 
-  nachname: Dietmair
+  - name: ChatGPT5.2
+
+    zweck: Inspirations & Informationsbeschaffung, Rechtschreibkorrektur
+ 
+- vorname: Elias 
+
+  nachname: Grgic
+
   klasse: 5BHWIN
-  thema: Recherche und führen des Projekthandbuch, sowie Evaluierung der Technologiealternativen
 
+  thema: Backend
+
+  ki-tools:
+
+  - name: ChatGPT5.2
+
+    zweck: Informationsbeschaffung, Rechtschreibkorrektur
+ 
+ 
 da-betreuer:
-- paraffe: lech
-  name: Dipl.-Wirt.-Ing. (FH) Leitner Christoph, BEd
 
-- paraffe: kep
-  name: DI (FH) Klaus Kepplinger, MSc
+- paraffe: kuw
 
-da-kurzfassung-de: Die vorliegende Diplomarbeit beschäftigt sich mit der Entwicklung und Umsetzung einer webbasierten Inventarisierungslösung unter Verwendung von QR-Codes zur Verwaltung schulischer IT-Ausstattung. Der Ausgangspunkt ist der bisherige manuelle Prozess, bei dem Objekte wie Monitore, PCs, Beamer oder Tastaturen in einer Excel-Tabelle erfasst und verwaltet werden. Dieses Verfahren ist fehleranfällig, zeitaufwendig und wenig effizient.
+  name: DI Uwe Kondert, Msc.
+ 
+- paraffe: hg
 
-Ziel dieser Arbeit ist es, den bestehenden Prozess durch eine digitale Lösung zu ersetzen, die sowohl benutzerfreundlich als auch ressourcenschonend ist. Durch den Einsatz von QR-Codes wird die Identifikation und Zuordnung von Geräten deutlich vereinfacht. Nutzer:innen können mittels mobiler Endgeräte wie Smartphones oder Tablets direkt auf Informationen zugreifen, Objekte erfassen oder Änderungen vornehmen.
-
-Die Lösung wird auf Basis vorhandener schulischer Infrastruktur realisiert, wodurch zusätzliche Investitionen weitgehend vermieden werden können. Die Umsetzung erfolgt in mehreren Phasen – von der Anforderungsanalyse über die Implementierung bis hin zur Testphase mit ausgewählten Nutzer:innen. Anschließend wird die Lösung hinsichtlich Funktionalität, Effizienz und Benutzerfreundlichkeit evaluiert.
-
-Die Arbeit zeigt, wie durch den gezielten Einsatz digitaler Werkzeuge bestehende Verwaltungsprozesse an Schulen modernisiert und langfristig optimiert werden können.
-
-
-da-kurzfassung-en: This thesis focuses on the development and implementation of a web-based inventory system using QR codes to manage IT equipment in schools. The starting point is the current manual process, in which devices such as monitors, PCs, projectors, and keyboards are tracked using Excel spreadsheets. This method is inefficient, time-consuming, and prone to errors.
-
-The aim of this work is to replace the existing process with a digital solution that is both user-friendly and resource-efficient. QR codes simplify the identification and assignment of devices. Users can access and update information directly using mobile devices such as smartphones or tablets.
-
-The solution is implemented using existing school infrastructure, avoiding major additional costs. The development follows a structured plan, including requirement analysis, implementation, and a testing phase with selected users. Afterwards, the system is evaluated regarding functionality, efficiency, and usability.
-
-This thesis demonstrates how digital tools can modernize and sustainably improve administrative processes in educational institutions.
-
+  name: Ing. DI(FH) Günther Hutter, Msc.
+ 
+da-kurzfassung-de: Im Rahmen dieser Diplomarbeit wurde ein minimalistisches, mittelalterlich angehauchtes Bosskampf-Spiel für den PC entwickelt. Die 3D-Modellierung erfolgte mit Blender, während die spieltechnische Umsetzung in der Unreal Engine realisiert wurde. Die Arbeit zeigt exemplarisch, wie ein kleiner Game-Prototyp von der Konzeptphase über die Modellierung bis hin zur lauffähigen Anwendung entwickelt werden kann.
+ 
+da-kurzfassung-en: As part of this diploma project, a minimalist medieval-themed boss fight game for PC was developed. The 3D modeling was created using Blender, while the gameplay and technical implementation were realized with Unreal Engine. This work demonstrates how a small game prototype can be developed from the initial concept through modeling to a fully functional application.
+ 
+ 
+# KI Quellen müssen noch ersetzt werden
 
 da-kiquellen:
+
 - ki: ChatGPT4
+
   short-prompt: Erklärung Pandoc
+
   pdf-file: gpt-pandoc.pdf
-
+ 
 - ki: ChatGPT3.5
+
   short-prompt: Aufbau eines Atoms
+
   pdf-file: gpt-atom.pdf
-
-
+ 
+ 
 da-appendix:
+
 - abschnitt: Technische Dokumentation
+
   pdf-file: pandoc-manual.pdf
+
   seiten: 53-73
-
+ 
 - abschnitt: Betreuungsprotokolle
+
   pdf-file: betreuungsprotokolle.pdf    
-
-# Diplomarbeitsvereinbarungen müssen zum Schluss sein 
-
+ 
+# Diplomarbeitsvereinbarungen müssen zum Schluss sein
+ 
 - abschnitt: Diplomatbeitsvereinbarung Englisch
-  pdf-file: HTL-DA-Doku-EN.pdf
 
+  pdf-file: HTL-DA-Doku-EN.pdf
+ 
 - abschnitt: Diplomatbeitsvereinbarung Deutsch
+
   pdf-file: HTL-DA-Doku-DE.pdf
-  
+
 ---
+ 
