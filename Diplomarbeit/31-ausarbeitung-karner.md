@@ -258,133 +258,91 @@ Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Dip
 
 ## Datenbankmodell Erstellung
 
-### T_Account
-
-| Feldname                         | Datentyp                         | Beschreibung |
-|----------------------------------|----------------------------------|--------------|
-| ACCOUNT_ID                       | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
-| Convert_ID                       | varchar(50)                      | DatenImport Reference Number |
-| Account_Info_CreateFrom          | varchar(100)                     | Nicht sichtbarer Name des Erstellers |
-| Account_Info_CreateDate          | datetime                         | Nicht sichtbares Datum der Erstellung |
-| Account_ExternalID               | varchar(200)                     | ID von externen Systemen (LDAP) |
-| Account_Shortcut                 | varchar(10)                      | Benutzer-Kurzzeichen |
-| Account_DisplayName              | varchar(250)                     | Anzeigename |
-| Account_Username                 | varchar(100)                     | Account-Username |
-| Account_Password                 | varchar(500)                     | Verschlüsseltes Passwort |
-| Account_Email                    | varchar(200)                     | Benutzer-E-Mail |
-| Account_CountLogins              | int                              | Anzahl der Logins |
-| Account_LastLoginDate            | datetime                         | Letztes Login-Datum |
-| Account_LastLoginSource          | varchar(350)                     | Letzte Anmeldequelle |
-| Account_IsEnabled                | bit                              | Account aktiv |
-| Account_IsLocked                 | bit                              | Account gesperrt |
-| Account_LockReason               | varchar(512)                     | Sperrgrund |
-| Account_TwoWayAuthEnabled        | bit                              | 2FA aktiviert (derzeit nicht verwendet) |
-| Account_TwoWayAuthMode           | varchar(200)                     | 2FA-Art (SMS, E-Mail) |
-| Account_TwoWayAuthRecoverKey     | varchar(200)                     | 2FA-Wiederherstellungsschlüssel |
-| Account_Settings                 | text                             | Website-Einstellungen (JSON) |
-| Account_RightAllowEditConfig     | bit                              | Recht: Konfiguration bearbeiten |
-| Account_RightAllowEditProduct    | bit                              | Recht: Produkte bearbeiten |
-| Account_RightAllowExport         | bit                              | Recht: Daten exportieren |
+Das Datenbankmodell bildet die zentrale Grundlage der webbasierten Inventarisierungslösung.  
+Es wurde so entworfen, dass alle relevanten Informationen strukturiert, konsistent und nachvollziehbar gespeichert werden können. Dabei wurde besonderer Wert auf Erweiterbarkeit, Datenintegrität sowie eine klare Trennung der einzelnen Verantwortungsbereiche gelegt. Es ist wichtig zu erwähnen das jeder Primary Key eine **sequential uniqueidentifier** ist.
+Die folgenden Tabellen repräsentieren die wichtigsten Entitäten der Anwendung und bilden gemeinsam die Basis für Benutzerverwaltung, Produktverwaltung sowie konfigurierbare Stammdaten.
 
 
+###  Erklärung der T_Account Tabelle
 
-### T_Account_History
+Die Tabelle **T_Account** dient der Verwaltung aller Benutzerkonten innerhalb der Inventarisierungslösung.  
+Sie speichert sowohl grundlegende Benutzerdaten wie Anzeigename, Benutzername und E-Mail-Adresse als auch sicherheitsrelevante Informationen wie verschlüsselte Passwörter, Login-Status und Berechtigungen.  
 
-| Feldname                         | Datentyp                         | Beschreibung |
-|----------------------------------|----------------------------------|--------------|
-| ACCOUNTHISTORY_ID                | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
-| ACCOUNT_ID                       | uniqueidentifier                 | Referenz auf Account |
-| AccountHistory_ActionCodeNum     | int                              | Aktionscode (0=Text, 1=Login, 2=Logout, …) |
-| AccountHistory_Date              | datetime                         | Datum |
-| AccountHistory_ActionCode        | varchar(100)                     | Aktionsbeschreibung |
-| AccountHistory_ShortInfo         | varchar(250)                     | Kurzbeschreibung (optional) |
-| AccountHistory_Details           | varchar(2048)                    | Detailinformationen (JSON, optional) |
+Zusätzlich werden Informationen zur Account-Historie wie Login-Zähler, letzter Login-Zeitpunkt sowie Sperrstatus erfasst.  
+Durch die integrierten Rechtefelder kann exakt gesteuert werden, welche Funktionen einem Benutzer zur Verfügung stehen, beispielsweise das Bearbeiten von Produkten oder Konfigurationen.  
+Die Verwendung einer `uniqueidentifier`-ID gewährleistet eine eindeutige Identifikation jedes Accounts und erleichtert die Referenzierung in anderen Tabellen.
+![ T_Account Tabellen Schema.](img/TableSchemaTAccount.png)  
 
 
+###  Erklärung der T_Account_History Tabelle
 
-### T_Product
+Die Tabelle **T_Account_History** dient zur Protokollierung von Benutzeraktionen und sicherheitsrelevanten Ereignissen.  
+Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Aktionen wie Anmeldungen, Abmeldungen oder systemrelevante Änderungen.  
 
-| Feldname                         | Datentyp                         | Beschreibung |
-|----------------------------------|----------------------------------|--------------|
-| PRODUCT_ID                       | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
-| Convert_ID                       | varchar(50)                      | DatenImport Reference Number |
-| Product_InfoCreateFrom           | varchar(100)                     | Ersteller (automatisch gesetzt) |
-| Product_InfoCreateDate           | datetime                         | Erstellungsdatum (automatisch gesetzt) |
-| Product_ExternalID               | varchar(200)                     | Externe ID |
-| Product_CreateDate               | datetime                         | Erstellungsdatum |
-| Product_InvNum                   | varchar(100)                     | Inventarnummer |
-| Product_Name                     | varchar(200)                     | Produktname |
-| Product_Description              | varchar(300)                     | Produktbeschreibung |
-| Product_CostGross                | money                            | Bruttokosten |
-| Product_InvoiceDate              | datetime                         | Rechnungsdatum |
-| Product_InvoiceNum               | varchar(100)                     | Rechnungsnummer |
-| Product_SerialNumber             | varchar(100)                     | Seriennummer |
-| Product_WarrantyUntil            | datetime                         | Garantie bis |
-| Product_DeInventoryReason        | varchar(500)                     | Entinventarisierungsgrund |
-| Product_DeInventoryDate          | datetime                         | Entinventarisierungsdatum |
-| Product_TypeID                   | uniqueidentifier                 | Produkttyp |
-| Product_AreaID                   | uniqueidentifier                 | Bereich |
-| Product_SupplierID               | uniqueidentifier                 | Lieferant |
-| Product_LocationID               | uniqueidentifier                 | Standort |
-| Product_DepositorAccountID       | uniqueidentifier                 | Einbringer |
-| Product_ResponsiblePersonID      | uniqueidentifier                 | Verantwortliche Person |
+Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.  
+Diese Historie ist insbesondere für Wartungszwecke, Sicherheitsanalysen und administrative Auswertungen von Bedeutung.
+![ T_Account_History Tabellen Schema.](img/TableSchemaTAccountHistory.png)  
 
 
+### Erklärung der T_Product Tabelle
 
-### config_ProductType
+Die Tabelle **T_Product** stellt das Herzstück der Inventarisierung dar und speichert sämtliche Informationen zu inventarisierten Produkten.  
+Dazu zählen Identifikationsmerkmale wie Inventarnummer und Produktname, kaufmännische Daten wie Kosten und Rechnungsinformationen sowie technische Angaben wie Seriennummer und Garantiezeitraum.  
 
-| Feldname                        | Datentyp                         | Beschreibung |
-|---------------------------------|----------------------------------|--------------|
-| PRODUCTTYPE_ID                  | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
-| Convert_ID                      | varchar(50)                      | DatenImport Reference Number |
-| ProductType_ParentID            | uniqueidentifier                 | Elternelement |
-| ProductType_CreateFrom          | varchar(100)                     | Ersteller |
-| ProductType_CreateDate          | datetime                         | Erstellungsdatum |
-| ProductType_Number              | varchar(50)                      | Inventarkennzahl |
-| ProductType_Name                | varchar(200)                     | Typenname |
-| ProductType_InfoText            | varchar(500)                     | Beschreibung |
-| ProductType_LifetimeInYears     | int                              | Gültigkeit in Jahren |
-| ProductType_IsSelectable        | bit                              | Auswählbar |
+Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung zu Produkttypen, Bereichen, Lieferanten, Standorten und verantwortlichen Personen ermöglichen.  
+Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.  
+Die konsequente Verwendung von GUIDs stellt sicher, dass Produkte auch bei späteren Erweiterungen oder Datenimporten eindeutig identifizierbar bleiben.
+![ T_Product Tabellen Schema.](img/TableSchemaTProduct.png)  
 
 
+### Erklärung der config_ProductType Tabelle
 
-### config_DetailInfo
+Die Tabelle **config_ProductType** dient zur Verwaltung der unterschiedlichen Produkttypen innerhalb des Systems.  
+Sie bildet die Grundlage für die Strukturierung der Inventarnummern und ermöglicht eine hierarchische Gliederung von Produktkategorien durch Parent-Child-Beziehungen.  
 
-| Feldname                        | Datentyp                         | Beschreibung |
-|---------------------------------|----------------------------------|--------------|
-| DETAILINFO_ID                   | uniqueidentifier ROWGUIDCOL      | PRIMARY_KEY + ROW_GUID = newsequentialid() |
-| Convert_ID                      | varchar(50)                      | DatenImport Reference Number |
-| DetailInfo_InfoCreateFrom       | varchar(100)                     | Ersteller |
-| DetailInfo_InfoCreateDate       | datetime                         | Erstellungsdatum |
-| DetailInfo_ExternalID           | varchar(200)                     | Externe ID |
-| DetailInfo_RefType              | int                              | Referenztyp |
-| DetailInfo_Name                 | varchar(200)                     | Name |
-| DetailInfo_InfoText             | varchar(500)                     | Beschreibung |
+Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und Lebensdauer gespeichert.  
+Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.  
+Diese Konfiguration trägt wesentlich zur Flexibilität und Anpassbarkeit der Inventarisierungslösung bei.
+![ config_ProductType Tabellen Schema.](img/TableSchemaconfigProductType.png)  
 
 
+### Erklärung der config_DetailInfo Tabelle
 
-### RefTypes
+Die Tabelle **config_DetailInfo** wird für die zentrale Verwaltung unterschiedlicher konfigurierbarer Stammdaten verwendet.  
+Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten oder Standorte einheitlich abzubilden und zu pflegen.  
 
-| Konfiguration            | Wert | Beschreibung |
-|--------------------------|------|--------------|
-| config_Area              | 1    | Bereich / Verwendung |
-| config_Supplier          | 2    | Lieferant |
-| config_Location          | 3    | Standort (Raum) |
-| config_ResponsiblePerson | 4    | Zuständige Person |
-| config_Depositor         | 5    | Einbringer (ACCOUNT_ID) |
+Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
+Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
+![ config_ProductType Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
 
-**RefType Erklärung:**  
-Diese Lösung ermöglicht eine einfache Wartbarkeit sowie eine zentrale Konfiguration der Daten.  
-Zusätzlich erlaubt sie die Umsetzung einer einheitlichen Benutzeroberfläche für die Bearbeitung dieser Daten, wobei lediglich der jeweilige **RefType** variiert.
+### Erklärung der RefTypes
+
+Die **RefTypes** definieren die möglichen Referenztypen, die in der Tabelle `config_DetailInfo` verwendet werden.  
+Jeder RefType repräsentiert eine bestimmte Kategorie von Stammdaten, beispielsweise Bereiche, Lieferanten oder Standorte.  
+
+Durch dieses Konzept wird eine zentrale und flexible Konfigurationslogik realisiert.  
+Neue Konfigurationstypen können mit minimalem Aufwand ergänzt werden, ohne dass zusätzliche Tabellen oder komplexe Anpassungen notwendig sind.  
+Dies ermöglicht eine konsistente Benutzeroberfläche sowie eine einheitliche Verarbeitung der verschiedenen Konfigurationsdaten innerhalb der Anwendung.
+
+Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in der folgenden Tabelle dargestellt:
+
+| RefType-Bezeichnung        | Wert | Beschreibung              |
+|----------------------------|------|---------------------------|
+| config_Area                | 1    | Bereich / Verwendung      |
+| config_Supplier            | 2    | Lieferant                 |
+| config_Location            | 3    | Standort (Raum)           |
+| config_ResponsiblePerson   | 4    | Zuständige Person         |
+| config_Depositor           | 5    | Hinterleger               |
+
+Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigurationsart und ermöglichen eine einfache Zuordnung innerhalb der Datenbank sowie der Benutzeroberfläche.
+
 
 ---
 
-## Testdaten  
-Die verwendeten Testdaten stammen aus der Excel-Liste  
-[`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx)  
-und wurden manuell in die Datenbank übernommen.
+## Testdaten Erstellung
+Die verwendeten Testdaten stammen aus der Excel-Liste [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx) und wurden manuell in die Datenbank übernommen.
 
-### T_Account  
+### Testdaten der Tabelle T_Account  
 Das verwendete Passwort entspricht **nicht** dem tatsächlichen Passwort.  
 Aus Sicherheitsgründen wird dieses hier lediglich als **xxx** angegeben.
 
@@ -403,7 +361,7 @@ exec sp_Account_Create
 GO
 ```
 
-### config_ProductType
+### Testdaten der Tabelle config_ProductType
 Diese Daten stammen aus der Datei [`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx) und wurden mithilfe von SSMS aufbereitet.
 Es werden hier bewusst nicht alle Einträge angeführt, da dies den Umfang der Arbeit unverhältnismäßig vergrößern würde.
 Nachfolgend sind lediglich einige exemplarische Beispiele dargestellt:
@@ -420,7 +378,7 @@ exec sp_ProductType_Create 'Andre Karner','408-03','Steckkarten',NULL,NULL
 exec sp_ProductType_Create 'Andre Karner','408-04','Drucker',NULL,NULL
 ```
 
-### config_ProductType RefType 1
+### Testdaten der Tabelle config_DetailInfo mit RefType 1
 ```sql
 exec sp_ProductArea_Create 'Andre Karner','####','AV',NULL
 exec sp_ProductArea_Create 'Andre Karner','####','IT',NULL
@@ -439,7 +397,7 @@ exec sp_ProductArea_Create 'Andre Karner','####','Allgemein',NULL
 exec sp_ProductArea_Create 'Andre Karner','####','Hydraulik',NULL
 ```
 
-### config_ProductType RefType 2
+### Testdaten der Tabelle config_DetailInfo mit RefType 2
 ```sql
 exec sp_ProductSupplier_Create 'Andre Karner','####','TEKAEF',NULL
 exec sp_ProductSupplier_Create 'Andre Karner','####','MediaMarkt',NULL
@@ -462,7 +420,7 @@ exec sp_ProductSupplier_Create 'Andre Karner','####','LBE GmbH',NULL
 exec sp_ProductSupplier_Create 'Andre Karner','####','Neuson Hydrotec',NULL
 ```
 
-### config_ProductType RefType 3
+### Testdaten der Tabelle config_DetailInfo mit RefType 3
 ```sql
 exec sp_ProductLocation_Create 'Andre Karner','####','BK',NULL
 exec sp_ProductLocation_Create 'Andre Karner','####','ENTSORGT',NULL
@@ -483,7 +441,7 @@ exec sp_ProductLocation_Create 'Andre Karner','####','Internat',NULL
 exec sp_ProductLocation_Create 'Andre Karner','####','R13',NULL
 ```
 
-### config_ProductType RefType 4
+### Testdaten der Tabelle config_DetailInfo mit RefType 4
 ```sql
 exec sp_ProductResponsible_Create 'Andre Karner','####','KEP',NULL
 exec sp_ProductResponsible_Create 'Andre Karner','####','Kep',NULL
@@ -502,7 +460,7 @@ exec sp_ProductResponsible_Create 'Andre Karner','####','Pre',NULL
 exec sp_ProductResponsible_Create 'Andre Karner','####','Kach',NULL
 ```
 
-### config_ProductType RefType 5
+### Testdaten der Tabelle config_DetailInfo mit RefType 5
 ```sql
 exec sp_ProductDepositor_Create 'Andre Karner','####','-',NULL
 exec sp_ProductDepositor_Create 'Andre Karner','####','Kep',NULL
@@ -557,80 +515,68 @@ Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umse
 
 ---
 
-## Tatsächliche Umsetzung
+## Die tatsächliche Umsetzung
 
-Das Endprodukt fungiert als **Onepager**, bei dem der Seiteninhalt je nach Aktion dynamisch über **Ajax** ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird.  
+Das Endprodukt fungiert als **Onepager**, bei dem der Seiteninhalt je nach Aktion dynamisch über **Ajax** ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist **vollständig responsiv** und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
 
-Ein besonderes Feature ist die QR-Code-Integration: Jeder QR-Code wird im Bearbeitungsmodus angezeigt und kann auf dem realen Objekt angebracht werden, sodass die zugehörigen Daten direkt abgerufen werden können. Unter jedem QR-Code wird zusätzlich die **Inventarnummer** angezeigt, damit diese auch für Menschen leicht lesbar ist.  
+### Erklärung der QR-Code-Funktion
 
-Die Webseite ist **vollständig responsiv** und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
+Ein zentrales Feature der Inventarisierungslösung ist die integrierte **QR-Code-Funktion**.  
+Für jedes Produkt wird im Bearbeitungsmodus automatisch ein individueller QR-Code generiert und angezeigt. Dieser QR-Code kann ausgedruckt und direkt am realen Objekt angebracht werden, wodurch ein schneller und direkter Zugriff auf die zugehörigen Produktdaten ermöglicht wird.
 
-### Navigationsleiste
+Unterhalb jedes QR-Codes wird zusätzlich die **Inventarnummer** in Klartext dargestellt. Dadurch ist die Identifikation des Produkts nicht nur digital, sondern auch für Menschen ohne technische Hilfsmittel jederzeit eindeutig möglich.
 
-Die Navigationsleiste besteht aus drei Hauptpunkten:
+Technisch besteht der QR-Code aus der Domäne der Webanwendung sowie einem URL-Parameter, der die eindeutige Identifikationsnummer (Primary Key) des Produkts beinhaltet. Beim Scannen des QR-Codes wird der Benutzer automatisch auf die entsprechende Bearbeitungsseite des Produkts weitergeleitet. Dadurch können die hinterlegten Informationen unmittelbar eingesehen und – sofern entsprechende Berechtigungen vorhanden sind – auch bearbeitet werden.
 
-- **Einstellungen**  
-  Hier können kontobezogene Einstellungen angepasst werden, z. B. die Standardanzahl der angezeigten Einträge in der Produktliste. Administratoren verfügen über zusätzliche Optionen, wie das Anpassen des Speicherpfads für QR-Codes.
+Dieses Konzept erleichtert die Verwaltung physischer Inventargegenstände erheblich und reduziert den Zeitaufwand für das Suchen und Zuordnen von Produktdaten auf ein Minimum.
 
-- **Drucken**  
-  Zeigt alle gespeicherten QR-Codes an, sodass diese gesammelt ausgedruckt werden können.
+### Funktionen der Navigationsleiste
 
-- **Ausloggen**  
-  Ermöglicht das Abmelden vom System.
+Die Navigationsleiste stellt das zentrale Steuerelement der Anwendung dar und ermöglicht den schnellen Zugriff auf alle wesentlichen Funktionen der Inventarisierungslösung. Sie ist übersichtlich aufgebaut und besteht aus drei klar definierten Hauptpunkten, die je nach Benutzerrolle unterschiedliche Funktionalitäten bereitstellen.
+
+Über den Menüpunkt **Einstellungen** können kontobezogene Konfigurationen vorgenommen werden. Dazu zählt unter anderem die Festlegung, wie viele Produkte standardmäßig in der Produktliste angezeigt werden. Benutzer mit Administratorrechten verfügen zusätzlich über erweiterte Optionen, wie beispielsweise die Anpassung des Speicherpfads für generierte QR-Codes oder weitere systemrelevante Konfigurationen.
+
+Der Menüpunkt **Drucken** bietet eine zentrale Übersicht aller bereits erstellten QR-Codes. Diese können gesammelt ausgewählt und in einem Schritt ausgedruckt werden, was insbesondere bei der Inventarisierung mehrerer Objekte eine erhebliche Zeitersparnis darstellt.
+
+Über **Ausloggen** kann sich der Benutzer jederzeit sicher vom System abmelden, wodurch ein unbefugter Zugriff auf die Anwendung verhindert wird.
 
 ### Such- und Filterfunktion
 
-Die Anwendung bietet umfangreiche Such- und Filtermöglichkeiten:
+Um auch bei einer großen Anzahl von Inventargegenständen effizient arbeiten zu können, stellt die Anwendung umfangreiche Such- und Filterfunktionen zur Verfügung. Diese ermöglichen es, gezielt nach bestimmten Produkten zu suchen und die angezeigten Ergebnisse nach unterschiedlichen Kriterien einzuschränken.
 
-- **Suche nach:**  
-  - Name  
-  - Inventarnummer  
+Die **Suchfunktion** erlaubt eine direkte Suche nach dem Produktnamen oder der Inventarnummer. Ergänzend dazu können mehrere **Filterkriterien** gleichzeitig verwendet werden, darunter Produktkategorie, Bereich, Lieferant, Standort, verantwortliche Person, Hinterleger sowie das Erscheinungsdatum. Durch die Kombination dieser Filter lassen sich auch komplexe Abfragen schnell und übersichtlich darstellen.
 
-- **Filter nach:**  
-  - Produktkategorie  
-  - Bereich  
-  - Lieferant  
-  - Standort  
-  - Verantwortliche Person  
-  - Hinterleger  
-  - Erscheinungsdatum  
+![ Such- und Filterfunktion.](img/FilterUndSuche.png)
 
-![ Such- und Filterfunktion.](img/FilterUndSuche.png)  
 
 ### Anzeige der Produkte
 
-Die Produkte werden tabellarisch dargestellt. Nutzer können die Anzahl der angezeigten Einträge anpassen und zwischen Seiten wechseln. Die Liste aktualisiert nur den sichtbaren Inhalt, wodurch langes Scrollen vermieden wird.  
+Die Inventargegenstände werden in einer übersichtlichen tabellarischen Form dargestellt. Nutzer haben die Möglichkeit, die Anzahl der angezeigten Einträge individuell anzupassen und zwischen mehreren Seiten zu wechseln. Dabei wird jeweils nur der sichtbare Bereich der Liste aktualisiert, wodurch langes Scrollen vermieden und die Performance der Anwendung verbessert wird.
 
-Jedes Produkt kann durch einen Klick auf einen Pfeil geöffnet werden, um zusätzliche Informationen anzuzeigen. Über ein Kopiersymbol lässt sich die Inventarnummer direkt kopieren.  
+Jeder Produkteintrag kann über ein Pfeilsymbol aufgeklappt werden, um zusätzliche Detailinformationen anzuzeigen. Zudem steht ein Kopiersymbol zur Verfügung, mit dem die Inventarnummer eines Produkts direkt in die Zwischenablage übernommen werden kann. Dies erleichtert die Weiterverarbeitung der Daten erheblich.
 
-![ Produktliste.](img/ProduktListe.png)  
+![ Produktliste.](img/ProduktListe.png)
+
 
 ### Erstellung neuer Produkte
 
-Ein großes **Plus-Symbol** in der Produktliste ermöglicht das Hinzufügen neuer Produkte. Dabei kann gewählt werden, ob die Daten von einer bestehenden Inventarnummer übernommen oder ein komplett neues Produkt erstellt werden sollen.  
+Das Hinzufügen neuer Inventargegenstände erfolgt über ein gut sichtbares **Plus-Symbol** innerhalb der Produktliste. Beim Erstellen eines neuen Produkts kann gewählt werden, ob die Daten von einer bestehenden, gültigen Inventarnummer übernommen oder ein vollständig neues Produkt angelegt werden soll.
 
-In beiden Fällen müssen eine **Produktkategorie** und ein **Erstellungsdatum** angegeben werden, um die korrekte Inventarnummer automatisch zu generieren. Eine manuelle Änderung der Inventarnummer ist **nicht möglich**, da dies sonst zu **Inkonsistenzen in der fortlaufenden Nummerierung** führen könnte.
+Unabhängig von der gewählten Option müssen eine **Produktkategorie** sowie ein **Erstellungsdatum** angegeben werden. Auf Basis dieser Informationen wird die Inventarnummer automatisch generiert. Eine manuelle Änderung der Inventarnummer ist bewusst nicht vorgesehen, da dies zu Inkonsistenzen in der fortlaufenden Nummerierung und somit zu fehlerhaften Zuordnungen führen könnte.
 
 ### Bearbeitung eines Produktes
 
-Bei jedem Produkt gibt es ein **Bearbeitungssymbol**, das die Bearbeitungsansicht öffnet. Dort können alle Produktinformationen geändert werden, **mit Ausnahme der Inventarnummer und der Produktkategorie**, um die Datenkonsistenz zu wahren. Das **Erstellungsdatum** kann im Bearbeitungsmodus angepasst werden, da es die Inventarnummer nicht beeinflusst.
+Für jedes bestehende Produkt steht ein **Bearbeitungssymbol** zur Verfügung, über das die Bearbeitungsansicht geöffnet wird. In dieser Ansicht können nahezu alle Produktinformationen angepasst werden. Ausgenommen davon sind die **Inventarnummer** und die **Produktkategorie**, da diese wesentliche Bestandteile der eindeutigen Identifikation eines Produkts darstellen und nicht verändert werden dürfen.
 
-In der Bearbeitungsansicht steht eine **Top-Bar** mit folgenden Funktionen zur Verfügung:
+Das Erstellungsdatum kann im Bearbeitungsmodus nicht mehr angepasst werden, da eine nachträgliche Änderung die bereits vergebene Inventarnummer beeinflussen und zu Inkonsistenzen führen würde.
+Zusätzlich befindet sich in der Bearbeitungsansicht eine übersichtliche Top-Bar, in der zentrale Aktionen gebündelt zur Verfügung stehen.
 
-- **Drucken**  
-  Fügt den QR-Code zur Druckansicht hinzu, sodass mehrere QR-Codes gemeinsam ausgedruckt werden können.
+Dazu zählen das **Hinzufügen des QR-Codes zur Druckansicht**, das **Speichern** der vorgenommenen Änderungen sowie das **Abbrechen** der Bearbeitung ohne Übernahme der Änderungen.
 
-- **Speichern**  
-
-- **Abbrechen**  
-
-![ Produktbearbeitungs- und -Erstellungsseite](img/Produktseite.png)  
+![ Produktbearbeitungs- und -Erstellungsseite](img/Produktseite.png)
 
 ### Unterschiede zwischen Bearbeitung und Erstellung
 
-Sowohl im **Erstellungsmodus** als auch im **Bearbeitungsmodus** können die **Inventarnummer** und die **Produktkategorie** **nicht geändert werden**.  
-Dies ist bewusst so implementiert, um **Inkonsistenzen bei der automatischen Vergabe nachfolgender Inventarnummern** zu verhindern und die **Datenintegrität** zu gewährleisten.  
-
-Ein wesentlicher Unterschied besteht darin, dass im **Erstellungsmodus** das **Erstellungsdatum fixiert** ist, während es im **Bearbeitungsmodus** angepasst werden kann. So bleibt die fortlaufende Nummerierung zuverlässig und konsistent.
+Zwischen dem Erstellungs- und dem Bearbeitungsmodus bestehen bewusst definierte Unterschiede. In beiden Modi ist es nicht möglich, die **Inventarnummer** sowie die **Produktkategorie** und das **Erstellungsdatum** zu verändern. Diese Einschränkung dient der Sicherstellung einer konsistenten und fortlaufenden Nummerierung sowie der Wahrung der Datenintegrität innerhalb der Datenbank.
 
 ---
