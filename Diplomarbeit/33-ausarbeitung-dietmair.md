@@ -65,7 +65,7 @@ Gerade bei Softwareprojekten mit unvollständig definierten Anforderungen ist ei
 
 ### 5.2 Abgrenzung zu klassischen Modellen
 
-Das klassische Wasserfallmodell sieht eine strikte Abfolge von Phasen vor (Analyse → Design → Implementierung → Test). Änderungen während der Umsetzungsphase sind nur schwer möglich.
+Das klassische Wasserfallmodell sieht eine strikte Abfolge von Phasen vor (Analyse -> Design -> Implementierung -> Test). Änderungen während der Umsetzungsphase sind nur schwer möglich.
 
 Da sich im Verlauf der Diplomarbeit Anforderungen, technische Entscheidungen und Designaspekte weiterentwickelten, wäre ein starres Modell ungeeignet gewesen. Das gewählte agile Vorgehen ermöglichte hingegen eine iterative Verfeinerung des Systems.
 
