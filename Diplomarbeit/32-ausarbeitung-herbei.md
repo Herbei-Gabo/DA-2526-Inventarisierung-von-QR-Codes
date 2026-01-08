@@ -3,7 +3,7 @@
 ## Begriffsklärung: Inventarisierung
 Unter Inventarisierung versteht man den strukturierten Prozess der Erfassung, Organisation und Dokumentation von materiellen Vermögenswerten einer Organisation. Im schulischen Kontext betrifft dies insbesondere Geräte wie Monitore, Personal Computer, Beamer, Fernbedienungen, Tastaturen und weitere technische oder pädagogische Ausstattung.
 
-Die Einführung einer digitalen Inventarisierungslösung ermöglicht eine effizientere und transparentere Verwaltung dieser Gegenstände. Insbesondere bei einer größeren Anzahl an Geräten oder häufigen Standortwechseln stößt eine manuelle Erfassung mit Papierlisten oder Tabellenprogrammen schnell an ihre Grenzen.
+Die Einführung einer digitalen Inventarisierungslösung ermöglicht eine effizientere und transparentere Verwaltung dieser Gegenstände. Insbesondere bei einer größeren Anzahl an Geräten oder häufigen Standortwechseln stößt eine manuelle Erfassung mit Papierlisten oder Tabellenprogrammen schnell an ihre Grenzen. [@kister_inventarisierung_2024]
 
 ## Ziel der Digitalisierung: Vereinfachung des schulischen Prozesses
 Die Digitalisierung des Inventarisierungsprozesses verfolgt das Ziel, den Aufwand für schulisches Verwaltungspersonal deutlich zu reduzieren und zugleich die Genauigkeit der Bestandsdaten zu erhöhen. Eine einfache Erfassung verringert die Fehleranfälligkeit, beschleunigt den Zugriff auf Informationen und verbessert die Wartbarkeit der Inventardaten erheblich. Dabei steht nicht nur die Effizienz im Vordergrund, sondern auch die langfristige Entlastung der schulischen Infrastruktur durch transparente, leicht wartbare Datenstrukturen.
@@ -22,7 +22,7 @@ Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware 
 Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch zukunftsfähig ist. Insbesondere bei wachsendem Bestand und höherem Digitalisierungsgrad wird eine professionelle, digitale Lösung notwendig, die zentrale Datenhaltung, Mehrbenutzerfähigkeit und mobile Zugriffsmöglichkeiten vereint.
 
 ## QR-Codes als technologische Grundlage
-Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.
+Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.[@bendel_qrcode_gabler]
 
 ![ Darstellung eines QR-Codes.](img/qrcode.gif)
 
@@ -71,9 +71,9 @@ Am Markt existieren sowohl kostenlose als auch kostenpflichtige Inventarisierung
 Eine speziell auf Schulen zugeschnittene kostenlose Inventarisierungssoftware existiert derzeit nicht auf dem Markt. Vielmehr richten sich die vorhandenen kostenlosen Programme an kleine Unternehmen oder den E-Commerce-Bereich. Beispiele hierfür sind:
 
 - [Zoho Inventory](https://www.zoho.com/inventory/)  
-- [Odoo Inventory](https://www.odoo.com/de_DE/app/inventory)  
+- [Odoo Inventory](https://www.odoo.com/de_DE/app/inventory) [@odoo_inventory]  
 
-Diese Lösungen bieten eine Vielzahl von Funktionen wie Lagerverwaltung, Bestellwesen und Lieferkettenmanagement. Für den schulischen Bereich ist dieser Funktionsumfang jedoch überdimensioniert und führt zu einem unnötigen Verwaltungsaufwand.  
+Diese Lösungen bieten eine Vielzahl von Funktionen wie Lagerverwaltung, Bestellwesen und Lieferkettenmanagement.[@fischer_inventarsoftware_2024] Für den schulischen Bereich ist dieser Funktionsumfang jedoch überdimensioniert und führt zu einem unnötigen Verwaltungsaufwand.  
 
 **Vorteile**:  
 - kostenlos nutzbar  
@@ -94,7 +94,7 @@ Im Bereich der kostenpflichtigen Softwarelösungen existieren mehrere Anbieter, 
 
 #### Hoppe
 
-Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist eine etablierte Lösung zur Inventarisierung, die vor allem von Behörden, Krankenhäusern und mittelständischen Unternehmen genutzt wird. Sie wird in über 11 Ländern mit mehr als 3300 Kunden eingesetzt.
+Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) [@hoppe_inventarsoftware] ist eine etablierte Lösung zur Inventarisierung, die vor allem von Behörden, Krankenhäusern und mittelständischen Unternehmen genutzt wird. Sie wird in über 11 Ländern mit mehr als 3300 Kunden eingesetzt.
 
 **Vorteile**:
 
@@ -117,7 +117,7 @@ Die [Hoppe Inventarsoftware](https://www.inventarsoftware.de/Default.html) ist e
 
 #### Timly 
 
-Die [Timly Inventarsoftware](https://timly.com/inventar-software/) ist eine moderne, cloudbasierte Lösung zur Inventarisierung von Assets und Geräten. Sie wird vor allem von Unternehmen eingesetzt, die eine mobile, flexible Verwaltung ihrer Bestände benötigen.
+Die [Timly Inventarsoftware](https://timly.com/inventar-software/) [@timly_inventarsoftware]ist eine moderne, cloudbasierte Lösung zur Inventarisierung von Assets und Geräten. Sie wird vor allem von Unternehmen eingesetzt, die eine mobile, flexible Verwaltung ihrer Bestände benötigen.
 
 **Vorteile**:
 
@@ -167,11 +167,11 @@ Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/i
 **Nachteile**:  
 - sehr hohe Kosten: Das günstigste Paket „Entrepreneur“ beginnt bei 186 USD/Monat und bietet nur eingeschränkte Funktionen (z. B. Zugriff für nur zwei Benutzer, begrenzter technischer Support). Die teuersten Pakete für mittelgroße Unternehmen kosten bis zu 999 USD/Monat ([Preisübersicht](https://www.inflowinventory.com/software-pricing)).  
 - viele Funktionen sind nur in höheren Preiskategorien enthalten  
-- Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar  
+- Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar [@hofer_open_source_inventory_2025]
 
 ## Programmieren einer Excel-Erweiterung
 
-Die Inventarisierungsliste der HTL Leoben basiert, wie bereits erwähnt, auf Microsoft Excel. Daher wäre die Möglichkeit, eine Excel-Erweiterung zu programmieren, auf den ersten Blick eine naheliegende Idee. Excel-Add-ins (Erweiterungen) ermöglichen es, neue Funktionen direkt in Excel einzubinden, wie beispielsweise automatisierte Berechnungen, Datenvalidierungen oder benutzerdefinierte Menüleisten. Sie können Arbeitsabläufe deutlich vereinfachen und sind insbesondere dann sinnvoll, wenn wiederkehrende Aufgaben standardisiert werden sollen.
+Die Inventarisierungsliste der HTL Leoben basiert, wie bereits erwähnt, auf Microsoft Excel. Daher wäre die Möglichkeit, eine Excel-Erweiterung zu programmieren, auf den ersten Blick eine naheliegende Idee. Excel-Add-ins (Erweiterungen) ermöglichen es, neue Funktionen direkt in Excel einzubinden, wie beispielsweise automatisierte Berechnungen, Datenvalidierungen oder benutzerdefinierte Menüleisten. Sie können Arbeitsabläufe deutlich vereinfachen und sind insbesondere dann sinnvoll, wenn wiederkehrende Aufgaben standardisiert werden sollen. [@kowalski_excel_addin_2024]
 
 Allerdings sprechen mehrere Punkte dagegen, diese Lösung tatsächlich umzusetzen:
 
@@ -193,7 +193,7 @@ Die Entwicklung einer Excel-Erweiterung würde den Aufwand erhöhen und nur eine
 
 Die Idee, eine eigene Erweiterung für Microsoft Teams zu entwickeln, klingt auf den ersten Blick attraktiv, da Teams bereits ein etablierter Bestandteil des schulischen und organisatorischen Alltags ist. Dennoch spricht eine Reihe gewichtiger Argumente dagegen, diesen Ansatz für die Umsetzung einer Inventarisierungslösung zu wählen.
 
-Eine Teams-Erweiterung ist stark an die Microsoft-365-Umgebung und speziell an die Teams-Infrastruktur gebunden. Sie bietet keine direkte Möglichkeit, eigene Datenbanken anzubinden oder komplexe externe Datenquellen zuverlässig zu verwalten. Stattdessen müssen sämtliche Daten in der Teams- bzw. Microsoft-Cloud gespeichert oder über Zwischenschritte aus externen Dateien eingebunden werden. Das macht die Lösung nicht nur unflexibel, sondern auch abhängig von bestehenden Teams-Strukturen und der Verfügbarkeit dieser Dienste.
+Eine Teams-Erweiterung ist stark an die Microsoft-365-Umgebung und speziell an die Teams-Infrastruktur gebunden. Sie bietet keine direkte Möglichkeit, eigene Datenbanken anzubinden oder komplexe externe Datenquellen zuverlässig zu verwalten. Stattdessen müssen sämtliche Daten in der Teams- bzw. Microsoft-Cloud gespeichert oder über Zwischenschritte aus externen Dateien eingebunden werden. Das macht die Lösung nicht nur unflexibel, sondern auch abhängig von bestehenden Teams-Strukturen und der Verfügbarkeit dieser Dienste. [@georg_teams_apps_2023] [@ovacapta_teams_extensions]
 
 Soll beispielsweise ein Inventar mit mehreren hundert Geräten verwaltet werden, müssten die Daten entweder in SharePoint-Listen oder anderen Teams-internen Strukturen hinterlegt werden. Diese sind jedoch nicht für performante, strukturierte Inventardatenbank ausgelegt. Zudem müsste weiterhin auf externe Dateien zurückgegriffen werden, um etwa QR-Code-Zuordnungen oder Geräteinformationen zu verwalten. Das erhöht die Komplexität und die Fehleranfälligkeit erheblich.
 
@@ -201,7 +201,7 @@ Die fehlende direkte Datenbankanbindung verhindert den Aufbau einer robusten, sk
 
 ## Verwendung von MS Access
 
-Microsoft Access ist eine relationale Datenbankanwendung, die Bestandteil des Microsoft-Office-Pakets ist, welches an das aktuelle System der Schule andocken würde. Sie ermöglicht die Erstellung, Verwaltung und Abfrage von Datenbanken über eine grafische Benutzeroberfläche, ohne dass tiefgehende Programmierkenntnisse erforderlich sind.
+Microsoft Access ist eine relationale Datenbankanwendung, die Bestandteil des Microsoft-Office-Pakets ist, welches an das aktuelle System der Schule andocken würde. Sie ermöglicht die Erstellung, Verwaltung und Abfrage von Datenbanken über eine grafische Benutzeroberfläche, ohne dass tiefgehende Programmierkenntnisse erforderlich sind. [@ionos_access_alternativen]
 
 Im schulischen Kontext wird Access häufig zur Verwaltung von Inventar, Lehrmitteln oder Schülerdaten verwendet. Durch seine Integration in das Office-Ökosystem bietet es eine einfache Möglichkeit, Daten mit anderen Anwendungen wie Excel oder Word auszutauschen. Besonders vorteilhaft ist dabei, dass Access auch von nicht-technischem Personal, wie Lehrkräften oder Verwaltungsmitarbeitern, genutzt werden kann.
 
