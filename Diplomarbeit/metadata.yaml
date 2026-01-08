@@ -39,23 +39,6 @@ da-kurzfassung-de: Die vorliegende Diplomarbeit beschäftigt sich mit der Entwic
 
 da-kurzfassung-en: This thesis focuses on the development and implementation of a web-based inventory system using QR codes to manage IT equipment in schools. The starting point is the current manual process, in which devices such as monitors, PCs, projectors, and keyboards are tracked using Excel spreadsheets. This method is inefficient, time-consuming, and prone to errors.The aim of this work is to replace the existing process with a digital solution that is both user-friendly and resource-efficient. QR codes simplify the identification and assignment of devices. Users can access and update information directly using mobile devices such as smartphones or tablets.The solution is implemented using existing school infrastructure, avoiding major additional costs. The development follows a structured plan, including requirement analysis, implementation, and a testing phase with selected users. Afterwards, the system is evaluated regarding functionality, efficiency, and usability.This thesis demonstrates how digital tools can modernize and sustainably improve administrative processes in educational institutions.
 
-da-kiquellen:
-- ki: ChatGPT4
-  short-prompt: Erklärung Pandoc
-  pdf-file: gpt-pandoc.pdf
-
-- ki: ChatGPT3.5
-  short-prompt: Aufbau eines Atoms
-  pdf-file: gpt-atom.pdf
-
-da-appendix:
-- abschnitt: Technische Dokumentation
-  pdf-file: pandoc-manual.pdf
-  seiten: 53-73
-
-- abschnitt: Betreuungsprotokolle
-  pdf-file: betreuungsprotokolle.pdf    
-
 # Diplomarbeitsvereinbarungen müssen zum Schluss sein 
 
 - abschnitt: Diplomatbeitsvereinbarung Englisch
