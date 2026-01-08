@@ -34,90 +34,90 @@ HTML ist der international anerkannte Standard zur Strukturierung von Webinhalte
 ### Cascading Style Sheets (CSS)
 
 #### Erläuterung  
-Cascading Style Sheets (CSS) werden zur visuellen Gestaltung der Webanwendung verwendet. Mithilfe von CSS werden Layout, Farbgestaltung, Schriftarten, Abstände sowie responsive Anpassungen definiert. Dadurch entsteht ein übersichtliches, modernes und benutzerfreundliches Erscheinungsbild der Inventarisierungsoberfläche, das die Bedienbarkeit wesentlich unterstützt.[mdn_css]
+Cascading Style Sheets (CSS) werden zur visuellen Gestaltung der Webanwendung verwendet. Mithilfe von CSS werden Layout, Farbgestaltung, Schriftarten, Abstände sowie responsive Anpassungen definiert. Dadurch entsteht ein übersichtliches, modernes und benutzerfreundliches Erscheinungsbild der Inventarisierungsoberfläche, das die Bedienbarkeit wesentlich unterstützt.[@mdn_css]
 
 #### Entscheidungsgrundlage  
-Durch die konsequente Trennung von Struktur (HTML) und Darstellung (CSS) wird eine saubere und übersichtliche Softwarearchitektur realisiert. CSS ist ein etablierter Webstandard und bietet umfangreiche Möglichkeiten zur Gestaltung responsiver Benutzeroberflächen, die auf unterschiedlichen Endgeräten korrekt dargestellt werden.[mdn_css]
+Durch die konsequente Trennung von Struktur (HTML) und Darstellung (CSS) wird eine saubere und übersichtliche Softwarearchitektur realisiert. CSS ist ein etablierter Webstandard und bietet umfangreiche Möglichkeiten zur Gestaltung responsiver Benutzeroberflächen, die auf unterschiedlichen Endgeräten korrekt dargestellt werden.[@mdn_css]
 
 #### Vorteile  
 - Klare Trennung von Inhalt und Darstellung  
 - Einheitliches Design über alle Seiten hinweg  
 - Unterstützung für responsive und adaptive Layouts  
-- Verbesserung der Benutzerfreundlichkeit und Übersichtlichkeit[mdn_css]  
+- Verbesserung der Benutzerfreundlichkeit und Übersichtlichkeit[@mdn_css]  
 
 
 ### Hypertext Preprocessor (PHP)
 
 #### Erläuterung  
-PHP ist eine serverseitige Skriptsprache und bildet gemeinsam mit der Datenbank das Backend der Inventarisierungslösung. Sie wird zur Verarbeitung von Benutzereingaben, zur Umsetzung der Geschäftslogik sowie zur Kommunikation mit der Datenbank eingesetzt. Darüber hinaus kommt PHP für serverseitige Prozesse wie die Generierung von QR-Codes und die Zugriffskontrolle zum Einsatz.[php_manual]
+PHP ist eine serverseitige Skriptsprache und bildet gemeinsam mit der Datenbank das Backend der Inventarisierungslösung. Sie wird zur Verarbeitung von Benutzereingaben, zur Umsetzung der Geschäftslogik sowie zur Kommunikation mit der Datenbank eingesetzt. Darüber hinaus kommt PHP für serverseitige Prozesse wie die Generierung von QR-Codes und die Zugriffskontrolle zum Einsatz.[@php_manual]
 
 #### Entscheidungsgrundlage  
-PHP ist besonders für webbasierte Anwendungen geeignet und wird seit vielen Jahren erfolgreich eingesetzt. Durch die breite Verfügbarkeit, die umfangreiche Dokumentation sowie die einfache Wartbarkeit ist PHP eine zuverlässige Wahl für die Umsetzung der vorliegenden Aufgabenstellung.[php_manual]
+PHP ist besonders für webbasierte Anwendungen geeignet und wird seit vielen Jahren erfolgreich eingesetzt. Durch die breite Verfügbarkeit, die umfangreiche Dokumentation sowie die einfache Wartbarkeit ist PHP eine zuverlässige Wahl für die Umsetzung der vorliegenden Aufgabenstellung.[@php_manual]
 
 #### Vorteile  
 - Serverseitige Verarbeitung sensibler Daten  
 - Gute Integration mit relationalen Datenbanksystemen  
 - Weit verbreitet und umfangreich dokumentiert  
-- Geeignet für wartungsfreundliche und skalierbare Webanwendungen[php_manual]
+- Geeignet für wartungsfreundliche und skalierbare Webanwendungen[@php_manual]
 
 
 ### JavaScript (JS)
 
 #### Erläuterung  
-JavaScript wird clientseitig verwendet, um die Benutzeroberfläche interaktiv zu gestalten. Dazu zählen dynamische Formularvalidierungen, Benutzerinteraktionen sowie die Steuerung von Abläufen, die ohne vollständige Seitenneuladungen auskommen. Dadurch wird die Reaktionsfähigkeit der Anwendung deutlich erhöht.[mdn_javascript]
+JavaScript wird clientseitig verwendet, um die Benutzeroberfläche interaktiv zu gestalten. Dazu zählen dynamische Formularvalidierungen, Benutzerinteraktionen sowie die Steuerung von Abläufen, die ohne vollständige Seitenneuladungen auskommen. Dadurch wird die Reaktionsfähigkeit der Anwendung deutlich erhöht.[@mdn_javascript]
 
 #### Entscheidungsgrundlage  
-JavaScript ist die Standardsprache für clientseitige Webentwicklung und wird von allen modernen Browsern unterstützt. Der gezielte Einsatz von JavaScript ermöglicht eine spürbare Verbesserung der Benutzererfahrung und trägt zu einer intuitiven Bedienung der Anwendung bei.[mdn_javascript]
+JavaScript ist die Standardsprache für clientseitige Webentwicklung und wird von allen modernen Browsern unterstützt. Der gezielte Einsatz von JavaScript ermöglicht eine spürbare Verbesserung der Benutzererfahrung und trägt zu einer intuitiven Bedienung der Anwendung bei.[@mdn_javascript]
 
 #### Vorteile  
 - Hohe Interaktivität der Benutzeroberfläche  
 - Verbesserte Benutzererfahrung und Reaktionsgeschwindigkeit  
-- Direkte und nahtlose Integration mit HTML und CSS[mdn_javascript]  
+- Direkte und nahtlose Integration mit HTML und CSS[@mdn_javascript]  
 
 
 ### Asynchronous JavaScript and XML (AJAX)
 
 #### Erläuterung  
-AJAX ermöglicht eine asynchrone Kommunikation zwischen Client und Server. Dadurch können Daten, wie Inventareinträge, Suchergebnisse oder Filteroptionen, im Hintergrund geladen oder aktualisiert werden, ohne dass die gesamte Webseite neu geladen werden muss.[mdn_ajax]
+AJAX ermöglicht eine asynchrone Kommunikation zwischen Client und Server. Dadurch können Daten, wie Inventareinträge, Suchergebnisse oder Filteroptionen, im Hintergrund geladen oder aktualisiert werden, ohne dass die gesamte Webseite neu geladen werden muss.[@mdn_ajax]
 
 #### Entscheidungsgrundlage  
-Für eine moderne Inventarisierungslösung ist eine schnelle und reaktionsfähige Benutzeroberfläche essenziell. Der Einsatz von AJAX unterstützt dieses Ziel maßgeblich und trägt zur Effizienz sowie zur positiven Nutzererfahrung der Anwendung bei.[mdn_ajax]
+Für eine moderne Inventarisierungslösung ist eine schnelle und reaktionsfähige Benutzeroberfläche essenziell. Der Einsatz von AJAX unterstützt dieses Ziel maßgeblich und trägt zur Effizienz sowie zur positiven Nutzererfahrung der Anwendung bei.[@mdn_ajax]
 
 #### Vorteile  
 - Keine vollständigen Seitenneuladungen notwendig  
 - Schnellere Reaktionszeiten der Anwendung  
 - Reduzierte Server- und Netzwerkbelastung  
-- Deutlich erhöhte Benutzerfreundlichkeit[mdn_ajax]  
+- Deutlich erhöhte Benutzerfreundlichkeit[@mdn_ajax]  
 
 
 ### SQL Server Management Studio (SSMS)
 
 #### Erläuterung  
-Das SQL Server Management Studio (SSMS) dient zur Verwaltung und Pflege der relationalen Datenbank der Anwendung. Es wird zur Erstellung und Anpassung von Tabellen, zur Ausführung von Abfragen sowie zur Verwaltung und Analyse der gespeicherten Inventardaten eingesetzt.[microsoft_ssms]
+Das SQL Server Management Studio (SSMS) dient zur Verwaltung und Pflege der relationalen Datenbank der Anwendung. Es wird zur Erstellung und Anpassung von Tabellen, zur Ausführung von Abfragen sowie zur Verwaltung und Analyse der gespeicherten Inventardaten eingesetzt.[@microsoft_ssms]
 
 #### Entscheidungsgrundlage  
-SSMS ist ein etabliertes Administrationswerkzeug für Microsoft SQL Server. Die Nutzung ermöglicht eine strukturierte, zuverlässige und nachvollziehbare Verwaltung der Datenbank und unterstützt die Entwicklung sowie Wartung der Anwendung.[microsoft_ssms]
+SSMS ist ein etabliertes Administrationswerkzeug für Microsoft SQL Server. Die Nutzung ermöglicht eine strukturierte, zuverlässige und nachvollziehbare Verwaltung der Datenbank und unterstützt die Entwicklung sowie Wartung der Anwendung.[@microsoft_ssms]
 
 #### Vorteile  
 - Intuitive grafische Benutzeroberfläche  
 - Leistungsfähige Verwaltungs- und Abfragefunktionen  
 - Hohe Stabilität und Zuverlässigkeit  
-- Gute Integration in Microsoft-Systeme[microsoft_ssms]
+- Gute Integration in Microsoft-Systeme[@microsoft_ssms]
 
 
 ### Internet Information Services (IIS)
 
 #### Erläuterung  
-Internet Information Services (IIS) wird als Webserver für den Betrieb der Inventarisierungsanwendung eingesetzt. Der Webserver stellt sowohl die PHP-Anwendung als auch statische Inhalte wie HTML-, CSS- und JavaScript-Dateien bereit und ermöglicht den Zugriff über das interne Netzwerk.[microsoft_iis]
+Internet Information Services (IIS) wird als Webserver für den Betrieb der Inventarisierungsanwendung eingesetzt. Der Webserver stellt sowohl die PHP-Anwendung als auch statische Inhalte wie HTML-, CSS- und JavaScript-Dateien bereit und ermöglicht den Zugriff über das interne Netzwerk.[@microsoft_iis]
 
 #### Entscheidungsgrundlage  
-IIS ist Bestandteil von Windows-Server-Systemen und bietet eine stabile sowie sichere Plattform für den Betrieb von Webanwendungen. Die Kombination aus IIS, PHP und Microsoft SQL Server ermöglicht einen zuverlässigen und wartungsfreundlichen Betrieb der Inventarisierungslösung.[microsoft_iis]
+IIS ist Bestandteil von Windows-Server-Systemen und bietet eine stabile sowie sichere Plattform für den Betrieb von Webanwendungen. Die Kombination aus IIS, PHP und Microsoft SQL Server ermöglicht einen zuverlässigen und wartungsfreundlichen Betrieb der Inventarisierungslösung.[@microsoft_iis]
 
 #### Vorteile  
 - Hohe Stabilität und Sicherheit  
 - Zentrale Verwaltung der Webanwendung  
 - Gute Integration mit Windows-Diensten  
-- Geeignet für den produktiven Einsatz im Schulumfeld[microsoft_iis]
+- Geeignet für den produktiven Einsatz im Schulumfeld[@microsoft_iis]
 
 
 ### Benutzte Frameworks
@@ -180,7 +180,7 @@ Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unter
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![ KennzahlenBeispiel Bild.](img/KennzahlenBeispiel.JPG)  
+![ Kennzahlen Beispiel.](img/KennzahlenBeispiel.JPG)  
 
 *Abbildung: KennzahlenBeispiel*
 
@@ -551,8 +551,7 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform **Geizhals** angelehnt ist:
 
-![ Geizhals Suchfilteroptionen Bild.](img/GeizhalsFilterOptionen.png)  
-*Abbildung: Geizhals Suchfilteroptionen*
+![ Geizhals Suchfilteroptionen.](img/GeizhalsFilterOptionen.png)  
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die **Benutzerfreundlichkeit** zu erhöhen.
 
@@ -596,8 +595,7 @@ Die Anwendung bietet umfangreiche Such- und Filtermöglichkeiten:
   - Hinterleger  
   - Erscheinungsdatum  
 
-![ Filter & Suche Bild.](img/FilterUndSuche.png)  
-*Abbildung: Such- und Filterfunktion*
+![ Such- und Filterfunktion.](img/FilterUndSuche.png)  
 
 ### Anzeige der Produkte
 
@@ -605,8 +603,7 @@ Die Produkte werden tabellarisch dargestellt. Nutzer können die Anzahl der ange
 
 Jedes Produkt kann durch einen Klick auf einen Pfeil geöffnet werden, um zusätzliche Informationen anzuzeigen. Über ein Kopiersymbol lässt sich die Inventarnummer direkt kopieren.  
 
-![ Produktliste Bild.](img/ProduktListe.png)  
-*Abbildung: Produktliste*
+![ Produktliste.](img/ProduktListe.png)  
 
 ### Erstellung neuer Produkte
 
@@ -627,8 +624,7 @@ In der Bearbeitungsansicht steht eine **Top-Bar** mit folgenden Funktionen zur V
 
 - **Abbrechen**  
 
-![  Produktseite Bild](img/Produktseite.png)  
-*Abbildung 5: Produktbearbeitungs- und -erstellungsseite*
+![ Produktbearbeitungs- und -Erstellungsseite](img/Produktseite.png)  
 
 ### Unterschiede zwischen Bearbeitung und Erstellung
 
