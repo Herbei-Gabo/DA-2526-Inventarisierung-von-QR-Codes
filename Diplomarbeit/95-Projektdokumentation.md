@@ -26,7 +26,7 @@ Die Aufgabenverwaltung erfolgte über:
 
 ---
 
-# Projektfortschritte nach Meilensteinen
+## Projektfortschritte nach Meilensteinen
 
 ---
 
@@ -116,7 +116,8 @@ Sehr strukturierte Zusammenarbeit, regelmäßige Abstimmungen und klare Aufgaben
 ## Projektfortschritt 3 – Testphase
 
 ### Berichtszeitraum
-07.10.2025 – 16.11.2025
+07.10.2025 – 01.11.2025
+
 
 ### Durchgeführte Arbeiten
 - Implementierung von Backend- und Datenbankfunktionen
@@ -157,7 +158,8 @@ Gute Zusammenarbeit trotz erhöhter Arbeitsbelastung durch Schulbetrieb.
 ## Projektfortschritt 4 – 1. Zwischenpräsentation
 
 ### Berichtszeitraum
-07.10.2025 – 11.11.2025
+02.11.2025 – 16.11.2025
+
 
 ### Durchgeführte Arbeiten
 - Aufbereitung des Projektstandes
@@ -187,7 +189,8 @@ Das Projekt wurde positiv bewertet und befindet sich weiterhin im Plan.
 ## Projektfortschritt 5 – Dokumentationsphase
 
 ### Berichtszeitraum
-12.11.2025 – 26.02.2026
+17.11.2025 – 26.02.2026
+
 
 ### Durchgeführte Arbeiten
 - Erstellung und Überarbeitung der Projektdokumentation
@@ -218,15 +221,8 @@ Die Dokumentation befindet sich im Endstadium. Das System ist stabil und funktio
 - Vorbereitung der zweiten Zwischenpräsentation
 - Abschlussarbeiten
 
----
-
-## Projektfortschritt 6 – Abschlussphase & Abgabe
-
-### Berichtszeitraum
-27.02.2026 – 06.03.2026
 
 
 
-## Zusammenfassung
 
 
