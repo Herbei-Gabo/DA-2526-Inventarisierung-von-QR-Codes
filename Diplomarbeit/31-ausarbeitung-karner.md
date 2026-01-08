@@ -18,7 +18,7 @@ Im Folgenden werden die einzelnen Technologien, ihre Einsatzgebiete, Entscheidun
 ### HyperText Markup Language (HTML)
 
 #### Erläuterung  
-HTML (HyperText Markup Language) stellt die strukturelle Grundlage der webbasierten Inventarisierungslösung dar. Es wird zur semantischen Beschreibung und klaren Gliederung sämtlicher Inhalte der Benutzeroberfläche eingesetzt. Dazu zählen unter anderem Eingabeformulare, Tabellen zur Darstellung von Inventardaten, Navigationsbereiche sowie verschiedene Bedienelemente. Durch die Verwendung semantischer HTML-Elemente wird sowohl die Lesbarkeit des Codes als auch die Zugänglichkeit der Anwendung verbessert.
+HTML (HyperText Markup Language) stellt die strukturelle Grundlage der webbasierten Inventarisierungslösung dar. Es wird zur semantischen Beschreibung und klaren Gliederung sämtlicher Inhalte der Benutzeroberfläche eingesetzt. Dazu zählen unter anderem Eingabeformulare, Tabellen zur Darstellung von Inventardaten, Navigationsbereiche sowie verschiedene Bedienelemente. Durch die Verwendung semantischer HTML-Elemente wird sowohl die Lesbarkeit des Codes als auch die Zugänglichkeit der Anwendung verbessert.[@mdn_html]
 
 #### Entscheidungsgrundlage  
 HTML ist der international anerkannte Standard zur Strukturierung von Webinhalten und wird von allen gängigen Webbrowsern vollständig unterstützt. Aufgrund seiner Stabilität, langfristigen Zukunftssicherheit sowie der nahtlosen Kombinierbarkeit mit CSS und JavaScript eignet sich HTML besonders gut für die Entwicklung einer webbasierten Anwendung im schulischen Umfeld.
