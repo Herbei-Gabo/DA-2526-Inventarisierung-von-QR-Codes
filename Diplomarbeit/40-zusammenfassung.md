@@ -16,7 +16,7 @@ Nicht alle geplanten Erweiterungen konnten im Rahmen der Diplomarbeit umgesetzt 
 
 Zusammenfassend kann festgehalten werden, dass das gewählte Thema sowohl sinnvoll als auch praxisnah war. Durch die Kombination aus methodischer Planung, theoretischer Analyse und technischer Umsetzung konnte eine funktionierende Grundlage für eine digitale Inventarisierung geschaffen werden, die den bisherigen Verwaltungsaufwand deutlich reduziert und die Datenqualität erhöht. Die einzelnen Teilaufgaben ergänzten sich dabei gezielt und trugen jeweils wesentlich zur Lösung des Gesamtproblems bei.
 
-Als Ausblick bieten sich weitere Schritte wie die produktive Einführung der Lösung im Schulbetrieb, der Ausbau der Rollen- und Rechteverwaltung sowie die Anbindung externer Systeme an. Darüber hinaus kann die entwickelte Anwendung als Basis für ähnliche Inventarisierungsprojekte an anderen Bildungseinrichtungen dienen und entsprechend angepasst oder erweitert werden.
+Als Ausblick bieten sich weitere Schritte wie die produktive Einführung der Lösung im Schulbetrieb, der Ausbau der Rollen- und Rechteverwaltung sowie die Anbindung externer Systeme an. 
 
 ---
 
