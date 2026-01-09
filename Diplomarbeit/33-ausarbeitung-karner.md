@@ -315,7 +315,7 @@ Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten ode
 Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
 Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
 
-![ config_ProductType Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
+![ config_DetailInfo Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
 
 ### Erklärung der RefTypes
 
