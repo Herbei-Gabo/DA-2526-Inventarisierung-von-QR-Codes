@@ -13,10 +13,7 @@ da-author:
 - vorname: Gabriel 
   nachname: Herbei
   klasse: 5BHWIN
-  thema: Analyse, Anwendung und Testen einer digitalen Inventarisierungslösung basierend auf QR-Codes
-  ki-tools:
-  - name: ChatGPT 5.2
-    zweck: Unterstützung bei der Recherche, Strukturierung, Formulierung und sprachlichen Korrektur einzelner Abschnitte. 
+  thema: Analyse, Anwendung und Testen einer digitalen Inventarisierungslösung basierend auf QR-Codes#
 
 - vorname: Andre 
   nachname: Karner
