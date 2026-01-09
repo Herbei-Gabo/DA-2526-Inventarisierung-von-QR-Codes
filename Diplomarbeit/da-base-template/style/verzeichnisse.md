@@ -5,16 +5,6 @@
 \section{ \lof }
 \listoffigures
 
-<!-- Tabellenverzeichnis -->
-\translatelet\lot{lstoftables}
-\section{ \lot }
-\listoftables
-
-<!-- Quellcodeverzeichnis -->
-\translatelet\lol{lstoflistings}
-\section{ \lol }
-\lstlistoflistings
-
 <!-- Literaturverzeichnis -->
 \translatelet\lor{lstofreferences}
 \section{ \lor }
