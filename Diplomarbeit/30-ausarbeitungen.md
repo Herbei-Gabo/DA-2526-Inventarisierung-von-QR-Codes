@@ -12,7 +12,7 @@ Der Auftraggeber verspricht sich von dieser Arbeit eine deutliche Vereinfachung 
 
 ## Ausgangssituation
 
-Die allgemeine Ausgangssituation war geprägt von einer klassischen, tabellenbasierten Inventarverwaltung. Inventargegenstände wurden überwiegend in Excel-Listen oder vergleichbaren Dokumenten erfasst und gepflegt. Diese Form der Verwaltung ist zwar einfach umzusetzen, stößt jedoch bei zunehmender Datenmenge schnell an ihre Grenzen.
+Die Inventargegenstände wurden überwiegend in Excel-Listen erfasst und gepflegt. Diese Form der Verwaltung ist zwar einfach umzusetzen, stößt jedoch bei zunehmender Datenmenge schnell an ihre Grenzen.
 
 ### Derzeitige Situation
 
