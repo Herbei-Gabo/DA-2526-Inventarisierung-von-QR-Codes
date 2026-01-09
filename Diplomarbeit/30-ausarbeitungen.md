@@ -26,15 +26,3 @@ Der derzeitige Arbeitsprozess basierte hauptsächlich auf manueller Pflege von L
 
 Diese Ausgangssituation verdeutlichte den Bedarf an einer zentralen, webbasierten Lösung, die sowohl technisch zeitgemäß als auch auf die organisatorischen Anforderungen einer Schule zugeschnitten ist. Die vorliegende Diplomarbeit setzt genau an diesem Punkt an und bietet eine moderne Alternative zur bisherigen Arbeitsweise.
 
----
-# Aufgabenstellung 
-
-## Auftraggeber
-Wer ist der Auftraggeber, wie ist es zu dieser Arbeit gekommen, was verspricht sich der Auftraggeber davon
-
-## Ausgangssituation
-
-Eine allgemeine Aufgabenstellung 
-
-* Was ist die derzeitige Situation ? 
-* Wie wird derzeit gearbeitet ?
