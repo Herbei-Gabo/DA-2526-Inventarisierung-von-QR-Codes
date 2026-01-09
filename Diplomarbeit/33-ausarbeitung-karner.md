@@ -225,6 +225,7 @@ Dies betrifft folgende Felder:
 | Standort            |
 | Einbringer/in       |
 | Verantwortliche/r   |
+| Produktkategorie    |
 
 
 ### Auswahl der Datenbank  
