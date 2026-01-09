@@ -6,7 +6,7 @@
 ## Inventarisierung mit QR-Codes
 **Stand:** 08. Jänner 2026
 
----
+
 
 ### Projektübersicht
 **Thema:** Entwicklung einer webbasierten Inventarisierungslösung mit QR-Codes zur Verwaltung schulischer IT-Ausstattung
@@ -20,52 +20,52 @@
 **Zeitraum:** Juni 2025 – März 2026
 **Schule:** HTL Leoben
 
----
+
 
 ### Zielsetzung
 Die Zielsetzung beschreibt das allgemeine Ziel und die Motivation hinter der Diplomarbeit. Dabei werden folgende Themen adressiert:
 
-- **Aktueller Stand:**  
+ **Aktueller Stand:**  
   An der Schule wird die IT-Ausstattung (PCs, Monitore, Beamer etc.) derzeit manuell in einer Excel-Liste verwaltet. Diese Methode ist zeitaufwendig, unübersichtlich und fehleranfällig.
 
-- **Motivation:**  
+ **Motivation:**  
   Der Wunsch besteht darin, den Inventarisierungsprozess zu digitalisieren und zu vereinfachen. Durch den Einsatz von QR-Codes soll die Verwaltung moderner, schneller und mobil zugänglich werden.
 
-- **Was möchten wir erreichen?**  
-  - Entwicklung einer webbasierten Inventarisierungslösung mit QR-Code-Integration  
-  - Vereinfachung der Erfassung, Verwaltung und Nachverfolgung von Geräten  
-  - Zugriff über Smartphones/Tablets ohne manuelle Eingabe  
-  - Nutzung vorhandener Schulressourcen ohne Zusatzkosten  
-  - Stärkung digitaler Kompetenzen innerhalb der Schule  
+ **Was möchten wir erreichen?**  
+   Entwicklung einer webbasierten Inventarisierungslösung mit QR-Code-Integration  
+   Vereinfachung der Erfassung, Verwaltung und Nachverfolgung von Geräten  
+   Zugriff über Smartphones/Tablets ohne manuelle Eingabe  
+   Nutzung vorhandener Schulressourcen ohne Zusatzkosten  
+   Stärkung digitaler Kompetenzen innerhalb der Schule  
 
-- **Was möchten wir nicht erreichen (Nicht-Ziele)?**  
-  - Keine vollständige Integration in externe ERP- oder Ticketsysteme  
-  - Kein Austausch der bestehenden Schulserver-Struktur  
-  - Kein Fokus auf kaufmännische Warenwirtschaft  
+ **Was möchten wir nicht erreichen (Nicht-Ziele)?**  
+   Keine vollständige Integration in externe ERP- oder Ticketsysteme  
+   Kein Austausch der bestehenden Schulserver-Struktur  
+   Kein Fokus auf kaufmännische Warenwirtschaft  
 
-- **Was ändert sich durch die Arbeit?**  
-  - Der manuelle Aufwand entfällt weitgehend  
-  - Geräte können schnell und mobil identifiziert werden  
-  - Die Verwaltung wird übersichtlicher und weniger fehleranfällig  
-  - Das Schulpersonal kann eigenständig Inventar anpassen oder erfassen  
+ **Was ändert sich durch die Arbeit?**  
+   Der manuelle Aufwand entfällt weitgehend  
+   Geräte können schnell und mobil identifiziert werden  
+   Die Verwaltung wird übersichtlicher und weniger fehleranfällig  
+   Das Schulpersonal kann eigenständig Inventar anpassen oder erfassen  
 
----
+
 
 ### Projektorganisation
 **Kommunikation:**  
-- Microsoft Teams (Austausch, Statusupdates) 
-- Whatsapp Gruppe (schneller Austausch) 
-- GitHub (Code & Dokumentenverwaltung)  
-- Persönliche Treffen nach Bedarf (sporadisch, bei Projektfortschritten oder Problemen)  
+ Microsoft Teams (Austausch, Statusupdates)    
+ Whatsapp Gruppe (schneller Austausch)    
+ GitHub (Code & Dokumentenverwaltung)  
+ Persönliche Treffen nach Bedarf (sporadisch, bei Projektfortschritten oder Problemen)  
 
 **Dateiablage:**  
 GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`  
 
 **Teammeetings:**  
-- Treffen erfolgen **nach Bedarf**, meist bei Abschluss eines Projektabschnitts  
-- Notizen und Entscheidungen werden im Projekthandbuch dokumentiert  
+ Treffen erfolgen **nach Bedarf**, meist bei Abschluss eines Projektabschnitts  
+ Notizen und Entscheidungen werden im Projekthandbuch dokumentiert  
 
----
+
 
 ### Zeitplan (aktualisiert – bis Ende Jänner 2026)
 
@@ -86,7 +86,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 | **9 Jänner 2026** | Gemeinsane Erstversion für Feedback abgegen | Team | offen |
 | **Ende Jänner 2026** | Feinschliff von Suchfunktion, Admin-Menü, Druckfunktion sowie Responsive | Gabriel + André | offen
 
----
+
 
 ### Aktueller Projektstatus (Stand 08.01.2026)
  Datenbank- und Backend-Struktur fertiggestellt  
@@ -96,7 +96,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
  Dokumentation in Bearbeitung    
  Finale Tests in Vorbereitung 
 
----
+
 
 
 
@@ -112,7 +112,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 | Erweiterte Funktionstests (Suche, QR-Druck, Mobile) | Team | 05.02.2026 | offen |
 
 
----
+
 Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokumentiert.
 
 
@@ -138,14 +138,14 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 
 
 
----
-### Risiken & Herausforderungen
-- Abhängigkeit von der Schul-IT-Infrastruktur (Serverrechte, Zugriff)  
-- Zeitliche Belastung durch parallelen Schulunterricht  
-- QR-Code-Leserkompatibilität auf unterschiedlichen Geräten  
-- Fehlende Original-Listen für korrekte Inventarnummern  
 
----
+### Risiken & Herausforderungen
+ Abhängigkeit von der Schul-IT-Infrastruktur (Serverrechte, Zugriff)  
+ Zeitliche Belastung durch parallelen Schulunterricht  
+ QR-Code-Leserkompatibilität auf unterschiedlichen Geräten  
+ Fehlende Original-Listen für korrekte Inventarnummern  
+
+
 
 ### Dokumentenübersicht
 | Dokument | Beschreibung | Speicherort |
@@ -155,18 +155,16 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 | `HTLGesamtinventar_Monitorbeispiel.xlsx` | Basis-Excel der bisherigen Inventarisierung | GitHub / data |
 | `da_inventory_TableSchema.xlsx` | Datenbankschema & Tabellenbeziehungen | GitHub / data |
 
----
+
 
 ### Zusammenfassung
-Das Projekt „Inventarisierung mit QR-Codes“ verläuft planmäßig und zeigt einen klaren Fortschritt.  
-Die theoretische und technische Basis ist abgeschlossen, das **Frontend** und die **technologische Evaluierung** folgen in den Herbstferien.  
-Bis **Ende Dezember 2025** werden alle Tests und die finale Dokumentation abgeschlossen sein.  
-Damit ist das Projekt sowohl technisch als auch organisatorisch auf einem sehr guten Weg.
+Im Projektzeitraum von Juni 2025 bis Dezember 2025 wurden Analyse, Konzeption, technische Umsetzung sowie erste Tests erfolgreich durchgeführt. Das System ermöglicht eine schnelle Inventarisierung und Verwaltung von Geräten über mobile Endgeräte, reduziert den administrativen Aufwand und verbessert die Übersichtlichkeit der Inventardaten.
+Der aktuelle Fokus liegt auf dem Abschluss der Dokumentation, dem Feinschliff einzelner Funktionen (Suche, Admin-Menü, QR-Druck) sowie auf finalen Tests zur Vorbereitung der Abgabe.
 
----
+
 
 ### Projektlog & Entscheidungsdokumentation
 
----
+
 
 
