@@ -126,7 +126,7 @@ Für die Umsetzung der Anwendung in PHP und JavaScript wurde ein firmeneigenes F
 
 Aus rechtlichen Gründen können keine detaillierten technischen Informationen zu diesem Framework bereitgestellt werden. Die HTL Leoben erhält ausschließlich das Nutzungs- und Bearbeitungsrecht der Anwendung. Eine Weitergabe oder Veröffentlichung des Quellcodes an Dritte ist ausdrücklich untersagt.
 
----
+
 
 ## Datenauswertung & Datenbankerstellung  
 
@@ -253,8 +253,6 @@ Ebenso wurde der Wunsch geäußert, das System künftig an ein LDAP-System anzub
 Auch hierfür ist vorgesehen, eine zusätzliche Spalte zur Speicherung der LDAP-ID zu integrieren.  
 Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Diplomarbeit**, sondern lediglich konzeptionell vorbereitet.
 
----
-
 ## Datenbankmodell Erstellung
 
 Das Datenbankmodell bildet die zentrale Grundlage der webbasierten Inventarisierungslösung.  
@@ -339,9 +337,6 @@ Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in d
 | config_Depositor           | 5    | Hinterleger               |
 
 Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigurationsart und ermöglichen eine einfache Zuordnung innerhalb der Datenbank sowie der Benutzeroberfläche.
-
-
----
 
 ## Testdaten Erstellung
 Die verwendeten Testdaten stammen aus der Excel-Liste [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx) und wurden manuell in die Datenbank übernommen.
@@ -501,8 +496,6 @@ exec
 GO
 ```
 
----
-
 ## Designentwicklung
 
 ### MockUp-Designentwicklung
@@ -517,7 +510,6 @@ Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, 
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die **Benutzerfreundlichkeit** zu erhöhen.
 
----
 
 ## Die tatsächliche Umsetzung
 
@@ -582,5 +574,3 @@ Dazu zählen das **Hinzufügen des QR-Codes zur Druckansicht**, das **Speichern*
 ### Unterschiede zwischen Bearbeitung und Erstellung
 
 Zwischen dem Erstellungs- und dem Bearbeitungsmodus bestehen bewusst definierte Unterschiede. In beiden Modi ist es nicht möglich, die **Inventarnummer** sowie die **Produktkategorie** und das **Erstellungsdatum** zu verändern. Diese Einschränkung dient der Sicherstellung einer konsistenten und fortlaufenden Nummerierung sowie der Wahrung der Datenintegrität innerhalb der Datenbank.
-
----
