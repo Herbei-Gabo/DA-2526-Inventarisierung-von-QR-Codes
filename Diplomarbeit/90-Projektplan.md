@@ -1,6 +1,8 @@
 
 # Projekthandbuch – Diplomarbeit
+
 \textauthor{Dietmair}
+
 ## Inventarisierung mit QR-Codes
 **Stand:** 08. Jänner 2026
 
