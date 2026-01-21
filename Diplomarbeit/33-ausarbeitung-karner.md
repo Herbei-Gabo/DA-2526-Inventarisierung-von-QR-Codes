@@ -126,7 +126,6 @@ Für die Umsetzung der Anwendung in PHP und JavaScript wurde ein firmeneigenes F
 
 Aus rechtlichen Gründen können keine detaillierten technischen Informationen zu diesem Framework bereitgestellt werden. Die HTL Leoben erhält ausschließlich das Nutzungs- und Bearbeitungsrecht der Anwendung. Eine Weitergabe oder Veröffentlichung des Quellcodes an Dritte ist ausdrücklich untersagt.
 
----
 
 ## Datenauswertung & Datenbankerstellung  
 
@@ -265,7 +264,8 @@ Sie speichert sowohl grundlegende Benutzerdaten wie Anzeigename, Benutzername un
 Zusätzlich werden Informationen zur Account-Historie wie Login-Zähler, letzter Login-Zeitpunkt sowie Sperrstatus erfasst.  
 Durch die integrierten Rechtefelder kann exakt gesteuert werden, welche Funktionen einem Benutzer zur Verfügung stehen, beispielsweise das Bearbeiten von Produkten oder Konfigurationen.  
 Die Verwendung einer `uniqueidentifier`-ID gewährleistet eine eindeutige Identifikation jedes Accounts und erleichtert die Referenzierung in anderen Tabellen.
-![ T_Account Tabellen Schema.](img/TableSchemaTAccount.png)  
+
+![ T_Account Tabellen Schema](img/TableSchemaTAccount.png)  
 
 
 ###  Erklärung der T_Account_History Tabelle
@@ -275,6 +275,7 @@ Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Akti
 
 Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.  
 Diese Historie ist insbesondere für Wartungszwecke, Sicherheitsanalysen und administrative Auswertungen von Bedeutung.
+
 ![ T_Account_History Tabellen Schema.](img/TableSchemaTAccountHistory.png)  
 
 
@@ -286,6 +287,7 @@ Dazu zählen Identifikationsmerkmale wie Inventarnummer und Produktname, kaufmä
 Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung zu Produkttypen, Bereichen, Lieferanten, Standorten und verantwortlichen Personen ermöglichen.  
 Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.  
 Die konsequente Verwendung von GUIDs stellt sicher, dass Produkte auch bei späteren Erweiterungen oder Datenimporten eindeutig identifizierbar bleiben.
+
 ![ T_Product Tabellen Schema.](img/TableSchemaTProduct.png)  
 
 
@@ -297,6 +299,7 @@ Sie bildet die Grundlage für die Strukturierung der Inventarnummern und ermögl
 Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und Lebensdauer gespeichert.  
 Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.  
 Diese Konfiguration trägt wesentlich zur Flexibilität und Anpassbarkeit der Inventarisierungslösung bei.
+
 ![ config_ProductType Tabellen Schema.](img/TableSchemaconfigProductType.png)  
 
 
@@ -307,6 +310,7 @@ Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten ode
 
 Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
 Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
+
 ![ config_ProductType Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
 
 ### Erklärung der RefTypes
@@ -330,7 +334,6 @@ Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in d
 
 Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigurationsart und ermöglichen eine einfache Zuordnung innerhalb der Datenbank sowie der Benutzeroberfläche.
 
----
 
 ## Testdaten Erstellung
 Die verwendeten Testdaten stammen aus der Excel-Liste und wurden manuell in die Datenbank übernommen: [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx)
@@ -490,7 +493,6 @@ exec
 GO
 ```
 
----
 
 ## Designentwicklung
 
@@ -503,6 +505,7 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
 
 ![ Geizhals Suchfilteroptionen](img/GeizhalsFilterOptionen.png)
+
 Quelle: Geizhals Preisvergleich https://geizhals.at/?cat=nb&xf=525_Acer, Abgerufen am 2026-01-02
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die Benutzerfreundlichkeit zu erhöhen.
