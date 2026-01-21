@@ -131,16 +131,13 @@ Aus rechtlichen Gründen können keine detaillierten technischen Informationen z
 ## Datenauswertung & Datenbankerstellung  
 
 ### Datenquelle  
-Die Grundlage für die Datenbankstruktur bildet eine von der Schule bereitgestellte Excel-Liste mit dem Namen:  
-[`HTLGesamtinventar_Monitorbeispiel.xlsx`](doc/HTLGesamtinventar_Monitorbeispiel.xlsx).  
+Die Grundlage für die Datenbankstruktur bildet eine von der Schule bereitgestellte Excel-Liste: [`HTLGesamtinventar_Monitorbeispiel.xlsx`](doc/HTLGesamtinventar_Monitorbeispiel.xlsx).  
 Diese Datei diente als initiale Datenbasis und lieferte einen ersten Überblick über den bestehenden Inventarbestand sowie über die verwendeten Datenfelder.
 
-Im weiteren Verlauf der Analyse wurde diese Basis aufgrund einer erweiterten und aktuelleren Excel-Liste ergänzt, diese hat den Namen:  
-[`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx).  
+Im weiteren Verlauf der Analyse wurde diese Basis aufgrund einer erweiterten und aktuelleren Excel-Liste ergänzt: [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx).  
 Diese zweite Datei enthielt zusätzliche Datensätze sowie weitere Informationen, die für die vollständige Abbildung des Inventars notwendig waren.
 
-Der geplante Tabellenaufbau aller Datenbanktabellen ist zusätzlich in dieser Excel-Datei dokumentiert:  
-[`da_inventory_TableSchema.xlsx`](doc/da_inventory_TableSchema.xlsx).  
+Der geplante Tabellenaufbau aller Datenbanktabellen ist zusätzlich in dieser Excel-Datei dokumentiert: [`da_inventory_TableSchema.xlsx`](doc/da_inventory_TableSchema.xlsx).  
 Diese Datei dient als verbindliche Referenz für die Struktur, Benennung und Datentypen der einzelnen Felder.
 
 
@@ -171,9 +168,8 @@ Diese Struktur ermöglicht eine eindeutige Identifikation jedes Inventargegensta
 
 
 ### Anlagenkennzahl – Erkenntnisse  
-Zusätzlich zeigte die Analyse der Kennzahlenliste  
-[`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx),  
-dass eine eigene Tabelle für Anlagenkennzahlen notwendig ist.
+Zusätzlich zeigte die Analyse der Kennzahlenliste dass eine eigene Tabelle für Anlagenkennzahlen notwendig ist: [`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx),  
+
 
 Dabei ist besonders zu beachten, dass die Kennzahlen **hierarchisch aufgebaut** sind.  
 Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unterkategorien (Child)** hervorgehen.
@@ -334,11 +330,10 @@ Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in d
 
 Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigurationsart und ermöglichen eine einfache Zuordnung innerhalb der Datenbank sowie der Benutzeroberfläche.
 
-
 ---
 
 ## Testdaten Erstellung
-Die verwendeten Testdaten stammen aus der Excel-Liste [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx) und wurden manuell in die Datenbank übernommen.
+Die verwendeten Testdaten stammen aus der Excel-Liste und wurden manuell in die Datenbank übernommen: [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx)
 
 ### Testdaten der Tabelle T_Account  
 Das verwendete Passwort entspricht **nicht** dem tatsächlichen Passwort.  
@@ -355,12 +350,12 @@ exec sp_Account_Create
       @email          = 'andre@basic-systems.at',
       @externalID     = NULL,
       @isEnabled      = 1
-);
+)
 GO
 ```
 
 ### Testdaten der Tabelle config_ProductType
-Diese Daten stammen aus der Datei [`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx) und wurden mithilfe von SSMS aufbereitet.
+Diese Daten stammen aus der Datei und wurden mithilfe von SSMS aufbereitet: [`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx)
 Es werden hier bewusst nicht alle Einträge angeführt, da dies den Umfang der Arbeit unverhältnismäßig vergrößern würde.
 Nachfolgend sind lediglich einige exemplarische Beispiele dargestellt:
 
@@ -507,11 +502,10 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
 
-![ Geizhals Suchfilteroptionen.](img/GeizhalsFilterOptionen.png)[@geizhals_acer_notebooks]
+![ Geizhals Suchfilteroptionen](img/GeizhalsFilterOptionen.png)
+Quelle: Geizhals Preisvergleich https://geizhals.at/?cat=nb&xf=525_Acer, Abgerufen am 2026-01-02
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die Benutzerfreundlichkeit zu erhöhen.
-
----
 
 ## Die tatsächliche Umsetzung
 
@@ -571,10 +565,9 @@ Zusätzlich befindet sich in der Bearbeitungsansicht eine übersichtliche Top-Ba
 
 Dazu zählen das **Hinzufügen des QR-Codes zur Druckansicht**, das **Speichern** der vorgenommenen Änderungen sowie das **Abbrechen** der Bearbeitung ohne Übernahme der Änderungen.
 
-![ Produktbearbeitungs- und -Erstellungsseite](img/Produktseite.png)
+![ Produktbearbeitungs- und Erstellungsseite](img/Produktseite.png)
 
 ### Unterschiede zwischen Bearbeitung und Erstellung
 
 Zwischen dem Erstellungs- und dem Bearbeitungsmodus bestehen bewusst definierte Unterschiede. In beiden Modi ist es nicht möglich, die **Inventarnummer** sowie die **Produktkategorie** und das **Erstellungsdatum** zu verändern. Diese Einschränkung dient der Sicherstellung einer konsistenten und fortlaufenden Nummerierung sowie der Wahrung der Datenintegrität innerhalb der Datenbank.
 
----
