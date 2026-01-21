@@ -126,21 +126,21 @@ Für die Umsetzung der Anwendung in PHP und JavaScript wurde ein firmeneigenes F
 
 Aus rechtlichen Gründen können keine detaillierten technischen Informationen zu diesem Framework bereitgestellt werden. Die HTL Leoben erhält ausschließlich das Nutzungs- und Bearbeitungsrecht der Anwendung. Eine Weitergabe oder Veröffentlichung des Quellcodes an Dritte ist ausdrücklich untersagt.
 
-
+---
 
 ## Datenauswertung & Datenbankerstellung  
 
 ### Datenquelle  
-Die Grundlage für die Datenbankstruktur bildet eine von der Schule bereitgestellte Excel-Liste mit dem Namen  
+Die Grundlage für die Datenbankstruktur bildet eine von der Schule bereitgestellte Excel-Liste mit dem Namen:  
 [`HTLGesamtinventar_Monitorbeispiel.xlsx`](doc/HTLGesamtinventar_Monitorbeispiel.xlsx).  
 Diese Datei diente als initiale Datenbasis und lieferte einen ersten Überblick über den bestehenden Inventarbestand sowie über die verwendeten Datenfelder.
 
-Im weiteren Verlauf der Analyse wurde diese Basis aufgrund einer erweiterten und aktuelleren Excel-Liste  
-[`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx) ergänzt.  
+Im weiteren Verlauf der Analyse wurde diese Basis aufgrund einer erweiterten und aktuelleren Excel-Liste ergänzt, diese hat den Namen:  
+[`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx).  
 Diese zweite Datei enthielt zusätzliche Datensätze sowie weitere Informationen, die für die vollständige Abbildung des Inventars notwendig waren.
 
-Der geplante Tabellenaufbau aller Datenbanktabellen ist zusätzlich in der Excel-Datei  
-[`da_inventory_TableSchema.xlsx`](doc/da_inventory_TableSchema.xlsx) dokumentiert.  
+Der geplante Tabellenaufbau aller Datenbanktabellen ist zusätzlich in dieser Excel-Datei dokumentiert:  
+[`da_inventory_TableSchema.xlsx`](doc/da_inventory_TableSchema.xlsx).  
 Diese Datei dient als verbindliche Referenz für die Struktur, Benennung und Datentypen der einzelnen Felder.
 
 
@@ -180,7 +180,7 @@ Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unter
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![ Kennzahlen Beispiel.](img/KennzahlenBeispiel.JPG)
+![ Kennzahlen Beispiel.](img/KennzahlenBeispiel.JPG)  
 
 
 ### Erklärung des Anlagenkennzahlbeispiels  
@@ -225,7 +225,6 @@ Dies betrifft folgende Felder:
 | Standort            |
 | Einbringer/in       |
 | Verantwortliche/r   |
-| Produktkategorie    |
 
 
 ### Auswahl der Datenbank  
@@ -253,6 +252,8 @@ Ebenso wurde der Wunsch geäußert, das System künftig an ein LDAP-System anzub
 Auch hierfür ist vorgesehen, eine zusätzliche Spalte zur Speicherung der LDAP-ID zu integrieren.  
 Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Diplomarbeit**, sondern lediglich konzeptionell vorbereitet.
 
+---
+
 ## Datenbankmodell Erstellung
 
 Das Datenbankmodell bildet die zentrale Grundlage der webbasierten Inventarisierungslösung.  
@@ -268,7 +269,6 @@ Sie speichert sowohl grundlegende Benutzerdaten wie Anzeigename, Benutzername un
 Zusätzlich werden Informationen zur Account-Historie wie Login-Zähler, letzter Login-Zeitpunkt sowie Sperrstatus erfasst.  
 Durch die integrierten Rechtefelder kann exakt gesteuert werden, welche Funktionen einem Benutzer zur Verfügung stehen, beispielsweise das Bearbeiten von Produkten oder Konfigurationen.  
 Die Verwendung einer `uniqueidentifier`-ID gewährleistet eine eindeutige Identifikation jedes Accounts und erleichtert die Referenzierung in anderen Tabellen.
-
 ![ T_Account Tabellen Schema.](img/TableSchemaTAccount.png)  
 
 
@@ -279,7 +279,6 @@ Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Akti
 
 Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.  
 Diese Historie ist insbesondere für Wartungszwecke, Sicherheitsanalysen und administrative Auswertungen von Bedeutung.
-
 ![ T_Account_History Tabellen Schema.](img/TableSchemaTAccountHistory.png)  
 
 
@@ -291,7 +290,6 @@ Dazu zählen Identifikationsmerkmale wie Inventarnummer und Produktname, kaufmä
 Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung zu Produkttypen, Bereichen, Lieferanten, Standorten und verantwortlichen Personen ermöglichen.  
 Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.  
 Die konsequente Verwendung von GUIDs stellt sicher, dass Produkte auch bei späteren Erweiterungen oder Datenimporten eindeutig identifizierbar bleiben.
-
 ![ T_Product Tabellen Schema.](img/TableSchemaTProduct.png)  
 
 
@@ -303,7 +301,6 @@ Sie bildet die Grundlage für die Strukturierung der Inventarnummern und ermögl
 Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und Lebensdauer gespeichert.  
 Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.  
 Diese Konfiguration trägt wesentlich zur Flexibilität und Anpassbarkeit der Inventarisierungslösung bei.
-
 ![ config_ProductType Tabellen Schema.](img/TableSchemaconfigProductType.png)  
 
 
@@ -314,8 +311,7 @@ Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten ode
 
 Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
 Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
-
-![ config_DetailInfo Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
+![ config_ProductType Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
 
 ### Erklärung der RefTypes
 
@@ -337,6 +333,9 @@ Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in d
 | config_Depositor           | 5    | Hinterleger               |
 
 Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigurationsart und ermöglichen eine einfache Zuordnung innerhalb der Datenbank sowie der Benutzeroberfläche.
+
+
+---
 
 ## Testdaten Erstellung
 Die verwendeten Testdaten stammen aus der Excel-Liste [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx) und wurden manuell in die Datenbank übernommen.
@@ -470,7 +469,7 @@ exec sp_ProductDepositor_Create 'Andre Karner','####','Pre',NULL
 exec sp_ProductDepositor_Create 'Andre Karner','####','Kach',NULL
 ```
 
-### Testdaten der Tabelle T_Product
+### T_Product
 Im folgenden Abschnitt wird bewusst nur ein einzelnes SQL-Skript angeführt, da eine vollständige Auflistung aller Testdatensätze den Umfang deutlich überschreiten würde.
 
 ```sql
@@ -496,31 +495,34 @@ exec
 GO
 ```
 
+---
+
 ## Designentwicklung
 
 ### MockUp-Designentwicklung
 
-Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vollständig mit Unterstützung einer **KI** erstellt. Es dient als visuelle Leitlinie und zeigt das geplante Layout, besitzt jedoch keinerlei Funktionalität. Das **Endprodukt** wurde anschließend komplett eigenständig entwickelt und währenddessen weiter optimiert, um die **Usability** und **Nutzerfreundlichkeit** zu maximieren.
+Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vollständig mit Unterstützung einer KI erstellt. Es dient als visuelle Leitlinie und zeigt das geplante Layout, besitzt jedoch keinerlei Funktionalität. Das Endprodukt wurde anschließend komplett eigenständig entwickelt und währenddessen weiter optimiert, um die Usability und Nutzerfreundlichkeit zu maximieren.
 
 #### Inspirationen
 
-Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform **Geizhals** angelehnt ist:
+Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
 
-![ Geizhals Suchfilteroptionen.](img/GeizhalsFilterOptionen.png)  
+![ Geizhals Suchfilteroptionen.](img/GeizhalsFilterOptionen.png)[@geizhals_acer_notebooks]
 
-Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die **Benutzerfreundlichkeit** zu erhöhen.
+Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die Benutzerfreundlichkeit zu erhöhen.
 
+---
 
 ## Die tatsächliche Umsetzung
 
-Das Endprodukt fungiert als **Onepager**, bei dem der Seiteninhalt je nach Aktion dynamisch über **Ajax** ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist **vollständig responsiv** und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
+Das Endprodukt fungiert als Onepager, bei dem der Seiteninhalt je nach Aktion dynamisch über Ajax ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist vollständig responsiv und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
 
 ### Erklärung der QR-Code-Funktion
 
-Ein zentrales Feature der Inventarisierungslösung ist die integrierte **QR-Code-Funktion**.  
+Ein zentrales Feature der Inventarisierungslösung ist die integrierte QR-Code-Funktion.  
 Für jedes Produkt wird im Bearbeitungsmodus automatisch ein individueller QR-Code generiert und angezeigt. Dieser QR-Code kann ausgedruckt und direkt am realen Objekt angebracht werden, wodurch ein schneller und direkter Zugriff auf die zugehörigen Produktdaten ermöglicht wird.
 
-Unterhalb jedes QR-Codes wird zusätzlich die **Inventarnummer** in Klartext dargestellt. Dadurch ist die Identifikation des Produkts nicht nur digital, sondern auch für Menschen ohne technische Hilfsmittel jederzeit eindeutig möglich.
+Unterhalb jedes QR-Codes wird zusätzlich die Inventarnummer in Klartext dargestellt. Dadurch ist die Identifikation des Produkts nicht nur digital, sondern auch für Menschen ohne technische Hilfsmittel jederzeit eindeutig möglich.
 
 Technisch besteht der QR-Code aus der Domäne der Webanwendung sowie einem URL-Parameter, der die eindeutige Identifikationsnummer (Primary Key) des Produkts beinhaltet. Beim Scannen des QR-Codes wird der Benutzer automatisch auf die entsprechende Bearbeitungsseite des Produkts weitergeleitet. Dadurch können die hinterlegten Informationen unmittelbar eingesehen und – sofern entsprechende Berechtigungen vorhanden sind – auch bearbeitet werden.
 
@@ -574,3 +576,5 @@ Dazu zählen das **Hinzufügen des QR-Codes zur Druckansicht**, das **Speichern*
 ### Unterschiede zwischen Bearbeitung und Erstellung
 
 Zwischen dem Erstellungs- und dem Bearbeitungsmodus bestehen bewusst definierte Unterschiede. In beiden Modi ist es nicht möglich, die **Inventarnummer** sowie die **Produktkategorie** und das **Erstellungsdatum** zu verändern. Diese Einschränkung dient der Sicherstellung einer konsistenten und fortlaufenden Nummerierung sowie der Wahrung der Datenintegrität innerhalb der Datenbank.
+
+---
