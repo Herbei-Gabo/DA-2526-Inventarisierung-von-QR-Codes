@@ -175,7 +175,7 @@ Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unter
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![ Kennzahlen Beispiel.](img/KennzahlenBeispiel.JPG)  
+![ Kennzahlen Beispiel](img/KennzahlenBeispiel.JPG)  
 
 
 ### Erklärung des Anlagenkennzahlbeispiels  
@@ -276,7 +276,7 @@ Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Akti
 Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.  
 Diese Historie ist insbesondere für Wartungszwecke, Sicherheitsanalysen und administrative Auswertungen von Bedeutung.
 
-![ T_Account_History Tabellen Schema.](img/TableSchemaTAccountHistory.png)  
+![ T_Account_History Tabellen Schema](img/TableSchemaTAccountHistory.png)  
 
 
 ### Erklärung der T_Product Tabelle
@@ -288,7 +288,7 @@ Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung
 Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.  
 Die konsequente Verwendung von GUIDs stellt sicher, dass Produkte auch bei späteren Erweiterungen oder Datenimporten eindeutig identifizierbar bleiben.
 
-![ T_Product Tabellen Schema.](img/TableSchemaTProduct.png)  
+![ T_Product Tabellen Schema](img/TableSchemaTProduct.png)  
 
 
 ### Erklärung der config_ProductType Tabelle
@@ -300,7 +300,7 @@ Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und L
 Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.  
 Diese Konfiguration trägt wesentlich zur Flexibilität und Anpassbarkeit der Inventarisierungslösung bei.
 
-![ config_ProductType Tabellen Schema.](img/TableSchemaconfigProductType.png)  
+![ config_ProductType Tabellen Schema](img/TableSchemaconfigProductType.png)  
 
 
 ### Erklärung der config_DetailInfo Tabelle
@@ -311,7 +311,7 @@ Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten ode
 Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
 Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
 
-![ config_ProductType Tabellen Schema.](img/TableSchemaconfigDetailInfo.png)  
+![ config_ProductType Tabellen Schema](img/TableSchemaconfigDetailInfo.png)  
 
 ### Erklärung der RefTypes
 
@@ -502,9 +502,9 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 
 #### Inspirationen
 
-Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
+Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:[@geizhals_acer_notebooks]
 
-![ Geizhals Suchfilteroptionen (Quelle: Geizhals.at, abgerufen am 21.01.2026, https://geizhals.at/?cat=nb&xf=525_Acer)](img/GeizhalsFilterOptionen.png)
+![ Geizhals Suchfilteroptionen](img/GeizhalsFilterOptionen.png)
 
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die Benutzerfreundlichkeit zu erhöhen.
@@ -540,7 +540,7 @@ Um auch bei einer großen Anzahl von Inventargegenständen effizient arbeiten zu
 
 Die **Suchfunktion** erlaubt eine direkte Suche nach dem Produktnamen oder der Inventarnummer. Ergänzend dazu können mehrere **Filterkriterien** gleichzeitig verwendet werden, darunter Produktkategorie, Bereich, Lieferant, Standort, verantwortliche Person, Hinterleger sowie das Erscheinungsdatum. Durch die Kombination dieser Filter lassen sich auch komplexe Abfragen schnell und übersichtlich darstellen.
 
-![ Such- und Filterfunktion.](img/FilterUndSuche.png)
+![ Such- und Filterfunktion](img/FilterUndSuche.png)
 
 
 ### Anzeige der Produkte
@@ -549,7 +549,7 @@ Die Inventargegenstände werden in einer übersichtlichen tabellarischen Form da
 
 Jeder Produkteintrag kann über ein Pfeilsymbol aufgeklappt werden, um zusätzliche Detailinformationen anzuzeigen. Zudem steht ein Kopiersymbol zur Verfügung, mit dem die Inventarnummer eines Produkts direkt in die Zwischenablage übernommen werden kann. Dies erleichtert die Weiterverarbeitung der Daten erheblich.
 
-![ Produktliste.](img/ProduktListe.png)
+![ Produktliste](img/ProduktListe.png)
 
 
 ### Erstellung neuer Produkte
