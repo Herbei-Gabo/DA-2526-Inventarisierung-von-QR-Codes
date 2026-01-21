@@ -32,8 +32,11 @@ da-betreuer:
 - paraffe: kep
   name: DI (FH) Klaus Kepplinger, MSc
 
-da-kurzfassung-de: xxx
-da-kurzfassung-en: xxx
+da-kurzfassung-de:
+pdf-file: HTL-DA-Doku-DE.pdf
+
+da-kurzfassung-en:
+pdf-file: HTL-DA-Doku-EN.pdf
 
 da-kiquellen:
 
