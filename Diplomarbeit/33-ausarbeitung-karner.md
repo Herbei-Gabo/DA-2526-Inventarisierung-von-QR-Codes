@@ -504,9 +504,8 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
 
-![ Geizhals Suchfilteroptionen](img/GeizhalsFilterOptionen.png)
+![ Geizhals Suchfilteroptionen (Quelle: Geizhals.at, abgerufen am 21.01.2026, https://geizhals.at/?cat=nb&xf=525_Acer)](img/GeizhalsFilterOptionen.png)
 
-Quelle: Geizhals Preisvergleich https://geizhals.at/?cat=nb&xf=525_Acer, Abgerufen am 2026-01-02
 
 Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umsetzung gezielt angepasst, um die Benutzerfreundlichkeit zu erhöhen.
 
