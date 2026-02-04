@@ -216,7 +216,7 @@ Darüber hinaus ist die Erweiterbarkeit eingeschränkt. Funktionen wie die autom
 
 ## Anschließen an das aktuelle Ticketsystem
 
-Das aktuelle Ticketsystem der HTL Leoben läuft Open-Source auf https://ticket.htl-leoben.at/, erstellt von MantisBT. Dabei melden sich jeweilige Schüler und Lehrer über das Schulnetzwerk - welches über LDAP läuft - an und können einen Defekt oder einen Einwand reklamieren. [@htl_leoben_ticket]
+Das aktuelle Ticketsystem der HTL Leoben läuft Open-Source auf https://ticket.htl-leoben.at/, erstellt von MantisBT. Dabei melden sich jeweilige Schüler und Lehrer über das Schulnetzwerk, welches über LDAP läuft, an und können einen Defekt oder einen Einwand reklamieren. [@htl_leoben_ticket]
 
 Die Idee mit dem anschließen an dieses Ticketsystem klingt einfacher gesagt als getan. Zu aller Erst muss gesagt werden, dass wir uns dazu entschieden haben, unsere Invetarisierungslösung nicht als Open-Source veröffentlicht wird. Diese Lösung sollte ausschließlich der HTL Leoben dienen.
 
