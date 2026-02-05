@@ -1,6 +1,21 @@
 
 # Teilaufgabe André Karner
 
+## Abkürzungsverzeichnis
+
+| Abkürzung | Bedeutung |
+|----------|-----------|
+| AJAX | Asynchronous JavaScript and XML |
+| CSS | Cascading Style Sheets |
+| HTML | HyperText Markup Language |
+| IIS | Internet Information Services |
+| JS | JavaScript |
+| PHP | Hypertext Preprocessor |
+| QR-Code | Quick Response Code |
+| SQL | Structured Query Language |
+| SSMS | SQL Server Management Studio |
+
+
 ## Verwendete Technologien
 
 Für die Entwicklung der webbasierten Inventarisierungslösung kamen verschiedene, aufeinander abgestimmte Technologien zum Einsatz.  
@@ -513,7 +528,7 @@ Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umse
 
 Das Endprodukt fungiert als Onepager, bei dem der Seiteninhalt je nach Aktion dynamisch über Ajax ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist vollständig responsiv und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
 
-### Erklärung der QR-Code-Funktion
+### !!! Erklärung der QR-Code-Funktion
 
 Ein zentrales Feature der Inventarisierungslösung ist die integrierte QR-Code-Funktion.  
 Für jedes Produkt wird im Bearbeitungsmodus automatisch ein individueller QR-Code generiert und angezeigt. Dieser QR-Code kann ausgedruckt und direkt am realen Objekt angebracht werden, wodurch ein schneller und direkter Zugriff auf die zugehörigen Produktdaten ermöglicht wird.
