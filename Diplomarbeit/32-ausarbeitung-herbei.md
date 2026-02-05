@@ -23,7 +23,7 @@ Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch 
 ## QR-Codes als technologische Grundlage
 Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird.[@bendel_qrcode_gabler @eckert_qr_vs_barcode_2023 @berger_nfc_vs_qr_2024]
 
-![ Darstellung eines QR-Codes.](img/qrcode.gif)
+![ Darstellung eines QR-Codes.](img/qrcode.gif) [@activebarcode_qrcode_info_2025]
 
 Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeicher verwendet, sondern als Verweis auf einen zentralen Datensatz. Der Code enthält typischerweise eine eindeutige Identifikationsnummer oder eine URL, über die beim Scannen die aktuellen Informationen aus der Datenbank abgerufen werden. Dieses Prinzip ermöglicht es, Daten jederzeit zu aktualisieren, ohne den QR-Code neu drucken zu müssen. Zusätzlich verfügen QR-Codes über eine integrierte Fehlerkorrektur, wodurch sie auch bei teilweiser Beschädigung oder Verschmutzung noch zuverlässig gelesen werden können, welches ein wesentlicher Vorteil im schulischen Alltag ist.
 
@@ -32,11 +32,11 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 ### Technische Vergleichskriterien
 **Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. [@eckert_qr_vs_barcode_2023]
 
-![ Darstellung eines Bar-Codes.](img/Barcode.jpg)
+![ Darstellung eines Bar-Codes.](img/Barcode.jpg) [@tecit_barcode_generator_2025]
 
 NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte, siehe Abbildung 3), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. [@berger_nfc_vs_qr_2024]
 
-![Darstellung eines NFC.](img/nfc-symbol.jpg)
+![Darstellung eines NFC.](img/nfc-symbol.jpg) [@homeandsmart_nfc_2025]
 
 **Lesegeschwindigkeit und -sicherheit:** Bei Barcodes muss der Scanner (oder die Kamera) den Code zeilenweise in einer Achse lesen. 1D-Barcodes sind richtungsabhängig, sie müssen in einer bestimmten Ausrichtung erfasst werden und das Lesegerät braucht oft einen direkten, geraden „Line-of-Sight“ zum Code. Das macht sie empfindlicher für Verdrehungen oder Winkel beim Scannen. In der Praxis müssen Barcodes meist ziemlich genau ausgerichtet werden, was Zeit kosten kann. QR-Codes dagegen besitzen Ausrichtungsmarkierungen und können aus jedem Winkel schnell erkannt werden. Das beschleunigt den Scan-Vorgang, da Nutzer das Gerät nicht exakt ausrichten müssen. Beide Codearten lassen sich mit modernen Geräten zügig einlesen. Jedoch bieten QR-Codes hier einen Vorteil durch robustere Erkennung (daher der Name „Quick Response“). NFC-Scans sind in der Regel sehr schnell, ein kurzes Tap mit dem Gerät reicht. In Szenarien mit einzelnen Objekten ist NFC vom reinen Lesevorgang her ggf. am schnellsten, da kein Fokussieren der Kamera nötig ist. Allerdings muss das Gerät für NFC sehr nah (wenige cm) an den Tag gebracht werden, was bei vielen Objekten hintereinander zeitaufwendiger werden kann. [@eckert_qr_vs_barcode_2023] [@berger_nfc_vs_qr_2024.] [@winkler_barcode_vs_qr_2023]
 
