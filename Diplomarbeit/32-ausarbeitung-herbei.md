@@ -30,7 +30,7 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 ## Wieso QR-Code und kein Barcode oder NFC
 
 ### Technische Vergleichskriterien
-**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ca. 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. [@eckert_qr_vs_barcode_2023]
+**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ungefähr 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, wo ein 1D-Barcode oft nur eine kurze ID liefert. [@eckert_qr_vs_barcode_2023]
 
 ![ Darstellung eines Bar-Codes. [@tecit_barcode_generator_2025]](img/Barcode.jpg) 
 
@@ -69,23 +69,23 @@ Am Markt existieren sowohl kostenlose als auch kostenpflichtige Inventarisierung
 
 Eine speziell auf Schulen zugeschnittene kostenlose Inventarisierungssoftware existiert derzeit nicht auf dem Markt. Vielmehr richten sich die vorhandenen kostenlosen Programme an kleine Unternehmen oder den E-Commerce-Bereich. Beispiele hierfür sind:
 
-- [Zoho Inventory](https://www.zoho.com/inventory/) [@zoho_inventory]    
+- [Zoho Inventory](https://www.zoho.com/inventory/) [@zoho_inventory]
 - [Odoo Inventory](https://www.odoo.com/de_DE/app/inventory) [@odoo_inventory]    
 
 Diese Lösungen bieten eine Vielzahl von Funktionen wie Lagerverwaltung, Bestellwesen und Lieferkettenmanagement.[@fischer_inventarsoftware_2024] Für den schulischen Bereich ist dieser Funktionsumfang jedoch überdimensioniert und führt zu einem unnötigen Verwaltungsaufwand.  
 
 **Vorteile**:  
 
-- kostenlos nutzbar  
-- professionell entwickelte Software mit stabiler Basis  
-- modular erweiterbar  
+- kostenlos nutzbar
+- professionell entwickelte Software mit stabiler Basis
+- modular erweiterbar
 
 **Nachteile**:  
 
-- keine QR-Code-Integration für einfache Inventarisierung vor Ort  
-- Fokus auf Warenwirtschaft und Verkauf, nicht auf schulische Inventarverwaltung  
-- hohe Komplexität in der Einrichtung und Bedienung, die nicht im Verhältnis zum Nutzen steht  
-- keine direkte Anpassung an die Bedürfnisse einer Schule möglich  
+- keine QR-Code-Integration für einfache Inventarisierung vor Ort
+- Fokus auf Warenwirtschaft und Verkauf, nicht auf schulische Inventarverwaltung
+- hohe Komplexität in der Einrichtung und Bedienung, die nicht im Verhältnis zum Nutzen steht
+- keine direkte Anpassung an die Bedürfnisse einer Schule möglich
 
 Damit sind kostenlose Alternativen für den angestrebten Anwendungsbereich ungeeignet, da sie mehr Aufwand erzeugen als Nutzen bringen.
 
@@ -138,24 +138,24 @@ Die [Timly Inventarsoftware](https://timly.com/inventar-software/) ist eine mode
 
 Die Lösung [Endoo Organize](https://endoo-organize.de/funktionen-inventarisierung/) [@endoo_organize] richtet sich ausdrücklich auch an Schulen und Bildungseinrichtungen. Sie bietet neben einer QR-Code-Integration auch zahlreiche zusätzliche Funktionen wie:
 
-- Verwaltung von Zubehör    
-- Ausleihmanagement     
-- Reservierung von Objekten     
-- zentrale Verwaltung von Geräten und Materialien [@endoo_organize]     
+- Verwaltung von Zubehör
+- Ausleihmanagement
+- Reservierung von Objekten
+- zentrale Verwaltung von Geräten und Materialien [@endoo_organize]
 
 **Vorteile**:  
 
-- speziell für Schulen ausgelegt  
-- integrierte QR-Code-Lösung  
-- vielfältige Zusatzfunktionen, die den Schulalltag vereinfachen können  
+- speziell für Schulen ausgelegt
+- integrierte QR-Code-Lösung
+- vielfältige Zusatzfunktionen, die den Schulalltag vereinfachen können
 - professionelle Unterstützung durch den Anbieter  [@endoo_organize]
 
 **Nachteile**:  
 
-- keine transparente Preisgestaltung (Preisinformationen nur nach Kontaktaufnahme)  
-- verpflichtende Terminvereinbarung für eine Online-Beratung oder Live-Präsentation (zeitaufwändig)  
-- mögliche laufende Lizenzkosten, die schwer abschätzbar sind  
-- Abhängigkeit vom Anbieter bei Erweiterungen und Wartung [@endoo_organize]  
+- keine transparente Preisgestaltung (Preisinformationen nur nach Kontaktaufnahme)
+- verpflichtende Terminvereinbarung für eine Online-Beratung oder Live-Präsentation (zeitaufwändig)
+- mögliche laufende Lizenzkosten, die schwer abschätzbar sind
+- Abhängigkeit vom Anbieter bei Erweiterungen und Wartung [@endoo_organize]
 
 #### inFlow Inventory
 
@@ -163,9 +163,9 @@ Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/i
 
 **Vorteile**:  
 
-- 14-tägige kostenlose Testphase  
-- benutzerfreundliche Oberfläche  
-- für verschiedene Plattformen (Web, Desktop, Mobile) verfügbar  
+- 14-tägige kostenlose Testphase
+- benutzerfreundliche Oberfläche
+- für verschiedene Plattformen (Web, Desktop, Mobile) verfügbar
 - international weit verbreitet und gut dokumentiert  [@hofer_open_source_inventory_2025]
 
 **Nachteile**:  
