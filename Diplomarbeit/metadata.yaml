@@ -19,6 +19,9 @@ da-author:
   nachname: Karner
   klasse: 5BHWIN
   thema: Entwicklung und Programmierung einer funktionierenden Webbasierenden Inventarisierungslösung
+  ki-tools:
+  - name: ChatGPT5.2
+    zweck: Rechtschreibkorrektur & Formatierung in Markdown Syntax
 
 - vorname: Stephan 
   nachname: Dietmair
