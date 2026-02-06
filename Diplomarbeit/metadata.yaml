@@ -14,6 +14,9 @@ da-author:
   nachname: Herbei
   klasse: 5BHWIN
   thema: Analyse, Anwendung und Testen einer digitalen Inventarisierungslösung basierend auf QR-Codes
+  ki-tools:
+  - name: ChatGPT5.2
+    zweck: Rechtschreibkorrektur & Formatierung in Markdown Syntax
 
 - vorname: Andre 
   nachname: Karner
