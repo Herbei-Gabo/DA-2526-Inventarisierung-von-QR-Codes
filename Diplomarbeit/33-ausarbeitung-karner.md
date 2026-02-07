@@ -517,7 +517,7 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 
 #### Inspirationen
 
-Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:[@geizhals_acer_notebooks]
+Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
 
 ![ Geizhals Suchfilteroptionen](img/GeizhalsFilterOptionen.png)
 
@@ -528,63 +528,118 @@ Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umse
 
 Das Endprodukt fungiert als Onepager, bei dem der Seiteninhalt je nach Aktion dynamisch über Ajax ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist vollständig responsiv und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
 
-### !!! Erklärung der QR-Code-Funktion
+### Erklärung der QR-Code-Funktion
 
 Ein zentrales Feature der Inventarisierungslösung ist die integrierte QR-Code-Funktion.  
 Für jedes Produkt wird im Bearbeitungsmodus automatisch ein individueller QR-Code generiert und angezeigt. Dieser QR-Code kann ausgedruckt und direkt am realen Objekt angebracht werden, wodurch ein schneller und direkter Zugriff auf die zugehörigen Produktdaten ermöglicht wird.
 
 Unterhalb jedes QR-Codes wird zusätzlich die Inventarnummer in Klartext dargestellt. Dadurch ist die Identifikation des Produkts nicht nur digital, sondern auch für Menschen ohne technische Hilfsmittel jederzeit eindeutig möglich.
 
-Technisch besteht der QR-Code aus der Domäne der Webanwendung sowie einem URL-Parameter, der die eindeutige Identifikationsnummer (Primary Key) des Produkts beinhaltet. Beim Scannen des QR-Codes wird der Benutzer automatisch auf die entsprechende Bearbeitungsseite des Produkts weitergeleitet. Dadurch können die hinterlegten Informationen unmittelbar eingesehen und – sofern entsprechende Berechtigungen vorhanden sind – auch bearbeitet werden.
+Technisch besteht der QR-Code aus der Domäne der Webanwendung sowie einem URL-Parameter, der die eindeutige Inventarnummer des Produkts beinhaltet. Beim Scannen des QR-Codes wird der Benutzer automatisch auf die entsprechende Bearbeitungsseite des Produkts weitergeleitet. Dadurch können die hinterlegten Informationen unmittelbar eingesehen und sofern entsprechende Berechtigungen vorhanden sind auch bearbeitet werden.
 
 Dieses Konzept erleichtert die Verwaltung physischer Inventargegenstände erheblich und reduziert den Zeitaufwand für das Suchen und Zuordnen von Produktdaten auf ein Minimum.
 
-### Funktionen der Navigationsleiste
+## Erklärung des Aufbaus der Seite
 
-Die Navigationsleiste stellt das zentrale Steuerelement der Anwendung dar und ermöglicht den schnellen Zugriff auf alle wesentlichen Funktionen der Inventarisierungslösung. Sie ist übersichtlich aufgebaut und besteht aus drei klar definierten Hauptpunkten, die je nach Benutzerrolle unterschiedliche Funktionalitäten bereitstellen.
+![Hauptseite](img/Explain_MainPage.png)
 
-Über den Menüpunkt **Einstellungen** können kontobezogene Konfigurationen vorgenommen werden. Dazu zählt unter anderem die Festlegung, wie viele Produkte standardmäßig in der Produktliste angezeigt werden. Benutzer mit Administratorrechten verfügen zusätzlich über erweiterte Optionen, wie beispielsweise die Anpassung des Speicherpfads für generierte QR-Codes oder weitere systemrelevante Konfigurationen.
+### Navigationsleiste
 
-Der Menüpunkt **Drucken** bietet eine zentrale Übersicht aller bereits erstellten QR-Codes. Diese können gesammelt ausgewählt und in einem Schritt ausgedruckt werden, was insbesondere bei der Inventarisierung mehrerer Objekte eine erhebliche Zeitersparnis darstellt.
+Die Navigationsleiste bildet das zentrale Steuerelement der Anwendung und ermöglicht einen schnellen Zugriff auf alle wesentlichen Funktionen der webbasierten Inventarisierungslösung. Sie ist übersichtlich aufgebaut und besteht aus drei klar definierten Hauptpunkten, deren verfügbare Funktionen abhängig von der jeweiligen Benutzerrolle variieren.
 
-Über **Ausloggen** kann sich der Benutzer jederzeit sicher vom System abmelden, wodurch ein unbefugter Zugriff auf die Anwendung verhindert wird.
+**Punkt 1:** Über den Menüpunkt *Einstellungen* können systemrelevante Konfigurationen vorgenommen werden. Insbesondere Benutzer mit Administratorrechten haben hier Zugriff auf erweiterte Funktionen, darunter die Benutzerverwaltung, welche ausschließlich bei entsprechender Berechtigung angezeigt wird.  
+
+**Punkt 2:** Die *Druckanzeige* visualisiert in einem roten Kreis die Anzahl der aktuell für den Druck ausgewählten Objekte. Durch Anklicken dieses Symbols wird zur Druckansicht navigiert.  
+
+**Punkt 3:** Dieses Symbol ermöglicht das ordnungsgemäße Abmelden (Logout) aus der Anwendung.
 
 ### Such- und Filterfunktion
 
-Um auch bei einer großen Anzahl von Inventargegenständen effizient arbeiten zu können, stellt die Anwendung umfangreiche Such- und Filterfunktionen zur Verfügung. Diese ermöglichen es, gezielt nach bestimmten Produkten zu suchen und die angezeigten Ergebnisse nach unterschiedlichen Kriterien einzuschränken.
+Um auch bei einer großen Anzahl an Inventargegenständen effizient arbeiten zu können, stellt die Anwendung eine leistungsfähige Such- und Filterfunktion zur Verfügung (**Punkt 4**). Diese erlaubt eine gezielte Recherche nach bestimmten Produkten sowie eine Einschränkung der angezeigten Ergebnisse anhand unterschiedlicher Kriterien.
 
-Die **Suchfunktion** erlaubt eine direkte Suche nach dem Produktnamen oder der Inventarnummer. Ergänzend dazu können mehrere **Filterkriterien** gleichzeitig verwendet werden, darunter Produktkategorie, Bereich, Lieferant, Standort, verantwortliche Person, Hinterleger sowie das Erscheinungsdatum. Durch die Kombination dieser Filter lassen sich auch komplexe Abfragen schnell und übersichtlich darstellen.
+Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sternsymbol (`*`), welches in allen Suchfeldern verwendet werden kann. Wird beispielsweise der Suchbegriff `Projekt*` im Feld *Produktname* eingegeben, werden alle Objekte angezeigt, deren Name mit „Projekt“ beginnt. Die Eingabe `*Pro*` liefert hingegen alle Objekte, die den Text „Pro“ an beliebiger Stelle im Namen enthalten. Dieselbe Logik gilt auch für die Suche nach Inventarnummern. So liefert etwa die Eingabe `408-*-*-24` alle Inventargegenstände der Kategorie 408, die im Jahr 2024 inventarisiert wurden.
 
-![ Such- und Filterfunktion](img/FilterUndSuche.png)
+**Punkt 5:** Suchfeld zur Recherche nach Produktnamen unter Verwendung der beschriebenen Platzhalterlogik.  
 
+**Punkt 6:** Suchfeld zur Recherche nach Inventarnummern mit Unterstützung des Sternsymbols (`*`).  
 
-### Anzeige der Produkte
+**Punkt 7:** Über das Suchsymbol wird die Suche ausgeführt. Das Pfeilsymbol dient zum Öffnen beziehungsweise Schließen der erweiterten Such- und Filtermaske.  
 
-Die Inventargegenstände werden in einer übersichtlichen tabellarischen Form dargestellt. Nutzer haben die Möglichkeit, die Anzahl der angezeigten Einträge individuell anzupassen und zwischen mehreren Seiten zu wechseln. Dabei wird jeweils nur der sichtbare Bereich der Liste aktualisiert, wodurch langes Scrollen vermieden und die Performance der Anwendung verbessert wird.
+**Punkt 8:** In diesem Bereich können zusätzliche Filterkriterien angewendet werden. Dazu zählen *Kategorie*, *Bereich*, *Lieferant*, *Standort*, *verantwortliche Person* sowie *Hinterleger*. Beim Öffnen der Filtermaske – im folgenden Beispiel für den Bereich – erscheint ein Fenster, das den jeweiligen Namen sowie die Anzahl der zugeordneten Objekte anzeigt:
 
-Jeder Produkteintrag kann über ein Pfeilsymbol aufgeklappt werden, um zusätzliche Detailinformationen anzuzeigen. Zudem steht ein Kopiersymbol zur Verfügung, mit dem die Inventarnummer eines Produkts direkt in die Zwischenablage übernommen werden kann. Dies erleichtert die Weiterverarbeitung der Daten erheblich.
+![configDetail Filter](img/Explain_DetailFilter.jpeg)
 
-![ Produktliste](img/ProduktListe.png)
+**Punkt 9:** Dieser Bereich enthält Symbole zur Erstellung neuer Einträge sowie zur Bearbeitung bestehender Konfigurationen.
 
+### Anzeige der Inventarliste
 
-### Erstellung neuer Produkte
+Die Inventarliste stellt das zentrale Element der Anwendung dar. In diesem Bereich werden alle im System gespeicherten Inventarobjekte angezeigt. Die Darstellung passt sich dynamisch an die aktuell gesetzten Such- und Filterkriterien an.
 
-Das Hinzufügen neuer Inventargegenstände erfolgt über ein gut sichtbares **Plus-Symbol** innerhalb der Produktliste. Beim Erstellen eines neuen Produkts kann gewählt werden, ob die Daten von einer bestehenden, gültigen Inventarnummer übernommen oder ein vollständig neues Produkt angelegt werden soll.
+**Punkt 10:** Dieser Bereich dient der Seitenverwaltung der Inventarliste. Um auch bei einer großen Anzahl an Objekten eine übersichtliche Darstellung zu gewährleisten, kann zwischen einzelnen Seiten gewechselt sowie die Anzahl der angezeigten Elemente pro Seite angepasst werden. Zusätzlich befindet sich am rechten Rand ein Plus-Symbol zur Erstellung neuer Produkte.  
 
-Unabhängig von der gewählten Option müssen eine **Produktkategorie** sowie ein **Erstellungsdatum** angegeben werden. Auf Basis dieser Informationen wird die Inventarnummer automatisch generiert. Eine manuelle Änderung der Inventarnummer ist bewusst nicht vorgesehen, da dies zu Inkonsistenzen in der fortlaufenden Nummerierung und somit zu fehlerhaften Zuordnungen führen könnte.
+**Punkt 11:** Jedes Inventarobjekt wird durch einen eigenen Listeneintrag dargestellt. Angezeigt werden unter anderem der Produktname, der zugehörige Bereich, der Raum sowie die Inventarnummer.  
 
-### Bearbeitung eines Produktes
+**Punkt 12:** Für jedes Objekt stehen mehrere Funktionen zur Verfügung:
+- Über das Drucksymbol kann das Objekt zur Druckliste hinzugefügt werden. Die Anzeige in der Navigationsleiste erhöht sich dabei automatisch.  
+- Das Kopiersymbol ermöglicht das Kopieren der Inventarnummer, beispielsweise zur Verwendung bei der Produkterstellung.  
+- Über das Editiersymbol kann das jeweilige Produkt bearbeitet werden.  
+- Zusätzlich kann der Eintrag ein- oder ausgeklappt werden, um weitere Detailinformationen anzuzeigen:
 
-Für jedes bestehende Produkt steht ein **Bearbeitungssymbol** zur Verfügung, über das die Bearbeitungsansicht geöffnet wird. In dieser Ansicht können nahezu alle Produktinformationen angepasst werden. Ausgenommen davon sind die **Inventarnummer** und die **Produktkategorie**, da diese wesentliche Bestandteile der eindeutigen Identifikation eines Produkts darstellen und nicht verändert werden dürfen.
+![Product Open](img/Explain_ProductOpen.jpeg)
 
-Das Erstellungsdatum kann im Bearbeitungsmodus nicht mehr angepasst werden, da eine nachträgliche Änderung die bereits vergebene Inventarnummer beeinflussen und zu Inkonsistenzen führen würde.
-Zusätzlich befindet sich in der Bearbeitungsansicht eine übersichtliche Top-Bar, in der zentrale Aktionen gebündelt zur Verfügung stehen.
+### Punkt 2 – Navigationsleiste: Druckoption
 
-Dazu zählen das **Hinzufügen des QR-Codes zur Druckansicht**, das **Speichern** der vorgenommenen Änderungen sowie das **Abbrechen** der Bearbeitung ohne Übernahme der Änderungen.
+In der Druckansicht werden alle für den Druck ausgewählten QR-Codes verwaltet.
 
-![ Produktbearbeitungs- und Erstellungsseite](img/Produktseite.png)
+**Punkt 1:** Über diese Schaltflächen kann der Druckvorgang abgebrochen, gestartet oder die gesamte Auswahlliste gelöscht werden.  
 
-### Unterschiede zwischen Bearbeitung und Erstellung
+**Punkt 2:** Dieser Bereich zeigt eine Übersicht aller aktuell ausgewählten QR-Codes.  
 
-Zwischen dem Erstellungs- und dem Bearbeitungsmodus bestehen bewusst definierte Unterschiede. In beiden Modi ist es nicht möglich, die **Inventarnummer** sowie die **Produktkategorie** und das **Erstellungsdatum** zu verändern. Diese Einschränkung dient der Sicherstellung einer konsistenten und fortlaufenden Nummerierung sowie der Wahrung der Datenintegrität innerhalb der Datenbank.
+**Punkt 3:** Jedes Feld kann einzeln ausgewählt werden, um den Startpunkt der QR-Code-Liste festzulegen. Diese Funktion ermöglicht eine effiziente Nutzung der Druckbögen, sodass auch angebrochene Stickerbögen vollständig verwendet werden können.
 
+![Print](img/Explain_Print.png)
+
+### Punkt 9 – Such- und Filterfunktion: Konfigurationsbearbeitung
+
+Durch Anklicken des Editiersymbols öffnet sich eine Bearbeitungsmaske. Im folgenden Beispiel wird die Konfiguration *Bereiche* dargestellt:
+
+![configDetail EditSelection](img/Explain_configEditSelection.png)
+
+**Punkt 1:** Anzeige des Namens des ausgewählten Bereichs.  
+**Punkt 2:** Anzeige der Anzahl der Objekte, die diesem Bereich zugeordnet sind.  
+**Punkt 3:** Über dieses Symbol kann der Bereich bearbeitet werden.  
+**Punkt 4:** Ist der Bereich keinem Objekt zugeordnet, erscheint ein Löschsymbol, über das der Eintrag entfernt werden kann.
+
+Bei der Bearbeitung eines Bereichs öffnet sich folgende Maske:
+
+![configDetail Edit](img/Explain_configEdit.png)
+
+**Punkt 1:** Änderung des Namens des Bereichs.  
+**Punkt 2:** Änderung des Kurzzeichens des Bereichs.  
+**Punkt 3:** Möglichkeit zur Ergänzung einer Beschreibung.
+
+### Punkt 10 – Anzeige der Inventarliste: Produkterstellung
+
+Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
+
+![Product Create](img/Explain_ProductCreate.png)
+
+**Punkt 1:** Auswahl der Produktkategorie.  
+**Punkt 2:** Festlegung des Inventarisierungsdatums.  
+**Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen.  
+**Punkt 4:** Option zum Abbrechen der Produkterstellung oder zum Erstellen des neuen Produkts.
+
+### Punkt 10 und 12 – Produktmaske
+
+Über diese Ansicht erfolgt sowohl die **Erstellung neuer Produkte** als auch die **Bearbeitung bereits vorhandener Produkte**. Die dargestellte Maske dient der Konfiguration eines Produkts und passt sich abhängig vom jeweiligen Modus entsprechend an.
+
+![Product Edit](img/Explain_ProductEdit.png)
+
+**Punkt 1:** Abbruch der Produkterstellung beziehungsweise der Bearbeitung und Rückkehr zur vorherigen Ansicht.  
+**Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts; die Beschriftung der Schaltfläche variiert abhängig vom Modus.  
+**Punkt 3:** Anzeige der editierbaren Eingabefelder zur Anpassung der Produktinformationen.
+
+Die **Inventarnummer** (**Punkt 4**), das **Erstelldatum** (**Punkt 5**) sowie die **Produktkategorie** (**Punkt 6**) sind ausschließlich schreibgeschützt und können nicht manuell verändert werden. Diese Informationen stellen zentrale Bestandteile der eindeutigen Identifikation eines Produkts dar.  
+Unterhalb der Eingabefelder wird über **Punkt 7** der dem Produkt zugeordnete **QR-Code** angezeigt.
+
+Nahezu alle weiteren Produktinformationen können in dieser Maske angepasst werden. Eine Änderung der schreibgeschützten Felder ist nicht vorgesehen, da dies zu Inkonsistenzen im System führen würde.
