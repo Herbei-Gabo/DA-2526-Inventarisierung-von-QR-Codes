@@ -610,7 +610,7 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 **Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen.  
 **Punkt 4:** Option zum Abbrechen der Produkterstellung oder zum Erstellen des neuen Produkts.
 
-### Punkt 10 und 12 – Produktmaske
+### Punkt 12 – Produktmaske
 
 Über diese Ansicht erfolgt sowohl die **Erstellung neuer Produkte** als auch die **Bearbeitung bereits vorhandener Produkte**. Die dargestellte Maske dient der Konfiguration eines Produkts und passt sich abhängig vom jeweiligen Modus entsprechend an.
 
