@@ -500,7 +500,7 @@ GO
 
 Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vollständig mit Unterstützung einer KI erstellt. Es dient als visuelle Leitlinie und zeigt das geplante Layout, besitzt jedoch keinerlei Funktionalität. Das Endprodukt wurde anschließend komplett eigenständig entwickelt und währenddessen weiter optimiert, um die Usability und Nutzerfreundlichkeit zu maximieren.
 
-#### Inspirationen
+### Inspirationen
 
 Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist: [@geizhals_acer_notebooks]
 
