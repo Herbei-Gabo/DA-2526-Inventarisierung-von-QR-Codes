@@ -1,21 +1,6 @@
 
 # Teilaufgabe André Karner
 
-## Abkürzungsverzeichnis
-
-| Abkürzung | Bedeutung |
-|----------|-----------|
-| AJAX | Asynchronous JavaScript and XML |
-| CSS | Cascading Style Sheets |
-| HTML | HyperText Markup Language |
-| IIS | Internet Information Services |
-| JS | JavaScript |
-| PHP | Hypertext Preprocessor |
-| QR-Code | Quick Response Code |
-| SQL | Structured Query Language |
-| SSMS | SQL Server Management Studio |
-
-
 ## Verwendete Technologien
 
 Für die Entwicklung der webbasierten Inventarisierungslösung kamen verschiedene, aufeinander abgestimmte Technologien zum Einsatz.  
@@ -482,7 +467,7 @@ exec sp_ProductDepositor_Create 'Andre Karner','####','Pre',NULL
 exec sp_ProductDepositor_Create 'Andre Karner','####','Kach',NULL
 ```
 
-### T_Product
+### Testdaten der Tabelle T_Product
 Im folgenden Abschnitt wird bewusst nur ein einzelnes SQL-Skript angeführt, da eine vollständige Auflistung aller Testdatensätze den Umfang deutlich überschreiten würde.
 
 ```sql
@@ -567,7 +552,7 @@ Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sterns
 
 **Punkt 8:** In diesem Bereich können zusätzliche Filterkriterien angewendet werden. Dazu zählen *Kategorie*, *Bereich*, *Lieferant*, *Standort*, *verantwortliche Person* sowie *Hinterleger*. Beim Öffnen der Filtermaske – im folgenden Beispiel für den Bereich – erscheint ein Fenster, das den jeweiligen Namen sowie die Anzahl der zugeordneten Objekte anzeigt:
 
-![configDetail Filter](img/Explain_DetailFilter.jpeg)
+![Filteransicht](img/Explain_DetailFilter.jpeg)
 
 **Punkt 9:** Dieser Bereich enthält Symbole zur Erstellung neuer Einträge sowie zur Bearbeitung bestehender Konfigurationen.
 
@@ -580,12 +565,12 @@ Die Inventarliste stellt das zentrale Element der Anwendung dar. In diesem Berei
 **Punkt 11:** Jedes Inventarobjekt wird durch einen eigenen Listeneintrag dargestellt. Angezeigt werden unter anderem der Produktname, der zugehörige Bereich, der Raum sowie die Inventarnummer.  
 
 **Punkt 12:** Für jedes Objekt stehen mehrere Funktionen zur Verfügung:
-- Über das Drucksymbol kann das Objekt zur Druckliste hinzugefügt werden. Die Anzeige in der Navigationsleiste erhöht sich dabei automatisch.  
-- Das Kopiersymbol ermöglicht das Kopieren der Inventarnummer, beispielsweise zur Verwendung bei der Produkterstellung.  
-- Über das Editiersymbol kann das jeweilige Produkt bearbeitet werden.  
-- Zusätzlich kann der Eintrag ein- oder ausgeklappt werden, um weitere Detailinformationen anzuzeigen:
+  - Über das Drucksymbol kann das Objekt zur Druckliste hinzugefügt werden. Die Anzeige in der Navigationsleiste erhöht sich dabei automatisch.  
+  - Das Kopiersymbol ermöglicht das Kopieren der Inventarnummer, beispielsweise zur Verwendung bei der Produkterstellung.  
+  - Über das Editiersymbol kann das jeweilige Produkt bearbeitet werden.  
+  - Zusätzlich kann der Eintrag ein- oder ausgeklappt werden, um weitere Detailinformationen anzuzeigen:
 
-![Product Open](img/Explain_ProductOpen.jpeg)
+![Produktdetails](img/Explain_ProductOpen.jpeg)
 
 ### Punkt 2 – Navigationsleiste: Druckoption
 
@@ -597,13 +582,13 @@ In der Druckansicht werden alle für den Druck ausgewählten QR-Codes verwaltet.
 
 **Punkt 3:** Jedes Feld kann einzeln ausgewählt werden, um den Startpunkt der QR-Code-Liste festzulegen. Diese Funktion ermöglicht eine effiziente Nutzung der Druckbögen, sodass auch angebrochene Stickerbögen vollständig verwendet werden können.
 
-![Print](img/Explain_Print.png)
+![Druckansicht](img/Explain_Print.png)
 
 ### Punkt 9 – Such- und Filterfunktion: Konfigurationsbearbeitung
 
 Durch Anklicken des Editiersymbols öffnet sich eine Bearbeitungsmaske. Im folgenden Beispiel wird die Konfiguration *Bereiche* dargestellt:
 
-![configDetail EditSelection](img/Explain_configEditSelection.png)
+![Bearbeitungsauswahl](img/Explain_configEditSelection.png)
 
 **Punkt 1:** Anzeige des Namens des ausgewählten Bereichs.  
 **Punkt 2:** Anzeige der Anzahl der Objekte, die diesem Bereich zugeordnet sind.  
@@ -612,7 +597,7 @@ Durch Anklicken des Editiersymbols öffnet sich eine Bearbeitungsmaske. Im folge
 
 Bei der Bearbeitung eines Bereichs öffnet sich folgende Maske:
 
-![configDetail Edit](img/Explain_configEdit.png)
+![Bearbeitungsformular](img/Explain_configEdit.png)
 
 **Punkt 1:** Änderung des Namens des Bereichs.  
 **Punkt 2:** Änderung des Kurzzeichens des Bereichs.  
@@ -622,7 +607,7 @@ Bei der Bearbeitung eines Bereichs öffnet sich folgende Maske:
 
 Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 
-![Product Create](img/Explain_ProductCreate.png)
+![Produkterstellung](img/Explain_ProductCreate.png)
 
 **Punkt 1:** Auswahl der Produktkategorie.  
 **Punkt 2:** Festlegung des Inventarisierungsdatums.  
@@ -633,7 +618,7 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 
 Über diese Ansicht erfolgt sowohl die **Erstellung neuer Produkte** als auch die **Bearbeitung bereits vorhandener Produkte**. Die dargestellte Maske dient der Konfiguration eines Produkts und passt sich abhängig vom jeweiligen Modus entsprechend an.
 
-![Product Edit](img/Explain_ProductEdit.png)
+![Produktbearbeitung](img/Explain_ProductEdit.png)
 
 **Punkt 1:** Abbruch der Produkterstellung beziehungsweise der Bearbeitung und Rückkehr zur vorherigen Ansicht.  
 **Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts; die Beschriftung der Schaltfläche variiert abhängig vom Modus.  
