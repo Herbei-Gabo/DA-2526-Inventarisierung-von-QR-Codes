@@ -564,11 +564,7 @@ Die Inventarliste stellt das zentrale Element der Anwendung dar. In diesem Berei
 
 **Punkt 11:** Jedes Inventarobjekt wird durch einen eigenen Listeneintrag dargestellt. Angezeigt werden unter anderem der Produktname, der zugehörige Bereich, der Raum sowie die Inventarnummer.  
 
-**Punkt 12:** Für jedes Objekt stehen mehrere Funktionen zur Verfügung:
-  - Über das Drucksymbol kann das Objekt zur Druckliste hinzugefügt werden. Die Anzeige in der Navigationsleiste erhöht sich dabei automatisch.  
-  - Das Kopiersymbol ermöglicht das Kopieren der Inventarnummer, beispielsweise zur Verwendung bei der Produkterstellung.  
-  - Über das Editiersymbol kann das jeweilige Produkt bearbeitet werden.  
-  - Zusätzlich kann der Eintrag ein- oder ausgeklappt werden, um weitere Detailinformationen anzuzeigen:
+**Punkt 12:** Über das **Drucksymbol** kann das Objekt zur Druckliste hinzugefügt werden. Die Anzeige in der Navigationsleiste erhöht sich dabei automatisch- Das **Kopiersymbol** ermöglicht das Kopieren der Inventarnummer, beispielsweise zur Verwendung bei der Produkterstellung. Über das **Editiersymbol** kann das jeweilige Produkt bearbeitet werden. Zusätzlich kann der Eintrag ein- oder ausgeklappt werden, um weitere Detailinformationen anzuzeigen:
 
 ![Produktdetails](img/Explain_ProductOpen.jpeg)
 
