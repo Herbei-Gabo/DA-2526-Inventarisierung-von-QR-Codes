@@ -502,7 +502,7 @@ Das MockUp der Inventar-Webseite wurde aus Gründen der zeitlichen Effizienz vol
 
 #### Inspirationen
 
-Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist:
+Für die Such- und Filterfunktionen wünschte sich der Auftraggeber ein Design, das an die Plattform Geizhals angelehnt ist: [@geizhals_acer_notebooks]
 
 ![ Geizhals Suchfilteroptionen](img/GeizhalsFilterOptionen.png)
 
