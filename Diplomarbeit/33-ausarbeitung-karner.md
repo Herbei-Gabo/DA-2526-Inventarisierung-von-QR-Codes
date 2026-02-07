@@ -542,7 +542,7 @@ Die Navigationsleiste bildet das zentrale Steuerelement der Anwendung und ermög
 
 Um auch bei einer großen Anzahl an Inventargegenständen effizient arbeiten zu können, stellt die Anwendung eine leistungsfähige Such- und Filterfunktion zur Verfügung (**Punkt 4**). Diese erlaubt eine gezielte Recherche nach bestimmten Produkten sowie eine Einschränkung der angezeigten Ergebnisse anhand unterschiedlicher Kriterien.
 
-Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sternsymbol *, welches in allen Suchfeldern verwendet werden kann. Wird beispielsweise der Suchbegriff **Projekt*** im Feld *Produktname* eingegeben, werden alle Objekte angezeigt, deren Name mit **Projekt** beginnt. Die Eingabe **\*Pro\*** liefert hingegen alle Objekte, die den Text „Pro“ an beliebiger Stelle im Namen enthalten. Dieselbe Logik gilt auch für die Suche nach Inventarnummern. So liefert etwa die Eingabe **408-*-*-24** alle Inventargegenstände der Kategorie 408, die im Jahr 2024 inventarisiert wurden.
+Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sternsymbol *, welches in allen Suchfeldern verwendet werden kann. Wird beispielsweise der Suchbegriff **Projekt\*** im Feld `Produktname` eingegeben, werden alle Objekte angezeigt, deren Name mit **Projekt** beginnt. Die Eingabe **\*Pro\*** liefert hingegen alle Objekte, die den Text „Pro“ an beliebiger Stelle im Namen enthalten. Dieselbe Logik gilt auch für die Suche nach Inventarnummern. So liefert etwa die Eingabe **408-\*-\*-24** alle Inventargegenstände der Kategorie 408, die im Jahr 2024 inventarisiert wurden.
 
 **Punkt 5:** Suchfeld zur Recherche nach Produktnamen unter Verwendung der beschriebenen Platzhalterlogik.  
 
