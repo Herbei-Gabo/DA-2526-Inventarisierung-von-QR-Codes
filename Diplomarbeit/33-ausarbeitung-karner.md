@@ -194,7 +194,7 @@ Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle
 ### Erklärung der Felder  
 
 | Feldname               | Erklärung                    |
-|------------------------|------------------------------|
+|-----------------------:|:-----------------------------|
 | PRODUCTTYPE_ID         | ID des Child-Objekts         |
 | ProductType_ParentID   | ID des Elternelements        |
 
