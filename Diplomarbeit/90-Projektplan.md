@@ -103,7 +103,7 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 ## To-do-Liste (nächste Schritte)
 
 | Aufgabe | Verantwortlich | Fällig bis | Status |
-|--------|----------------|------------|--------|
+|--------:|:--------------:|:----------:|:------:|
 | Dokumentationsabschluss & Abgabevorbereitung | Stephan | 31.12.2025 | geplant |
 | Überarbeitung Admin-Menü (Struktur & Bedienbarkeit) | André | 20.01.2026 | geplant |
 | Implementierung & Optimierung Suchfunktion | André & Gabriel | 31.01.2026 | offen |
