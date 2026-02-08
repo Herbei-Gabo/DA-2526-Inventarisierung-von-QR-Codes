@@ -114,7 +114,7 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 
 ### Dokumentenübersicht
 
-![Dokumentenübersicht](img/Dokumentenuebersicht.png) 
+![Dokumentenuebersicht](img/Dokumentenuebersicht.png) 
 
 
 
