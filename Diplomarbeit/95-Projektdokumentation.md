@@ -1,9 +1,8 @@
-
 # Projektdokumentation  
-## Diplomarbeit „Inventarisierung mit QR-Codes“
+## Diplomarbeit „Entwicklung einer webbasierten Inventarisierung“
 
 **Projektteam:**  
-- Stephan Dietmair – Projektmanagement  
+- Stephan Dietmair – Projektmanagement & Organisation  
 - Gabriel Herbei – Analyse & Qualitätssicherung  
 - André Karner – Softwareentwicklung  
 
@@ -28,8 +27,6 @@ Die Aufgabenverwaltung erfolgte über:
 
 ## Projektfortschritte nach Meilensteinen
 
----
-
 ## Projektfortschritt 1 – Recherchephase
 
 ### Berichtszeitraum
@@ -46,9 +43,9 @@ Die Aufgabenverwaltung erfolgte über:
 
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
-| Stephan Dietmair | Projektkoordination, Recherche | 25 h |
-| Gabriel Herbei | Markt- & Technologieanalyse | 33 h |
-| André Karner | Technische Recherche | 30 h |
+| Stephan Dietmair | Projektkoordination, Recherche | 10 h |
+| Gabriel Herbei | Markt- & Technologieanalyse | 14 h |
+| André Karner | Technische Recherche | 12 h |
 
 ### Projektstatus
 
@@ -88,9 +85,9 @@ transparent kommuniziert.
 
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
-| Stephan Dietmair | Projektmanagement & Dokumentation | 33 h |
-| Gabriel Herbei | Analyse & Qualitätssicherung | 27 h |
-| André Karner | DB-Planung & Architektur | 41 h |
+| Stephan Dietmair | Projektmanagement & Dokumentation | 18 h |
+| Gabriel Herbei | Analyse & Qualitätssicherung | 12 h |
+| André Karner | DB-Planung & Architektur | 20 h |
 
 ### Projektstatus
 
@@ -130,9 +127,9 @@ Sehr strukturierte Zusammenarbeit, regelmäßige Abstimmungen und klare Aufgaben
 
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
-| Stephan Dietmair | Koordination & Tests | 28 h |
-| Gabriel Herbei | Testplanung & Qualitätssicherung | 35 h |
-| André Karner | Entwicklung & Bugfixing | 55 h |
+| Stephan Dietmair | Koordination & Tests | 15 h |
+| Gabriel Herbei | Testplanung & Qualitätssicherung | 22 h |
+| André Karner | Entwicklung & Bugfixing | 35 h |
 
 ### Projektstatus
 
@@ -171,9 +168,9 @@ Gute Zusammenarbeit trotz erhöhter Arbeitsbelastung durch Schulbetrieb.
 
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
-| Stephan Dietmair | Präsentation & Organisation | 27 h |
-| Gabriel Herbei | Analyse & Feedbackauswertung | 23 h |
-| André Karner | Technische Anpassungen | 20 h |
+| Stephan Dietmair | Präsentation & Organisation | 12 h |
+| Gabriel Herbei | Analyse & Feedbackauswertung | 8 h |
+| André Karner | Technische Anpassungen | 10 h |
 
 ### Projektstatus
 Alle Zielsetzungen der Zwischenpräsentation wurden erfüllt.
@@ -202,9 +199,9 @@ Das Projekt wurde positiv bewertet und befindet sich weiterhin im Plan.
 
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
-| Stephan Dietmair | Hauptdokumentation | 39 h |
-| Gabriel Herbei | Qualitätssicherung & Tests | 33 h |
-| André Karner | Optimierungen & Bugfixing | 31 h |
+| Stephan Dietmair | Hauptdokumentation | 30 h |
+| Gabriel Herbei | Qualitätssicherung & Tests | 18 h |
+| André Karner | Optimierungen & Bugfixing | 20 h |
 
 ### Projektstatus
 
