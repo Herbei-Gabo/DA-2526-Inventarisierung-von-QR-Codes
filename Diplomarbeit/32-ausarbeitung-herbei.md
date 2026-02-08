@@ -21,7 +21,7 @@ Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware 
 Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch zukunftsfähig ist. Insbesondere bei wachsendem Bestand und höherem Digitalisierungsgrad wird eine professionelle, digitale Lösung notwendig, die zentrale Datenhaltung, Mehrbenutzerfähigkeit und mobile Zugriffsmöglichkeiten vereint.
 
 ## QR-Codes als technologische Grundlage
-Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe nachstehendern Abbildung). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird. „QR-Codes sind die effizienteste, kostengünstigste und flexibelste Lösung zur Objektkennzeichnung – scanbar mit nahezu jedem Smartphone ohne Zusatzhardware.“ [@codasol_rfid_nfc_qr_2024] [@assetinfinity_tracking_technologies_2024] 
+Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe nachstehendern Abbildung). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird. „QR-Codes sind die effizienteste, kostengünstigste und flexibelste Lösung zur Objektkennzeichnung, scanbar mit nahezu jedem Smartphone ohne Zusatzhardware.“ [@codasol_rfid_nfc_qr_2024] [@assetinfinity_tracking_technologies_2024] 
 
 ![ Darstellung eines QR-Codes. [@activebarcode_qrcode_info_2025]](img/qrcode.gif) 
 
@@ -170,8 +170,8 @@ Eine weitere Lösung stellt [inFlow Inventory](https://www.inflowinventory.com/i
 
 **Nachteile**:  
 
-- sehr hohe Kosten. Das günstigste Paket „Entrepreneur“ beginnt bei 186 USD/Monat und bietet nur eingeschränkte Funktionen (z. B. Zugriff für nur zwei Benutzer, begrenzter technischer Support). Die teuersten Pakete für mittelgroße Unternehmen kosten bis zu 999 USD/Monat ([Preisübersicht](https://www.inflowinventory.com/software-pricing)).  
-- viele Funktionen sind nur in höheren Preiskategorien enthalten  
+- sehr hohe Kosten. Das günstigste Paket „Entrepreneur“ beginnt bei 186 USD/Monat und bietet nur eingeschränkte Funktionen (z. B. Zugriff für nur zwei Benutzer, begrenzter technischer Support). Die teuersten Pakete für mittelgroße Unternehmen kosten bis zu 999 USD/Monat ([Preisübersicht](https://www.inflowinventory.com/software-pricing)).
+- viele Funktionen sind nur in höheren Preiskategorien enthalten
 - Kosten-Nutzen-Verhältnis für eine Schule nicht vertretbar [@hofer_open_source_inventory_2025]
 
 ## Programmieren einer Excel-Erweiterung
@@ -198,7 +198,7 @@ Die Entwicklung einer Excel-Erweiterung würde den Aufwand erhöhen und nur eine
 
 Die Idee, eine eigene Erweiterung für Microsoft Teams zu entwickeln, klingt auf den ersten Blick attraktiv, da Teams bereits ein etablierter Bestandteil des schulischen und organisatorischen Alltags ist. Dennoch spricht eine Reihe gewichtiger Argumente dagegen, diesen Ansatz für die Umsetzung einer Inventarisierungslösung zu wählen.
 
-Eine Teams-Erweiterung ist stark an die Microsoft-365-Umgebung und speziell an die Teams-Infrastruktur gebunden. Sie bietet keine direkte Möglichkeit, eigene Datenbanken anzubinden oder komplexe externe Datenquellen zuverlässig zu verwalten. Stattdessen müssen sämtliche Daten in der Teams- bzw. Microsoft-Cloud gespeichert oder über Zwischenschritte aus externen Dateien eingebunden werden. Das macht die Lösung nicht nur unflexibel, sondern auch abhängig von bestehenden Teams-Strukturen und der Verfügbarkeit dieser Dienste. [@georg_teams_apps_2023] [@ovacapta_teams_extensions]
+Eine Teams-Erweiterung ist stark an die Microsoft-365-Umgebung und speziell an die Teams-Infrastruktur gebunden. Sie bietet keine direkte Möglichkeit, eigene Datenbanken anzubinden oder komplexe externe Datenquellen zuverlässig zu verwalten. Stattdessen müssen sämtliche Daten in der Teams- bzw. Microsoft-Cloud gespeichert oder über Zwischenschritte aus externen Dateien eingebunden werden. Das macht die Lösung nicht nur unflexibel, sondern auch abhängig von bestehenden Teams-Strukturen und der Verfügbarkeit dieser Dienste. [@georg_teams_apps_2023] [@novacapta_teams_extensions]
 
 Soll beispielsweise ein Inventar mit mehreren hundert Geräten verwaltet werden, müssten die Daten entweder in SharePoint-Listen oder in anderen Teams-internen Strukturen hinterlegt werden. Diese sind jedoch nicht für performante, strukturierte Inventardatenbanken ausgelegt. Zudem müsste weiterhin auf externe Dateien zurückgegriffen werden, um etwa QR-Code-Zuordnungen oder Geräteinformationen zu verwalten. Das erhöht die Komplexität und die Fehleranfälligkeit erheblich.
 
@@ -210,7 +210,7 @@ Microsoft Access ist eine relationale Datenbankanwendung, die Bestandteil des Mi
 
 Im schulischen Kontext wird Access häufig zur Verwaltung von Inventar, Lehrmitteln oder Schülerdaten verwendet. Durch seine Integration in das Office-Ökosystem bietet es eine einfache Möglichkeit, Daten mit anderen Anwendungen wie Excel oder Word auszutauschen. Besonders vorteilhaft ist dabei, dass Access auch von nicht-technischem Personal, wie Lehrkräften oder Verwaltungsmitarbeitern, genutzt werden kann.
 
-Trotz dieser Vorteile stößt Access in der Praxis schnell an seine Grenzen. Die Datenverwaltung erfolgt meist lokal auf einem einzelnen Computer, was zu reduzierter Zugänglichkeit und mangelnder Datensynchronisation führt. Zudem ist die Benutzeroberfläche nicht für mobile Endgeräte optimiert, was die Verwendung im Schulalltag – beispielsweise beim Erfassen von Inventargegenständen direkt im Raum – deutlich erschwert.
+Trotz dieser Vorteile stößt Access in der Praxis schnell an seine Grenzen. Die Datenverwaltung erfolgt meist lokal auf einem einzelnen Computer, was zu reduzierter Zugänglichkeit und mangelnder Datensynchronisation führt. Zudem ist die Benutzeroberfläche nicht für mobile Endgeräte optimiert, was die Verwendung im Schulalltag, beispielsweise beim Erfassen von Inventargegenständen direkt im Raum, deutlich erschwert.
 
 Darüber hinaus ist die Erweiterbarkeit eingeschränkt. Funktionen wie die automatische Generierung und Zuordnung von QR-Codes, eine Weboberfläche oder der gleichzeitige Zugriff mehrerer Benutzer lassen sich nur mit erheblichem Aufwand realisieren. Aus diesen Gründen eignet sich Microsoft Access zwar als Einstiegslösung für einfache Inventarverwaltungen, erfüllt jedoch nicht die Anforderungen einer modernen, plattformunabhängigen und webbasierten Inventarisierungslösung.
 
@@ -234,10 +234,10 @@ Die QR-Codes selbst wurden über unsere eigene Inventarisierung generiert, die a
 
 ### Vorteile dieser Methode
 
-- **Hohe Kompatibilität** mit gängigen Office-Programmen  
-- **Exakte Passform** für physische Etiketten (keine manuelle Justierung nötig)  
-- **Kostengünstiger Druck** auf Standarddruckern  
-- **Wiederverwendbare Vorlage** für künftige Inventargenerationen  
-- **Flexibilität** bei der Gestaltung (Text unterhalb, Farben, Rahmen etc.)  
+- **Hohe Kompatibilität** mit gängigen Office-Programmen
+- **Exakte Passform** für physische Etiketten (keine manuelle Justierung nötig)
+- **Kostengünstiger Druck** auf Standarddruckern
+- **Wiederverwendbare Vorlage** für künftige Inventargenerationen
+- **Flexibilität** bei der Gestaltung (Text unterhalb, Farben, Rahmen etc.)
 
 Die QR-Code-Aufkleber können nach dem Ausdruck direkt auf die jeweiligen Inventargegenstände geklebt werden. Dank der Formatierung ist es möglich, bis zu 24 QR-Codes pro A4-Bogen unterzubringen.
