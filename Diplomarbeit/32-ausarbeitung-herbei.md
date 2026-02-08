@@ -21,7 +21,7 @@ Derzeit erfolgt die Inventarisierung von Objekten, Werkzeugen sowie IT-Hardware 
 Diese Nachteile machen deutlich, dass der aktuelle Prozess weder effizient noch zukunftsfähig ist. Insbesondere bei wachsendem Bestand und höherem Digitalisierungsgrad wird eine professionelle, digitale Lösung notwendig, die zentrale Datenhaltung, Mehrbenutzerfähigkeit und mobile Zugriffsmöglichkeiten vereint.
 
 ## QR-Codes als technologische Grundlage
-Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe Abbildung 1). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird. „QR-Codes sind die effizienteste, kostengünstigste und flexibelste Lösung zur Objektkennzeichnung – scanbar mit nahezu jedem Smartphone ohne Zusatzhardware.“ [@codasol_rfid_nfc_qr_2024] [@assetinfinity_tracking_technologies_2024] 
+Die geplante Lösung basiert auf dem Einsatz von QR-Codes zur Identifikation und Verknüpfung einzelner Inventargegenstände mit digitalen Datensätzen in einer zentralen Datenbank. QR steht für „Quick Response“, also „schnelle Antwort“, und bezeichnet einen zweidimensionalen Code, der aus mindestens 21 × 21 und maximal 177 × 177 quadratischen Modulen besteht (siehe nachstehendern Abbildung). In einem QR-Code können Informationen wie URLs, Textdaten, Telefonnummern oder ID-Nummern codiert werden. Der große Vorteil liegt in der schnellen und einfachen Lesbarkeit durch handelsübliche Smartphones oder Tablets, wodurch eine mobile, ortsunabhängige Nutzung gewährleistet wird. „QR-Codes sind die effizienteste, kostengünstigste und flexibelste Lösung zur Objektkennzeichnung – scanbar mit nahezu jedem Smartphone ohne Zusatzhardware.“ [@codasol_rfid_nfc_qr_2024] [@assetinfinity_tracking_technologies_2024] 
 
 ![ Darstellung eines QR-Codes. [@activebarcode_qrcode_info_2025]](img/qrcode.gif) 
 
@@ -30,11 +30,11 @@ Für die Inventarisierung wird der QR-Code nicht als vollständiger Datenspeiche
 ## Wieso QR-Code und kein Barcode oder NFC?
 
 ### Technische Vergleichskriterien
-**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ungefähr 20–25 Zeichen speichern können (siehe Abbildung 2.), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, während ein 1D-Barcode oft nur eine kurze ID liefert. [@assetinfinity_tracking_technologies_2024]
+**Datenkapazität:** QR-Codes (2D-Codes) bieten eine deutlich höhere Datenkapazität als klassische eindimensionale Barcodes. Während 1D-Barcodes je nach Typ typischerweise nur ungefähr 20–25 Zeichen speichern können (siehe nachstehendern Abbildung), können QR-Codes bis zu 2.509 Ziffern bzw. 1.520 alphanumerische Zeichen aufnehmen. In der Praxis bedeutet dies, dass QR-Codes wesentlich mehr Informationen (z. B. Inventarnummern, URLs oder Detaildaten) direkt im Code unterbringen können. Ein QR-Code kann etwa eine vollständige URL oder Text enthalten, während ein 1D-Barcode oft nur eine kurze ID liefert. [@assetinfinity_tracking_technologies_2024]
 
 ![ Darstellung eines Bar-Codes. [@tecit_barcode_generator_2025]](img/Barcode.jpg) 
 
-NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte, siehe Abbildung 3), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. [@sortly_barcodes_vs_qr_2024]
+NFC-Tags haben je nach Chip ebenfalls begrenzten Speicher (häufig zwischen 48 Byte bis ein paar Kilobyte, siehe nachstehendern Abbildung), was für einfache IDs oder Links ausreicht. Allerdings ist die Speicherkapazität von NFC pro Tag oft geringer als die von QR-Codes auf einem Label, und meist werden auch bei NFC nur Identifikationsnummern oder kurze Datensätze gespeichert. [@sortly_barcodes_vs_qr_2024]
 
 ![Darstellung eines NFC. [@homeandsmart_nfc_2025]](img/nfc-symbol.jpg) 
 
@@ -228,9 +228,9 @@ Zur praktischen Umsetzung der Inventarisierungslösung wurde eine Möglichkeit e
 
 Die Vorlage zur Gestaltung und Anordnung der QR-Codes basiert auf einem offiziellen Etikettenlayout, das von Avery Zweckform kostenlos bereitgestellt wird und direkt mit Programmen wie Microsoft Word oder der Avery-eigenen Online-Software kompatibel ist. Dadurch wird sichergestellt, dass die Etiketten exakt positioniert und auf gängige Drucker angepasst sind.
 
-Die QR-Codes selbst wurden über unsere eigene Inventarisierung generiert, die auf Basis der eindeutigen Inventarnummern (z. B. `408-05-147-19`) individuelle Codes erstellt und automatisch in die Avery-Vorlage einfügt. Dies ermöglicht die Serienerstellung ganzer Etikettenbögen mit minimalem Aufwand. Ein Beispiel eines solchen ausgedruckten Bogens ist in Abbildung 4 dargestellt.
+Die QR-Codes selbst wurden über unsere eigene Inventarisierung generiert, die auf Basis der eindeutigen Inventarnummern (z. B. `408-09-01-19`) individuelle Codes erstellt und automatisch in die Avery-Vorlage einfügt. Dies ermöglicht die Serienerstellung ganzer Etikettenbögen mit minimalem Aufwand. Ein Beispiel eines solchen ausgedruckten Bogens ist in der nachstehendern Abbildung dargestellt.
 
-![Abbildung 4: Ausdruck eines Etikettenbogens mit QR-Codes auf Avery 6251 Format.](img/QR-Codes_Drucken.jpg)
+![Ausdruck eines Etikettenbogens mit QR-Codes auf Avery 6251 Format.](img/QR-Codes_Drucken.jpg)
 
 ### Vorteile dieser Methode
 
