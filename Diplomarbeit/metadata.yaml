@@ -30,6 +30,9 @@ da-author:
   nachname: Dietmair
   klasse: 5BHWIN
   thema: Recherche und führen des Projekthandbuch, sowie Evaluierung der Technologiealternativen
+  ki-tools:
+  - name: ChatGPT5.2
+    zweck: Rechtschreibkorrektur & Formatierung in Markdown Syntax
 
 da-betreuer:
 - paraffe: lech
