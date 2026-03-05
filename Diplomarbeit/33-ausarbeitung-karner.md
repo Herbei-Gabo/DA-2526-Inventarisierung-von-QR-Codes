@@ -511,7 +511,7 @@ Weitere Inspirationen stammen aus dem MockUp selbst und wurden während der Umse
 
 ## Die tatsächliche Umsetzung
 
-Das Endprodukt fungiert als Onepager, bei dem der Seiteninhalt je nach Aktion dynamisch über Ajax ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist vollständig responsiv und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
+Das Endprodukt fungiert als Single Page Application, bei dem der Seiteninhalt je nach Aktion dynamisch über Ajax ausgetauscht wird. Dadurch bleibt die URL unverändert, während nur der Inhalt aktualisiert wird. Die Webseite ist vollständig responsiv und kann sowohl auf dem Desktop als auch auf mobilen Endgeräten genutzt werden.
 
 ### Erklärung der QR-Code-Funktion
 
@@ -572,13 +572,15 @@ Die Inventarliste stellt das zentrale Element der Anwendung dar. In diesem Berei
 
 In der Druckansicht werden alle für den Druck ausgewählten QR-Codes verwaltet.
 
+![Druckansicht](img/Explain_Print.png)
+
 **Punkt 1:** Über diese Schaltflächen kann der Druckvorgang abgebrochen, gestartet oder die gesamte Auswahlliste gelöscht werden.  
 
 **Punkt 2:** Dieser Bereich zeigt eine Übersicht aller aktuell ausgewählten QR-Codes.  
 
 **Punkt 3:** Jedes Feld kann einzeln ausgewählt werden, um den Startpunkt der QR-Code-Liste festzulegen. Diese Funktion ermöglicht eine effiziente Nutzung der Druckbögen, sodass auch angebrochene Stickerbögen vollständig verwendet werden können.
 
-![Druckansicht](img/Explain_Print.png)
+
 
 ### Punkt 9 – Such- und Filterfunktion: Konfigurationsbearbeitung
 
@@ -617,7 +619,7 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 ![Produktbearbeitung](img/Explain_ProductEdit.png)
 
 **Punkt 1:** Abbruch der Produkterstellung beziehungsweise der Bearbeitung und Rückkehr zur vorherigen Ansicht.  
-**Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts; die Beschriftung der Schaltfläche variiert abhängig vom Modus.  
+**Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts die Beschriftung der Schaltfläche variiert abhängig vom Modus.  
 **Punkt 3:** Anzeige der editierbaren Eingabefelder zur Anpassung der Produktinformationen.
 
 Die **Inventarnummer** (**Punkt 4**), das **Erstelldatum** (**Punkt 5**) sowie die **Produktkategorie** (**Punkt 6**) sind ausschließlich schreibgeschützt und können nicht manuell verändert werden. Diese Informationen stellen zentrale Bestandteile der eindeutigen Identifikation eines Produkts dar.  
