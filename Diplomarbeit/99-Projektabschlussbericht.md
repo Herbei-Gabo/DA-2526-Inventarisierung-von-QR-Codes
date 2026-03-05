@@ -25,8 +25,6 @@ Zusammenfassend kann festgehalten werden, dass die Terminziele im Großen und Ga
 
 Da das Projekt im schulischen Umfeld umgesetzt wurde und größtenteils auf vorhandene Infrastruktur zurückgreift, entstanden nur sehr geringe direkte Kosten.
 
-Die entwickelte Lösung basiert auf vorhandenen schulischen Ressourcen wie bestehenden Serverstrukturen sowie frei verfügbaren Softwaretools. Dadurch konnten zusätzliche Investitionen weitgehend vermieden werden.
-
 Die einzigen realen Kosten entstehen durch den Druck der QR-Code-Etiketten sowie durch geringe Stromkosten beim Betrieb des Systems. Diese Kosten sind im Vergleich zum Nutzen der Lösung sehr gering.
 
 Würde das Projekt in einem wirtschaftlichen Umfeld umgesetzt werden, würden die größten Kosten durch den Personalaufwand entstehen. Für die Diplomarbeit wurde der Aufwand mit etwa 180 Arbeitsstunden pro Person kalkuliert. Bei einem angenommenen Stundensatz von 57,50 € ergeben sich theoretische Personalkosten von etwa 10.350 € pro Teammitglied bzw. rund 31.050 € für das gesamte Projektteam.
