@@ -626,3 +626,6 @@ Die **Inventarnummer** (**Punkt 4**), das **Erstelldatum** (**Punkt 5**) sowie d
 Unterhalb der Eingabefelder wird über **Punkt 7** der dem Produkt zugeordnete **QR-Code** angezeigt.
 
 Nahezu alle weiteren Produktinformationen können in dieser Maske angepasst werden. Eine Änderung der schreibgeschützten Felder ist nicht vorgesehen, da dies zu Inkonsistenzen im System führen würde.
+
+### Verlauf in der Zukunft
+Die Anwendung wird voraussichtlich auch nach Abschluss dieser Diplomarbeit weiterentwickelt. Daher sind sowohl Anpassungen am Design als auch die Umsetzung zusätzlicher Funktionen möglich.
