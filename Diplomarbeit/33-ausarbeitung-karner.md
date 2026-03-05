@@ -552,9 +552,9 @@ Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sterns
 
 **Punkt 8:** In diesem Bereich können zusätzliche Filterkriterien angewendet werden. Dazu zählen *Kategorie*, *Bereich*, *Lieferant*, *Standort*, *verantwortliche Person* sowie *Hinterleger*. Beim Öffnen der Filtermaske – im folgenden Beispiel für den Bereich – erscheint ein Fenster, das den jeweiligen Namen sowie die Anzahl der zugeordneten Objekte anzeigt:
 
-![Filteransicht](img/Explain_DetailFilter.jpeg)
-
 **Punkt 9:** Dieser Bereich enthält Symbole zur Erstellung neuer Einträge sowie zur Bearbeitung bestehender Konfigurationen.
+
+![Filteransicht](img/Explain_DetailFilter.jpeg)
 
 ### Anzeige der Inventarliste
 
