@@ -29,4 +29,12 @@
 | SSMS     | SQL Server Management Studio                               |
 | URL      | Uniform Resource Locator                                   |
 | USD      | United States Dollar                                       |
+| PM       | Projektmanagement                                          |
+| PHB      | Projekthandbuch                                            |
+| PMI      | Project Management Institute                               |
+| PMBOK    | Project Management Body of Knowledge                       |
+| GPM      | Gesellschaft für Projektmanagement                         |
+| PRINCE2  | Projects in Controlled Environments                        |
+| V-Modell | Vorgehensmodell zur Entwicklung von IT-Systemen            |
+
 
