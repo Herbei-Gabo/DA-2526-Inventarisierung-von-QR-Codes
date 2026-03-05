@@ -194,7 +194,7 @@ Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle
 ### Erklärung der Felder  
 
 | Feldname               | Erklärung                    |
-|-----------------------:|:-----------------------------|
+|------------------------|------------------------------|
 | PRODUCTTYPE_ID         | ID des Child-Objekts         |
 | ProductType_ParentID   | ID des Elternelements        |
 
@@ -532,7 +532,7 @@ Dieses Konzept erleichtert die Verwaltung physischer Inventargegenstände erhebl
 
 Die Navigationsleiste bildet das zentrale Steuerelement der Anwendung und ermöglicht einen schnellen Zugriff auf alle wesentlichen Funktionen der webbasierten Inventarisierungslösung. Sie ist übersichtlich aufgebaut und besteht aus drei klar definierten Hauptpunkten, deren verfügbare Funktionen abhängig von der jeweiligen Benutzerrolle variieren.
 
-**Punkt 1:** Über den Menüpunkt *Einstellungen* können systemrelevante Konfigurationen vorgenommen werden. Insbesondere Benutzer mit Administratorrechten haben hier Zugriff auf erweiterte Funktionen, darunter die Benutzerverwaltung, welche ausschließlich bei entsprechender Berechtigung angezeigt wird.  
+**Punkt 1:** Über den Menüpunkt *Einstellungen* können systemrelevante Konfigurationen vorgenommen werden. Insbesondere Benutzer mit Administratorrechten haben hier Zugriff auf erweiterte Funktionen, darunter die Benutzerverwaltung, welche ausschließlich bei entsprechender Berechtigung angezeigt wird. Auf diese Maske wird bewusst nicht näher eingegangen, um die Sicherheit zusätzlich zu gewährleisten.
 
 **Punkt 2:** Die *Druckanzeige* visualisiert in einem roten Kreis die Anzahl der aktuell für den Druck ausgewählten Objekte. Durch Anklicken dieses Symbols wird zur Druckansicht navigiert.  
 
@@ -607,7 +607,7 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 
 **Punkt 1:** Auswahl der Produktkategorie.  
 **Punkt 2:** Festlegung des Inventarisierungsdatums.  
-**Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen.  
+**Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen.   
 **Punkt 4:** Option zum Abbrechen der Produkterstellung oder zum Erstellen des neuen Produkts.
 
 ### Punkt 12 – Produktmaske
