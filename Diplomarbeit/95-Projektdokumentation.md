@@ -9,7 +9,6 @@
 **Projektzeitraum:** Juni 2025 – März 2026  
 **Schule:** HTL Leoben  
 
----
 
 ## Vorgehensmodell
 
@@ -23,7 +22,6 @@ Die Aufgabenverwaltung erfolgte über:
 - To-do-Listen im Projekthandbuch
 - Regelmäßige Abstimmungen im Team (Microsoft Teams, persönliche Treffen)
 
----
 
 ## Projektfortschritte nach Meilensteinen
 
@@ -67,7 +65,6 @@ transparent kommuniziert.
 - Übergang in die Planungs- und Implementierungsphase
 - Detailplanung der Systemarchitektur
 
----
 
 ## Projektfortschritt 2 – Implementierungs- & Planungsphase
 
@@ -108,7 +105,6 @@ Sehr strukturierte Zusammenarbeit, regelmäßige Abstimmungen und klare Aufgaben
 - Start der eigentlichen Implementierung
 - Vorbereitung der Testphase
 
----
 
 ## Projektfortschritt 3 – Testphase
 
@@ -150,7 +146,6 @@ Gute Zusammenarbeit trotz erhöhter Arbeitsbelastung durch Schulbetrieb.
 - Vorbereitung der ersten Zwischenpräsentation
 - Stabilisierung des Systems
 
----
 
 ## Projektfortschritt 4 – 1. Zwischenpräsentation
 
@@ -165,6 +160,7 @@ Gute Zusammenarbeit trotz erhöhter Arbeitsbelastung durch Schulbetrieb.
 - Anpassungen basierend auf Rückmeldungen
 
 ### Aufwände der Teammitglieder
+
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
 | Stephan Dietmair | Präsentation & Organisation | 12 h |
@@ -180,7 +176,6 @@ Das Projekt wurde positiv bewertet und befindet sich weiterhin im Plan.
 ### Nächste Schritte
 - Übergang in die Dokumentationsphase
 
----
 
 ## Projektfortschritt 5 – Dokumentationsphase
 
