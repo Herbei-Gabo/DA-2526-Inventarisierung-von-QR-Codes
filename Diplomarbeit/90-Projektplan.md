@@ -3,7 +3,7 @@
 
 
 ## Entwicklung einer webbasierten Inventarisierung
-**Stand:** 08. Februar 2026
+**Stand:** 05. März 2026
 
 
 
