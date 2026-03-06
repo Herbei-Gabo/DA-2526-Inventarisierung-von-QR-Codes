@@ -3,120 +3,120 @@
 
 ## Verwendete Technologien
 
-Für die Entwicklung der webbasierten Inventarisierungslösung kamen verschiedene, aufeinander abgestimmte Technologien zum Einsatz.  
-Diese bilden das Fundament für eine moderne, stabile und benutzerfreundliche Anwendung, die sowohl auf Desktop- als auch auf mobilen Geräten zuverlässig funktioniert.  
+Für die Entwicklung der webbasierten Inventarisierungslösung kamen verschiedene, aufeinander abgestimmte Technologien zum Einsatz.
+Diese bilden das Fundament für eine moderne, stabile und benutzerfreundliche Anwendung, die sowohl auf Desktop- als auch auf mobilen Geräten zuverlässig funktioniert.
 
-Die Auswahl der Technologien erfolgte auf Basis folgender Kriterien:  
+Die Auswahl der Technologien erfolgte auf Basis folgender Kriterien:
 
-- **Kompatibilität und Standardisierung:** Alle eingesetzten Technologien entsprechen gängigen Webstandards und werden von aktuellen Browsern sowie Betriebssystemen unterstützt.  
-- **Trennung von Struktur, Darstellung und Logik:** Durch die konsequente Trennung von HTML, CSS, JavaScript und serverseitiger Logik wird eine klare und wartbare Softwarearchitektur gewährleistet.  
-- **Effizienz und Benutzerfreundlichkeit:** Die Kombination aus clientseitigen und serverseitigen Technologien ermöglicht schnelle Ladezeiten, interaktive Oberflächen und eine intuitive Bedienung.  
-- **Zukunftssicherheit:** Die eingesetzten Technologien sind weit verbreitet, gut dokumentiert und bieten eine langfristige Perspektive für Wartung und Erweiterung.  
+- **Kompatibilität und Standardisierung:** Alle eingesetzten Technologien entsprechen gängigen Webstandards und werden von aktuellen Browsern sowie Betriebssystemen unterstützt.
+- **Trennung von Struktur, Darstellung und Logik:** Durch die konsequente Trennung von HTML, CSS, JavaScript und serverseitiger Logik wird eine klare und wartbare Softwarearchitektur gewährleistet.
+- **Effizienz und Benutzerfreundlichkeit:** Die Kombination aus clientseitigen und serverseitigen Technologien ermöglicht schnelle Ladezeiten, interaktive Oberflächen und eine intuitive Bedienung.
+- **Zukunftssicherheit:** Die eingesetzten Technologien sind weit verbreitet, gut dokumentiert und bieten eine langfristige Perspektive für Wartung und Erweiterung.
 
 Im Folgenden werden die einzelnen Technologien, ihre Einsatzgebiete, Entscheidungsgründe und Vorteile im Detail erläutert. Dies umfasst sowohl die **Frontend-Technologien** (HTML, CSS, JavaScript, AJAX) zur Gestaltung der Benutzeroberfläche als auch die **Backend-Technologien** (PHP, SQL Server, IIS) für Datenverarbeitung, Speicherung und Zugriffskontrolle. Abschließend wird das eingesetzte Framework vorgestellt, das die Entwicklung strukturierter und effizienter gestaltet.
 
 ### HyperText Markup Language (HTML)
 
-#### Erläuterung  
+#### Erläuterung
 HTML (HyperText Markup Language) stellt die strukturelle Grundlage der webbasierten Inventarisierungslösung dar. Es wird zur semantischen Beschreibung und klaren Gliederung sämtlicher Inhalte der Benutzeroberfläche eingesetzt. Dazu zählen unter anderem Eingabeformulare, Tabellen zur Darstellung von Inventardaten, Navigationsbereiche sowie verschiedene Bedienelemente. Durch die Verwendung semantischer HTML-Elemente wird sowohl die Lesbarkeit des Codes als auch die Zugänglichkeit der Anwendung verbessert.[@mdn_html]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 HTML ist der international anerkannte Standard zur Strukturierung von Webinhalten und wird von allen gängigen Webbrowsern vollständig unterstützt. Aufgrund seiner Stabilität, langfristigen Zukunftssicherheit sowie der nahtlosen Kombinierbarkeit mit CSS und JavaScript eignet sich HTML besonders gut für die Entwicklung einer webbasierten Anwendung im schulischen Umfeld.[@mdn_html]
 
-#### Vorteile  
-- Plattform- und browserunabhängig  
-- Klare und semantische Strukturierung von Inhalten  
-- Hohe Wartbarkeit und Erweiterbarkeit des Codes  
+#### Vorteile
+- Plattform- und browserunabhängig
+- Klare und semantische Strukturierung von Inhalten
+- Hohe Wartbarkeit und Erweiterbarkeit des Codes
 - Standardisierte und bewährte Webtechnologie[@mdn_html]
 
 
 
 ### Cascading Style Sheets (CSS)
 
-#### Erläuterung  
+#### Erläuterung
 Cascading Style Sheets (CSS) werden zur visuellen Gestaltung der Webanwendung verwendet. Mithilfe von CSS werden Layout, Farbgestaltung, Schriftarten, Abstände sowie responsive Anpassungen definiert. Dadurch entsteht ein übersichtliches, modernes und benutzerfreundliches Erscheinungsbild der Inventarisierungsoberfläche, das die Bedienbarkeit wesentlich unterstützt.[@mdn_css]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 Durch die konsequente Trennung von Struktur (HTML) und Darstellung (CSS) wird eine saubere und übersichtliche Softwarearchitektur realisiert. CSS ist ein etablierter Webstandard und bietet umfangreiche Möglichkeiten zur Gestaltung responsiver Benutzeroberflächen, die auf unterschiedlichen Endgeräten korrekt dargestellt werden.[@mdn_css]
 
-#### Vorteile  
-- Klare Trennung von Inhalt und Darstellung  
-- Einheitliches Design über alle Seiten hinweg  
-- Unterstützung für responsive und adaptive Layouts  
-- Verbesserung der Benutzerfreundlichkeit und Übersichtlichkeit[@mdn_css]  
+#### Vorteile
+- Klare Trennung von Inhalt und Darstellung
+- Einheitliches Design über alle Seiten hinweg
+- Unterstützung für responsive und adaptive Layouts
+- Verbesserung der Benutzerfreundlichkeit und Übersichtlichkeit[@mdn_css]
 
 
 ### Hypertext Preprocessor (PHP)
 
-#### Erläuterung  
+#### Erläuterung
 PHP ist eine serverseitige Skriptsprache und bildet gemeinsam mit der Datenbank das Backend der Inventarisierungslösung. Sie wird zur Verarbeitung von Benutzereingaben, zur Umsetzung der Geschäftslogik sowie zur Kommunikation mit der Datenbank eingesetzt. Darüber hinaus kommt PHP für serverseitige Prozesse wie die Generierung von QR-Codes und die Zugriffskontrolle zum Einsatz.[@php_manual]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 PHP ist besonders für webbasierte Anwendungen geeignet und wird seit vielen Jahren erfolgreich eingesetzt. Durch die breite Verfügbarkeit, die umfangreiche Dokumentation sowie die einfache Wartbarkeit ist PHP eine zuverlässige Wahl für die Umsetzung der vorliegenden Aufgabenstellung.[@php_manual]
 
-#### Vorteile  
-- Serverseitige Verarbeitung sensibler Daten  
-- Gute Integration mit relationalen Datenbanksystemen  
-- Weit verbreitet und umfangreich dokumentiert  
+#### Vorteile
+- Serverseitige Verarbeitung sensibler Daten
+- Gute Integration mit relationalen Datenbanksystemen
+- Weit verbreitet und umfangreich dokumentiert
 - Geeignet für wartungsfreundliche und skalierbare Webanwendungen[@php_manual]
 
 
 ### JavaScript (JS)
 
-#### Erläuterung  
+#### Erläuterung
 JavaScript wird clientseitig verwendet, um die Benutzeroberfläche interaktiv zu gestalten. Dazu zählen dynamische Formularvalidierungen, Benutzerinteraktionen sowie die Steuerung von Abläufen, die ohne vollständige Seitenneuladungen auskommen. Dadurch wird die Reaktionsfähigkeit der Anwendung deutlich erhöht.[@mdn_javascript]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 JavaScript ist die Standardsprache für clientseitige Webentwicklung und wird von allen modernen Browsern unterstützt. Der gezielte Einsatz von JavaScript ermöglicht eine spürbare Verbesserung der Benutzererfahrung und trägt zu einer intuitiven Bedienung der Anwendung bei.[@mdn_javascript]
 
-#### Vorteile  
-- Hohe Interaktivität der Benutzeroberfläche  
-- Verbesserte Benutzererfahrung und Reaktionsgeschwindigkeit  
-- Direkte und nahtlose Integration mit HTML und CSS[@mdn_javascript]  
+#### Vorteile
+- Hohe Interaktivität der Benutzeroberfläche
+- Verbesserte Benutzererfahrung und Reaktionsgeschwindigkeit
+- Direkte und nahtlose Integration mit HTML und CSS[@mdn_javascript]
 
 
 ### Asynchronous JavaScript and XML (AJAX)
 
-#### Erläuterung  
+#### Erläuterung
 AJAX ermöglicht eine asynchrone Kommunikation zwischen Client und Server. Dadurch können Daten, wie Inventareinträge, Suchergebnisse oder Filteroptionen, im Hintergrund geladen oder aktualisiert werden, ohne dass die gesamte Webseite neu geladen werden muss.[@mdn_ajax]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 Für eine moderne Inventarisierungslösung ist eine schnelle und reaktionsfähige Benutzeroberfläche essenziell. Der Einsatz von AJAX unterstützt dieses Ziel maßgeblich und trägt zur Effizienz sowie zur positiven Nutzererfahrung der Anwendung bei.[@mdn_ajax]
 
-#### Vorteile  
-- Keine vollständigen Seitenneuladungen notwendig  
-- Schnellere Reaktionszeiten der Anwendung  
-- Reduzierte Server- und Netzwerkbelastung  
-- Deutlich erhöhte Benutzerfreundlichkeit[@mdn_ajax]  
+#### Vorteile
+- Keine vollständigen Seitenneuladungen notwendig
+- Schnellere Reaktionszeiten der Anwendung
+- Reduzierte Server- und Netzwerkbelastung
+- Deutlich erhöhte Benutzerfreundlichkeit[@mdn_ajax]
 
 
 ### SQL Server Management Studio (SSMS)
 
-#### Erläuterung  
+#### Erläuterung
 Das SQL Server Management Studio (SSMS) dient zur Verwaltung und Pflege der relationalen Datenbank der Anwendung. Es wird zur Erstellung und Anpassung von Tabellen, zur Ausführung von Abfragen sowie zur Verwaltung und Analyse der gespeicherten Inventardaten eingesetzt.[@microsoft_ssms]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 SSMS ist ein etabliertes Administrationswerkzeug für Microsoft SQL Server. Die Nutzung ermöglicht eine strukturierte, zuverlässige und nachvollziehbare Verwaltung der Datenbank und unterstützt die Entwicklung sowie Wartung der Anwendung.[@microsoft_ssms]
 
-#### Vorteile  
-- Intuitive grafische Benutzeroberfläche  
-- Leistungsfähige Verwaltungs- und Abfragefunktionen  
-- Hohe Stabilität und Zuverlässigkeit  
+#### Vorteile
+- Intuitive grafische Benutzeroberfläche
+- Leistungsfähige Verwaltungs- und Abfragefunktionen
+- Hohe Stabilität und Zuverlässigkeit
 - Gute Integration in Microsoft-Systeme[@microsoft_ssms]
 
 
 ### Internet Information Services (IIS)
 
-#### Erläuterung  
+#### Erläuterung
 Internet Information Services (IIS) wird als Webserver für den Betrieb der Inventarisierungsanwendung eingesetzt. Der Webserver stellt sowohl die PHP-Anwendung als auch statische Inhalte wie HTML-, CSS- und JavaScript-Dateien bereit und ermöglicht den Zugriff über das interne Netzwerk.[@microsoft_iis]
 
-#### Entscheidungsgrundlage  
+#### Entscheidungsgrundlage
 IIS ist Bestandteil von Windows-Server-Systemen und bietet eine stabile sowie sichere Plattform für den Betrieb von Webanwendungen. Die Kombination aus IIS, PHP und Microsoft SQL Server ermöglicht einen zuverlässigen und wartungsfreundlichen Betrieb der Inventarisierungslösung.[@microsoft_iis]
 
-#### Vorteile  
-- Hohe Stabilität und Sicherheit  
-- Zentrale Verwaltung der Webanwendung  
-- Gute Integration mit Windows-Diensten  
+#### Vorteile
+- Hohe Stabilität und Sicherheit
+- Zentrale Verwaltung der Webanwendung
+- Gute Integration mit Windows-Diensten
 - Geeignet für den produktiven Einsatz im Schulumfeld[@microsoft_iis]
 
 
@@ -127,59 +127,59 @@ Für die Umsetzung der Anwendung in PHP und JavaScript wurde ein firmeneigenes F
 Aus rechtlichen Gründen können keine detaillierten technischen Informationen zu diesem Framework bereitgestellt werden. Die HTL Leoben erhält ausschließlich das Nutzungs- und Bearbeitungsrecht der Anwendung. Eine Weitergabe oder Veröffentlichung des Quellcodes an Dritte ist ausdrücklich untersagt.
 
 
-## Datenauswertung & Datenbankerstellung  
+## Datenauswertung & Datenbankerstellung
 
-### Datenquelle  
-Die Grundlage für die Datenbankstruktur bildet eine von der Schule bereitgestellte Excel-Liste: [`HTLGesamtinventar_Monitorbeispiel.xlsx`](doc/HTLGesamtinventar_Monitorbeispiel.xlsx).  
+### Datenquelle
+Die Grundlage für die Datenbankstruktur bildet eine von der Schule bereitgestellte Excel-Liste: [`HTLGesamtinventar_Monitorbeispiel.xlsx`](doc/HTLGesamtinventar_Monitorbeispiel.xlsx).
 Diese Datei diente als initiale Datenbasis und lieferte einen ersten Überblick über den bestehenden Inventarbestand sowie über die verwendeten Datenfelder.
 
-Im weiteren Verlauf der Analyse wurde diese Basis aufgrund einer erweiterten und aktuelleren Excel-Liste ergänzt: [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx).  
+Im weiteren Verlauf der Analyse wurde diese Basis aufgrund einer erweiterten und aktuelleren Excel-Liste ergänzt: [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx).
 Diese zweite Datei enthielt zusätzliche Datensätze sowie weitere Informationen, die für die vollständige Abbildung des Inventars notwendig waren.
 
-Der geplante Tabellenaufbau aller Datenbanktabellen ist zusätzlich in dieser Excel-Datei dokumentiert: [`da_inventory_TableSchema.xlsx`](doc/da_inventory_TableSchema.xlsx).  
+Der geplante Tabellenaufbau aller Datenbanktabellen ist zusätzlich in dieser Excel-Datei dokumentiert: [`da_inventory_TableSchema.xlsx`](doc/da_inventory_TableSchema.xlsx).
 Diese Datei dient als verbindliche Referenz für die Struktur, Benennung und Datentypen der einzelnen Felder.
 
 
-### Erkenntnisse  
+### Erkenntnisse
 Aus der Analyse der Excel-Listen, einem persönlichen Gespräch mit dem Auftraggeber sowie aus der praktischen Entwicklung der Anwendung ergaben sich mehrere wesentliche Erkenntnisse, die maßgeblich Einfluss auf das Datenbankdesign und die Applikationslogik hatten.
 
 
-### Inventarnummer – Erkenntnisse  
+### Inventarnummer – Erkenntnisse
 Die Inventarnummer setzt sich aus **vier numerischen Bestandteilen** zusammen, welche jeweils eine bestimmte Bedeutung haben:
 
-- **Erste Zahl:**  
-  Kennzahl aus der Anlagenkennzahlenübersicht, zum Beispiel **408** für Datenverarbeitungsanlagen.  
+- **Erste Zahl:**
+Kennzahl aus der Anlagenkennzahlenübersicht, zum Beispiel **408** für Datenverarbeitungsanlagen.
 
-- **Zweite Zahl:**  
-  Unterkategorie, die gemäß einer HTL-internen Liste aufsteigend nummeriert ist, zum Beispiel **09** für Monitore.  
+- **Zweite Zahl:**
+Unterkategorie, die gemäß einer HTL-internen Liste aufsteigend nummeriert ist, zum Beispiel **09** für Monitore.
 
-- **Dritte Zahl:**  
-  Fortlaufende Nummer des im jeweiligen Kalenderjahr angeschafften Geräts, zum Beispiel **10** für den zehnten Monitor im entsprechenden Jahr.  
+- **Dritte Zahl:**
+Fortlaufende Nummer des im jeweiligen Kalenderjahr angeschafften Geräts, zum Beispiel **10** für den zehnten Monitor im entsprechenden Jahr.
 
-- **Vierte Zahl:**  
-  Kalenderjahr der Anschaffung, zum Beispiel **2025**.  
+- **Vierte Zahl:**
+Kalenderjahr der Anschaffung, zum Beispiel **2025**.
 
-Eine vollständige Beispiel-Inventarnummer ergibt somit folgendes Format:  
+Eine vollständige Beispiel-Inventarnummer ergibt somit folgendes Format:
 **408-09-10-25**
 
 Diese Struktur ermöglicht eine eindeutige Identifikation jedes Inventargegenstandes und liefert gleichzeitig wichtige Informationen über Kategorie, Typ und Anschaffungsjahr.
 
 
 
-### Anlagenkennzahl – Erkenntnisse  
-Zusätzlich zeigte die Analyse der Kennzahlenliste dass eine eigene Tabelle für Anlagenkennzahlen notwendig ist: [`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx),  
+### Anlagenkennzahl – Erkenntnisse
+Zusätzlich zeigte die Analyse der Kennzahlenliste dass eine eigene Tabelle für Anlagenkennzahlen notwendig ist: [`AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx`](doc/AnlagenkennzahlübersichtRIMGesamt_09_kompakt.xlsx),
 
 
-Dabei ist besonders zu beachten, dass die Kennzahlen **hierarchisch aufgebaut** sind.  
+Dabei ist besonders zu beachten, dass die Kennzahlen **hierarchisch aufgebaut** sind.
 Es existieren sogenannte **Überkategorien (Parent)**, aus denen mehrere **Unterkategorien (Child)** hervorgehen.
 
 Zur besseren Veranschaulichung ist nachfolgend ein Ausschnitt aus der Excel-Liste dargestellt:
 
-![ Kennzahlen Beispiel](img/KennzahlenBeispiel.JPG)  
+![ Kennzahlen Beispiel](img/KennzahlenBeispiel.JPG)
 
 
-### Erklärung des Anlagenkennzahlbeispiels  
-In diesem Beispiel stellt **Tische (100)** die übergeordnete Kategorie (Parent) dar, während **PC-Tische (100-01)** eine untergeordnete Kategorie (Child) ist.  
+### Erklärung des Anlagenkennzahlbeispiels
+In diesem Beispiel stellt **Tische (100)** die übergeordnete Kategorie (Parent) dar, während **PC-Tische (100-01)** eine untergeordnete Kategorie (Child) ist.
 
 Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundlegende Struktur umgesetzt:
 
@@ -191,7 +191,7 @@ Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundleg
 Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle jedoch bewusst **nicht** detailliert erläutert werden, da sie für das grundlegende Verständnis der Hierarchie nicht erforderlich sind.
 
 
-### Erklärung der Felder  
+### Erklärung der Felder
 
 | Feldname               | Erklärung                    |
 |------------------------|------------------------------|
@@ -199,16 +199,16 @@ Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle
 | ProductType_ParentID   | ID des Elternelements        |
 
 
-### Hinfällige Felder  
+### Hinfällige Felder
 Im Zuge der Umstrukturierung und Normalisierung der Datenbank ergab sich, dass einige Spalten aus der ursprünglichen Excel-Liste nicht mehr benötigt werden. Diese Felder sind im neuen System hinfällig:
 
-- **Stk**  
-- **Gesamt**  
+- **Stk**
+- **Gesamt**
 
 Diese Informationen lassen sich entweder ableiten oder sind für die digitale Inventarisierung nicht mehr relevant.
 
 
-### Datenfelder  
+### Datenfelder
 Weiters wurde festgestellt, dass bestimmte Datenfelder in der Anwendung nicht als Freitextfelder, sondern als **Dropdown-Menüs** umgesetzt werden sollen, um eine einheitliche Dateneingabe sicherzustellen.
 
 Dies betrifft folgende Felder:
@@ -222,102 +222,102 @@ Dies betrifft folgende Felder:
 | Verantwortliche/r   |
 
 
-### Auswahl der Datenbank  
+### Auswahl der Datenbank
 Als Datenbanksystem wurde **SQL Server Management Studio 2019 (SSMS)** gewählt.
 
-Die Entscheidung fiel unter anderem aufgrund der privaten Vorerfahrung mit SQL Server Management Studio, wodurch das notwendige Fachwissen bereits vorhanden war.  
+Die Entscheidung fiel unter anderem aufgrund der privaten Vorerfahrung mit SQL Server Management Studio, wodurch das notwendige Fachwissen bereits vorhanden war.
 Zusätzlich bietet **SSMS** zahlreiche leistungsstarke Funktionen, darunter:
 
-- Views  
-- Funktionen  
-- Stored Procedures  
+- Views
+- Funktionen
+- Stored Procedures
 
 Insbesondere **Stored Procedures** stellen einen zentralen Bestandteil einer sicheren Anwendung dar, da sie unter anderem einen wirksamen **Schutz vor SQL-Injection-Angriffen** ermöglichen.
 
 
-### Ticketsystem-Anbindung  
-Aus dem Gespräch mit dem Auftraggeber ergab sich zusätzlich die Anforderung, das neue Inventarisierungssystem zukünftig mit einem bereits bestehenden Ticketsystem zu verbinden.  
+### Ticketsystem-Anbindung
+Aus dem Gespräch mit dem Auftraggeber ergab sich zusätzlich die Anforderung, das neue Inventarisierungssystem zukünftig mit einem bereits bestehenden Ticketsystem zu verbinden.
 
-Die derzeitige Lösung sieht vor, eine zusätzliche Spalte in der Datenbank zu integrieren, welche die jeweilige ID aus dem Ticketsystem speichert.  
+Die derzeitige Lösung sieht vor, eine zusätzliche Spalte in der Datenbank zu integrieren, welche die jeweilige ID aus dem Ticketsystem speichert.
 Diese Erweiterung dient ausschließlich der Vorbereitung einer späteren Anbindung und ist **nicht Bestandteil dieser Diplomarbeit**.
 
-### LDAP-Anbindung  
-Ebenso wurde der Wunsch geäußert, das System künftig an ein LDAP-System anzubinden.  
+### LDAP-Anbindung
+Ebenso wurde der Wunsch geäußert, das System künftig an ein LDAP-System anzubinden.
 
-Auch hierfür ist vorgesehen, eine zusätzliche Spalte zur Speicherung der LDAP-ID zu integrieren.  
+Auch hierfür ist vorgesehen, eine zusätzliche Spalte zur Speicherung der LDAP-ID zu integrieren.
 Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Diplomarbeit**, sondern lediglich konzeptionell vorbereitet.
 
 ## Datenbankmodell Erstellung
 
-Das Datenbankmodell bildet die zentrale Grundlage der webbasierten Inventarisierungslösung.  
+Das Datenbankmodell bildet die zentrale Grundlage der webbasierten Inventarisierungslösung.
 Es wurde so entworfen, dass alle relevanten Informationen strukturiert, konsistent und nachvollziehbar gespeichert werden können. Dabei wurde besonderer Wert auf Erweiterbarkeit, Datenintegrität sowie eine klare Trennung der einzelnen Verantwortungsbereiche gelegt. Es ist wichtig zu erwähnen das jeder Primary Key eine **sequential uniqueidentifier** ist.
 Die folgenden Tabellen repräsentieren die wichtigsten Entitäten der Anwendung und bilden gemeinsam die Basis für Benutzerverwaltung, Produktverwaltung sowie konfigurierbare Stammdaten.
 
 
 ###  Erklärung der T_Account Tabelle
 
-Die Tabelle **T_Account** dient der Verwaltung aller Benutzerkonten innerhalb der Inventarisierungslösung.  
-Sie speichert sowohl grundlegende Benutzerdaten wie Anzeigename, Benutzername und E-Mail-Adresse als auch sicherheitsrelevante Informationen wie verschlüsselte Passwörter, Login-Status und Berechtigungen.  
+Die Tabelle **T_Account** dient der Verwaltung aller Benutzerkonten innerhalb der Inventarisierungslösung.
+Sie speichert sowohl grundlegende Benutzerdaten wie Anzeigename, Benutzername und E-Mail-Adresse als auch sicherheitsrelevante Informationen wie verschlüsselte Passwörter, Login-Status und Berechtigungen.
 
-Zusätzlich werden Informationen zur Account-Historie wie Login-Zähler, letzter Login-Zeitpunkt sowie Sperrstatus erfasst.  
-Durch die integrierten Rechtefelder kann exakt gesteuert werden, welche Funktionen einem Benutzer zur Verfügung stehen, beispielsweise das Bearbeiten von Produkten oder Konfigurationen.  
+Zusätzlich werden Informationen zur Account-Historie wie Login-Zähler, letzter Login-Zeitpunkt sowie Sperrstatus erfasst.
+Durch die integrierten Rechtefelder kann exakt gesteuert werden, welche Funktionen einem Benutzer zur Verfügung stehen, beispielsweise das Bearbeiten von Produkten oder Konfigurationen.
 Die Verwendung einer `uniqueidentifier`-ID gewährleistet eine eindeutige Identifikation jedes Accounts und erleichtert die Referenzierung in anderen Tabellen.
 
-![ T_Account Tabellen Schema](img/TableSchemaTAccount.png)  
+![ T_Account Tabellen Schema](img/TableSchemaTAccount.png)
 
 
-###  Erklärung der T_Account_History Tabelle
+###Erklärung der T_Account_History Tabelle
 
-Die Tabelle **T_Account_History** dient zur Protokollierung von Benutzeraktionen und sicherheitsrelevanten Ereignissen.  
-Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Aktionen wie Anmeldungen, Abmeldungen oder systemrelevante Änderungen.  
+Die Tabelle **T_Account_History** dient zur Protokollierung von Benutzeraktionen und sicherheitsrelevanten Ereignissen.
+Jeder Eintrag ist eindeutig einem Benutzerkonto zugeordnet und dokumentiert Aktionen wie Anmeldungen, Abmeldungen oder systemrelevante Änderungen.
 
-Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.  
+Durch die Speicherung von Aktionscodes, Zeitstempeln und optionalen Detailinformationen wird eine transparente Nachvollziehbarkeit von Benutzeraktivitäten ermöglicht.
 Diese Historie ist insbesondere für Wartungszwecke, Sicherheitsanalysen und administrative Auswertungen von Bedeutung.
 
-![ T_Account_History Tabellen Schema](img/TableSchemaTAccountHistory.png)  
+![ T_Account_History Tabellen Schema](img/TableSchemaTAccountHistory.png)
 
 
 ### Erklärung der T_Product Tabelle
 
-Die Tabelle **T_Product** stellt das Herzstück der Inventarisierung dar und speichert sämtliche Informationen zu inventarisierten Produkten.  
-Dazu zählen Identifikationsmerkmale wie Inventarnummer und Produktname, kaufmännische Daten wie Kosten und Rechnungsinformationen sowie technische Angaben wie Seriennummer und Garantiezeitraum.  
+Die Tabelle **T_Product** stellt das Herzstück der Inventarisierung dar und speichert sämtliche Informationen zu inventarisierten Produkten.
+Dazu zählen Identifikationsmerkmale wie Inventarnummer und Produktname, kaufmännische Daten wie Kosten und Rechnungsinformationen sowie technische Angaben wie Seriennummer und Garantiezeitraum.
 
-Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung zu Produkttypen, Bereichen, Lieferanten, Standorten und verantwortlichen Personen ermöglichen.  
-Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.  
+Darüber hinaus enthält die Tabelle mehrere Fremdschlüssel, die eine Zuordnung zu Produkttypen, Bereichen, Lieferanten, Standorten und verantwortlichen Personen ermöglichen.
+Durch diese Struktur kann jedes Produkt eindeutig klassifiziert und organisatorisch zugeordnet werden.
 Die konsequente Verwendung von GUIDs stellt sicher, dass Produkte auch bei späteren Erweiterungen oder Datenimporten eindeutig identifizierbar bleiben.
 
-![ T_Product Tabellen Schema](img/TableSchemaTProduct.png)  
+![ T_Product Tabellen Schema](img/TableSchemaTProduct.png)
 
 
 ### Erklärung der config_ProductType Tabelle
 
-Die Tabelle **config_ProductType** dient zur Verwaltung der unterschiedlichen Produkttypen innerhalb des Systems.  
-Sie bildet die Grundlage für die Strukturierung der Inventarnummern und ermöglicht eine hierarchische Gliederung von Produktkategorien durch Parent-Child-Beziehungen.  
+Die Tabelle **config_ProductType** dient zur Verwaltung der unterschiedlichen Produkttypen innerhalb des Systems.
+Sie bildet die Grundlage für die Strukturierung der Inventarnummern und ermöglicht eine hierarchische Gliederung von Produktkategorien durch Parent-Child-Beziehungen.
 
-Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und Lebensdauer gespeichert.  
-Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.  
+Zusätzlich werden typbezogene Informationen wie Bezeichnung, Beschreibung und Lebensdauer gespeichert.
+Das Attribut zur Selektierbarkeit erlaubt es, bestimmte Produkttypen gezielt für die Auswahl freizugeben oder auszublenden, ohne sie vollständig zu löschen.
 Diese Konfiguration trägt wesentlich zur Flexibilität und Anpassbarkeit der Inventarisierungslösung bei.
 
-![ config_ProductType Tabellen Schema](img/TableSchemaconfigProductType.png)  
+![ config_ProductType Tabellen Schema](img/TableSchemaconfigProductType.png)
 
 
 ### Erklärung der config_DetailInfo Tabelle
 
-Die Tabelle **config_DetailInfo** wird für die zentrale Verwaltung unterschiedlicher konfigurierbarer Stammdaten verwendet.  
-Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten oder Standorte einheitlich abzubilden und zu pflegen.  
+Die Tabelle **config_DetailInfo** wird für die zentrale Verwaltung unterschiedlicher konfigurierbarer Stammdaten verwendet.
+Sie ermöglicht es, verschiedene Informationsarten wie Bereiche, Lieferanten oder Standorte einheitlich abzubilden und zu pflegen.
 
-Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.  
+Durch die Verwendung eines Referenztyps kann dieselbe Tabellenstruktur für unterschiedliche Konfigurationsarten genutzt werden.
 Dies reduziert Redundanzen im Datenbankdesign und vereinfacht sowohl die Wartung als auch die Erweiterung der Anwendung erheblich.
 
-![ config_ProductType Tabellen Schema](img/TableSchemaconfigDetailInfo.png)  
+![ config_ProductType Tabellen Schema](img/TableSchemaconfigDetailInfo.png)
 
 ### Erklärung der RefTypes
 
-Die **RefTypes** definieren die möglichen Referenztypen, die in der Tabelle `config_DetailInfo` verwendet werden.  
-Jeder RefType repräsentiert eine bestimmte Kategorie von Stammdaten, beispielsweise Bereiche, Lieferanten oder Standorte.  
+Die **RefTypes** definieren die möglichen Referenztypen, die in der Tabelle `config_DetailInfo` verwendet werden.
+Jeder RefType repräsentiert eine bestimmte Kategorie von Stammdaten, beispielsweise Bereiche, Lieferanten oder Standorte.
 
-Durch dieses Konzept wird eine zentrale und flexible Konfigurationslogik realisiert.  
-Neue Konfigurationstypen können mit minimalem Aufwand ergänzt werden, ohne dass zusätzliche Tabellen oder komplexe Anpassungen notwendig sind.  
+Durch dieses Konzept wird eine zentrale und flexible Konfigurationslogik realisiert.
+Neue Konfigurationstypen können mit minimalem Aufwand ergänzt werden, ohne dass zusätzliche Tabellen oder komplexe Anpassungen notwendig sind.
 Dies ermöglicht eine konsistente Benutzeroberfläche sowie eine einheitliche Verarbeitung der verschiedenen Konfigurationsdaten innerhalb der Anwendung.
 
 Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in der folgenden Tabelle dargestellt:
@@ -336,8 +336,8 @@ Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigu
 ## Testdaten Erstellung
 Die verwendeten Testdaten stammen aus der Excel-Liste und wurden manuell in die Datenbank übernommen: [`HTLGesamtinventar_Auszug20251120.xlsx`](doc/HTLGesamtinventar_Auszug20251120.xlsx)
 
-### Testdaten der Tabelle T_Account  
-Das verwendete Passwort entspricht **nicht** dem tatsächlichen Passwort.  
+### Testdaten der Tabelle T_Account
+Das verwendete Passwort entspricht **nicht** dem tatsächlichen Passwort.
 Aus Sicherheitsgründen wird dieses hier lediglich als **xxx** angegeben.
 
 ```sql
@@ -513,7 +513,7 @@ Das Endprodukt fungiert als Single Page Application, bei dem der Seiteninhalt je
 
 ### Erklärung der QR-Code-Funktion
 
-Ein zentrales Feature der Inventarisierungslösung ist die integrierte QR-Code-Funktion.  
+Ein zentrales Feature der Inventarisierungslösung ist die integrierte QR-Code-Funktion.
 Für jedes Produkt wird im Bearbeitungsmodus automatisch ein individueller QR-Code generiert und angezeigt. Dieser QR-Code kann ausgedruckt und direkt am realen Objekt angebracht werden, wodurch ein schneller und direkter Zugriff auf die zugehörigen Produktdaten ermöglicht wird.
 
 Unterhalb jedes QR-Codes wird zusätzlich die Inventarnummer in Klartext dargestellt. Dadurch ist die Identifikation des Produkts nicht nur digital, sondern auch für Menschen ohne technische Hilfsmittel jederzeit eindeutig möglich.
@@ -532,7 +532,7 @@ Die Navigationsleiste bildet das zentrale Steuerelement der Anwendung und ermög
 
 **Punkt 1:** Über den Menüpunkt *Einstellungen* können systemrelevante Konfigurationen vorgenommen werden. Insbesondere Benutzer mit Administratorrechten haben hier Zugriff auf erweiterte Funktionen, darunter die Benutzerverwaltung, welche ausschließlich bei entsprechender Berechtigung angezeigt wird. Auf diese Maske wird bewusst nicht näher eingegangen, um die Sicherheit zusätzlich zu gewährleisten.
 
-**Punkt 2:** Die *Druckanzeige* visualisiert in einem roten Kreis die Anzahl der aktuell für den Druck ausgewählten Objekte. Durch Anklicken dieses Symbols wird zur Druckansicht navigiert.  
+**Punkt 2:** Die *Druckanzeige* visualisiert in einem roten Kreis die Anzahl der aktuell für den Druck ausgewählten Objekte. Durch Anklicken dieses Symbols wird zur Druckansicht navigiert.
 
 **Punkt 3:** Dieses Symbol ermöglicht das ordnungsgemäße Abmelden (Logout) aus der Anwendung.
 
@@ -542,11 +542,11 @@ Um auch bei einer großen Anzahl an Inventargegenständen effizient arbeiten zu 
 
 Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sternsymbol *, welches in allen Suchfeldern verwendet werden kann. Wird beispielsweise der Suchbegriff **Projekt\*** im Feld `Produktname` eingegeben, werden alle Objekte angezeigt, deren Name mit **Projekt** beginnt. Die Eingabe **\*Pro\*** liefert hingegen alle Objekte, die den Text „Pro“ an beliebiger Stelle im Namen enthalten. Dieselbe Logik gilt auch für die Suche nach Inventarnummern. So liefert etwa die Eingabe **408-\*-\*-24** alle Inventargegenstände der Kategorie 408, die im Jahr 2024 inventarisiert wurden.
 
-**Punkt 5:** Suchfeld zur Recherche nach Produktnamen unter Verwendung der beschriebenen Platzhalterlogik.  
+**Punkt 5:** Suchfeld zur Recherche nach Produktnamen unter Verwendung der beschriebenen Platzhalterlogik.
 
-**Punkt 6:** Suchfeld zur Recherche nach Inventarnummern mit Unterstützung des Sternsymbols *.  
+**Punkt 6:** Suchfeld zur Recherche nach Inventarnummern mit Unterstützung des Sternsymbols *.
 
-**Punkt 7:** Über das Suchsymbol wird die Suche ausgeführt. Das Pfeilsymbol dient zum Öffnen beziehungsweise Schließen der erweiterten Such- und Filtermaske.  
+**Punkt 7:** Über das Suchsymbol wird die Suche ausgeführt. Das Pfeilsymbol dient zum Öffnen beziehungsweise Schließen der erweiterten Such- und Filtermaske.
 
 **Punkt 8:** In diesem Bereich können zusätzliche Filterkriterien angewendet werden. Dazu zählen *Kategorie*, *Bereich*, *Lieferant*, *Standort*, *verantwortliche Person* sowie *Hinterleger*. Beim Öffnen der Filtermaske – im folgenden Beispiel für den Bereich – erscheint ein Fenster, das den jeweiligen Namen sowie die Anzahl der zugeordneten Objekte anzeigt:
 
@@ -558,9 +558,9 @@ Besonders hervorzuheben ist die Unterstützung von Platzhaltern durch das Sterns
 
 Die Inventarliste stellt das zentrale Element der Anwendung dar. In diesem Bereich werden alle im System gespeicherten Inventarobjekte angezeigt. Die Darstellung passt sich dynamisch an die aktuell gesetzten Such- und Filterkriterien an.
 
-**Punkt 10:** Dieser Bereich dient der Seitenverwaltung der Inventarliste. Um auch bei einer großen Anzahl an Objekten eine übersichtliche Darstellung zu gewährleisten, kann zwischen einzelnen Seiten gewechselt sowie die Anzahl der angezeigten Elemente pro Seite angepasst werden. Zusätzlich befindet sich am rechten Rand ein Plus-Symbol zur Erstellung neuer Produkte.  
+**Punkt 10:** Dieser Bereich dient der Seitenverwaltung der Inventarliste. Um auch bei einer großen Anzahl an Objekten eine übersichtliche Darstellung zu gewährleisten, kann zwischen einzelnen Seiten gewechselt sowie die Anzahl der angezeigten Elemente pro Seite angepasst werden. Zusätzlich befindet sich am rechten Rand ein Plus-Symbol zur Erstellung neuer Produkte.
 
-**Punkt 11:** Jedes Inventarobjekt wird durch einen eigenen Listeneintrag dargestellt. Angezeigt werden unter anderem der Produktname, der zugehörige Bereich, der Raum sowie die Inventarnummer.  
+**Punkt 11:** Jedes Inventarobjekt wird durch einen eigenen Listeneintrag dargestellt. Angezeigt werden unter anderem der Produktname, der zugehörige Bereich, der Raum sowie die Inventarnummer.
 
 **Punkt 12:** Über das **Drucksymbol** kann das Objekt zur Druckliste hinzugefügt werden. Die Anzeige in der Navigationsleiste erhöht sich dabei automatisch- Das **Kopiersymbol** ermöglicht das Kopieren der Inventarnummer, beispielsweise zur Verwendung bei der Produkterstellung. Über das **Editiersymbol** kann das jeweilige Produkt bearbeitet werden. Zusätzlich kann der Eintrag ein- oder ausgeklappt werden, um weitere Detailinformationen anzuzeigen:
 
@@ -572,9 +572,9 @@ In der Druckansicht werden alle für den Druck ausgewählten QR-Codes verwaltet.
 
 ![Druckansicht](img/Explain_Print.png)
 
-**Punkt 1:** Über diese Schaltflächen kann der Druckvorgang abgebrochen, gestartet oder die gesamte Auswahlliste gelöscht werden.  
+**Punkt 1:** Über diese Schaltflächen kann der Druckvorgang abgebrochen, gestartet oder die gesamte Auswahlliste gelöscht werden.
 
-**Punkt 2:** Dieser Bereich zeigt eine Übersicht aller aktuell ausgewählten QR-Codes.  
+**Punkt 2:** Dieser Bereich zeigt eine Übersicht aller aktuell ausgewählten QR-Codes.
 
 **Punkt 3:** Jedes Feld kann einzeln ausgewählt werden, um den Startpunkt der QR-Code-Liste festzulegen. Diese Funktion ermöglicht eine effiziente Nutzung der Druckbögen, sodass auch angebrochene Stickerbögen vollständig verwendet werden können.
 
@@ -586,17 +586,17 @@ Durch Anklicken des Editiersymbols öffnet sich eine Bearbeitungsmaske. Im folge
 
 ![Bearbeitungsauswahl](img/Explain_configEditSelection.png)
 
-**Punkt 1:** Anzeige des Namens des ausgewählten Bereichs.  
-**Punkt 2:** Anzeige der Anzahl der Objekte, die diesem Bereich zugeordnet sind.  
-**Punkt 3:** Über dieses Symbol kann der Bereich bearbeitet werden.  
+**Punkt 1:** Anzeige des Namens des ausgewählten Bereichs.
+**Punkt 2:** Anzeige der Anzahl der Objekte, die diesem Bereich zugeordnet sind.
+**Punkt 3:** Über dieses Symbol kann der Bereich bearbeitet werden.
 **Punkt 4:** Ist der Bereich keinem Objekt zugeordnet, erscheint ein Löschsymbol, über das der Eintrag entfernt werden kann.
 
 Bei der Bearbeitung eines Bereichs öffnet sich folgende Maske:
 
 ![Bearbeitungsformular](img/Explain_configEdit.png)
 
-**Punkt 1:** Änderung des Namens des Bereichs.  
-**Punkt 2:** Änderung des Kurzzeichens des Bereichs.  
+**Punkt 1:** Änderung des Namens des Bereichs.
+**Punkt 2:** Änderung des Kurzzeichens des Bereichs.
 **Punkt 3:** Möglichkeit zur Ergänzung einer Beschreibung.
 
 ### Punkt 10 – Anzeige der Inventarliste: Produkterstellung
@@ -605,9 +605,9 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 
 ![Produkterstellung](img/Explain_ProductCreate.png)
 
-**Punkt 1:** Auswahl der Produktkategorie.  
-**Punkt 2:** Festlegung des Inventarisierungsdatums.  
-**Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen.   
+**Punkt 1:** Auswahl der Produktkategorie.
+**Punkt 2:** Festlegung des Inventarisierungsdatums.
+**Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen. 
 **Punkt 4:** Option zum Abbrechen der Produkterstellung oder zum Erstellen des neuen Produkts.
 
 ### Punkt 12 – Produktmaske
@@ -616,11 +616,11 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 
 ![Produktbearbeitung](img/Explain_ProductEdit.png)
 
-**Punkt 1:** Abbruch der Produkterstellung beziehungsweise der Bearbeitung und Rückkehr zur vorherigen Ansicht.  
-**Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts die Beschriftung der Schaltfläche variiert abhängig vom Modus.  
+**Punkt 1:** Abbruch der Produkterstellung beziehungsweise der Bearbeitung und Rückkehr zur vorherigen Ansicht.
+**Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts die Beschriftung der Schaltfläche variiert abhängig vom Modus.
 **Punkt 3:** Anzeige der editierbaren Eingabefelder zur Anpassung der Produktinformationen.
 
-Die **Inventarnummer** (**Punkt 4**), das **Erstelldatum** (**Punkt 5**) sowie die **Produktkategorie** (**Punkt 6**) sind ausschließlich schreibgeschützt und können nicht manuell verändert werden. Diese Informationen stellen zentrale Bestandteile der eindeutigen Identifikation eines Produkts dar.  
+Die **Inventarnummer** (**Punkt 4**), das **Erstelldatum** (**Punkt 5**) sowie die **Produktkategorie** (**Punkt 6**) sind ausschließlich schreibgeschützt und können nicht manuell verändert werden. Diese Informationen stellen zentrale Bestandteile der eindeutigen Identifikation eines Produkts dar.
 Unterhalb der Eingabefelder wird über **Punkt 7** der dem Produkt zugeordnete **QR-Code** angezeigt.
 
 Nahezu alle weiteren Produktinformationen können in dieser Maske angepasst werden. Eine Änderung der schreibgeschützten Felder ist nicht vorgesehen, da dies zu Inkonsistenzen im System führen würde.
