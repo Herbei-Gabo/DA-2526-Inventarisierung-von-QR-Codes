@@ -74,7 +74,7 @@ Beide Projektmanagement-Ansätze bieten spezifische Vor- und Nachteile, die gera
 
 ## Aufbau, Zweck und Vorteile des Projekthandbuchs
 
-## Struktur und typische Inhalte eines Projekthandbuchs
+### Struktur und typische Inhalte eines Projekthandbuchs
 
 Ein Projekthandbuch (PHB) ist eine projektspezifische Sammlung aller wichtigen Informationen, Regeln und Vereinbarungen, die für Planung und Durchführung eines bestimmten Projekts gelten. Es handelt sich sozusagen um das zentrale Nachschlagewerk für das Projekt. Verantwortlich für die Erstellung und Aktualisierung ist der Projektleiter; häufig wird das PHB vom Lenkungsausschuss freigegeben und der Pflege (Versionierung, Verteilung) unterworfen. Wichtig: Das Projekthandbuch ist projektspezifisch – es unterscheidet sich vom allgemeinen Projektmanagement-Handbuch einer Organisation dadurch, dass es nur die für dieses eine Projekt gültigen Vereinbarungen enthält und gegebenenfalls auf übergeordnete PM-Standards verweist. Nach PMI entspricht das Projekthandbuch im Wesentlichen dem Project Management Plan gemäß PMBOK Guide, der alle Teilpläne des Projektmanagements integriert.[@projektmagazin_projekthandbuch][@peterjohann_projekthandbuch]
 
@@ -105,7 +105,7 @@ oder Sprint-Zyklen) und Meilensteine. Hier wird festgehalten, nach welcher Metho
 
 Die genaue Gliederung ist nicht starr vorgegeben – je nach Projekt und geltendem Standard kann das Projekthandbuch unterschiedlich aufgebaut sein. Wichtig ist, dass es alle für das Verständnis und die Durchführung des Projekts notwendigen organisatorischen Vorgaben bündelt. Bei kleinen Projekten kann das PHB sehr schlank sein und dennoch alle wesentlichen Informationen enthalten; bei großen Projekten verweist es oft auf detailreiche Unterdokumente. Entscheidend ist der Zweckmäßigkeit: Das Projekthandbuch soll übersichtlich bleiben und nicht mit unnötiger Wiederholung von Bekanntem (z.B. allgemeinen Firmenstandards) überfrachtet werden. Verweise auf bestehende Handbücher oder Vorlagen genügen in solchen Fällen, um Redundanz zu vermeiden.[@peterjohann_projekthandbuch]
 
-## Zweck und Nutzen eines Projekthandbuchs
+### Zweck und Nutzen eines Projekthandbuchs
 
 Das Projekthandbuch erfüllt einen zentralen Zweck: Es stellt dem Projektteam (und relevanten Stakeholdern) alle organisatorischen Informationen zur Verfügung, damit jederzeit Klarheit darüber herrscht, wie im Projekt vorzugehen ist. Im Grunde dient es als Leitfaden des Projekts.[@projektmagazin_projekthandbuch] [@peterjohann_projekthandbuch]
 
