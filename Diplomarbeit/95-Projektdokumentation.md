@@ -215,7 +215,6 @@ Das Projekt wurde positiv bewertet und befindet sich weiterhin im Plan.
 Die Dokumentation befindet sich im Endstadium. Das System ist stabil und funktionsfähig.
 
 ### Nächste Schritte
-- Vorbereitung der zweiten Zwischenpräsentation
 - Abschlussarbeiten
 
 
