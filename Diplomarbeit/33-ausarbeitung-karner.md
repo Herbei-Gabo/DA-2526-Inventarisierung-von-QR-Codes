@@ -185,7 +185,7 @@ Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundleg
 
 | Feldname               | Datentyp                   | Beschreibung                    |
 |------------------------|----------------------------|--------------------------------|
-| PRODUCTTYPE_ID         | uniqueidentifier ROWGUIDCOL | [PRIMARY_KEY + ROW_GUID]       |
+| PRODUCTTYPE_ID         | uniqueidentifier ROWGUIDCOL | [PRIMARY_KEY + ROW_GUID]      |
 | ProductType_ParentID   | uniqueidentifier           | ID des Elternelements          |
 
 Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle jedoch bewusst **nicht** detailliert erläutert werden, da sie für das grundlegende Verständnis der Hierarchie nicht erforderlich sind.
@@ -246,8 +246,6 @@ Ebenso wurde der Wunsch geäußert, das System künftig an ein LDAP-System anzub
 
 Auch hierfür ist vorgesehen, eine zusätzliche Spalte zur Speicherung der LDAP-ID zu integrieren.  
 Die tatsächliche Umsetzung einer LDAP-Anbindung ist jedoch **nicht Teil der Diplomarbeit**, sondern lediglich konzeptionell vorbereitet.
-
----
 
 ## Datenbankmodell Erstellung
 
