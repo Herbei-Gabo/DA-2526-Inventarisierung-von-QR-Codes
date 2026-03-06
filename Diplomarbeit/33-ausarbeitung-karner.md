@@ -587,8 +587,11 @@ Durch Anklicken des Editiersymbols öffnet sich eine Bearbeitungsmaske. Im folge
 ![Bearbeitungsauswahl](img/Explain_configEditSelection.png)
 
 **Punkt 1:** Anzeige des Namens des ausgewählten Bereichs.
+
 **Punkt 2:** Anzeige der Anzahl der Objekte, die diesem Bereich zugeordnet sind.
+
 **Punkt 3:** Über dieses Symbol kann der Bereich bearbeitet werden.
+
 **Punkt 4:** Ist der Bereich keinem Objekt zugeordnet, erscheint ein Löschsymbol, über das der Eintrag entfernt werden kann.
 
 Bei der Bearbeitung eines Bereichs öffnet sich folgende Maske:
@@ -596,7 +599,9 @@ Bei der Bearbeitung eines Bereichs öffnet sich folgende Maske:
 ![Bearbeitungsformular](img/Explain_configEdit.png)
 
 **Punkt 1:** Änderung des Namens des Bereichs.
+
 **Punkt 2:** Änderung des Kurzzeichens des Bereichs.
+
 **Punkt 3:** Möglichkeit zur Ergänzung einer Beschreibung.
 
 ### Punkt 10 – Anzeige der Inventarliste: Produkterstellung
@@ -606,8 +611,11 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 ![Produkterstellung](img/Explain_ProductCreate.png)
 
 **Punkt 1:** Auswahl der Produktkategorie.
+
 **Punkt 2:** Festlegung des Inventarisierungsdatums.
+
 **Punkt 3:** Möglichkeit, eine bestehende Inventarnummer als Vorlage zu übernehmen. 
+
 **Punkt 4:** Option zum Abbrechen der Produkterstellung oder zum Erstellen des neuen Produkts.
 
 ### Punkt 12 – Produktmaske
@@ -617,7 +625,9 @@ Die folgende Ansicht zeigt die Maske zur Erstellung eines neuen Produkts:
 ![Produktbearbeitung](img/Explain_ProductEdit.png)
 
 **Punkt 1:** Abbruch der Produkterstellung beziehungsweise der Bearbeitung und Rückkehr zur vorherigen Ansicht.
+
 **Punkt 2:** Speichern eines bestehenden Produkts oder Erstellen eines neuen Produkts die Beschriftung der Schaltfläche variiert abhängig vom Modus.
+
 **Punkt 3:** Anzeige der editierbaren Eingabefelder zur Anpassung der Produktinformationen.
 
 Die **Inventarnummer** (**Punkt 4**), das **Erstelldatum** (**Punkt 5**) sowie die **Produktkategorie** (**Punkt 6**) sind ausschließlich schreibgeschützt und können nicht manuell verändert werden. Diese Informationen stellen zentrale Bestandteile der eindeutigen Identifikation eines Produkts dar.
