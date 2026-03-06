@@ -165,7 +165,6 @@ Gute Zusammenarbeit trotz erhöhter Arbeitsbelastung durch Schulbetrieb.
 - Anpassungen basierend auf Rückmeldungen
 
 ### Aufwände der Teammitglieder
-
 | Name | Tätigkeit | Aufwand |
 |------|----------|---------|
 | Stephan Dietmair | Präsentation & Organisation | 12 h |
