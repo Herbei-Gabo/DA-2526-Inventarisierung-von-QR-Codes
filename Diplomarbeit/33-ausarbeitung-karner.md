@@ -183,7 +183,7 @@ In diesem Beispiel stellt **Tische (100)** die übergeordnete Kategorie (Parent)
 
 Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundlegende Struktur umgesetzt:
 
-:Tabelle Anlagenkennzahlbeispiel Teil 1
+Table: Tabelle Anlagenkennzahlbeispiel Teil 1
 
 | Feldname               | Datentyp                   | Beschreibung                    |
 |------------------------|----------------------------|--------------------------------|
@@ -195,7 +195,7 @@ Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle
 
 ### Erklärung der Felder
 
-:Tabelle Anlagenkennzahlbeispiel Teil 2
+Table: Tabelle Anlagenkennzahlbeispiel Teil 2
 
 | Feldname               | Erklärung                    |
 |------------------------|------------------------------|
@@ -216,6 +216,8 @@ Diese Informationen lassen sich entweder ableiten oder sind für die digitale In
 Weiters wurde festgestellt, dass bestimmte Datenfelder in der Anwendung nicht als Freitextfelder, sondern als **Dropdown-Menüs** umgesetzt werden sollen, um eine einheitliche Dateneingabe sicherzustellen.
 
 Dies betrifft folgende Felder:
+
+Table: Als Dropdown-Menüs umgesetzte Datenfelder
 
 | Daten               |
 |--------------------|
@@ -325,6 +327,8 @@ Neue Konfigurationstypen können mit minimalem Aufwand ergänzt werden, ohne das
 Dies ermöglicht eine konsistente Benutzeroberfläche sowie eine einheitliche Verarbeitung der verschiedenen Konfigurationsdaten innerhalb der Anwendung.
 
 Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in der folgenden Tabelle dargestellt:
+
+Table: Referenztypen in der Anwendung
 
 | RefType-Bezeichnung        | Wert | Beschreibung              |
 |----------------------------|------|---------------------------|
