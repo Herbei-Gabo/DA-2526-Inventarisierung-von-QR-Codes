@@ -183,7 +183,7 @@ In diesem Beispiel stellt **Tische (100)** die übergeordnete Kategorie (Parent)
 
 Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundlegende Struktur umgesetzt:
 
-Table: Tabelle Anlagenkennzahlbeispiel Teil 1
+:Tabelle Anlagenkennzahlbeispiel Teil 1
 
 | Feldname               | Datentyp                   | Beschreibung                    |
 |------------------------|----------------------------|--------------------------------|
@@ -195,7 +195,7 @@ Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle
 
 ### Erklärung der Felder
 
-Table: Tabelle Anlagenkennzahlbeispiel Teil 2
+:Tabelle Anlagenkennzahlbeispiel Teil 2
 
 | Feldname               | Erklärung                    |
 |------------------------|------------------------------|
@@ -217,7 +217,7 @@ Weiters wurde festgestellt, dass bestimmte Datenfelder in der Anwendung nicht al
 
 Dies betrifft folgende Felder:
 
-Table: Als Dropdown-Menüs umgesetzte Datenfelder
+:Als Dropdown-Menüs umgesetzte Datenfelder
 
 | Daten               |
 |--------------------|
@@ -328,7 +328,7 @@ Dies ermöglicht eine konsistente Benutzeroberfläche sowie eine einheitliche Ve
 
 Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in der folgenden Tabelle dargestellt:
 
-Table: Referenztypen in der Anwendung
+:Referenztypen in der Anwendung
 
 | RefType-Bezeichnung        | Wert | Beschreibung              |
 |----------------------------|------|---------------------------|
