@@ -8,12 +8,12 @@ Diese bilden das Fundament für eine moderne, stabile und benutzerfreundliche An
 
 Die Auswahl der Technologien erfolgte auf Basis folgender Kriterien:
 
-- **Kompatibilität und Standardisierung:** Alle eingesetzten Technologien entsprechen gängigen Webstandards und werden von aktuellen Browsern sowie Betriebssystemen unterstützt.
-- **Trennung von Struktur, Darstellung und Logik:** Durch die konsequente Trennung von HTML, CSS, JavaScript und serverseitiger Logik wird eine klare und wartbare Softwarearchitektur gewährleistet.
-- **Effizienz und Benutzerfreundlichkeit:** Die Kombination aus clientseitigen und serverseitigen Technologien ermöglicht schnelle Ladezeiten, interaktive Oberflächen und eine intuitive Bedienung.
-- **Zukunftssicherheit:** Die eingesetzten Technologien sind weit verbreitet, gut dokumentiert und bieten eine langfristige Perspektive für Wartung und Erweiterung.
+- **Kompatibilität und Standardisierung:** Alle eingesetzten Technologien entsprechen gängigen Webstandards und werden von aktuellen Browsern sowie Betriebssystemen unterstützt. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax]
+- **Trennung von Struktur, Darstellung und Logik:** Durch die konsequente Trennung von HTML, CSS, JavaScript und serverseitiger Logik wird eine klare und wartbare Softwarearchitektur gewährleistet. [@mdn_html], [@mdn_css], [@php_manual],[@mdn_javascript]
+- **Effizienz und Benutzerfreundlichkeit:** Die Kombination aus clientseitigen und serverseitigen Technologien ermöglicht schnelle Ladezeiten, interaktive Oberflächen und eine intuitive Bedienung. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax] 
+- **Zukunftssicherheit:** Die eingesetzten Technologien sind weit verbreitet, gut dokumentiert und bieten eine langfristige Perspektive für Wartung und Erweiterung. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax], [@microsoft_ssms], [@microsoft_iis]
 
-Im Folgenden werden die einzelnen Technologien, ihre Einsatzgebiete, Entscheidungsgründe und Vorteile im Detail erläutert. Dies umfasst sowohl die **Frontend-Technologien** (HTML, CSS, JavaScript, AJAX) zur Gestaltung der Benutzeroberfläche als auch die **Backend-Technologien** (PHP, SQL Server, IIS) für Datenverarbeitung, Speicherung und Zugriffskontrolle. Abschließend wird das eingesetzte Framework vorgestellt, das die Entwicklung strukturierter und effizienter gestaltet.
+Im Folgenden werden die einzelnen Technologien, ihre Einsatzgebiete, Entscheidungsgründe und Vorteile im Detail erläutert. Dies umfasst sowohl die **Frontend-Technologien** (HTML, CSS, JavaScript, AJAX) zur Gestaltung der Benutzeroberfläche als auch die **Backend-Technologien** (PHP, SQL Server, IIS) für Datenverarbeitung, Speicherung und Zugriffskontrolle. Abschließend wird das eingesetzte Framework vorgestellt, das die Entwicklung strukturierter und effizienter gestaltet. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax], [@microsoft_ssms], [@microsoft_iis]
 
 ### HyperText Markup Language (HTML)
 
@@ -64,7 +64,7 @@ PHP ist besonders für webbasierte Anwendungen geeignet und wird seit vielen Jah
 ### JavaScript (JS)
 
 #### Erläuterung
-JavaScript wird clientseitig verwendet, um die Benutzeroberfläche interaktiv zu gestalten. Dazu zählen dynamische Formularvalidierungen, Benutzerinteraktionen sowie die Steuerung von Abläufen, die ohne vollständige Seitenneuladungen auskommen. Dadurch wird die Reaktionsfähigkeit der Anwendung deutlich erhöht.[@mdn_javascript]
+JavaScript wird clientseitig verwendet, um die Benutzeroberfläche interaktiv zu gestalten. Dazu zählen dynamische Formularvalidierungen, Benutzerinteraktionen sowie die Steuerung von Abläufen, die ohne vollständige Seitenneuladungen auskommen. Dadurch wird die Reaktionsfähigkeit der Anwendung deutlich erhöht.[@mdn_javascript] 
 
 #### Entscheidungsgrundlage
 JavaScript ist die Standardsprache für clientseitige Webentwicklung und wird von allen modernen Browsern unterstützt. Der gezielte Einsatz von JavaScript ermöglicht eine spürbare Verbesserung der Benutzererfahrung und trägt zu einer intuitiven Bedienung der Anwendung bei.[@mdn_javascript]
