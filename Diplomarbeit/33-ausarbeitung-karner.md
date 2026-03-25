@@ -183,25 +183,24 @@ In diesem Beispiel stellt **Tische (100)** die übergeordnete Kategorie (Parent)
 
 Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundlegende Struktur umgesetzt:
 
-:Tabelle Anlagenkennzahlbeispiel Teil 1
-
 | Feldname               | Datentyp                   | Beschreibung                    |
 |------------------------|----------------------------|--------------------------------|
 | PRODUCTTYPE_ID         | uniqueidentifier ROWGUIDCOL | [PRIMARY_KEY + ROW_GUID]      |
 | ProductType_ParentID   | uniqueidentifier           | ID des Elternelements          |
+
+:Tabelle Anlagenkennzahlbeispiel Teil 1
 
 Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle jedoch bewusst **nicht** detailliert erläutert werden, da sie für das grundlegende Verständnis der Hierarchie nicht erforderlich sind.
 
 
 ### Erklärung der Felder
 
-:Tabelle Anlagenkennzahlbeispiel Teil 2
-
 | Feldname               | Erklärung                    |
 |------------------------|------------------------------|
 | PRODUCTTYPE_ID         | ID des Child-Objekts         |
 | ProductType_ParentID   | ID des Elternelements        |
 
+:Tabelle Anlagenkennzahlbeispiel Teil 2
 
 ### Hinfällige Felder
 Im Zuge der Umstrukturierung und Normalisierung der Datenbank ergab sich, dass einige Spalten aus der ursprünglichen Excel-Liste nicht mehr benötigt werden. Diese Felder sind im neuen System hinfällig:
