@@ -141,7 +141,7 @@ Die Kernfunktionen wurden erfolgreich umgesetzt. Kleinere Verzögerungen konnten
 durch Priorisierung kompensiert werden.
 
 ### Teamarbeit
-Trotz der durch den Schulbetrieb erhöhten Arbeitsbelastung konnte eine gute Zusammenarbeit im Team aufrechterhalten werden.
+Trotz der zusätzlichen Belastung durch den Schulbetrieb funktionierte die Zusammenarbeit im Team sehr gut.
 
 ### Nächste Schritte & Entscheidungen
 - Vorbereitung der ersten Zwischenpräsentation
