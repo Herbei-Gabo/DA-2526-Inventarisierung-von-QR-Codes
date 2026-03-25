@@ -18,9 +18,10 @@ konkrete Aufgaben (vergleichbar mit User Stories und Subtasks) definiert, bearbe
 abgeschlossen wurden.
 
 Die Aufgabenverwaltung erfolgte über:
-- GitHub (Issues, Versionsverwaltung)
-- To-do-Listen im Projekthandbuch
-- Regelmäßige Abstimmungen im Team (Microsoft Teams, persönliche Treffen)
+
+ - GitHub (Issues, Versionsverwaltung)
+ - To-do-Listen im Projekthandbuch
+ - Regelmäßige Abstimmungen im Team (Microsoft Teams, persönliche Treffen)
 
 
 ## Projektfortschritte nach Meilensteinen
@@ -140,7 +141,7 @@ Die Kernfunktionen wurden erfolgreich umgesetzt. Kleinere Verzögerungen konnten
 durch Priorisierung kompensiert werden.
 
 ### Teamarbeit
-Gute Zusammenarbeit trotz erhöhter Arbeitsbelastung durch Schulbetrieb.
+Trotz der durch den Schulbetrieb erhöhten Arbeitsbelastung konnte eine gute Zusammenarbeit im Team aufrechterhalten werden.
 
 ### Nächste Schritte & Entscheidungen
 - Vorbereitung der ersten Zwischenpräsentation
