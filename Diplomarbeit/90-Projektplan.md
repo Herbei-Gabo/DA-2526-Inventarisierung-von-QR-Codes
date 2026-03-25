@@ -11,9 +11,9 @@
 **Thema:** Entwicklung einer webbasierten Inventarisierungslösung mit QR-Codes zur Verwaltung schulischer IT-Ausstattung
 
 **Team:**
-- **Dietmair Stephan** – Projektmanagement & Organisation
-- **Herbei Gabriel** – Analyse, Konzeption & Qualitätssicherung 
-- **Karner André** – Softwareentwicklung & technische Umsetzung 
+- **Dietmair Stephan**: Projektmanagement & Organisation
+- **Herbei Gabriel**: Analyse, Konzeption & Qualitätssicherung 
+- **Karner André**: Softwareentwicklung & technische Umsetzung 
 
 **Betreuer:** Dipl.-Wirt.-Ing. (FH) Leitner Christoph, BEd 
 **Zeitraum:** Juni 2025 – März 2026
@@ -73,14 +73,14 @@ GitHub-Repository: `DA-2526-Inventarisierung-von-QR-Codes`
 
 
 ### Aktueller Projektstatus (Stand 08.02.2026)
-- Datenbank- und Backend-Struktur fertiggestellt  
-- Theoretische Grundlagen & Marktanalyse abgeschlossen  
-- Projekthandbuch fertiggestellt und abgegeben  
-- Frontend-Phase abgeschlossen, Admin-Menü überarbeitet  
-- QR-Code-Druckfunktion überarbeitet  
-- Responsive Design für mobile Endgeräte optimiert  
-- Erweiterte Funktionstests (Suche, QR-Druck, Mobile) abgeschlossen  
-- Dokumentation finalisiert und Abgabe vorbereitet 
+- Datenbank- und Backend-Struktur fertiggestellt
+- Theoretische Grundlagen & Marktanalyse abgeschlossen
+- Projekthandbuch fertiggestellt und abgegeben
+- Frontend-Phase abgeschlossen, Admin-Menü überarbeitet
+- QR-Code-Druckfunktion überarbeitet
+- Responsive Design für mobile Endgeräte optimiert
+- Erweiterte Funktionstests (Suche, QR-Druck, Mobile) abgeschlossen
+- Dokumentation finalisiert und Abgabe vorbereitet
 
 
 
@@ -105,10 +105,10 @@ Hinweis: Abgeschlossene Aufgaben werden in Kapitel 7 (Aufgabenhistorie) dokument
 
 
 ### Risiken & Herausforderungen
- Abhängigkeit von der Schul-IT-Infrastruktur (Serverrechte, Zugriff)  
- Zeitliche Belastung durch parallelen Schulunterricht  
- QR-Code-Leserkompatibilität auf unterschiedlichen Geräten  
- Fehlende Original-Listen für korrekte Inventarnummern  
+ - Abhängigkeit von der Schul-IT-Infrastruktur (Serverrechte, Zugriff)  
+ - Zeitliche Belastung durch parallelen Schulunterricht  
+ - QR-Code-Leserkompatibilität auf unterschiedlichen Geräten  
+ - Fehlende Original-Listen für korrekte Inventarnummern  
 
 
 
