@@ -190,6 +190,8 @@ Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundleg
 | PRODUCTTYPE_ID         | uniqueidentifier ROWGUIDCOL | [PRIMARY_KEY + ROW_GUID]      |
 | ProductType_ParentID   | uniqueidentifier           | ID des Elternelements          |
 
+[@tabelle_anlagenkennzahlbeispiel_teil_1]
+
 Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle jedoch bewusst **nicht** detailliert erläutert werden, da sie für das grundlegende Verständnis der Hierarchie nicht erforderlich sind.
 
 
@@ -201,6 +203,8 @@ Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle
 |------------------------|------------------------------|
 | PRODUCTTYPE_ID         | ID des Child-Objekts         |
 | ProductType_ParentID   | ID des Elternelements        |
+
+[@tabelle_anlagenkennzahlbeispiel_teil_2]
 
 
 ### Hinfällige Felder
