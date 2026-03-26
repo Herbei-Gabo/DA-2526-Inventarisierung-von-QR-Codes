@@ -183,24 +183,19 @@ In diesem Beispiel stellt **Tische (100)** die übergeordnete Kategorie (Parent)
 
 Um diese Hierarchie korrekt in der Datenbank abzubilden, wurde folgende grundlegende Struktur umgesetzt:
 
-| Feldname               | Datentyp                   | Beschreibung                    |
-|------------------------|----------------------------|--------------------------------|
-| PRODUCTTYPE_ID         | uniqueidentifier ROWGUIDCOL | [PRIMARY_KEY + ROW_GUID]      |
-| ProductType_ParentID   | uniqueidentifier           | ID des Elternelements          |
-
-:Tabelle Anlagenkennzahlbeispiel Teil 1
+- **PRODUCTTYPE_ID**
+  Datentyp: `uniqueidentifier ROWGUIDCOL`  
+  Beschreibung: `[PRIMARY_KEY + ROW_GUID]`
+- **ProductType_ParentID**
+  Datentyp: `uniqueidentifier`  
+  Beschreibung: ID des Elternelements
 
 Die Tabelle enthält selbstverständlich weitere Felder, welche an dieser Stelle jedoch bewusst **nicht** detailliert erläutert werden, da sie für das grundlegende Verständnis der Hierarchie nicht erforderlich sind.
 
-
 ### Erklärung der Felder
 
-| Feldname               | Erklärung                    |
-|------------------------|------------------------------|
-| PRODUCTTYPE_ID         | ID des Child-Objekts         |
-| ProductType_ParentID   | ID des Elternelements        |
-
-:Tabelle Anlagenkennzahlbeispiel Teil 2
+- **PRODUCTTYPE_ID:** ID des Child-Objekts
+- **ProductType_ParentID:** ID des Elternelements
 
 ### Hinfällige Felder
 Im Zuge der Umstrukturierung und Normalisierung der Datenbank ergab sich, dass einige Spalten aus der ursprünglichen Excel-Liste nicht mehr benötigt werden. Diese Felder sind im neuen System hinfällig:
@@ -216,15 +211,11 @@ Weiters wurde festgestellt, dass bestimmte Datenfelder in der Anwendung nicht al
 
 Dies betrifft folgende Felder:
 
-:Als Dropdown-Menüs umgesetzte Datenfelder
-
-| Daten               |
-|--------------------|
-| Bereich             |
-| Lieferant           |
-| Standort            |
-| Einbringer/in       |
-| Verantwortliche/r   |
+- Bereich
+- Lieferant
+- Standort
+- Einbringer/in
+- Verantwortliche/r
 
 
 ### Auswahl der Datenbank
@@ -325,17 +316,13 @@ Durch dieses Konzept wird eine zentrale und flexible Konfigurationslogik realisi
 Neue Konfigurationstypen können mit minimalem Aufwand ergänzt werden, ohne dass zusätzliche Tabellen oder komplexe Anpassungen notwendig sind.
 Dies ermöglicht eine konsistente Benutzeroberfläche sowie eine einheitliche Verarbeitung der verschiedenen Konfigurationsdaten innerhalb der Anwendung.
 
-Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in der folgenden Tabelle dargestellt:
+Zur besseren Übersicht sind die in der Anwendung verwendeten Referenztypen in der folgenden Übersicht dargestellt:
 
-:Referenztypen in der Anwendung
-
-| RefType-Bezeichnung        | Wert | Beschreibung              |
-|----------------------------|------|---------------------------|
-| config_Area                | 1    | Bereich / Verwendung      |
-| config_Supplier            | 2    | Lieferant                 |
-| config_Location            | 3    | Standort (Raum)           |
-| config_ResponsiblePerson   | 4    | Zuständige Person         |
-| config_Depositor           | 5    | Hinterleger               |
+- **config_Area** (Wert: 1) = Bereich / Verwendung
+- **config_Supplier** (Wert: 2) = Lieferant
+- **config_Location** (Wert: 3) = Standort (Raum)
+- **config_ResponsiblePerson** (Wert: 4) = Zuständige Person
+- **config_Depositor** (Wert: 5) = Hinterleger
 
 Die numerischen Werte dienen als eindeutige Kennzeichnung der jeweiligen Konfigurationsart und ermöglichen eine einfache Zuordnung innerhalb der Datenbank sowie der Benutzeroberfläche.
 
