@@ -9,7 +9,7 @@ Diese bilden das Fundament für eine moderne, stabile und benutzerfreundliche An
 Die Auswahl der Technologien erfolgte auf Basis folgender Kriterien:
 
 - **Kompatibilität und Standardisierung:** Alle eingesetzten Technologien entsprechen gängigen Webstandards und werden von aktuellen Browsern sowie Betriebssystemen unterstützt. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax]
-- **Trennung von Struktur, Darstellung und Logik:** Durch die konsequente Trennung von HTML, CSS, JavaScript und serverseitiger Logik wird eine klare und wartbare Softwarearchitektur gewährleistet. [@mdn_html], [@mdn_css], [@php_manual],[@mdn_javascript]
+- **Trennung von Struktur, Darstellung und Logik:** Durch die konsequente Trennung von HTML, CSS, JavaScript und serverseitiger Logik wird eine klare und wartbare Softwarearchitektur gewährleistet. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript]
 - **Effizienz und Benutzerfreundlichkeit:** Die Kombination aus clientseitigen und serverseitigen Technologien ermöglicht schnelle Ladezeiten, interaktive Oberflächen und eine intuitive Bedienung. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax] 
 - **Zukunftssicherheit:** Die eingesetzten Technologien sind weit verbreitet, gut dokumentiert und bieten eine langfristige Perspektive für Wartung und Erweiterung. [@mdn_html], [@mdn_css], [@php_manual], [@mdn_javascript], [@mdn_ajax], [@microsoft_ssms], [@microsoft_iis]
 
