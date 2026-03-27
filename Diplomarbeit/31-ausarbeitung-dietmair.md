@@ -79,7 +79,7 @@ Beide Projektmanagement-Ansätze bieten spezifische Vor- und Nachteile, die gera
 
 Ein Projekthandbuch (PHB) ist eine projektspezifische Sammlung aller wichtigen Informationen, Regeln und Vereinbarungen, die für Planung und Durchführung eines bestimmten Projekts gelten. Es handelt sich sozusagen um das zentrale Nachschlagewerk für das Projekt. Verantwortlich für die Erstellung und Aktualisierung ist der Projektleiter, häufig wird das PHB vom Lenkungsausschuss freigegeben und der Pflege (Versionierung, Verteilung) unterworfen. Wichtig ist, dass das Projekthandbuch projektspezifisch ist. Es unterscheidet sich vom allgemeinen Projektmanagementhandbuch einer Organisation dadurch, dass es nur die für dieses eine Projekt gültigen Vereinbarungen enthält und gegebenenfalls auf übergeordnete Projektmanagementstandards verweist. Nach PMI entspricht das Projekthandbuch im Wesentlichen dem Project Management Plan gemäß PMBOK Guide, der alle Teilpläne des Projektmanagements integriert.[@projektmagazin_projekthandbuch][@peterjohann_projekthandbuch]
 
-Typischerweise gliedert sich ein Projekthandbuch in mehrere Kapitel, die alle relevanten Bereiche abdecken. Zu den üblichen Inhalten zählen unter anderem:[@projektmagazin_projekthandbuch] [@peterjohann_projekthandbuch]
+Typischerweise gliedert sich ein Projekthandbuch in mehrere Kapitel, die alle relevanten Bereiche abdecken. Zu den üblichen Inhalten zählen unter anderem.[@projektmagazin_projekthandbuch] [@peterjohann_projekthandbuch]
 
 **Projektziel und -definition:** Beschreibung des Projektauftrags, der Ziele, des Scopes und der Abgrenzungen. Dazu gehört oft ein Business Case oder die Projektbegründung, also warum das Projekt durchgeführt wird und welchen Nutzen es stiften soll.[@projektmagazin_projekthandbuch]
 
