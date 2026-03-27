@@ -77,11 +77,7 @@ transparent kommuniziert.
 
 ### Projektstatus
 
-| Dimension | Status | Maßnahmen |
-|---------|--------|-----------|
-| Leistungsziele | In Ordnung | keine |
-| Terminziele | In Ordnung | keine |
-| Kostenziele | In Ordnung | keine |
+![Projektstatus2](img/Status2.png) 
 
 ### Gesamtstatus
 Die Planungsphase verlief planmäßig. Die technische Grundlage für die Implementierung
