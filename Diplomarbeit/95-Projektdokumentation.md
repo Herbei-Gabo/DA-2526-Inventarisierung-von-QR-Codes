@@ -40,19 +40,11 @@ Die Aufgabenverwaltung erfolgte über:
 
 ### Aufwände der Teammitglieder
 
-| Name | Tätigkeit | Aufwand |
-|------|----------|---------|
-| Stephan Dietmair | Projektkoordination, Recherche | 10 h |
-| Gabriel Herbei | Markt- & Technologieanalyse | 14 h |
-| André Karner | Technische Recherche | 12 h |
+![Aufwaende1](img/Aufwaende1.png) 
 
 ### Projektstatus
 
-| Dimension | Status | Maßnahmen |
-|---------|--------|-----------|
-| Leistungsziele | In Ordnung | keine |
-| Terminziele | In Ordnung | keine |
-| Kostenziele | In Ordnung | Nutzung kostenloser Tools |
+![Projektstatus1](img/Status1.png) 
 
 ### Gesamtstatus
 Die Recherchephase wurde erfolgreich abgeschlossen. Eine klare Zieldefinition sowie
@@ -81,11 +73,7 @@ transparent kommuniziert.
 
 ### Aufwände der Teammitglieder
 
-| Name | Tätigkeit | Aufwand |
-|------|----------|---------|
-| Stephan Dietmair | Projektmanagement & Dokumentation | 18 h |
-| Gabriel Herbei | Analyse & Qualitätssicherung | 12 h |
-| André Karner | DB-Planung & Architektur | 20 h |
+![Aufwaende2](img/Aufwaende2.png) 
 
 ### Projektstatus
 
@@ -122,19 +110,12 @@ Sehr strukturierte Zusammenarbeit, regelmäßige Abstimmungen und klare Aufgaben
 
 ### Aufwände der Teammitglieder
 
-| Name | Tätigkeit | Aufwand |
-|------|----------|---------|
-| Stephan Dietmair | Koordination & Tests | 15 h |
-| Gabriel Herbei | Testplanung & Qualitätssicherung | 22 h |
-| André Karner | Entwicklung & Bugfixing | 35 h |
+![Aufwaende3](img/Aufwaende3.png) 
 
 ### Projektstatus
 
-| Dimension | Status | Maßnahmen |
-|---------|--------|-----------|
-| Leistungsziele | In Ordnung | keine |
-| Terminziele | Leicht verzögert | Aufgabenpriorisierung |
-| Kostenziele | In Ordnung | keine |
+![Projektstatus3](img/Status3.png) 
+
 
 ### Gesamtstatus
 Die Kernfunktionen wurden erfolgreich umgesetzt. Kleinere Verzögerungen konnten
@@ -162,11 +143,7 @@ Trotz der zusätzlichen Belastung durch den Schulbetrieb funktionierte die Zusam
 
 ### Aufwände der Teammitglieder
 
-| Name | Tätigkeit | Aufwand |
-|------|----------|---------|
-| Stephan Dietmair | Präsentation & Organisation | 12 h |
-| Gabriel Herbei | Analyse & Feedbackauswertung | 8 h |
-| André Karner | Technische Anpassungen | 10 h |
+![Aufwaende4](img/Aufwaende4.png) 
 
 ### Projektstatus
 Alle Zielsetzungen der Zwischenpräsentation wurden erfüllt.
@@ -192,19 +169,12 @@ Das Projekt wurde positiv bewertet und befindet sich weiterhin im Plan.
 
 ### Aufwände der Teammitglieder
 
-| Name | Tätigkeit | Aufwand |
-|------|----------|---------|
-| Stephan Dietmair | Hauptdokumentation | 30 h |
-| Gabriel Herbei | Qualitätssicherung & Tests | 18 h |
-| André Karner | Optimierungen & Bugfixing | 20 h |
+![Aufwaende5](img/Aufwaende5.png) 
 
 ### Projektstatus
 
-| Dimension | Status | Maßnahmen |
-|---------|--------|-----------|
-| Leistungsziele | In Ordnung | keine |
-| Terminziele | In Ordnung | keine |
-| Kostenziele | In Ordnung | keine |
+![Projektstatus5](img/Status5.png) 
+
 
 ### Gesamtstatus
 Die Dokumentation befindet sich im Endstadium. Das System ist stabil und funktionsfähig.
